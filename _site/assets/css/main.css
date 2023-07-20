@@ -12384,6 +12384,11 @@ textarea.form-control-lg {
   color: #110e38;
 }
 
+@media (max-width: 800px) {
+  .image-sized {
+    max-width: 300px;
+  }
+}
 
 
 /*# sourceMappingURL=main.css.map */
