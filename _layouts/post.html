@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div class="container mt-5">
+    <div class="row align-items-center justify-content-center">
+        <div class="col-xl-6 col-xxl-6 text-center">
+            <img class="rounded-top rounded-bottom img-fluid" src="{{ page.image }}"/>
+        </div>
+        <div class="col-lg-6 col-xl-6 col-xxl-4">
+          <div class="my-5 text-center text-xl-start">
+                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
+                    {{ page.categories }}
+                </button>
+              <h1 class="fw-bolder">
+                  {{ page.title }}
+              </h1>
+              <div class="row">
+                  <!-- <img src="https://lh3.googleusercontent.com/pw/AIL4fc_sCgxhYtMHIqeGYTZW5tVQaDkjQT-Byex6gC7yQfy-UYyxku4bFb1mt5DB1y6uX03wsG0P8oQ6Nc2DMH9wiA3ofyRljcx2LwesqoPdNsLypYXbXatJkWxa0zuT251SWOmTqb3foYzePViG93KHguCKYq4S3Y4ewILNqkGKXEq9oN5vTDbmmzQjNvDCfPJ8bBEOeflAAUOMSLweHjxQVoZaMbVBIwHIR_C-63mBcqeZ6hFoegCnWBOT30rRcmYGd4bW61v65v0Dljo-EORb_MG8MjqlhDfAc0pyv2jxea3rcmcSYqZqag7FJ2hKxS5Pt5XBFkWUE2MjGCbP9HciMIamgaTHwKiihAHDMLHXDDog38PpHyxMRsyv7HGgqqghWohiuY-lceq8W8pRTlzbJXr5eUnGW5IH_FvK8F5S2MkHU1a5wzFcXaNwNqkAC2a2kDez41iIRccr4ATvpIpe-i_s0zsmiqI-Wx-9NaICoUpRjtu9B9s7FGHD2KvV5Tw8htIznKZg8igHyoumHIYN5rw0zihiRwzljiYh2z7APOdk8wOAT2HsTbIU4aZlSiZIlirjAMpHwhYVs3jX80tCz81d33RHlW6GilzJ9JzaKK0V20LO2HWwqcQ6r7oekbuJfDsvu471RTqfkNZvYeiWS7WzxoyYGwDNpuwuKh3RJG6gND_B6a0uyzbqjfuOVl1OWZeTdMhVbnI7idcgyhre1QIwRAqTTBUHVnTV0o6jtQD-22GaVnKY6IqokVZa_oyTzYmsEwS0L2PGq2QNBDMqBFHVrMwEH4nay78zHxkrll_67vowEKVMS6Jqessgi2DJdR6pB3fqbdHfCb6J7qHPTw6wIbe-Z-sGMGPrH9VboayuL0rgOf6PZAAC8cmewDaCZu1hy80w7xNuz-kIsdDkhtLS22DtroG5u3t81lxgY4Cdu3AvlxR4_8wA6A0=w1106-h830-s-no?authuser=0" 
+                        class="rounded-3"/> -->
+                  <div class="social-links">
+                    <h6>{{ page.author }}</h6>
+                    <p>
+                      {{ page.date | date: "%b %-d, %Y" }}
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="p-5">
+    {{ content }}
+  </div>
+</div>
+
