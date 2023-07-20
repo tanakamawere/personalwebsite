@@ -3,7 +3,7 @@ layout: post
 title:  "Trying Make It Work"
 date:   2023-07-19 10:58:07 +0200
 image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-summary: Hey there, something here
+description: Hey there, something here
 author: Tanaka Mawere
 categories: Money
 ---
