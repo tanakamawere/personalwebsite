@@ -12,7 +12,7 @@ image: "https://i.postimg.cc/N0zLYBcM/perfectimg.png"
 
 Any long time readers of my blog posts would have noticed that the website has changed more times than Mai Titi has changed husbands. That is because in all the previous versions of my website, I wanted to take short-cuts and use templates created by someone else. I tried avoiding creating the website from scratch (because "time". Just laziness to be more accurate) but all the templates really quite didn't do it for me. So I did the natural thing to do in such a situation. 
 
-*I gave up.*
+*_I gave up._*
 
 Well, until now. Came back, guns blazing determined to create my website from the ground up. I was going to put a portfolio, pagination, a game, my own design philosophy and another thing that would have been completely unnecessary. And it burnt me out. In just a day, I wanted to have everything that everyone else who has a personal website was doing. 
 
