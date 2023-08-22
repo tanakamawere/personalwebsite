@@ -3,10 +3,9 @@ layout: default
 ---
 
 <div class="container">
-    <div class="container">
-      <div class="row align-items-center justify-content-center">
+    <div class="row align-items-center justify-content-center">
         <div class="col-xl-6 col-xxl-6 text-center">
-            <img class="rounded-top rounded-bottom img-fluid image-sized" src="/assets/img/home_image.jpg"/>
+            <img class="rounded-top rounded-bottom img-fluid image-sized" src="/assets/img/home_image.jpg" />
         </div>
         <div class="col-lg-6 col-xl-6 col-xxl-4">
             <div class="my-5 text-center text-xl-start">
@@ -14,12 +13,13 @@ layout: default
                     Hi there, I am Tanaka Mawere😃
                 </h1>
                 <p>
-                    <strong>Incompetent C# Programmer</strong> and <strong>Keyboardist + Bassist</strong> from Harare. 
-                    Currently an unfortunate medical student at UZ and pretends to exercise at times. <br/>
+                    <strong>Incompetent C# Programmer</strong> and <strong>Keyboardist + Bassist</strong> from
+                    Harare.
+                    Currently an unfortunate medical student at UZ and pretends to exercise at times. <br />
                 </p>
                 <div class="row align-items-center">
                     <div class="col">
-                        <a href="https://wa.me/263718086035"> 
+                        <a href="https://wa.me/263718086035">
                             <i class="fa-brands fa-whatsapp fa-xl icon-colour"></i>
                         </a>
                     </div>
@@ -47,42 +47,33 @@ layout: default
             </div>
         </div>
     </div>
-    </div>
 
-    <div class="p-5 container rounded-3">
-      <div class="container-fluid py-5">
-        <h2 class="display-6 fw-bold">Recent Posts</h2>
-        <p class="col-md-8 fs-6">
-            Here is a preview of my thoughts on anything and everything😌
-        </p>
-      </div>
+    <div class="px-5 container">
+        <div class="container-fluid py-3">
+            <h2 class="display-6 fw-bold">Recent Thoughts</h2>
+            <p class="col-md-8 fs-6">
+                Who reads long things anyway? Here is my version of Twitter-esque thoughts, away from Twitter
+            </p>
+        </div>
 
-      
-    <div class="row gx-5">
-    {% for post in site.posts %}
+        {% assign sorted = site.thoughts | sort %}
+        {% assign recent = sorted | reverse | slice: 0, 3 %}
+
+        {% for post in recent %}
         <div class="col-lg-4 mb-5">
             <div class="card h-100 shadow border-0">
-                <img class="card-img-top" src="{{ post.image }}" alt="..."/>
                 <div class="card-body p-4 rounded-top">
-                <div class="row">
-                </div>
-                    <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                        {{ post.categories }}
-                    </button>
-                    <a class="text-decoration-none link-dark stretched-link mb-3 " href="{{ post.url | relative_url}}">
-                        <h5 class="fw-bold">
-                            {{ post.title }}
-                        </h5>
-                    </a>
                     <p class="card-text mb-0">
-                        {{ post.description }}
+                        {{ post.content }}
                     </p>
                 </div>
                 <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
                     <div class="d-flex align-items-end justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <div class="small">
-                                <div class="text-muted">
+                        <div class="row align-items-center container-fluid">
+                            <img class="col rounded-circle" style="max-height: 50px; max-width: 50px;" src="/assets/img/thoughts_profile.jpg"/>
+                            <div class="col small text-muted">
+                                <div>{{ post.author }}</div>
+                                <div>
                                     {{ post.date | date: "%b %-d, %Y" }}
                                 </div>
                             </div>
@@ -91,8 +82,56 @@ layout: default
                 </div>
             </div>
         </div>
-    {% endfor %}
-      
-  </div>
+        {% endfor %}
+    </div>
+
+    <div class="px-5 container">
+        <div class="container-fluid py-3">
+            <h2 class="display-6 fw-bold">Recent Posts</h2>
+            <p class="col-md-8 fs-6">
+                When I feel motivated, I write long form content. Very rare
+            </p>
+        </div>
+
+
+        <div class="row gx-5">
+            {% assign sorted = site.posts | sort %}
+            {% assign recent = sorted | reverse | slice: 0, 3 %}
+
+            {% for post in recent %}
+                <div class="col-lg-4 mb-5">
+                    <div class="card h-100 shadow border-0">
+                        <img class="card-img-top" src="{{ post.image }}" alt="..." />
+                        <div class="card-body p-4 rounded-top">
+                            <div class="row">
+                            </div>
+                            <button class="btn btn-primary rounded-pill fw-semibold fs-small">
+                                {{ post.categories }}
+                            </button>
+                            <a class="text-decoration-none link-dark stretched-link mb-3 "
+                                href="{{ post.url | relative_url}}">
+                                <h5 class="fw-bold">
+                                    {{ post.title }}
+                                </h5>
+                            </a>
+                            <p class="card-text mb-0">
+                                {{ post.description }}
+                            </p>
+                        </div>
+                        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
+                            <div class="d-flex align-items-end justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <div class="small">
+                                        <div class="text-muted">
+                                            {{ post.date | date: "%b %-d, %Y" }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 </div>

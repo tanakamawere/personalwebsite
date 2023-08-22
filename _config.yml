@@ -3,3 +3,7 @@ description: "Incompetent C# Programmer and Keyboardist + Bassist from Harare. C
 
 baseurl: "/" # the subpath of your site, e.g. /blog
 title: "Tanaka Mawere" # the name of your site, e.g. ACME Corp.
+
+collections:
+  thoughts:
+    output: true
