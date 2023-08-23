@@ -17,7 +17,7 @@ layout: default
                     Harare.
                     Currently an unfortunate medical student at UZ and pretends to exercise at times. <br />
                 </p>
-                <div class="row align-items-center">
+                <div class="row align-items-center m-2">
                     <div class="col">
                         <a href="https://wa.me/263718086035">
                             <i class="fa-brands fa-whatsapp fa-xl icon-colour"></i>
@@ -59,6 +59,7 @@ layout: default
         {% assign sorted = site.thoughts | sort %}
         {% assign recent = sorted | reverse | slice: 0, 3 %}
 
+        <div class="row gx-5">
         {% for post in recent %}
         <div class="col-lg-4 mb-5">
             <div class="card h-100 shadow border-0">
@@ -83,6 +84,7 @@ layout: default
             </div>
         </div>
         {% endfor %}
+        </div>
     </div>
 
     <div class="px-5 container">
