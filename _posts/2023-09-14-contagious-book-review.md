@@ -5,7 +5,7 @@ date: 2023-09-14 16:30:00 +0200
 description: "Contagious by Jonah Berger"
 author: Tanaka Mawere
 categories: Book-Review
-image: "https://cdn.thecollector.com/wp-content/uploads/2023/06/thomas-sankara-burkina-faso-revolutionary.jpg"
+image: "https://www.disruptorleague.com/wp-content/uploads/2017/03/Contagious-Jonah-Berger.jpg"
 ---
 
 ## Why should you continue reading this post?
