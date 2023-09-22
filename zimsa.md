@@ -15,10 +15,10 @@ permalink: /zimsa/
                     Hi there, too curious someone from the Zimsa Magazine
                 </h1>
                 <p>
-                    What kind of surprise would I have for you?😂 
+                    Gotcha! 
                     <br/>
                     <br/>
-                    But since you are already here, you might as well 
+                    Since you are already here, you might as well 
                     <a href="https://wa.link/ckbzi4"> say hie on WhatsApp so that I know who this curious person is</a>
                 </p>
                 
