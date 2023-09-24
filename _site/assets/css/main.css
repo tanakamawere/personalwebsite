@@ -12572,6 +12572,10 @@ fieldset:disabled .btn {
   color: #110e38;
 }
 
+.icon-size {
+  font-size: 2rem;
+}
+
 @media (max-width: 800px) {
   .image-sized {
     max-width: 300px;

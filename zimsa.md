@@ -12,18 +12,15 @@ permalink: /zimsa/
         <div class="col-lg-6 col-xl-6 col-xxl-4">
             <div class="my-5 text-center text-xl-start">
                 <h1 class="fw-bolder">
-                    Hi there, too curious someone from the Zimsa Magazine
+                    Hi there, too curious someone
                 </h1>
                 <p>
                     Gotcha! 
                     <br/>
                     <br/>
                     Since you are already here, you might as well 
-                    <a href="https://wa.link/ckbzi4"> say hie on WhatsApp so that I know who this curious person is</a>
-                </p>
-                
-                And while I have your attention, I code apps and play the guitar.
-                
+                    <a href="/"> explore my website</a>
+                </p>                
             </div>
         </div>
     </div>
