@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Humans Sweat Out Stress!?"
-date: 2023-10-03 00:00:00 +0200
+date: 2023-10-02 00:00:00 +0200
 description: "Here is a summary of what the 'stress doctor', Dr Tara Swart, says about managing stress and the power of our minds."
 author: Tanaka Mawere
 categories: Podcast-Review
