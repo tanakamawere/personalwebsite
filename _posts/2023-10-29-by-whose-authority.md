@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "By whose authority do I write?"
-date: 2023-08-27 18:00:00 +0200
+date: 2023-10-29 06:00:00 +0200
 description: "A bit of an imposter syndrome piece"
 author: Tanaka Mawere
 categories: Thoughts
@@ -20,4 +20,4 @@ I write and post primarily for myself and to organise my thoughts more. The feel
 
 # 2. Let the information out there
 
-The other reason is that at this very young, juvenile age, I don't know a lot. But I might be one step ahead in a journey that someone else younger is on. So what I share and experience might help in some way
+The other reason is that at this very young, juvenile age, I don't know a lot. But I might be one step ahead in a journey that someone else younger is on. So what I share and experience might help in some way. Very unlikely but I hope so.
