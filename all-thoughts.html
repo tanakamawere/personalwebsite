@@ -1,0 +1,41 @@
+---
+layout: default
+title: Thoughts
+permalink: /all-thoughts/
+---
+
+<div class="px-5 container rounded-3">
+    <div class="container-fluid py-5">
+        <h2 class="display-6 fw-bold">Recent Thoughts</h2>
+        <p class="col-md-8 fs-6">
+            Who reads long things anyway? Here is my version of Twitter like thoughts, away from Twitter
+        </p>
+    </div>
+    <div class="row gx-5">
+        {% assign sorted = site.thoughts | sort: 'date' | reverse  %}
+        {% for post in sorted %}
+        <div class="col-lg-4 mb-5">
+            <div class="card h-100 shadow border-0">
+                <div class="card-body p-4 rounded-top">
+                    <p class="card-text mb-0">
+                        {{ post.content }}
+                    </p>
+                </div>
+                <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
+                    <div class="d-flex align-items-end justify-content-between">
+                        <div class="row align-items-center container-fluid">
+                            <img class="col rounded-circle" style="max-height: 50px; max-width: 50px;" src="/assets/img/profile_picture.jpg"/>
+                            <div class="col small text-muted">
+                                <div>{{ post.author }}</div>
+                                <div>
+                                    {{ post.date | date: "%b %-d, %Y" }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
