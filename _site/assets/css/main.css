@@ -13217,4 +13217,37 @@ body hr {
   border-bottom-color: #eee;
 }
 
+/* Footer and button gradient accoding to Vonge */
+.vonge-gradient-footer {
+  background: linear-gradient(to right, #1394a6, #085d94);
+}
+
+.bg-light-gray {
+  background-color: #f8f9fa;
+}
+
+.card-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background: linear-gradient(to bottom, #1394a6, #085d94);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card:hover .card-text-overlay {
+  opacity: 0.8;
+}
+
 /*# sourceMappingURL=main.css.map */

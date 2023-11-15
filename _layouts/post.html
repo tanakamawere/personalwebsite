@@ -8,9 +8,11 @@ layout: default
         </div>
         <div class="col-lg-6 col-xl-6 col-xxl-4">
           <div class="my-3 text-center text-xl-start">
+              {% for category in page.categories %}  
                 <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    {{ page.categories }}
+                    {{ category }}
                 </button>
+              {% endfor %}
               <h1 class="fw-bolder">
                   {{ page.title }}
               </h1>
@@ -30,5 +32,25 @@ layout: default
   <div class="px-3 highlight">
     {{ content }}
   </div>
+
+  <!--Next article section-->
+  <hr class="my-5"/>
+  <h2 class="fw-bolder">Your next article...</h2>
+
+  {% if page.previous %}
+    <div class="card" style="max-width: 30rem;">
+      <div class="row card-body">
+        <div class="col-6">
+          <img class="rounded-top rounded-bottom img-fluid" src="{{ page.previous.image }}"/>
+        </div>
+        <div class="col-6">
+          <h3 class="card-title">{{ page.previous.title }}</h5>
+          <a href="{{ page.previous.url | relative_url}}" class="btn btn-primary">Read it...</a>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+
 </div>
 

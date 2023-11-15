@@ -16,38 +16,7 @@ permalink: /posts/
     <div class="row gx-5">
         {% assign sorted = site.posts | sort: 'date' | reverse  %}
         {% for post in sorted %}
-        <div class="col-lg-4 mb-5">
-            <div class="card h-100 shadow border-0">
-                <img class="card-img-top" src="{{ post.image }}" alt="..." />
-                <div class="card-body p-4 rounded-top">
-                    <div class="row">
-                    </div>
-                    <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                        {{ post.categories }}
-                    </button>
-                    <a class="text-decoration-none link-dark stretched-link mb-3 "
-                        href="{{ post.url | relative_url}}">
-                        <h5 class="fw-bold">
-                            {{ post.title }}
-                        </h5>
-                    </a>
-                    <p class="card-text mb-0">
-                        {{ post.description }}
-                    </p>
-                </div>
-                <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-                    <div class="d-flex align-items-end justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <div class="small">
-                                <div class="text-muted">
-                                    {{ post.date | date: "%b %-d, %Y" }}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            {% include posts-control.html %}
         {% endfor %}
     </div>
 </div>
