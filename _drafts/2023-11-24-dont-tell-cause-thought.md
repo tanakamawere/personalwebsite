@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Don't tell, cause thought"
-date: 2023-11-20 18:00:00 +0200
+date: 2023-11-24 18:00:00 +0200
 description: "People don't listen when you tell them something. Simple fact of life, so don't tell them. Make them think."
 author: Tanaka Mawere
 categories: 

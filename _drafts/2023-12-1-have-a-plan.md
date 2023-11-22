@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "One of the reasons you fail to be 'productive'"
-date: 2023-08-31 18:00:00 +0200
+date: 2023-12-01 18:00:00 +0200
 description: "Failure to plan really is planning to fail."
 author: Tanaka Mawere
 categories: Thoughts
