@@ -2,6 +2,8 @@
 layout: default
 title: Posts
 permalink: /posts/
+pagination: 
+    enabled: true
 ---
 
 <div class="px-5 container">
@@ -14,9 +16,26 @@ permalink: /posts/
 
 
     <div class="row gx-5">
-        {% assign sorted = site.posts | sort: 'date' | reverse  %}
+        {% assign sorted = paginator.posts | sort: 'date' | reverse  %}
         {% for post in sorted %}
             {% include posts-control.html %}
         {% endfor %}
     </div>
+
+    <nav>
+        {% if paginator.total_pages > 1 %}
+        <ul class="pagination">
+            {% if paginator.previous_page %}
+            <li class="page-item">
+                <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+            </li>
+            {% endif %}
+            {% if paginator.next_page %}
+            <li class="page-item">
+                <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+            </li>
+            {% endif %}
+        </ul>
+        {% endif %}
+    </nav>
 </div>
