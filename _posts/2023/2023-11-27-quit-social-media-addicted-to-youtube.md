@@ -5,7 +5,8 @@ date: 2023-11-27 16:53:00 +0200
 description: "The digital definition of evading a pothole and driving straight into a pit."
 author: Tanaka Mawere
 categories: 
-    -   Thoughts
+    -   Battle with Social Media
+    -   YouTube
     -   Productivity
 image: "https://i.postimg.cc/c4Rwg4Lx/quit-social-media.jpg"
 ---
