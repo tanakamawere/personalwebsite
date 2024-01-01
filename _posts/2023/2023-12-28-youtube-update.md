@@ -4,6 +4,7 @@ title: "And I am back to YouTube..."
 date: 2023-12-28 09:30:00 +0200
 description: "I had a good reason to go back (we always have a good reason. Don't we?)"
 author: Tanaka Mawere
+comments: true
 categories: 
     -   Battle with Social Media
     -   YouTube

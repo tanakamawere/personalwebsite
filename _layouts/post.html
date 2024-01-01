@@ -31,7 +31,11 @@ layout: default
 
   <div class="px-3 highlight">
     {{ content }}
-  </div>
+  </div>  
+    
+  {% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+  {% endif %}
 
   <!--Next article section-->
   <hr class="my-5"/>
@@ -50,7 +54,5 @@ layout: default
       </div>
     </div>
   {% endif %}
-
-
 </div>
 

@@ -4,6 +4,7 @@ title: "Health Misconceptions You Shouldn't Carry Into 2024"
 date: 2024-01-01 10:00:00 +0200
 description: "This is the first time using such a title that sounds sounds so click-bait-y and I don't like it either. But since it will pique your curiosity..."
 author: Tanaka Mawere
+comments: true
 categories: 
     -   Health
     -   Lessons from 2023

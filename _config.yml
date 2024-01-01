@@ -7,6 +7,11 @@ title: "Tanaka Mawere"
 gems: 
   - jekyll-paginate-v2
 
+disqus:
+    # Leave shortname blank to disable comments site-wide.
+    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+    shortname: tanakamawere
+
 pagination:
   
   # Site-wide kill switch, disabled here it doesn't run at all 
