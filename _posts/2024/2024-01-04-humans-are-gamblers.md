@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "A New Year for The Gamblers"
-date: 2024-01-03 09:30:00 +0200
+date: 2024-01-04 09:30:00 +0200
 description: "I had grown up to assume that people will always do the best for themselves, as rationally thinking people (not all though). But I learnt that we are more of gamblers than people who direct our lives in a particular direction."
 author: Tanaka Mawere
 categories: 
     -   Lessons from 2023
     -   Health
-image: "https://i.postimg.cc/mrw8Gp9t/9d897122-329a-4818-abf6-e340d63a3769.jpg"
+image: "https://i.postimg.cc/6pDg5LMf/9760c7fa-e670-46d9-a41c-e1668dbb5ec7.jpg"
 ---
 
 # Why Doctors Exist
