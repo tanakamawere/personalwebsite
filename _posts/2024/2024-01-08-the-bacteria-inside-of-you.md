@@ -69,11 +69,12 @@ I do realise however, that this is largely the Zimbabwean diet. From sugar beans
 
 ## Foods that affect the gut microbiome
 
-- Artificial sweeteners 
+- Artificial sweeteners.
     Those found in "diet-drinks" and other similar foods.
+
 - Processed/Refined foods.
     These deserve an article on their own. But they are more damaging than nutritive to the body and the gut microbiome is not spared.
-- Red meat
+- Red meat.
     Seems like beef isn't responsible for gout only but can also affect your heart and gut.
 
 # Prebiotics Vs Probiotics Vs Postbiotics
