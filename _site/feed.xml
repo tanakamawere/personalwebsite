@@ -1,4 +1,96 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-01T14:30:34+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tanaka Mawere</title><subtitle>Incompetent C# Programmer and Keyboardist + Bassist from Harare. Currently an unfortunate medical student at UZ and pretends to exercise at times.</subtitle><entry><title type="html">Health Misconceptions You Shouldn’t Carry Into 2024</title><link href="http://localhost:4000/health/lessons%20from%202023/2024/01/01/health-misconceptions.html" rel="alternate" type="text/html" title="Health Misconceptions You Shouldn’t Carry Into 2024" /><published>2024-01-01T10:00:00+02:00</published><updated>2024-01-01T10:00:00+02:00</updated><id>http://localhost:4000/health/lessons%20from%202023/2024/01/01/health-misconceptions</id><content type="html" xml:base="http://localhost:4000/health/lessons%20from%202023/2024/01/01/health-misconceptions.html"><![CDATA[<p>Let’s get right into it, shall we? But first a few disclaimers are in order.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-11T16:28:37+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tanaka Mawere</title><subtitle>Incompetent C# Programmer and Keyboardist + Bassist from Harare. Currently an unfortunate medical student at UZ and pretends to exercise at times.</subtitle><entry><title type="html">Your Bacteria and Fibre</title><link href="http://localhost:4000/health/bacteria&fibre" rel="alternate" type="text/html" title="Your Bacteria and Fibre" /><published>2024-01-08T18:00:00+02:00</published><updated>2024-01-08T18:00:00+02:00</updated><id>http://localhost:4000/health/the-bacteria-inside-of-you</id><content type="html" xml:base="http://localhost:4000/health/bacteria&amp;fibre"><![CDATA[<p>We don’t want germs. We domestos them dead. And bacteria is part of what we call germs. But it seems very odd that the same bacteria we kill outside our bodies is also responsible for keeping us well inside.</p>
+
+<p>So let’s start with what they are, what they do, why they are important to us, what we can do to keep them happy (all 38 trillion of them) and as a bonus, highlight the differences between <strong>prebiotic</strong>, <strong>probiotic</strong> and <strong>post-biotics</strong>.</p>
+
+<h1 id="so-whats-the-bacteria-inside-of-you">So what’s the bacteria inside of you?</h1>
+
+<p>Here is the thing. It’s not only bacteria inside your gut. There are</p>
+
+<ul>
+  <li>Viruses</li>
+  <li>Fungi</li>
+  <li>Parasites</li>
+  <li>Archae (recently discovered) as well.</li>
+</ul>
+
+<p>All these micro-organisms make up your “Gut Microbiome”. Your intestines are a home to an ecosystem to these small organisms and they feed off the food you eat and rely on the warmth on the warmth that your body generates. Quite a smart place to call home.</p>
+
+<h1 id="what-do-they-do">What do they do?</h1>
+
+<p>Humans can’t digest fibre. I am sure you have heard at some point that fibre is good for you but that is weird given that humans can’t naturally digest fibre. But guess who can?</p>
+
+<p>The gut microbes.</p>
+
+<p>The gut bacteria breaks down fibre and releases <em>Short-Chain Fatty Acids (SCFAs)</em>. (They have nothing to do with being fat)  SCFAs are fatty acids with fewer than 6 carbon atoms.</p>
+
+<p>The three most common are <strong>Acetate</strong>, <strong>Propionate</strong> and <strong>Butyrate</strong>.
+These SCFAs play crucial roles in the body¹:</p>
+
+<ul>
+  <li><strong>Acetate</strong> is important for energy production and synthesis of lipids</li>
+  <li><strong>Propionate</strong> is mainly involved in producing glucose in the liver and small intestine</li>
+  <li><strong>Butyrate</strong> is the preferred energy source for cells that line the colon.</li>
+</ul>
+
+<h1 id="why-is-they-are-important">Why is they are important?</h1>
+
+<p>To answer this, I think it’s easier to highlight the bad things that happen if we don’t take care of our gut microbiome.</p>
+
+<p>Your intestines are very selective about what they absorb into the body. There are also some harmful things produced by the gut bacteria such as <strong>bacterial endotoxin</strong> which is not harmful when it’s in the intestines but harmful when it gets into the blood.</p>
+
+<p>Butyrate as mentioned above, is the preferred energy source for cells that line the colon. Butyrate is formed from fibre that you eat. It follows that if you eat less fibre, you are eating less of what your intestinal lining needs to stay closed and not feeding the bacteria that form butyrate.</p>
+
+<p>What this leads to is inflammation of the intestinal lining and entrance of bacterial endotoxin into your blood. Leading to inflammation is all of the wrong places in your body.</p>
+
+<p>In addition to that, inflammation in your intestines may lead to colon cancer and other nasty health complications.</p>
+
+<h1 id="how-to-keep-our-gut-microbiome-happy">How to keep our Gut Microbiome happy</h1>
+
+<p>Fibre.</p>
+
+<p>That’s it.</p>
+
+<p>Foods that have fibre are plant based. That is</p>
+
+<ul>
+  <li>Fruits</li>
+  <li>Legumes</li>
+  <li>Vegetables</li>
+  <li>Seeds &amp; Nuts</li>
+</ul>
+
+<p>I do realise however, that this is largely the Zimbabwean diet. From sugar beans to nuts. So I suppose that much of the nation is okay in terms of the gut microbiome. But it’s this second part that is more important.</p>
+
+<h2 id="foods-that-affect-the-gut-microbiome">Foods that affect the gut microbiome</h2>
+
+<ul>
+  <li>
+    <p>Artificial sweeteners.
+  Those found in “diet-drinks” and other similar foods.</p>
+  </li>
+  <li>Processed/Refined foods.
+  These deserve an article on their own. But they are more damaging than nutritive to the body and the gut microbiome is not spared.</li>
+  <li>Red meat.
+  Seems like beef isn’t responsible for gout only but can also affect your heart and gut.</li>
+</ul>
+
+<h1 id="prebiotics-vs-probiotics-vs-postbiotics">Prebiotics Vs Probiotics Vs Postbiotics</h1>
+
+<ul>
+  <li>
+    <p><strong>Prebiotics</strong> are plant fibers found primarily in foods that contain complex carbohydrates, like resistant starch and fiber. They act as food for bacteria, promoting their growth and health. Foods rich in prebiotics include whole wheat, bananas, soybeans, and greens. Essentially plants</p>
+  </li>
+  <li>
+    <p><strong>Probiotics</strong> are live bacteria and yeast contained in cultured foods. They promote healthy digestive function, support immune health, and influence overall wellness. Probiotic-rich foods include yogurt and kombucha.</p>
+  </li>
+  <li>
+    <p><strong>Postbiotics</strong> are byproducts of the good bacteria left behind when probiotics ferment prebiotics. They contain dead bacteria, short-chain fatty acids, and peptides that support bodily function</p>
+  </li>
+</ul>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>This was not at all exhaustive on the topic of gut microbiota. But I believe that if you were at zero, you now know to spare a thought for the 38 trillion strong army inside your gut.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Health" /><summary type="html"><![CDATA[Explore the world of gut microbes with me plus why fibre is very important! Learn about these tiny organisms in our digestive system and their impact on our health.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/RZbK4bpk/63d82727-dfbd-4f5c-9a6c-8c127ecc231a.jpg" /><media:content medium="image" url="https://i.postimg.cc/RZbK4bpk/63d82727-dfbd-4f5c-9a6c-8c127ecc231a.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Health Misconceptions You Shouldn’t Carry Into 2024</title><link href="http://localhost:4000/health/lessons%20from%202023/2024/01/01/health-misconceptions.html" rel="alternate" type="text/html" title="Health Misconceptions You Shouldn’t Carry Into 2024" /><published>2024-01-01T10:00:00+02:00</published><updated>2024-01-01T10:00:00+02:00</updated><id>http://localhost:4000/health/lessons%20from%202023/2024/01/01/health-misconceptions</id><content type="html" xml:base="http://localhost:4000/health/lessons%20from%202023/2024/01/01/health-misconceptions.html"><![CDATA[<p>Let’s get right into it, shall we? But first a few disclaimers are in order.</p>
 
 <ul>
   <li>Health tips isn’t as reductionist and simple as blogs (like mine) and people make them seem. There’s much more nuance to each point and more explanation that could be given but since we are living in a society of people with short attention spans, we try to package the most correct information possible in the shortest possible way.</li>
@@ -373,75 +465,4 @@ But that ease of entry into trading is also the downfall for many and it is the 
 
 <blockquote>
   <p>Key takeaway for me: I am not old enough to be giving ‘life advice’. Don’t I ever will or dare to.</p>
-</blockquote>]]></content><author><name>Tanaka Mawere</name></author><category term="Thoughts" /><summary type="html"><![CDATA[A bit more quiet and shush from me...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/8zpTck2s/impostor.jpg" /><media:content medium="image" url="https://i.postimg.cc/8zpTck2s/impostor.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Are Minister Mahendere’s lyrics biblical?</title><link href="http://localhost:4000/faith/2023/10/31/tangai-neni-lyrics.html" rel="alternate" type="text/html" title="Are Minister Mahendere’s lyrics biblical?" /><published>2023-10-31T00:00:00+02:00</published><updated>2023-10-31T00:00:00+02:00</updated><id>http://localhost:4000/faith/2023/10/31/tangai-neni-lyrics</id><content type="html" xml:base="http://localhost:4000/faith/2023/10/31/tangai-neni-lyrics.html"><![CDATA[<p>It was late at night, at a time I know I should be asleep. It’s as easy as going offline, closing my eyes and going to sleep. But of course, I don’t do that. Instead, in a conversation with my friend, (who was honestly sleepy to the point of just indulging me by replying so ‘conversation’ might be some sort of a stretch), I got to wonder, <em>are Minister Mahendere’s lyrics to ‘Tangai Neni’ biblical?</em></p>
-
-<h2 id="disclaimers">Disclaimers</h2>
-
-<p>Before I go on, I should state a few things.</p>
-<ol>
-  <li>If you are a Minister Mahendere fan, please (and pretty please) do not take this as an attack. You will see that in this article, I won’t even claim whether it’s wrong (maybe once I get more information, I will have a solid opinion). I am simply in a quest for truth.</li>
-  <li>I am not the biggest fan of his in any case. It’s not that I don’t like his music and him, I just don’t listen to his music. I have nothing against him. (I felt I had to say this to remove any bias that might be perceived in this article).</li>
-</ol>
-
-<h2 id="things-i-have-questions-about">Things I have questions about</h2>
-
-<p>I am going to try to pose questions that I have about the song. I will try to be as objective as possible and keep them as questions. Please do feel free to reply with answers and I will update this article accordingly.</p>
-
-<p>Now that that is out of the way…</p>
-
-<h3 id="tangai-neni">Tangai neni</h3>
-
-<p>What does that mean? It’s implication is that we are in a competition to be blessed so “might as well start here Lord”.</p>
-
-<p>In addition to that, an obvious question is “Is this a song about God or about me?”</p>
-
-<p>The whole song’s lyrics are “Tangai neni”, “Mugopedza neni”, “Ndioneiwo”… Matthew 6 vs 33 says “But seek first His kingdom and His righteousness, and all these things will be given to you as well.”</p>
-
-<p>Are we not in direct violation of that when we ask God to do something for us first? And I say for us <em>first</em> because God is considered at the end, sort of as an afterthought with the following lyrics, at the end of the song…</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>I will testify
-I will testify
-Of Your goodness
-Of Your mercy
-</code></pre></div></div>
-
-<h3 id="prosperity-gospel-repackaged">Prosperity gospel repackaged?</h3>
-
-<p>There is a part of the song that goes like</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ko paye
-Pamuno promoter vanhu venyu
-Imbo tangai neni Ishe
-</code></pre></div></div>
-
-<p>Another</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Pamunokomborera vana venyu
-Imbo tangai neni Ishe
-</code></pre></div></div>
-
-<p>There is a very materialistic feel to the song. Prosperity gospel-like. And who can blame him? It sells easily. No wonder the song has 2.7 million views on YouTube. But then again, is it biblical?</p>
-
-<h3 id="so-for-those-who-things-dont-work-out">So for those who things don’t work out…</h3>
-
-<p>There are lyrics saying</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mwari
-Iko kutenda ndinako
-Kushoko renyu
-Saka ndioneiwo Mwari
-</code></pre></div></div>
-
-<p>This is one of the reasons why people end up leaving the church. “Ah it didn’t work out? You didn’t have enough faith. Keep pushing” without stopping to ask, “Is this what God wants for me? What actually is God’s will?”</p>
-
-<p>Romans 9 vs 21 says “Does not the potter have the right to make out of the same lump of clay some pottery for special purposes and some for common use?” God is sovereign and His will <em>will</em> be done.</p>
-
-<p>Is it not better that we first ask God what His will is and then pray for it to be done instead of encouraging people to have faith in whatever, no matter the reason?”</p>
-
-<h2 id="in-conclusion">In conclusion</h2>
-
-<p>If it wasn’t clear, my biggest problem with the song is that it seems to be about me and not about God. It seems to be about what I want and not what God wants. Further to that, it seems to be encouraging an ATM type of God. “Lord I want to make the first withdrawal so tangai neni”.</p>
-
-<p>Is that really what the New Testament is encouraging our relationship with God to be like?</p>
-
-<p>Again, please do feel free to reply me on my <a href="https://wa.me/263785468923">WhatsApp by clicking right here</a></p>]]></content><author><name>Tanaka Mawere</name></author><category term="Faith" /><summary type="html"><![CDATA[Minister Mahendere's popular song "Tangai Neni" came into question yesterday and I fell down a rabbit hole. Are they biblical?]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/zKL7xVbXSpI/sddefault.jpg" /><media:content medium="image" url="https://i.ytimg.com/vi/zKL7xVbXSpI/sddefault.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</blockquote>]]></content><author><name>Tanaka Mawere</name></author><category term="Thoughts" /><summary type="html"><![CDATA[A bit more quiet and shush from me...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/8zpTck2s/impostor.jpg" /><media:content medium="image" url="https://i.postimg.cc/8zpTck2s/impostor.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

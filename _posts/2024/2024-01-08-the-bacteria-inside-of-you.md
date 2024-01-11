@@ -6,7 +6,7 @@ description: "Explore the world of gut microbes with me plus why fibre is very i
 author: Tanaka Mawere
 categories: 
     -   Health
-    -   Food & Nutrition
+permalink: /health/bacteria&fibre
 image: "https://i.postimg.cc/RZbK4bpk/63d82727-dfbd-4f5c-9a6c-8c127ecc231a.jpg"
 ---
 
