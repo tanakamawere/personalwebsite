@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-21T08:06:23+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tanaka Mawere</title><subtitle>Incompetent C# Programmer and Keyboardist + Bassist from Harare. Currently an unfortunate medical student at UZ and pretends to exercise at times.</subtitle><entry><title type="html">The Misconception of Fruit Juice</title><link href="http://localhost:4000/health/2024/01/15/the-misconception-of-fruit-juice.html" rel="alternate" type="text/html" title="The Misconception of Fruit Juice" /><published>2024-01-15T18:00:00+02:00</published><updated>2024-01-15T18:00:00+02:00</updated><id>http://localhost:4000/health/2024/01/15/the-misconception-of-fruit-juice</id><content type="html" xml:base="http://localhost:4000/health/2024/01/15/the-misconception-of-fruit-juice.html"><![CDATA[<h1 id="the-story">The Story</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-23T18:39:12+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tanaka Mawere</title><subtitle>Incompetent C# Programmer and Keyboardist + Bassist from Harare. Currently an unfortunate medical student at UZ and pretends to exercise at times.</subtitle><entry><title type="html">Let There Be Light?</title><link href="http://localhost:4000/health/2024/01/22/let-there-be-light.html" rel="alternate" type="text/html" title="Let There Be Light?" /><published>2024-01-22T18:00:00+02:00</published><updated>2024-01-22T18:00:00+02:00</updated><id>http://localhost:4000/health/2024/01/22/let-there-be-light</id><content type="html" xml:base="http://localhost:4000/health/2024/01/22/let-there-be-light.html"><![CDATA[<h1 id="natural-clocks">Natural Clocks</h1>
+<p>Ever noticed that after using an alarm clock to wake up at a certain time, you end up not needing the alarm clock to wake up? At times, you even wake up prior to your set time all because your natural clock has adjusted to that time.</p>
+
+<p>This natural clock in your body is found in the Suprachiasmatic Nucleus (SCN). This structure is the master clock of your body. The SCN then is what determines your <strong>Circadian Rhythm</strong> which is the natural oscillation of your body every 24 hours, running in the background to carry out essential functions and processes.</p>
+
+<p>Your <em>Circadian Rhythm</em> is essentially then what determines the time you feel sleepy, the time you wake up and the time certain hormones are released in your body.</p>
+
+<p>For example, <em>Growth Hormone</em> (which does exactly what’s written on the tin) is secreted while you are asleep, but little is released during the day. How the body knows when to release Growth Hormone and others in a timely fashion is dependent on the Circadian Rhythm which is function of the SCN.</p>
+
+<p>Okay. That’s a lot of information.</p>
+<h1 id="the-scn-and-awakeness">The SCN and Awakeness</h1>
+<p>The single biggest thing that influences the SCN so that it carries out its Circadian pace-making activity is <strong>light</strong>, When you wake up in the morning and light hits your eyes, light influences the SCN to start waking up the body and release hormones in accordance with that.</p>
+
+<blockquote>
+  <p>An example is that when light hits your eyes in the morning, cortisol which was little while you are asleep, surges up and fills up your blood stream under instruction by the SCN.</p>
+</blockquote>
+
+<p>Conversely, at night, light is dimming down, and less light is getting to the SCN through your eyes. The SCN now releases hormones and inhibits some to prepare to sleep and rest for the night.</p>
+
+<p>The way the SCN decides to do certain things during the day and night and in a timely fashion is what we call the <strong>Circadian Rhythm</strong>.</p>
+
+<h1 id="why-does-this-all-matter">Why does this all matter?</h1>
+<p>All I was saying before is an attempt to lay the groundwork for you to understand the deleterious effects of light at the wrong time of the day and the importance of waking up at the same time of day, everyday.</p>
+
+<h2 id="in-relation-to-sleep">In relation to sleep</h2>
+<p>We have created a bright future (pun intended) in which at night, we have bulbs glaring and phones on. We don’t get a rest from light especially towards sleep so that the SCN gets the signal that it should prepare the body for sleep. Light keeps the body awake, making the SCN think that it is still day.</p>
+
+<blockquote>
+  <p>Tip: If you wake up in the middle of the night, the absolute worst thing you could do to yourself if you intend on going back to sleep is <em>use your phone.</em> From this discussion, light will make your SCN think it’s now day and wake up your body in a way that you will find it hard to go back to sleep.</p>
+</blockquote>
+
+<p>Our constant exposure to light is contributing to the sleep epidemic we are facing in which high quality sleep in going downhill. People are going to bed and spend an hour awake, twisting and turning endlessly as sleep evades them.</p>
+
+<p>That’s where the following advice comes from. Avoid looking at a screen an hour before you sleep. Or if you really need to use your phone, turn down the blue light as it is the most arousing light to the human body.</p>
+
+<h3 id="get-enough-light-in-the-morning">Get enough light in the morning</h3>
+
+<p>When you do intend to wake up, it’s recommended that you go outside and have natural light come into your eyes. Phone light has the same effect but is weaker in comparison.</p>
+
+<p>Sunlight properly wakes your body up and increases your mood to face the day. Phone light on the other hand, does a “partial job”. One in which you are up but are sluggish, which explains the sluggishness of getting out of bed after using your phone in the morning.</p>
+
+<h2 id="in-relation-to-wake-up-times">In relation to wake up times</h2>
+<p>This should have been a separate article, but it seems apposite to mention this here since the discussion is on the Circadian Rhythm and the Suprachiasmatic Nucleus (SCN),</p>
+
+<p>It’s not always possible to wake up at the same time every day. Life so happens that you sleep late the previous night, or something happens in the middle of the night i.e. visits from our relatives that pass through walls at night.</p>
+
+<p>Despite this, it is important to keep a consistent wake up time, even on weekends. The goal of this is to keep your Circadian Rhythm, in rhythm. Your body wants to have a rhythm, having constant times that it releases certain hormones and times it stops releasing them.</p>
+
+<p>Of importance to this is the stress hormone, Cortisol. It is an <strong>anti-inflammatory hormone</strong> that is secreted in bucket-loads according to your Circadian Rhythm when you wake up and is prevented from being secreted into your blood stream when you are asleep.</p>
+
+<p>Cortisol stops inflammation as it says on the tin, preventing chronic diseases such as Crohn’s disease, Ulcerative Colitis, Vasculitis, Arthritis and Psoriasis.</p>
+
+<p>As such, cortisol being in balance is important and should be a motivating factor for one to wake up at a consistent time.</p>
+
+<blockquote>
+  <p>The absolute time doesn’t matter that much. If you decide to wake up at 5am, 6am or 7am, that doesn’t matter. What matters is that you have gotten adequate, long enough sleep (6 to 8 hours) of high quality.</p>
+</blockquote>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>The takeaway message from this article is to expose yourself to sunlight in the morning, decrease your exposure to light at night as you want to sleep and to wake up consistently at the same time.</p>
+
+<p>All these things have major consequences on your physical and mental health, improving mood, minimising inflammation and giving you high quality sleep.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Health" /><summary type="html"><![CDATA[In this article, I dive into the links between light and our sleep and health. In addition, I highlight the importance of waking up at the same time every day.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/P5J10GKQ/a3b736b6-7ff8-47f9-9c9c-6e54aaae087a.jpg" /><media:content medium="image" url="https://i.postimg.cc/P5J10GKQ/a3b736b6-7ff8-47f9-9c9c-6e54aaae087a.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Misconception of Fruit Juice</title><link href="http://localhost:4000/health/2024/01/15/the-misconception-of-fruit-juice.html" rel="alternate" type="text/html" title="The Misconception of Fruit Juice" /><published>2024-01-15T18:00:00+02:00</published><updated>2024-01-15T18:00:00+02:00</updated><id>http://localhost:4000/health/2024/01/15/the-misconception-of-fruit-juice</id><content type="html" xml:base="http://localhost:4000/health/2024/01/15/the-misconception-of-fruit-juice.html"><![CDATA[<h1 id="the-story">The Story</h1>
 
 <p>I have a friend who drinks fruit juice <strong>everyday</strong>. When I say everyday, I mean every single waking day. She loves it.</p>
 
@@ -473,24 +534,4 @@ But that ease of entry into trading is also the downfall for many and it is the 
 
 <blockquote>
   <p>Don’t be fooled by how easy it is to start trading. And that is the catch of forex trading.</p>
-</blockquote>]]></content><author><name>Tanaka Mawere</name></author><category term="Forex" /><category term="Thoughts" /><category term="Trading" /><summary type="html"><![CDATA[This year marks 3 years since I started learning how to trade... Here's something I learnt]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1569025743873-ea3a9ade89f9?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9yZXglMjB0cmFkaW5nfGVufDB8fDB8fHww" /><media:content medium="image" url="https://images.unsplash.com/photo-1569025743873-ea3a9ade89f9?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9yZXglMjB0cmFkaW5nfGVufDB8fDB8fHww" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Put your eggs in one basket</title><link href="http://localhost:4000/thoughts/2023/11/07/put-your-eggs-in-one-basket.html" rel="alternate" type="text/html" title="Put your eggs in one basket" /><published>2023-11-07T12:00:00+02:00</published><updated>2023-11-07T12:00:00+02:00</updated><id>http://localhost:4000/thoughts/2023/11/07/put-your-eggs-in-one-basket</id><content type="html" xml:base="http://localhost:4000/thoughts/2023/11/07/put-your-eggs-in-one-basket.html"><![CDATA[<h1 id="introduction">Introduction</h1>
-
-<p>I am currently reading Stephen Bartlett’s “Diary of a CEO: 33 laws of something (I have forgotten and lazy to check it up)” and there is a chapter that says Plan B is bad for Plan A.</p>
-
-<p>That whole chapter resonated with me. Imagine you were living in a shack and you had one opportunity to free yourself and your family from poverty. You’d work hard to make that opportunity worthwhile and if you don’t succeed as much, you will be close to some definition of success. However, if you have an alternative path to follow, you won’t work as hard on Plan A because Plan B is a safety net for. Hence the commitment, the almost deluded belief in Plan A will not be there as you have comfort of having another way to go.</p>
-
-<p>Hence you won’t execute plan A well or fail miserably at it.</p>
-
-<h1 id="my-story">My Story</h1>
-
-<p>I have seen this in myself. My plan A is to make something with my coding skills and have that sustain me. My plan B is doing this medicine thingy. But because medicine is a safe bet and comforting, I am putting nowhere enough effort in plan A that would make me succeed at the very least. I suppose that if I wasn’t enrolled into medical school and sitting at home (of course not with African parents), plan A would probably be all there is and I would put all my being and effort into it.</p>
-
-<p>But because plan B exists, I am calm when I am not supposed to be.</p>
-
-<h1 id="this-is-zimbabwe">This is Zimbabwe</h1>
-
-<blockquote>
-  <p>But that is the Zimbabwean story isn’t it? One thing can’t sustain you. You have to have a job, a side hustle, a farm and three Visa applications to go to the UK, Australia and/or Poland (in that order) to help old white people bath.</p>
-</blockquote>
-
-<p>So realistically speaking, it’s not bad for plan B to exist. In Zimbabwe, it’s a necessity even. But there is a need to be conscious of your priorities and what you want to achieve most so that side-plans do not derail the first one.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Thoughts" /><summary type="html"><![CDATA[Having a 'Plan B' is bad for 'Plan A']]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" /><media:content medium="image" url="https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</blockquote>]]></content><author><name>Tanaka Mawere</name></author><category term="Forex" /><category term="Thoughts" /><category term="Trading" /><summary type="html"><![CDATA[This year marks 3 years since I started learning how to trade... Here's something I learnt]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1569025743873-ea3a9ade89f9?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9yZXglMjB0cmFkaW5nfGVufDB8fDB8fHww" /><media:content medium="image" url="https://images.unsplash.com/photo-1569025743873-ea3a9ade89f9?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9yZXglMjB0cmFkaW5nfGVufDB8fDB8fHww" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
