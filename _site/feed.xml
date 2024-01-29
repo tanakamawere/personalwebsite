@@ -1,4 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-25T11:47:19+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tanaka Mawere</title><subtitle>Incompetent C# Programmer and Keyboardist + Bassist from Harare. Currently an unfortunate medical student at UZ and pretends to exercise at times.</subtitle><entry><title type="html">Let There Be Light?</title><link href="http://localhost:4000/health/2024/01/22/let-there-be-light.html" rel="alternate" type="text/html" title="Let There Be Light?" /><published>2024-01-22T18:00:00+02:00</published><updated>2024-01-22T18:00:00+02:00</updated><id>http://localhost:4000/health/2024/01/22/let-there-be-light</id><content type="html" xml:base="http://localhost:4000/health/2024/01/22/let-there-be-light.html"><![CDATA[<h1 id="natural-clocks">Natural Clocks</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-29T19:08:29+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tanaka Mawere</title><subtitle>Incompetent C# Programmer and Keyboardist + Bassist from Harare. Currently an unfortunate medical student at UZ and pretends to exercise at times.</subtitle><entry><title type="html">A Sign of Good Health You Don’t Know About</title><link href="http://localhost:4000/health/2024/01/29/a-sign-of-health-you-dont-know.html" rel="alternate" type="text/html" title="A Sign of Good Health You Don’t Know About" /><published>2024-01-29T18:00:00+02:00</published><updated>2024-01-29T18:00:00+02:00</updated><id>http://localhost:4000/health/2024/01/29/a-sign-of-health-you-dont-know</id><content type="html" xml:base="http://localhost:4000/health/2024/01/29/a-sign-of-health-you-dont-know.html"><![CDATA[<p>This week, we are talking about matters of the heart.</p>
+
+<p>So in love, you should…</p>
+
+<p>Just kidding. I know nothing about that.</p>
+
+<p>Before reading on, please give your answer to the following and no cheating</p>
+
+<p><strong>PS: If there’s nothing there, just wait a few seconds until the page loads</strong></p>
+
+<script>(function(i,s,o,g,r,a,m){i['QP']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//scripts.poll-maker.com/3012/pollembed.js','qp');</script>
+<p><a href="https://www.quiz-maker.com" data-poll="5091087x675847b2-154" style="width:100%; display:block; text-align:right;">QuizWiz</a></p>
+
+<p>So what did you choose?</p>
+
+<p>We all know that a heart rate that is too slow, too fast or irregular can be a sign of heart disease so you can’t be blamed for choosing the first answer which is wrong.</p>
+
+<p>And if you chose the second, more baffling answer, it’s either you know your medical physiology or you cheated somehow. I believe more of the latter.</p>
+
+<h1 id="heart-rate-variability">Heart Rate Variability</h1>
+<p>Heart Rate Variability (HRV) is a measurement of the variation in time between successive heart beats. Simple as that.</p>
+
+<p>A high HRV, meaning the more the variation between your heartbeats has been shown to be a signal of a healthy heart. This means that instead of your heart beating at a constant rhythm of “lub dub, lub dub, lub dub, lub dub, lub dub”, you actually want your heart to do more of the following:</p>
+
+<p>“Lub dub (pauses for a sip of tea), lub dub, lub dub, (sprints to the next beat), lub dub”.</p>
+
+<blockquote>
+  <p>It’s important to note that the variability is of fractional duration at a time. There are arrhythmias which are medical conditions in which your heart rate variability is all over the place and that’s not what I am talking about.</p>
+</blockquote>
+
+<p>HRV though, is actually a reflection of your autonomic nervous system than your heart. The autonomic nervous system is the autopilot nervous system in your body that controls a lot of vital activities you don’t control, such as breathing rate, digestion, blood pressure and of course, heart rate.</p>
+
+<p><img src="https://cdn.michaelkummer.com/wp-content/uploads/2021/06/Heart-Rate-Variability.jpg?strip=all&amp;lossy=1&amp;resize=770%2C347&amp;ssl=1" alt="Heart Rate Variability Image" title="Your heart doesn't beat at exact intervals and it shouldn't" /></p>
+
+<h1 id="so-why-is-this-relevant">So why is this relevant?</h1>
+
+<h2 id="high-hrv">High HRV</h2>
+
+<p>Let’s start with a high HRV. 
+A high HRV, according to several studies, signals a healthy heart because it reflects the heart’s ability to respond quickly to rapid changes in the body. Things that can cause it to change are environmental stimuli, emotions, mental health, stress and metabolic imbalances in the body.</p>
+
+<p>I will extract a piece from an article from the Harvard Health blog that says it all well.</p>
+
+<p><em>In a healthy person, HRV should increase when your heart rate drops, as it does during relaxing activities such as reading or meditating. HRV decreases as the heart rate rises, such as when you exercise or are under stress. In fact, it changes constantly, both throughout the day and from day to day.</em></p>
+
+<h2 id="a-low-hrv">A low HRV</h2>
+
+<p>It then follows that a low Heart Rate Variability is a sign of ill-health.</p>
+
+<p>People with low HRV have an increased risk of Cardiovascular Disease and are less able to cope with stress. Studies have simply shown a correlation between ill-health outcomes and a low Heart Rate Variablity. Explanations as to why are still unclear.</p>
+
+<h1 id="how-to-track-hrv">How to track HRV</h1>
+
+<p>Unlike blood glucose levels that have a universal level that is considered good or bad, there is no one good value of what your HRV should be. It’s highly variable between people due to fitness levels, gender, diet etc.</p>
+
+<p>What’s important to track is the trend of your HRV. If you wear a smartwatch, it probably can measure your HRV and make a trend of whether your HRV is increasing or decreasing depending on your baseline.</p>
+
+<p>As such, it means that if someone has a higher HRV than you, it doesn’t mean they are fitter or healthier. But if you increase you HRV against a baseline that you set yourself, you know you are on the right path.</p>
+
+<h1 id="how-to-increase-heart-rate-variability">How to increase Heart Rate Variability</h1>
+
+<p>That’s what we all want to know now, isn’t it?</p>
+
+<p>Well, because HRV is such an automatic process in the body, it’s not something we can directly influence or control.
+Studies do show however, that people who do the following have higher levels of HRV.</p>
+
+<ul>
+  <li>Exercise regularly, especially athletes</li>
+  <li>Having a healthy diet while staying hydrated</li>
+  <li>Manage mental stress levels through various techniques such as sleeping on time, journalling etc</li>
+</ul>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>The take away from this article is this:</p>
+
+<blockquote>
+  <p>The greater your degree of physical fitness and health, the more variable the heart rate is.</p>
+</blockquote>
+
+<p>A bonus marker of health in addition to HRV, is VO2 max level. This will be for another article but now you know that a constant, regular heartbeat might be a sign that you are not fit or healthy.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Health" /><summary type="html"><![CDATA[Should your heart rate be regular and constant when you are resting, or should it be all over the place? What's the right thing? (Might surprise you)]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/qBjTz8z4/98a09f15-7d8c-4c4a-a995-94f8da258d88.jpg" /><media:content medium="image" url="https://i.postimg.cc/qBjTz8z4/98a09f15-7d8c-4c4a-a995-94f8da258d88.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Let There Be Light?</title><link href="http://localhost:4000/health/2024/01/22/let-there-be-light.html" rel="alternate" type="text/html" title="Let There Be Light?" /><published>2024-01-22T18:00:00+02:00</published><updated>2024-01-22T18:00:00+02:00</updated><id>http://localhost:4000/health/2024/01/22/let-there-be-light</id><content type="html" xml:base="http://localhost:4000/health/2024/01/22/let-there-be-light.html"><![CDATA[<h1 id="natural-clocks">Natural Clocks</h1>
 <p>Ever noticed that after using an alarm clock to wake up at a certain time, you end up not needing the alarm clock to wake up? At times, you even wake up prior to your set time all because your natural clock has adjusted to that time.</p>
 
 <p>This natural clock in your body is found in the Suprachiasmatic Nucleus (SCN). This structure is the master clock of your body. The SCN then is what determines your <strong>Circadian Rhythm</strong> which is the natural oscillation of your body every 24 hours, running in the background to carry out essential functions and processes.</p>
@@ -476,62 +556,4 @@ These SCFAs play crucial roles in the body¹:</p>
 
 <p>But what do you think? Are there any actionable steps to pull people away from WhatsApp groups towards using dedicated apps or websites? Because WhatsApp really is a developer’s enemy and developers need to fight against it.</p>
 
-<p><em>P.S: I do not have a girlfriend. Neither would I do daily checkups on her phone. I hope…</em></p>]]></content><author><name>Tanaka Mawere</name></author><category term="Thoughts" /><category term="Development" /><category term="Programming" /><summary type="html"><![CDATA[A programmer in Zimbabwe's greatest enemy is WhatsApp. How do we defeat it? I have no idea]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1632435499152-18838be77960?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdoYXRzYXBwfGVufDB8fDB8fHww" /><media:content medium="image" url="https://images.unsplash.com/photo-1632435499152-18838be77960?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdoYXRzYXBwfGVufDB8fDB8fHww" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Catch of Forex Trading…</title><link href="http://localhost:4000/the-catch-of-forex-trading" rel="alternate" type="text/html" title="The Catch of Forex Trading…" /><published>2023-11-15T18:00:00+02:00</published><updated>2023-11-15T18:00:00+02:00</updated><id>http://localhost:4000/the-catch-of-forex-trading</id><content type="html" xml:base="http://localhost:4000/the-catch-of-forex-trading"><![CDATA[<h1 id="introduction">Introduction</h1>
-
-<p>The number of times I have cast my privacy-disrespecting eye over to someone’s phone (most often a dude) and he passes through his apps screen, chances are I see Metatrader 4 and/or 5. And if you don’t know Metatrader 4 or 5, you are either a girl or a pocketically-blessed dude.</p>
-
-<p>The subject matter I want to talk about doesn’t need you to have any forex trading knowledge because I will keep it as generic as possible. So let’s dive into the catch of forex trading.</p>
-
-<h1 id="an-egg">An egg…</h1>
-
-<p>Ever heard the statement that the hardest thing to cook is an egg? And it’s because so easy to cook. Doesn’t make sense right?</p>
-
-<p>We are used to eating eggs that are either overcooked or overcooked-er. They are always way to crispy on the outside if they are fried, some to the point of qualifying as biltong. Worse even, try making a sunny side up egg without browning the edges. What about boiling an egg without making the york into a rubbery, minature ‘zadza-dama’? I won’t even mention poaching.</p>
-
-<p>The point of the overly-drawn joke above is that making a perfect egg is hard because the way to make an edible egg is easy to understand and do. It’s just frying in oil, boiling in water etc. That’s simple. The barriers to making an egg are so low and that’s what makes it hard. Contrast that with making a <em>insert some complicated recipe I will search on Google that only Gordon Ramsey can make</em>. The fact that you need the skills of Gordon Ramsey to make it stops you from even daring to make it.</p>
-
-<h1 id="so-what">So what?</h1>
-
-<blockquote>
-  <p>Forex trading is like making an egg.</p>
-</blockquote>
-
-<p>It’s so easy to put in $10 to start trading with. All you need is to make a broker account, download Metatrader and start getting your losses because you probably have no idea what you are doing. The barriers of entry into forex trading are extremely low hence anyone can sign up to do it.</p>
-
-<p>Much like making a perfect egg, the average Joe who has entered into forex trading will fail. And does fail. No wonder you hear so many people saying “forex trading is a scam” or something to that effect.</p>
-
-<p>And I don’t blame people for signing up to trade. All the other potential <del>legal</del> ways of making money either need some skill, quite a bit of capital and more effort than that which is required in forex trading. 
-But that ease of entry into trading is also the downfall for many and it is the catch.</p>
-
-<h1 id="the-effects-of-the-catch">The effects of the catch</h1>
-
-<ol>
-  <li>
-    <p>Trading, like any other business, needs capital. - More likely than not, if you deposit any amount below $100, you are going to lose it because when trades are still in red, your capital can’t handle it. And for you to make sensible money from such a low amount, you’d have to over-leverage your small capital (essentially trading more than you can). So in the end, you’d be at a disadvantage.</p>
-
-    <p>I never understood it while starting out while some brokers said their minimum deposit amount was $500. But now that I have gained the experience I have, anything below $100, you are probably going to lose it. This is another blog post on it’s own explaining this more.</p>
-  </li>
-  <li>
-    <p>There is no selection criteria - You just can’t be a doctor. There are many exams over the 5+ years of training that make sure you are up to scratch with your skills and knowledge to treat patients.</p>
-
-    <p>Not with trading though.</p>
-
-    <p>The only person stopping you from risking all you own is you. No one evaluates your skills and knowledge about trading or the market prior to trading except you. Hence anyone who wants to trade, can. And that is ultimately bad for them as they will end up blaming the markets for their lack of experience when they lose everything.</p>
-
-    <blockquote>
-      <p>Side note though. People go get degrees so that they trade for big banks and sometimes fail to make profits even with tens of millions of dollars to trade with. What makes us think that watching YouTube videos for a weekend and armed with $10 of capital, we are going to buy a Ferrari and lift the whole family out of poverty?</p>
-    </blockquote>
-  </li>
-</ol>
-
-<h1 id="the-take-aways">The take-aways</h1>
-
-<p>I wish all brokers had $500 as their minimum trading amount. I was angry about it when I started learning how to trade but it helped me not lose more than I did as I was learning. And it’s only from losing money that I learnt this lesson, hard. If someone asks me for advice on trading, I immediately tell them that if they don’t have $500 or more to trade, leave it alone.</p>
-
-<h1 id="conclusion">Conclusion</h1>
-
-<p>While I understand that trading might seems like a low-cost option of a side hustle, because it’s so easy to get into now, that should not be mistaken for ease of execution. Starting to forex trade is easy. Forexing <em>trading</em> itself, a totally different beast on its own.</p>
-
-<blockquote>
-  <p>Don’t be fooled by how easy it is to start trading. And that is the catch of forex trading.</p>
-</blockquote>]]></content><author><name>Tanaka Mawere</name></author><category term="Forex" /><category term="Thoughts" /><category term="Trading" /><summary type="html"><![CDATA[This year marks 3 years since I started learning how to trade... Here's something I learnt]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1569025743873-ea3a9ade89f9?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9yZXglMjB0cmFkaW5nfGVufDB8fDB8fHww" /><media:content medium="image" url="https://images.unsplash.com/photo-1569025743873-ea3a9ade89f9?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9yZXglMjB0cmFkaW5nfGVufDB8fDB8fHww" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p><em>P.S: I do not have a girlfriend. Neither would I do daily checkups on her phone. I hope…</em></p>]]></content><author><name>Tanaka Mawere</name></author><category term="Thoughts" /><category term="Development" /><category term="Programming" /><summary type="html"><![CDATA[A programmer in Zimbabwe's greatest enemy is WhatsApp. How do we defeat it? I have no idea]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1632435499152-18838be77960?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdoYXRzYXBwfGVufDB8fDB8fHww" /><media:content medium="image" url="https://images.unsplash.com/photo-1632435499152-18838be77960?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdoYXRzYXBwfGVufDB8fDB8fHww" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
