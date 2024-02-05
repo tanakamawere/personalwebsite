@@ -6,6 +6,4 @@ layout: thought-view
 
 Medical Students😂
 
-
-
 With the pictures they post, vakasungirira maStethoscope muhuro nemaScrubs, ungatofunga kuti ndivo vanorapa pama Ward Rounds acho.
