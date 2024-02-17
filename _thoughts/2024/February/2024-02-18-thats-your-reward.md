@@ -8,4 +8,4 @@ layout: thought-view
 
 If you never know what you want to be, if you live what some might call the dynamic life but what I will call the artistic life, if each day you are unsure of who you are and what you know, you will never become anything, and that is your reward."
 
-Oscar Wilde
+*Oscar Wilde*
