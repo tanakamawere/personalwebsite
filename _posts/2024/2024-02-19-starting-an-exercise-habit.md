@@ -6,7 +6,7 @@ description: "Based off my recent interactions with people, here are a few point
 author: Tanaka Mawere
 categories: 
     -   Health
-image: "https://i.postimg.cc/qBjTz8z4/98a09f15-7d8c-4c4a-a995-94f8da258d88.jpg"
+image: "https://i.postimg.cc/Bv2XVQdS/a46e0168-8718-4a76-94c6-d96e82f36e22.jpg"
 ---
 
 Ever said to yourself, "Next Monday, I will start exercise?"
