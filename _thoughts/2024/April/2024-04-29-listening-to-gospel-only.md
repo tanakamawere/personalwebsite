@@ -8,6 +8,6 @@ layout: thought-view
 
 But as of recent time, I am becoming that person too🥲 
 
-I have tried to the songs that I have liked in the past years and they're losing relevance if they aren't gospel.
+I have tried to listen to the songs that I have liked in the past years and they're losing relevance if they aren't gospel.
 
 But Zhakata naMacheso vakuramba kubuda havo😂
