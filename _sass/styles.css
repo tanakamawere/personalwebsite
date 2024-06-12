@@ -13943,17 +13943,6 @@ fieldset:disabled .btn {
   }
 }
 
-[data-bs-theme="light"] .icon-colour {
-  color: #110e38;
-}
-[data-bs-theme="dark"] .icon-colour {
-  color: #cccacc;
-}
-
-.icon-size{
-  font-size: 2rem;
-}
-
 @media (max-width: 800px) {
   .image-sized {
     max-width: 300px;

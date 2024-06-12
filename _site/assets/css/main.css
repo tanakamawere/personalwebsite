@@ -12561,18 +12561,6 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
-[data-bs-theme=light] .icon-colour {
-  color: #110e38;
-}
-
-[data-bs-theme=dark] .icon-colour {
-  color: #cccacc;
-}
-
-.icon-size {
-  font-size: 2rem;
-}
-
 @media (max-width: 800px) {
   .image-sized {
     max-width: 300px;
@@ -13256,6 +13244,22 @@ body hr {
 
 .card:hover .card-text-overlay {
   opacity: 0.8;
+}
+
+[data-bs-theme=light] .icon-colour {
+  color: #110e38;
+}
+
+[data-bs-theme=dark] .icon-colour {
+  color: #cccacc;
+}
+
+.icon-size {
+  font-size: 2rem;
+}
+
+.icon-size-sm {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

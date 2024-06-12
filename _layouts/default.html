@@ -3,14 +3,15 @@
   <head>
     {%- include head.html -%}
   </head>
-  <body data-bs-theme="auto">
-
+  <body>
     {% include navbar.html %}
+    {% include theme-toggler.html %}
     <main class="p-1">
       {{ content }}
     </main>
 
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/color-modes.js"></script>
   </body>
   {% include footer.html %}
 </html>

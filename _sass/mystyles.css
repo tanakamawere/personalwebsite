@@ -33,3 +33,18 @@
   }
 
   
+  
+[data-bs-theme="light"] .icon-colour {
+  color: #110e38;
+}
+[data-bs-theme="dark"] .icon-colour {
+  color: #cccacc;
+}
+
+.icon-size{
+  font-size: 2rem;
+}
+
+.icon-size-sm{
+  font-size: 1rem;
+}
