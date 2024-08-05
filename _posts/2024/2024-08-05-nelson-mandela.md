@@ -6,7 +6,7 @@ description: "I see a parallel between his struggles and the challenges we face 
 author: Tanaka Mawere
 categories: 
     -   Thoughts
-image: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ede5ad9793513.560da2326bb1e.jpg"
+image: "https://i0.wp.com/www.culturetype.com/wp-content/uploads/2013/12/mandela.png"
 ---
 
 I grew up watching Wiztech SABC channels like most of the people my age and I'd see Madiba being praised so much as a kid. I got it, 27 years was no joke in jail. Heck I haven't existed for as long as this man did in jail. That's something. More on him in a minute
