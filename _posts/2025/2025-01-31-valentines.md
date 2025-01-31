@@ -27,8 +27,6 @@ How do I then know that I actually did whatever I did for my partner because I w
 
 There should be a day where we celebrate love. I am all for that. Every day of the year is a day to celebrate something. But let's compare mother's day to Valentine's Day.
 
-Here’s your **Mother’s Day vs. Valentine’s Day** comparison table with a funny twist:  
-
 ### **Mother’s Day vs. Valentine’s Day**  
 
 | Feature             | Mother’s Day 👩‍👧‍👦 | Valentine’s Day 💘 |
