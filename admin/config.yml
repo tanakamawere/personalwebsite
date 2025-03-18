@@ -1,0 +1,45 @@
+backend:
+  name: git-gateway
+  branch: main # Change to your default branch
+
+media_folder: "assets/uploads" # Where uploaded images will be stored
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "thoughts"
+    label: "Thoughts"
+    folder: "_thoughts" # Change based on your actual folder structure
+    create: true
+    slug: "{{date}} - {{title}}"
+    fields:
+      - { name: "layout", label: "Layout", widget: "hidden", default: "post" }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "description", label: "Description", widget: "string" }
+      - { name: "author", label: "Author", widget: "string", default: "Tanaka Mawere" }
+      - { name: "categories", label: "Categories", widget: "list", default: ["Thoughts"] }
+      - { name: "image", label: "Image", widget: "image", required: false }
+      - { name: "body", label: "Content", widget: "markdown" }
+  - name: "projects"
+    label: "Projects"
+    folder: "_projects"
+    create: true
+    slug: "{{title}}"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "description", label: "Description", widget: "text" }
+      - { name: "category", label: "Category", widget: "string" }
+      - { name: "image", label: "Image", widget: "image", required: false }
+      - { name: "address", label: "Website URL", widget: "string" }
+      - { name: "body", label: "Content", widget: "markdown" }
+  - name: "thoughts"
+    label: "Thoughts"
+    folder: "_thoughts" # Adjust based on your actual folder structure
+    create: true
+    slug: "{{title}} - {{date}}"
+    fields:
+      - { name: "layout", label: "Layout", widget: "hidden", default: "thought-view" }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "author", label: "Author", widget: "string", default: "Tanaka Mawere" }
+      - { name: "body", label: "Content", widget: "markdown" }
