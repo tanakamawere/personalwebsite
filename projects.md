@@ -11,9 +11,18 @@ permalink: "projects"
             The programs I am working on ranging from programming projects, businesses, events and everything else that makes sense to put under this heading
         </p>
     </div>
-    <div class="row gx-5">
-        {% for project in site.projects %} 
-            {% include projects-control.html %}
-        {% endfor %}
-    </div>
+    
+    {% assign categories = site.projects | map: 'category' | uniq | sort %}
+    {% for cat in categories %}
+        <div class="container-fluid py-3">
+            <h3 class="fw-bold">{{ cat }}</h3>
+            <div class="row gx-5">
+                {% for project in site.projects %}
+                    {% if project.category == cat %}
+                        {% include projects-control.html %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
 </div>
