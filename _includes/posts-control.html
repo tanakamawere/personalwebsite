@@ -1,34 +1,59 @@
 <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="{{ post.image }}" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
-            </div>
-            {% for category in post.categories %}  
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    {{ category }}
-                </button>
-            {% endfor %}
-            <a class="text-decoration-none stretched-link mb-3"
-                href="{{ post.url | relative_url}}">
-                <h3 class="fw-bold">
-                    {{ post.title }}
-                </h3>
-            </a>
-            <p class="card-text mb-0">
-                {{ post.description }}
-            </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            {{ post.date | date: "%b %-d, %Y" }}
-                        </div>
-                    </div>
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="{{ post.image }}" alt="{{ post.title }}" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="{{ post.url | relative_url}}" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                {% for category in post.categories %}  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>{{ category }}
+                </span>
+                {% endfor %}
+            </div>
+            
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="{{ post.url | relative_url}}" class="text-decoration-none">
+                    {{ post.title }}
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
+                {{ post.description | default: post.excerpt | strip_html | truncate: 120 }}
+            </p>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">{{ post.author | default: site.author.name }}</span>
+                    </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="{{ post.content | strip_html }}">
+                        {{ post.content | strip_html | number_of_words | divided_by: 200 | plus: 1 }} min read
+                    </span>
+                </div>
+            </div>
+        </div>
+    </article>
 </div>

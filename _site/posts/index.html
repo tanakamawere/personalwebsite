@@ -23,14 +23,14 @@
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:4000/posts/index.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/posts/index.html" />
 <meta property="og:title" content="Posts - Tanaka Mawere" />
 <meta property="og:description" content="" />
 <meta property="og:image" content="" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="http://localhost:4000" />
+<meta property="twitter:url" content="http://0.0.0.0:4000" />
 <meta property="twitter:title" content="Posts - Tanaka Mawere" />
 <meta property="twitter:description" content="" />
 <meta property="twitter:image" content="" />
@@ -148,26 +148,38 @@
     <div class="container">
     <nav class="navbar navbar-expand-lg mt-4">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="/">TM</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand fw-bold fs-4" href="/">
+          <span class="text-primary">TM</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold align-items-center justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="/">
+                <i class="fas fa-home me-2"></i>Home
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/projects">Projects</a>
+              <a class="nav-link" href="/projects">
+                <i class="fas fa-code me-2"></i>Projects
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/posts">Posts</a>
+              <a class="nav-link active" href="/posts">
+                <i class="fas fa-blog me-2"></i>Posts
+              </a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/all-thoughts">
+                <i class="fas fa-lightbulb me-2"></i>Thoughts
+              </a>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/all-thoughts">Thoughts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/about">About</a>
+              <a class="nav-link" href="/about">
+                <i class="fas fa-user me-2"></i>About
+              </a>
             </li>
           </ul>
         </div>
@@ -175,34 +187,31 @@
     </nav>
   </div>
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
-        <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
-      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    <button class="btn btn-outline-secondary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+        <i class="fa-solid fa-circle-half-stroke me-2 theme-icon-active"></i>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
     </button>
     <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-          <i class="fa-solid fa-sun fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-sun me-2"></i>
           Light
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-          <i class="fa-solid fa-moon fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-moon me-2"></i>
           Dark
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-circle-half-stroke me-2"></i>
           Auto
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
     </ul>
-  </div>
+</div>
   
     <main class="p-1">
       <div class="px-5 container">
@@ -218,326 +227,1075 @@
         
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/28p8Kj2C/valentines.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/1RKnRKWq/Copilot-20250628-083519.png" alt="When music becomes perfect..." />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/thoughts/music/2025/06/28/perfect-music.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Thoughts
+                </span>
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Music
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/2025/01/31/valentines.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/thoughts/music/2025/06/28/perfect-music.html" class="text-decoration-none">
+                    When music becomes perfect...
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
+                There is no perfection in art
+            </p>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
+                    </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Jun 28, 2025</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="I like The Unveiled.
+
+They are the best vocal group in Zimbabwe to me and it’s not even close! Their harmonies are tighter than the way I grip my phone when I walk in town these days. Their individual voices are as smooth as Mama’s peanut butter.
+
+But… something is missing
+
+Their music sounds empty, it sounds soulless.
+
+On their last album, The Next Level, I couldn’t help but hope that the lead singer on each song would just go off-script - not in a bad way, but sound a bit more natural and a little less, I don’t know, practiced, regimented.
+
+And I feel that’s the problem that has plagued today’s music. It sounds “perfect”. There are no missed notes, there is high attention to detail and quality is off the charts.
+
+But is it moving? Does it twist your intestines into knots? Does it hit the bottom of your soul and push you to dance or something?
+
+I find myself going back to songs like Mudiwa Janet by John Chibadura or something like Tisaparadzane by Plaxedes Wenyika or Maitiro Enyu by Shingisai Suluma.
+
+And by today’s standards, these songs are simple horrible. Where do I begin?
+
+
+  So many missed notes
+  Very little to no harmonies included
+  No amazing two-key transpositions
+  Progressions so simple, anyone could play them.
+  Mixing levels all over the place.
+  Some tracks sound like they were recorded in the kitchen — and maybe they were!
+
+
+But they are the definition of what music and art should be.
+
+Because the point of music is (or was depending on how you look at it) to tell a story. It’s a form of art. A form of expression meant to make others relate and tap into what you are feeling.
+
+And that’s not to say you should make music that has missed notes to sound authentic. Let making a perfect song be the by-product of your craft, not the whole point, because people can hear it.
+
+Especially in gospel music, where the point isn’t your attention to detail or your crazy runs, but the message and it seems to me, those two have been mixed up and you can hear it.
+
+I know what you’re thinking.
+
+“But Tanaka, God deserves the best! Why wouldn’t we want to give Him perfect harmonies, polished mixes, and high-quality recordings?”
+
+And to that I say: absolutely! God does deserve our best. But who told us that “best” = “perfect”?
+
+David danced until his clothes fell off, not until his moves were tight. The woman with the alabaster jar broke it open — raw, messy, unplanned worship. No Pro Tools, no pitch correction, no rehearsed runs.
+
+The problem isn’t the quality. It’s the priority.  When polish outranks presence, when we edit out all the imperfections and along with them, all the emotion, what are we left with?
+
+
+  Sometimes, “the best” is not in the excellence of the sound — it’s in the honesty of the sound
+
+">
+                        3 min read
+                    </span>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+        
+            <div class="col-lg-4 mb-5">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/28p8Kj2C/valentines.jpg" alt="What is Valentine's Day!?" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/thoughts/2025/01/31/valentines.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Thoughts
+                </span>
+                
+            </div>
+            
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/thoughts/2025/01/31/valentines.html" class="text-decoration-none">
                     What is Valentine's Day!?
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 Lowkey protesting against Valentine's Day
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Jan 31, 2025
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Jan 31, 2025</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="Writing this, I do understand that it does come off as someone who is bitter and is trying to find a way out of participating in Valentine’s Day. But, I promise you, that is not the case, or I hope it isn’t.
+
+My feed has been full of memes, reels, products and services being marketed for Valentine’s Day. (Seems like everyone is selling something for Valentine’s, wondering who is going to buy.)
+
+One particular reel is of a guy singing the names of gents who don’t buy their ladies gifts on Valentine’s Day. “Tadiwa haatenge, Takudzwa haatenge…” Didn’t finish the whole reel but if my name isn’t mentioned, I am thoroughly disappointed.
+
+Add to that the memes that have been posted since December of “pane vachasara vasina chavakabata on the 14th of February.”
+
+My problem with Valentine’s Day
+
+My problem with it is now in its mass commercialisation. And the sort of external pressure from media to now participate in it. It’s like if you don’t participate in Valentine’s Day, you are not a good partner (maybe you aren’t, what do I know?)
+
+How do I then know that I actually did whatever I did for my partner because I wanted to and not because I was pressured to do so, just so that she is not subject to the ridicule of her friends?
+
+The concept is not lost on me
+
+There should be a day where we celebrate love. I am all for that. Every day of the year is a day to celebrate something. But let’s compare mother’s day to Valentine’s Day.
+
+Mother’s Day vs. Valentine’s Day
+
+
+  
+    
+      Feature
+      Mother’s Day 👩‍👧‍👦
+      Valentine’s Day 💘
+    
+  
+  
+    
+      Who is celebrated?
+      Moms (can touch hot pots and not get burnt)
+      Couples (or “couples”)
+    
+    
+      Gift expectations
+      Breakfast in bed, heartfelt cards, spa day
+      Flowers, chocolates, mukomana webhosvo (kana gitare), a Range Rover Evoque, and possibly the moon
+    
+    
+      Social pressure level
+      Moderate to nil – Forgetting is unwise but forgivable
+      Forgetting is equivalent to forgetting the relationship ever existed
+    
+    
+      Reaction to a forgotten day
+      “It’s okay, sweetheart…”
+      “Oh, so you just don’t love me? That’s fine. Totally fine. (It’s NOT fine.)”
+    
+    
+      Who benefits the most?
+      Moms get a day of appreciation (maybe)
+      Denilson Musekiwa
+    
+    
+      Social media effect
+      Cute baby photos, emotional tributes, #BestMomEver posts
+      Endless couple selfies making singles question their life choices (i.e. thinks of calling the ex)
+    
+    
+      How singles handle it?
+      Not applicable (everyone has a mom)
+      “Self-love is important!” (while binge-watching Netflix and eating a sack of potatoes cooked in 30 distinct ways)
+    
+    
+      How late you can plan it?
+      A day before, and she’ll still love you
+      If you book dinner late, enjoy your romantic evening at Chicken Slice
+    
+  
+
+
+
+
+Conclusion
+
+In summary, don’t get me wrong. It’s good. Vanhu dananai.
+
+But I don’t buy into the pressure that the commercialisation of Valentine’s day has brought. In fact I oppose it vehemently.
+
+
+  PS: I will still participate in the pressure because I don’t want to get dumped (so please take what I am saying with a big grain of salt)
+
+">
+                        3 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/7LSjnsQf/c742f3ca-04f0-4c93-a395-514cdefde9f4.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/7LSjnsQf/c742f3ca-04f0-4c93-a395-514cdefde9f4.jpg" alt="Where is the manual?" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/thoughts/2024/09/16/where-is-the-manual.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Thoughts
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/2024/09/16/where-is-the-manual.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/thoughts/2024/09/16/where-is-the-manual.html" class="text-decoration-none">
                     Where is the manual?
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 No, you don't have everything figured out... And you never will.
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Sep 16, 2024
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Sep 16, 2024</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="During gynae clinic today, there was a woman I was clerking. She has had genital warts for 17 years now. So normally, after taking her history, we are supposed to examine the patient and in this case, it meant asking her for permission to see and inspect the warts “down there.”
+
+But I reasoned myself out of it. “I have never done it before. I will first see a senior do it then maybe do it next time?”
+
+Which is what the medical field is about really. It’s an apprenticeship. Someone sort of holds your hand and guides you through the processes of being a doctor.
+
+If only life was like that…
+
+Because in medicine, you can always ask for help. You can always ask for a second opinion. You can always ask for a senior to come and see the patient with you.
+
+But you can’t ask someone to first live your life, then you live your life after seeing notes from them.
+
+Of course we take notes from the lives of other people but truth be told, although there is nothing new under the sun, the nuances and subtle differences that make up our lives are unique to us. Hence our experiences, although with similarities, are unique to us.
+
+Having things figured out
+
+A small debilitating disease of twenty-something year olds is the idea that you have to have everything figured out. That you have to have a plan always. That you have to know what you are doing.
+
+But the truth is, you don’t have to have everything figured out. And you never will. Proof of it?
+
+How often have your plans gone according to plan?
+
+Life is a journey. And you will make unbelievable mistakes (I question if they should even be termed “mistakes”), do a lot of good and a lot more bad, get involved with the wrong crowd, the right one etc.
+
+But don’t stop moving
+
+Came across the following quote today.
+
+
+  In any moment of decision, the best thing you can do is the right thing, the next best thing is the wrong thing, and the worst thing you can do is nothing. Theodore Roosevelt.
+
+
+Doing nothing is robbing yourself of the very essence of living… Another quote is that one that you probably know if you can’t run, walk, if not, crawl etc.
+
+Conclusion
+
+So where is the life manual?
+
+There is none. So why give yourself the pressure of having figured out life?
+
+If anything, each of us are writing our own manual as we are living it.
+">
+                        3 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/FR65nFdT/09c888b9-f4cf-46eb-b08c-e4bbfaddc429.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/FR65nFdT/09c888b9-f4cf-46eb-b08c-e4bbfaddc429.jpg" alt="On leadership and Hitler..." />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/thoughts/leadership/2024/09/15/on-leadership-and-hitler.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Leadership
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Thoughts
+                </span>
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Leadership
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/leadership/2024/09/15/on-leadership-and-hitler.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/thoughts/leadership/2024/09/15/on-leadership-and-hitler.html" class="text-decoration-none">
                     On leadership and Hitler...
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 Hitler, Mussolini, Lenin - what do all these people have in common?
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Sep 15, 2024
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Sep 15, 2024</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="If you don’t know what arm-chair commentary is, this is it. Saying something just because you had thoughts while sitting on your arm chair, regardless of you thinking the thoughts through or not.
+
+But that the beauty of having your own website right? I can edit this or post another one later when I have ironed out my thoughts😂.
+
+I have been pondering the power of leadership; the achievements and things accomplished by a group of people are really determined by the quality of leadership that the group has. And that is obvious. We have read it so many times from books by John Maxwell, heard it so many times from YouTube motivational speakers (also known as day light scammers) and the likes…
+
+But knowing something is one thing. Experiencing it is another.
+
+Hitler was ‘Hitler’
+
+My thoughts ultimately led me to Hitler. The idea of someone like Hitler actually doing what Hitler did should be absurd to literally everyone.
+
+This is a man who had the most radical beliefs among a group of people but managed to convince 60 million + other people of what he believed.
+
+I’d get it if he had more “in the middle views”, but Hitler literally preached “death to the Jews” and even the people who didn’t subscribe to that, got into the act.
+
+Sidenote: the historians among you will interject and say “He violence and murder to force people into submission” and you’d actually be proving what I am saying.
+
+The fact that he got into that position that people were willing to lie, kill, destroy, all in the name of the Fuhrer is astonishing to say the least.
+
+Hence…
+
+Hitler and so many other leaders you can name, these characters are proof of the power of leadership, good or bad. Whatever a group of people will achieve (once again, good or bad) lie solely on the leadership they have.
+
+Whether it is committing one of the biggest ethnic cleansings in history or starting the most valuable company in the world, it’s all on the leadership!
+
+From scripture
+
+To quote scripture
+
+
+  Then Jesus told them, “This very night you will all fall away on account of me, for it is written: “’I will strike the shepherd, and the sheep of the flock will be scattered.’ Matthew 26 vs 31
+
+
+We are headless chickens without a shepherd. We have no direction. And even when the shepherd is there, us as a flock are only as good as the one shepherding us.
+
+So?
+
+Back to square one I suppose.
+
+I had nowhere I was going with this despite retelling the obvious.
+
+Which is what I said in the introduction. When I discover where I wanted to go with this thought train, I’ll add.
+
+Thanks for reading! Congratulate yourself on not having the attention span of a housefly for reading this far because of all this TikTok, dopamine nonsense.
+">
+                        3 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i0.wp.com/www.culturetype.com/wp-content/uploads/2013/12/mandela.png" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i0.wp.com/www.culturetype.com/wp-content/uploads/2013/12/mandela.png" alt="I never understood Nelson Mandela until now..." />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/thoughts/2024/08/05/nelson-mandela.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Thoughts
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/2024/08/05/nelson-mandela.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/thoughts/2024/08/05/nelson-mandela.html" class="text-decoration-none">
                     I never understood Nelson Mandela until now...
-                </h3>
-            </a>
-            <p class="card-text mb-0">
-                I see a parallel between his struggles and the challenges we face in Zimbabwe, where hope can often seem elusive. Despite the systemic obstacles, I believe in the power of hope and the potential of my generation to restore it.
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
+                I see a parallel between his struggles and the challenges we face in Zimbabwe, where hope can often seem elusive. Des...
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Aug 5, 2024
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Aug 5, 2024</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="I grew up watching Wiztech SABC channels like most of the people my age and I’d see Madiba being praised so much as a kid. I got it, 27 years was no joke in jail. Heck I haven’t existed for as long as this man did in jail. That’s something. More on him in a minute
+
+But recently I was thinking about the concept of hope, an optimistic state of mind that tomorrow might be my day, if not, the next day.
+
+I see posts on the internet that say “Zimbabweans/Africans are prayerful, why does God let this country/continent go bad as it is?” or something like that. And I was thinking that, nope. Zimbabweans aren’t prayerful just because of the number of churches. In fact, most don’t go to church because they love God.
+
+I believe most Zimbabweans go to church (hence the mushrooming of pentecostal church shed everywhere) because that’s where hope is being promised.
+These pastors are promising that give that and your breakthrough is near. This year is your year and other kinds of lines just so that you get your hope up.
+
+Zimbabwe, as I am maturing, is a tough place for many reasons. People just wanted the country to be somewhere where your effort is rewarded. Knowing that going to work for a month will cover my food, accommodation, transport, health etc… Just the basics. But even the basics are something gotten by luck (or corruption) here hence the lack of hope.
+
+Back to Mandela.
+
+Being in a place designed to suck every inch of hope that you might have for just a day might be enough to break me. A month, you will definitely have killed me. What about in a year?
+
+And yet Nelson Mandela, in that very place made to kill one’s hope and faith, he endured for 27 years of his life. Typing this, it hits me again and again how incredibly impressive and awe-inducing this just is and I finally get to appreciate and understand why Nelson Mandela is celebrated as Nelson Mandela.
+
+I can imagine drawing a parallel to Zimbabwe, that how society, culture, politics now are in our motherland, it sometimes feels like it’s designed to kill your hope. Especially for my pals who have graduated (in medical school so 2 more years for me, hooray😣). As a kid it’s easy to have hope because the situations aren’t in your face directly, but now as you have graduated, now you have to make something of yourself (cue Winky D’s 25 right here) and you see that many of your plans aren’t working/won’t work… It’s scary
+
+But there is hope. Call it youthful exuberance.
+
+I want to keep this writing and I know the internet will. Probably our father’s generation wasn’t the one to restore and give us back hope in Zimbabwe but I do hope and pray that it is my generation somehow that gives hope back to Zimbabwe.
+Time to really emulate Nelson Mandela and not let situations around you kill your hope.
+
+Thank you for reading my writing. Tell me your thoughts.
+">
+                        3 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/VLHDhVX6/eebb8a09-f65b-4ed1-90f5-48f1c3a6c5df.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/VLHDhVX6/eebb8a09-f65b-4ed1-90f5-48f1c3a6c5df.jpg" alt="Run Faster by Training Slower" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/health/2024/06/11/run-faster-by-training-slower.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Health
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Health
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/health/2024/06/11/run-faster-by-training-slower.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/health/2024/06/11/run-faster-by-training-slower.html" class="text-decoration-none">
                     Run Faster by Training Slower
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 We all think that the most results come for putting in 100% all the time, but that's just not it.
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Jun 11, 2024
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Jun 11, 2024</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="A few years ago, I was on a morning run. That day I had told myself I am going to have an easy run, no pressure on having a fast pace. Just a nice jog to get the body started for the day.
+
+As I was turning a corner into Seke road, a guy on his way to work saw me and encouraged me to up the pace. Definitely well intentioned.
+
+And in that moment I thought, he’s right. Why am I even running slow? Running slow is making excuses. Up that pace. And I did so. Talk about working with peer pressure.
+
+How should I run actually?
+
+I was proud of myself for upping the pace during that run but it conflicted me. Should I always be running at a fast pace? What exactly is the correct way to train anyway?
+
+So I started reading around and I had also started studying physiology so I could get a clearer picture. Then I stumbled across the following book. 80/20 Running: Run Stronger &amp; Race Faster by Training Slower.
+
+
+Intuitively, we all think that for the best results, we should train hard most times. We should run fast almost every time and study hard almost every time, but 20% of what we do accounts for 80% of the results.
+
+And that’s what author Matt Fitzgerald explains.
+
+The core principles are the following
+
+
+  You should focus on running easy for most of your training, with bursts of high-intensity effort mixed in. This approach is designed to improve your fitness and fatigue resistance.
+  Easy running strengthens the brain’s ability to resist fatigue.
+
+
+In a nutshell, 80% of your training should be easy and slow while only 20% should be high in intensity and should leave you wishing you had started exercising.
+
+If you are running 5 days a week, 4 should be easy to mid intensity while you leave 1 day to be ballistic about your running and your training.
+
+80/20 - Pareto Principle
+
+
+
+This is what’s called the Pareto Principle. It’s not a law but it is a principle that was observed by some Italian dude way back in business but it has now been observed in so many other facets of life such as relationships and personal finance.
+
+
+  20% of what we do accounts for 80% of the results.
+
+
+So what?
+
+I personally felt a pressure when I posted on my social media a run with a slower than usual pace. Fear is to hear comments such as “you are becoming slow, you slacked” but that pressure only comes from being misinformed.
+
+Conclusion
+
+The hope is you have learnt that it’s not every day that you have to be putting in 100% of your effort into anything, or in this particular discussion, exercise. Most of your training should be slow, should be easy. But in the remaining 20%, make sure you are giving it your all.
+">
+                        3 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/hjVsQ2qb/2a2a5d41-2026-40f6-8495-78f0a9f75cc5.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/hjVsQ2qb/2a2a5d41-2026-40f6-8495-78f0a9f75cc5.jpg" alt="Praying about the Comfort Pandemic" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/faith/health/2024/05/23/praying-about-the-comfort-pandemic.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Faith
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Health
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Faith
+                </span>
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Health
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/faith/health/2024/05/23/praying-about-the-comfort-pandemic.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/faith/health/2024/05/23/praying-about-the-comfort-pandemic.html" class="text-decoration-none">
                     Praying about the Comfort Pandemic
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 When should we stop praying and start listening?
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            May 23, 2024
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>May 23, 2024</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="At a recent church gathering, an elder gave us the following prayer point. “Let’s pray against the diseases that are now more prevalent in this day and age than when we were growing up: diabetes mellitus, hypertension”.
+
+And as a medical student, I heard that and thought well…
+
+Not because I don’t believe in prayer, but made me think of something I have long wanted to rant about.
+
+Fat Children
+
+Back when I was grade 1, there was the fat kid in class. Or two. (I can talk about them because I was one of them). Hence the song “dhafu dhunda, rapedza loaf ramama.”
+The song should now be “ma-dhafu dhunda…”
+
+Point being the comfortable lives we have formed, the effects are clear to see in the generation of children in primary school, living the comfortable lives their parents have given them.
+
+And in adults?
+
+The children still have a chance with their health, however the comfortable lives we have formed in adults aren’t as forgiving.
+
+From the diet, there is the sedentary lives we live in which movement is at a minimum. Any form of exercise is “too painful”.
+Add to that the phones that distract us and put actual healthy, neural stimulation to zero.
+
+What are the results of that then?
+
+Diabetes mellitus, hypertension and cancer.
+
+Of course we can pray for the wisdom of knowing how to navigate our lives with these health issues
+But surely we can’t pray effects of our own doing away?
+
+So…?
+
+As a medical student and as someone so passionate about health, I am particularly concerned about preventable diseases. Preventable in the sense that our daily habits and lifestyles contribute directly to the instances of diseases occurring.
+
+Seeing that our lives have become so comfortable and with that, there’s no physical exercise, healthy diets or healthy brain activity, no wonder these preventable diseases are on the rise.
+
+Let’s pray for wisdom but let’s act on that wisdom we get from God. Our health needs our action.
+
+Conclusion
+
+If you haven’t gotten anything from this article, the following is the summary
+
+
+  Buy stocks in pharmaceutical companies. Their stock prices are only going to get higher.
+
+">
+                        2 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/y8LkCRgs/e59ab246-fb33-4dc0-8ec5-7790b633d1da.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/y8LkCRgs/e59ab246-fb33-4dc0-8ec5-7790b633d1da.jpg" alt="Shhh, let's not talk about sin" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/faith/2024/04/02/lets-shush-about-sin-copy.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Faith
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Faith
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/faith/2024/04/02/lets-shush-about-sin-copy.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/faith/2024/04/02/lets-shush-about-sin-copy.html" class="text-decoration-none">
                     Shhh, let's not talk about sin
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 The big, pink elephant wearing a crop-top in the room we ignore
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Apr 2, 2024
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Apr 2, 2024</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="Why?
+
+“Because we want to keep the peace, and not hurt each other’s feelings. 
+Besides, if you talk about sin, who are you to judge because Matthew 7 vs 1 says ‘Do not judge or you too will be judged…’ “
+
+Above are the many reasons I have heard whenever I have wanted to talk about sin, whether mine or someone else’s (some of you have tensed up because you are in the ‘why talk about someone else’s sin?’ camp). I felt this article pressed upon my spirit due to the misunderstanding of the following things
+
+
+  Judging each other
+  Talking about sin (and correcting)
+
+
+Those are two big things so let’s get right into it!
+
+1. Judging each other
+
+Don’t judge?
+
+Probably one of the most mis-used verses in the bible is Matthew 7 vs 1 which reads
+
+
+  Do not judge, or you too will be judged.
+
+  Matthew 7 vs 1 (NIV)
+
+
+It is mishandled and taken out of context three times over.
+
+
+  Christ does not say “never judge”. He warns there is a consequence to judgement.
+  This statement is immediately followed by instructions from Christ on the proper way to use judgement.
+  Jesus’ other teachings explicitly indicate that right judgement is necessary while hypocritical or shallow judgement is wrong. Stop judging by mere appearances, but instead judge correctly.’ John 7 vs 24
+
+
+It is modern culture that has pushed this notion of we shouldn’t judge each other. Happily someone shallow (I hope they were well-meaning but unlikely) read this verse and was happy that the bible supports him/her and will be defended by it whenever someone talks about how they are sinning. “Who are you to judge me?”
+
+So, what now?
+
+Yeah, unfortunately, we have to judge each other but in the correct way. The problem has always been hypocrisy in judgement, which Jesus explicitly notes in the following verses…
+
+
+  3 “Why do you look at the speck of sawdust in your brother’s eye and pay no attention to the plank in your own eye? 4 How can you say to your brother, ‘Let me take the speck out of your eye,’ when all the time there is a plank in your own eye? 5 You hypocrite, first take the plank out of your own eye, and then you will see clearly to remove the speck from your brother’s eye.
+
+  Matthew 7 vs 3 to 5 (NIV)
+
+
+But notice what Jesus did (and I absolutely love it. The bible is amazing).
+
+Not only did Jesus speak against hypocrisy, but He also gave the solution. Remove the plank out of your own eye, only then will you be able to remove the speck from your brother’s eye.
+
+The last part I put in italics is the part that many people forget (willingly in my opinion), that we are supposed to remove specks from each other’s eyes.
+
+Which is a nice segue to the second point
+
+2. Talking about sin
+
+Let’s just hammer the point home about helping each other. Paul in his first letter to the Corinthians says the following
+
+
+  What business is it of mine to judge those outside the church? Are you not to judge those inside?
+
+  1 Corinthians 5 vs 12 (NIV)
+
+
+Let me re-write the verse.
+
+“Are you (yes YOU) not to judge those inside?”
+
+Before the “read the ‘read the verse in context’ army comes after me”, read it in context as well. Although the story is started by addressing an adulterous son, Paul is simply saying hold each other accountable when you are in the body of Christ.
+
+Which is what I think is the root problem.
+
+We don’t talk about sin enough
+
+For reasons stated in the first paragraph, we are so scared talk about sin especially about each other’s sin (of course, if you know you have a plank in your own eye, don’t. Wait I think I have to explain this verse as well)
+
+Sidenote - Remove the plank in your own eye
+
+It’s so easy to see sin in others but not our own. Be as critical of others, but be twice that to yourself. We are often kind to ourselves and give ourselves grace that we don’t give others when we judge.
+
+Now, we will always sin. That’s the unfortunate part of the human condition. So does that mean we shouldn’t judge and correct each other? No. It all goes back to the heart and also, you might have a particular sin that you conquered like sexual sin, drunkenness, debauchery, lying etc. Once you have removed the planks or started the journey of removing those sins in your eye can you remove a speck from your brother and sister.
+
+Back to talking about sin.
+
+I think it’s a dis-service to have a friend that does not lovingly correct me according to the principles of our faith because they want to keep the peace. What good is it that we keep our friendship, but I lose my soul?
+
+And even I know in myself, that pride might not want to listen to someone correcting me. But once that seed is planted, it will be something that will grow in me that hey, maybe I am not supposed to be doing this thing I am doing.
+
+We should be able to correct and be corrected when we are wrong. That’s just how we are supposed to live in the body of Christ.
+
+I see this turning a blind eye to our own and peers sin is what has made us lose our morality and made us lukewarm Christians. The standard is Christ. Remember, He instructed us to be perfect… (Matthew 5 vs 48) meaning we should imitate the loving qualities of God, who is the heavenly standard of righteousness and perfection.
+
+And quite frankly, God in His love, also corrects us and does not ignore our sin, much like a parent whose child is headed in the wrong direction. Let us follow that example and help each other with sin as much as possible, in a loving and righteous manner.
+
+This would be a good place to end because the last paragraph sounded like a conclusion.😂 But I have two more things on my heart to say. If you are tired, you can scroll down and respond or comment. 
+Or read on. In any case, thank you for reading thus far.
+
+Bonus(es, is this the plural of bonus?)
+
+Judging is not condemning
+
+
+  ‘He that is without sin among you, let him first cast a stone at her.’
+
+  John 8 vs 7
+
+
+Familiar story of the woman caught in adultery. I have a friend who made the mistake of conflating ‘judging’ with ‘condemning’ and I wanted to clear this up. Yes, the Pharisees and teachers of the law had judged the woman (that’s how they knew she was doing wrong in the first place. I wonder what Jesus was writing down though in verse 6 and 8).
+
+Their problem was that they hadn’t judged to correct or help the woman with grace, they wanted to stone her, effectively condemning her to death.
+
+That’s why Jesus says “Woman, where are they? Has no one condemned you? “No one, sir,” she said. “Then neither do I condemn you,” Jesus declared. “Go now and leave your life of sin.”
+
+Note the grace of Jesus that He forgives our sins and instructs us to leave our lives of sin, not condemn us to death.
+
+They don’t want help
+
+So don’t. Leave them alone. Paul instructs us to distance ourselves from people living in obvious sin in 1 Corinthians 5. Does that mean we shouldn’t tell them about their sin? No. Read Matthew 28 vs 19
+
+You run the risk of losing your own faith if you live among people who want to live in obvious sin. Do the thing Jesus said in Matthew 10 vs 14.
+
+Shake the dust off your feet and move away.
+">
+                        7 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/Bv2XVQdS/a46e0168-8718-4a76-94c6-d96e82f36e22.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/Bv2XVQdS/a46e0168-8718-4a76-94c6-d96e82f36e22.jpg" alt="Starting & Maintaining An Exercise Habit" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/health/2024/02/19/starting-an-exercise-habit-copy.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Health
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Health
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/health/2024/02/19/starting-an-exercise-habit-copy.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/health/2024/02/19/starting-an-exercise-habit-copy.html" class="text-decoration-none">
                     Starting & Maintaining An Exercise Habit
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 Based off my recent interactions with people, here are a few pointers on how to keep an exercise habit.
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Feb 19, 2024
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-        
-            <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/qBjTz8z4/98a09f15-7d8c-4c4a-a995-94f8da258d88.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
-            </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Health
-                </button>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/health/2024/01/29/a-sign-of-health-you-dont-know.html">
-                <h3 class="fw-bold">
-                    A Sign of Good Health You Don't Know About
-                </h3>
-            </a>
-            <p class="card-text mb-0">
-                Should your heart rate be regular and constant when you are resting, or should it be all over the place? What's the right thing? (Might surprise you)
-            </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Jan 29, 2024
-                        </div>
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Feb 19, 2024</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="Ever said to yourself, “Next Monday, I will start exercise?”
+
+Oddly enough, you actually get round to do it on Monday and feel great after the run, gym etc.
+
+Then Tuesday comes and your body is aching and you decide to rest.
+
+Wednesday comes and you’d slept late the last-night so you postpone your next work out to tomorrow.
+
+Thursday comes. You actually wake up on time but have zero motivation to do it.
+Friday, you then conclude that maybe exercise isn’t for you.
+
+Well, I have seen many people who supposedly want to start exercising who follow this exact pattern. They start good for one day, then wane off as the week progresses.
+
+So I decided to write and highlight a few of the things you could do that could help start and maintain an exercise habit.
+
+The disclaimer is the first point.
+
+1. How much it means to you
+How much does exercise, and in turn, your health mean to you? 
+I said this point was a disclaimer because no matter how many hacks will follow in this article, if you do not have the intrinsic motivation to want to be healthy and exercise, they won’t work.
+
+When the COVID-19 pandemic hit, I realised just how important health was. It was the healthier people who were handling the virus better. It also put into perspective that if I am not healthy, everything else won’t matter, in particular, wealth, school, career, goals etc.
+
+What use is it to want wealth so as to gain freedom but are condemned to taking a tablet a day for hypertension?
+
+In addition to that, exercise helps maintain my mental and emotional health, keeps my brain on its toes and increases my creativity. In other words, exercise is absolutely essential to who I am and what I value.
+
+Now the question to you is how much is your health important to you?
+
+  Side note: I see that many people also rely on the fact that they are still young hence they’ll exercise later. Truth is that the diseases that occur in old age are due to a lack of a strong, healthy foundation set now when one is young. Of course your health is going to deteriorate inevitably, but at least start deteriorating from 90% than from 60% or 50% of health.
+
+
+2. Don’t start high
+One big hurdle I see for many people is the pressure to want to run their fastest 5km everyday, lift their heaviest weight etc. Actually run themselves into the ground because that is what exercise entails.
+
+False.
+
+With exercise, you do more by doing less. Instead of starting out with the intention to run 5km, just get out the door and walk for a start. Walk for even 200m. Why is this important?
+
+You are training your mind to just get out the door and do something, building discipline to exercise. Especially if you are starting from scratch, this is the best thing you could do for your habit training.
+
+Once your mental gets used to the habit of getting out the house and doing something active, you will natural increase the workout intensity. But beware…
+
+3. Do 80/20
+The world’s best athletes follow an 80/20 approach in which 80% of the time, they do light exercise. This is exercise that leaves with enough air to carry out a conversation or sing (when no one’s around of course). The other 20% is moderate to hard exercise that leaves you gasping for air.
+
+An example of what this looks like is if you decide to exercise for 5 days in the week, 4 of those days are your light exercise days and only 1 day is for hard exercise.
+
+This tries to shoot down the belief that people should be doing hard strenuous exercise all the time when light exercise is all that you need. What that looks like is jogging at a light, comfortable pace or walking.
+
+4. Post, post, post
+There is social pressure when posting such things. The fact that you are now aligning yourself with exercise, posting helps you maintain that habit because you have an intrinsic desire to look consistent with whatever you make public.
+
+So completed a 1km run? Post it. 
+Done a ten-minute workout? Post it.
+
+Not wanting to disappoint the eyes of others is a strong motivator for human actions. Might as well put it to good use.
+
+5. Discipline Over Motivation
+Another thing is to know and believe that you will never be motivated to exercise except on the first day. On so many runs, during the first kilometre, I ask myself why I am doing this anyway. That’s a lack of motivation.
+
+But you must be disciplined, striving to keep up an image to yourself that you are someone who does what they say they’re going to do. Point number 4 also acts as a hack for discipline.
+
+Conclusion
+These tips are by no means complete. I will keep on adding more and more, but these are what are relevant to the people I have recently interacted with.
+
+I hope it helps.
+
+Tell me about your exercise journey and the challenges you face and I will try to help and chime in with what I know.
+">
+                        5 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
     </div>
@@ -561,24 +1319,105 @@
     <script src="/assets/js/color-modes.js"></script>
   </body>
   
-<footer class="p-5 vonge-gradient-footer">
-    <ul class="nav justify-content-center pb-3 mb-3">
-      <li class="vonge-nav-item">
-        <a href="#" class="nav-link px-2 text-white fw-semibold">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="/posts" class="nav-link px-2 text-white fw-semibold">Posts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/projects" class="nav-link px-2 text-white fw-semibold">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="all-thoughts" class="nav-link px-2  text-white fw-semibold">Thoughts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/about" class="nav-link px-2 text-white fw-semibold">About</a>
-      </li>
-    </ul>
-    <p class="text-center text-white fw-semibold">2024 ©️ Tanaka Mawere</p>
-  </footer>
+<footer class="p-5 vonge-gradient-footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+                <p class="text-white-50 mb-3">
+                    Full-stack .NET developer and final year medical student passionate about 
+                    creating innovative solutions at the intersection of technology and healthcare.
+                </p>
+                <div class="row align-items-center m-2">
+    <div class="col">
+        <a href="https://www.instagram.com/tan.akamawere/">
+            <i class="fa-brands fa-instagram fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://github.com/tanakamawere">
+            <i class="fa-brands fa-github fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="mailto:tanaka@tanakamawere.co.zw">
+            <i class="fa-solid fa-envelope fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://wa.me/263785468923">
+            <i class="fa-brands fa-whatsapp fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://x.com/tanaka_mawere">
+            <i class="fa-brands fa-twitter fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <!-- <div class="col">
+        <a href="https://www.youtube.com/channel/UCta53LdBaAj7gQ-JHgHBEfg">
+            <i class="fa-brands fa-youtube fa-xl icon-colour icon-size"></i>
+        </a>
+    </div> -->
+</div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="/" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-home me-2"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/projects" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-code me-2"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/posts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-blog me-2"></i>Posts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/all-thoughts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-lightbulb me-2"></i>Thoughts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/about" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-user me-2"></i>About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Contact Info</h6>
+                <div class="text-white-50">
+                    <p class="mb-2">
+                        <i class="fas fa-envelope me-2"></i>
+                        hello@tanakamawere.com
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Harare, Zimbabwe
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4 footer-divider">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="text-white-50 mb-0">
+                    &copy; 2025 Tanaka Mawere. All rights reserved.
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <small class="text-white-50">
+                    Built with Jekyll & Bootstrap 5
+                </small>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>

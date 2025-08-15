@@ -1,21 +1,71 @@
 
-<footer class="p-5 vonge-gradient-footer">
-    <ul class="nav justify-content-center pb-3 mb-3">
-      <li class="vonge-nav-item">
-        <a href="#" class="nav-link px-2 text-white fw-semibold">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="/posts" class="nav-link px-2 text-white fw-semibold">Posts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/projects" class="nav-link px-2 text-white fw-semibold">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="all-thoughts" class="nav-link px-2  text-white fw-semibold">Thoughts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/about" class="nav-link px-2 text-white fw-semibold">About</a>
-      </li>
-    </ul>
-    <p class="text-center text-white fw-semibold">2025 ©️ Tanaka Mawere</p>
-  </footer>
+<footer class="p-5 vonge-gradient-footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+                <p class="text-white-50 mb-3">
+                    Full-stack .NET developer and final year medical student passionate about 
+                    creating innovative solutions at the intersection of technology and healthcare.
+                </p>
+                {% include social-links.html %}
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="/" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-home me-2"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/projects" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-code me-2"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/posts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-blog me-2"></i>Posts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/all-thoughts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-lightbulb me-2"></i>Thoughts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/about" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-user me-2"></i>About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Contact Info</h6>
+                <div class="text-white-50">
+                    <p class="mb-2">
+                        <i class="fas fa-envelope me-2"></i>
+                        hello@tanakamawere.com
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Harare, Zimbabwe
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4 footer-divider">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="text-white-50 mb-0">
+                    &copy; 2025 Tanaka Mawere. All rights reserved.
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <small class="text-white-50">
+                    Built with Jekyll & Bootstrap 5
+                </small>
+            </div>
+        </div>
+    </div>
+</footer>

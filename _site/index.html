@@ -23,14 +23,14 @@
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:url" content="http://0.0.0.0:4000/" />
 <meta property="og:title" content="Home - Tanaka Mawere" />
 <meta property="og:description" content="Incompetent C# Programmer and Keyboardist + Bassist from Harare. Currently an unfortunate medical student at UZ and pretends to exercise at times." />
 <meta property="og:image" content="https://i.postimg.cc/ydq0q6T9/home-image.jpg" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="http://localhost:4000" />
+<meta property="twitter:url" content="http://0.0.0.0:4000" />
 <meta property="twitter:title" content="Home - Tanaka Mawere" />
 <meta property="twitter:description" content="Incompetent C# Programmer and Keyboardist + Bassist from Harare. Currently an unfortunate medical student at UZ and pretends to exercise at times." />
 <meta property="twitter:image" content="https://i.postimg.cc/ydq0q6T9/home-image.jpg" />
@@ -148,26 +148,38 @@
     <div class="container">
     <nav class="navbar navbar-expand-lg mt-4">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="/">TM</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand fw-bold fs-4" href="/">
+          <span class="text-primary">TM</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold align-items-center justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link active" href="/">
+                <i class="fas fa-home me-2"></i>Home
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/projects">Projects</a>
+              <a class="nav-link" href="/projects">
+                <i class="fas fa-code me-2"></i>Projects
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/posts">Posts</a>
+              <a class="nav-link" href="/posts">
+                <i class="fas fa-blog me-2"></i>Posts
+              </a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/all-thoughts">
+                <i class="fas fa-lightbulb me-2"></i>Thoughts
+              </a>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/all-thoughts">Thoughts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/about">About</a>
+              <a class="nav-link" href="/about">
+                <i class="fas fa-user me-2"></i>About
+              </a>
             </li>
           </ul>
         </div>
@@ -175,76 +187,92 @@
     </nav>
   </div>
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
-        <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
-      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    <button class="btn btn-outline-secondary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+        <i class="fa-solid fa-circle-half-stroke me-2 theme-icon-active"></i>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
     </button>
     <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-          <i class="fa-solid fa-sun fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-sun me-2"></i>
           Light
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-          <i class="fa-solid fa-moon fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-moon me-2"></i>
           Dark
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-circle-half-stroke me-2"></i>
           Auto
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
     </ul>
-  </div>
+</div>
   
     <main class="p-1">
-      <div class="container">
-    <div class="row align-items-center justify-content-center">
-        <div class="col-xl-6 col-xxl-6 text-center">
-            <!-- Carousel Start -->
-            <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner rounded-top rounded-bottom img-fluid image-sized">
-                    <div class="carousel-item active">
-                        <img src="/assets/img/cover_image.jpg" class="d-block w-100" alt="Cover Image 1">
+      <!-- Hero Section -->
+<section class="hero-section position-relative overflow-hidden">
+    <div class="hero-bg position-absolute top-0 start-0 w-100 h-100"></div>
+    <div class="container position-relative">
+        <div class="row align-items-center min-vh-100 py-5">
+            <div class="col-lg-6 text-center text-lg-start">
+                <div class="hero-content">
+                    <!-- Animated Greeting -->
+                    <div class="hero-greeting mb-3">
+                        <span class="text-primary fw-medium">Hello, I'm</span>
                     </div>
-                    <div class="carousel-item">
-                        <img src="/assets/img/home_image.jpg" class="d-block w-100" alt="Cover Image 2">
+                    
+                    <!-- Main Title -->
+                    <h1 class="hero-title display-3 fw-bold mb-4">
+                        Tanaka Mawere
+                        <span class="hero-emoji">👋</span>
+                    </h1>
+                    
+                    <!-- Role Badges with Animation -->
+                    <div class="hero-badges mb-4">
+                        
+                        <span class="badge hero-badge hero-badge-1 px-4 py-2 me-2 mb-2">
+                            Full-stack .NET Programmer
+                        </span>
+                        
+                        <span class="badge hero-badge hero-badge-2 px-4 py-2 me-2 mb-2">
+                            Final Year Medical Student
+                        </span>
+                        
+                        <span class="badge hero-badge hero-badge-3 px-4 py-2 me-2 mb-2">
+                            Musician
+                        </span>
+                        
                     </div>
-                    <!-- Add more carousel-item divs for more images -->
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <!-- Carousel End -->
-        </div>
-        <div class="col-lg-6 col-xl-6 col-xxl-4">
-            <div class="my-5 text-center text-xl-start">
-                <h1 class="fw-bolder">
-                    Hi there, I am Tanaka Mawere😃
-                </h1>
-                <p>
-                    <strong>Mid .NET Programmer</strong>, <strong>5th Year Medical Student</strong> and <strong>Musician</strong>.
-                    <br/>
-                    <br/>
-                    I pretend to exercise at times.
-                    <!-- Currently an unfortunate medical student at UZ, wastes studying time coding apps and pretends to exercise at times. <br /> -->
-                </p>
-                
-                <hr class="divider" />
-                <div class="row align-items-center m-2">
+                    
+                    <!-- Bio -->
+                    <p class="hero-bio lead mb-4">
+                        Passionate about creating innovative solutions at the intersection of technology and healthcare. Currently balancing medical studies with full-stack development and music.
+                    </p>
+                    
+                    <!-- Short Bio -->
+                    <p class="hero-short-bio text-muted mb-4">
+                        <i class="fas fa-quote-left me-2"></i>
+                        I pretend to exercise at times.
+                    </p>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="hero-cta mb-4">
+                        <a href="/projects" class="btn btn-primary btn-lg me-3 mb-2">
+                            <i class="fas fa-rocket me-2"></i>View My Work
+                        </a>
+                        <a href="/about" class="btn btn-outline-primary btn-lg mb-2">
+                            <i class="fas fa-user me-2"></i>About Me
+                        </a>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="hero-social">
+                        <div class="row align-items-center m-2">
     <div class="col">
         <a href="https://www.instagram.com/tan.akamawere/">
             <i class="fa-brands fa-instagram fa-xl icon-colour icon-size"></i>
@@ -256,8 +284,18 @@
         </a>
     </div>
     <div class="col">
+        <a href="mailto:tanaka@tanakamawere.co.zw">
+            <i class="fa-solid fa-envelope fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
         <a href="https://wa.me/263785468923">
             <i class="fa-brands fa-whatsapp fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://x.com/tanaka_mawere">
+            <i class="fa-brands fa-twitter fa-xl icon-colour icon-size"></i>
         </a>
     </div>
     <!-- <div class="col">
@@ -265,151 +303,461 @@
             <i class="fa-brands fa-youtube fa-xl icon-colour icon-size"></i>
         </a>
     </div> -->
-    <div class="col">
-        <a href="mailto:tanaka@tanakamawere.co.zw">
-            <i class="fa-solid fa-envelope fa-xl icon-colour icon-size"></i>
-        </a>
-    </div>
 </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hero Visual -->
+            <div class="col-lg-6 text-center">
+                <div class="hero-visual">
+                    <!-- Profile Image Carousel -->
+                    <div class="hero-image-container position-relative">
+                        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/assets/img/cover_image.jpg" class="hero-image" alt="Tanaka Mawere">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/img/home_image.jpg" class="hero-image" alt="Tanaka Mawere">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Skill Icons -->
+                        <div class="floating-icons">
+                            <div class="floating-icon floating-icon-1">
+                                <i class="fab fa-microsoft"></i>
+                            </div>
+                            <div class="floating-icon floating-icon-2">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <div class="floating-icon floating-icon-3">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div class="floating-icon floating-icon-4">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Stats Cards -->
+                    <div class="hero-stats mt-4">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="stat-card text-center">
+                                    <h3 class="stat-number">33+</h3>
+                                    <p class="stat-label">Blog Posts</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-card text-center">
+                                    <h3 class="stat-number">6+</h3>
+                                    <p class="stat-label">Projects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator text-center position-absolute bottom-0 start-50 translate-middle-x">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <p class="small text-muted mt-2">Scroll to explore</p>
+        </div>
     </div>
-    
-    <div class="px-5 container">
-        <div class="container-fluid py-3">
+</section>
+
+<!-- Content Sections -->
+<div class="container">
+    <!-- Recent Posts Section -->
+    <div class="py-5 my-5">
+        <div class="text-center mb-5">
             <h2 class="display-6 fw-bold">Recent Posts</h2>
-            <p class="col-md-8 fs-6">
+            <p class="lead text-muted">
                 When I feel motivated, I write long form content. Very rare
             </p>
         </div>
-        <div class="row gx-5">
+        <div class="row g-4">
             
             
 
             
                 <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/28p8Kj2C/valentines.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/1RKnRKWq/Copilot-20250628-083519.png" alt="When music becomes perfect..." />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/thoughts/music/2025/06/28/perfect-music.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Thoughts
+                </span>
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Music
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/2025/01/31/valentines.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/thoughts/music/2025/06/28/perfect-music.html" class="text-decoration-none">
+                    When music becomes perfect...
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
+                There is no perfection in art
+            </p>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
+                    </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Jun 28, 2025</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="I like The Unveiled.
+
+They are the best vocal group in Zimbabwe to me and it’s not even close! Their harmonies are tighter than the way I grip my phone when I walk in town these days. Their individual voices are as smooth as Mama’s peanut butter.
+
+But… something is missing
+
+Their music sounds empty, it sounds soulless.
+
+On their last album, The Next Level, I couldn’t help but hope that the lead singer on each song would just go off-script - not in a bad way, but sound a bit more natural and a little less, I don’t know, practiced, regimented.
+
+And I feel that’s the problem that has plagued today’s music. It sounds “perfect”. There are no missed notes, there is high attention to detail and quality is off the charts.
+
+But is it moving? Does it twist your intestines into knots? Does it hit the bottom of your soul and push you to dance or something?
+
+I find myself going back to songs like Mudiwa Janet by John Chibadura or something like Tisaparadzane by Plaxedes Wenyika or Maitiro Enyu by Shingisai Suluma.
+
+And by today’s standards, these songs are simple horrible. Where do I begin?
+
+
+  So many missed notes
+  Very little to no harmonies included
+  No amazing two-key transpositions
+  Progressions so simple, anyone could play them.
+  Mixing levels all over the place.
+  Some tracks sound like they were recorded in the kitchen — and maybe they were!
+
+
+But they are the definition of what music and art should be.
+
+Because the point of music is (or was depending on how you look at it) to tell a story. It’s a form of art. A form of expression meant to make others relate and tap into what you are feeling.
+
+And that’s not to say you should make music that has missed notes to sound authentic. Let making a perfect song be the by-product of your craft, not the whole point, because people can hear it.
+
+Especially in gospel music, where the point isn’t your attention to detail or your crazy runs, but the message and it seems to me, those two have been mixed up and you can hear it.
+
+I know what you’re thinking.
+
+“But Tanaka, God deserves the best! Why wouldn’t we want to give Him perfect harmonies, polished mixes, and high-quality recordings?”
+
+And to that I say: absolutely! God does deserve our best. But who told us that “best” = “perfect”?
+
+David danced until his clothes fell off, not until his moves were tight. The woman with the alabaster jar broke it open — raw, messy, unplanned worship. No Pro Tools, no pitch correction, no rehearsed runs.
+
+The problem isn’t the quality. It’s the priority.  When polish outranks presence, when we edit out all the imperfections and along with them, all the emotion, what are we left with?
+
+
+  Sometimes, “the best” is not in the excellence of the sound — it’s in the honesty of the sound
+
+">
+                        3 min read
+                    </span>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+            
+                <div class="col-lg-4 mb-5">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/28p8Kj2C/valentines.jpg" alt="What is Valentine's Day!?" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/thoughts/2025/01/31/valentines.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Thoughts
+                </span>
+                
+            </div>
+            
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/thoughts/2025/01/31/valentines.html" class="text-decoration-none">
                     What is Valentine's Day!?
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 Lowkey protesting against Valentine's Day
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Jan 31, 2025
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Jan 31, 2025</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="Writing this, I do understand that it does come off as someone who is bitter and is trying to find a way out of participating in Valentine’s Day. But, I promise you, that is not the case, or I hope it isn’t.
+
+My feed has been full of memes, reels, products and services being marketed for Valentine’s Day. (Seems like everyone is selling something for Valentine’s, wondering who is going to buy.)
+
+One particular reel is of a guy singing the names of gents who don’t buy their ladies gifts on Valentine’s Day. “Tadiwa haatenge, Takudzwa haatenge…” Didn’t finish the whole reel but if my name isn’t mentioned, I am thoroughly disappointed.
+
+Add to that the memes that have been posted since December of “pane vachasara vasina chavakabata on the 14th of February.”
+
+My problem with Valentine’s Day
+
+My problem with it is now in its mass commercialisation. And the sort of external pressure from media to now participate in it. It’s like if you don’t participate in Valentine’s Day, you are not a good partner (maybe you aren’t, what do I know?)
+
+How do I then know that I actually did whatever I did for my partner because I wanted to and not because I was pressured to do so, just so that she is not subject to the ridicule of her friends?
+
+The concept is not lost on me
+
+There should be a day where we celebrate love. I am all for that. Every day of the year is a day to celebrate something. But let’s compare mother’s day to Valentine’s Day.
+
+Mother’s Day vs. Valentine’s Day
+
+
+  
+    
+      Feature
+      Mother’s Day 👩‍👧‍👦
+      Valentine’s Day 💘
+    
+  
+  
+    
+      Who is celebrated?
+      Moms (can touch hot pots and not get burnt)
+      Couples (or “couples”)
+    
+    
+      Gift expectations
+      Breakfast in bed, heartfelt cards, spa day
+      Flowers, chocolates, mukomana webhosvo (kana gitare), a Range Rover Evoque, and possibly the moon
+    
+    
+      Social pressure level
+      Moderate to nil – Forgetting is unwise but forgivable
+      Forgetting is equivalent to forgetting the relationship ever existed
+    
+    
+      Reaction to a forgotten day
+      “It’s okay, sweetheart…”
+      “Oh, so you just don’t love me? That’s fine. Totally fine. (It’s NOT fine.)”
+    
+    
+      Who benefits the most?
+      Moms get a day of appreciation (maybe)
+      Denilson Musekiwa
+    
+    
+      Social media effect
+      Cute baby photos, emotional tributes, #BestMomEver posts
+      Endless couple selfies making singles question their life choices (i.e. thinks of calling the ex)
+    
+    
+      How singles handle it?
+      Not applicable (everyone has a mom)
+      “Self-love is important!” (while binge-watching Netflix and eating a sack of potatoes cooked in 30 distinct ways)
+    
+    
+      How late you can plan it?
+      A day before, and she’ll still love you
+      If you book dinner late, enjoy your romantic evening at Chicken Slice
+    
+  
+
+
+
+
+Conclusion
+
+In summary, don’t get me wrong. It’s good. Vanhu dananai.
+
+But I don’t buy into the pressure that the commercialisation of Valentine’s day has brought. In fact I oppose it vehemently.
+
+
+  PS: I will still participate in the pressure because I don’t want to get dumped (so please take what I am saying with a big grain of salt)
+
+">
+                        3 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
             
                 <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/7LSjnsQf/c742f3ca-04f0-4c93-a395-514cdefde9f4.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/7LSjnsQf/c742f3ca-04f0-4c93-a395-514cdefde9f4.jpg" alt="Where is the manual?" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/thoughts/2024/09/16/where-is-the-manual.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Thoughts
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/2024/09/16/where-is-the-manual.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/thoughts/2024/09/16/where-is-the-manual.html" class="text-decoration-none">
                     Where is the manual?
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 No, you don't have everything figured out... And you never will.
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Sep 16, 2024
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Sep 16, 2024</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="During gynae clinic today, there was a woman I was clerking. She has had genital warts for 17 years now. So normally, after taking her history, we are supposed to examine the patient and in this case, it meant asking her for permission to see and inspect the warts “down there.”
+
+But I reasoned myself out of it. “I have never done it before. I will first see a senior do it then maybe do it next time?”
+
+Which is what the medical field is about really. It’s an apprenticeship. Someone sort of holds your hand and guides you through the processes of being a doctor.
+
+If only life was like that…
+
+Because in medicine, you can always ask for help. You can always ask for a second opinion. You can always ask for a senior to come and see the patient with you.
+
+But you can’t ask someone to first live your life, then you live your life after seeing notes from them.
+
+Of course we take notes from the lives of other people but truth be told, although there is nothing new under the sun, the nuances and subtle differences that make up our lives are unique to us. Hence our experiences, although with similarities, are unique to us.
+
+Having things figured out
+
+A small debilitating disease of twenty-something year olds is the idea that you have to have everything figured out. That you have to have a plan always. That you have to know what you are doing.
+
+But the truth is, you don’t have to have everything figured out. And you never will. Proof of it?
+
+How often have your plans gone according to plan?
+
+Life is a journey. And you will make unbelievable mistakes (I question if they should even be termed “mistakes”), do a lot of good and a lot more bad, get involved with the wrong crowd, the right one etc.
+
+But don’t stop moving
+
+Came across the following quote today.
+
+
+  In any moment of decision, the best thing you can do is the right thing, the next best thing is the wrong thing, and the worst thing you can do is nothing. Theodore Roosevelt.
+
+
+Doing nothing is robbing yourself of the very essence of living… Another quote is that one that you probably know if you can’t run, walk, if not, crawl etc.
+
+Conclusion
+
+So where is the life manual?
+
+There is none. So why give yourself the pressure of having figured out life?
+
+If anything, each of us are writing our own manual as we are living it.
+">
+                        3 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-            
-                <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/FR65nFdT/09c888b9-f4cf-46eb-b08c-e4bbfaddc429.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
-            </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Leadership
-                </button>
-            
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/leadership/2024/09/15/on-leadership-and-hitler.html">
-                <h3 class="fw-bold">
-                    On leadership and Hitler...
-                </h3>
-            </a>
-            <p class="card-text mb-0">
-                Hitler, Mussolini, Lenin - what do all these people have in common?
-            </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Sep 15, 2024
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </article>
 </div>
             
         </div> 
     </div>
 
-    <div class="px-5 container">
-        <div class="container-fluid py-3">
+    <!-- Recent Thoughts Section -->
+    <!-- <div class="py-5 my-5">
+        <div class="text-center mb-5">
             <h2 class="display-6 fw-bold">Recent Thoughts</h2>
-            <p class="col-md-8 fs-6">
+            <p class="lead text-muted">
                 Who reads long things anyway? Here is my version of Twitter-esque thoughts, away from Twitter
             </p>
         </div>
         
         
 
-        <div class="row gx-5">
+        <div class="row g-4">
         
             <div class="col-lg-4 mb-5">
     <div class="card h-100 shadow border-0">
@@ -508,7 +856,7 @@
 </div>
         
         </div>
-    </div>
+    </div> -->
 
 </div>
     </main>
@@ -517,24 +865,105 @@
     <script src="/assets/js/color-modes.js"></script>
   </body>
   
-<footer class="p-5 vonge-gradient-footer">
-    <ul class="nav justify-content-center pb-3 mb-3">
-      <li class="vonge-nav-item">
-        <a href="#" class="nav-link px-2 text-white fw-semibold">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="/posts" class="nav-link px-2 text-white fw-semibold">Posts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/projects" class="nav-link px-2 text-white fw-semibold">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="all-thoughts" class="nav-link px-2  text-white fw-semibold">Thoughts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/about" class="nav-link px-2 text-white fw-semibold">About</a>
-      </li>
-    </ul>
-    <p class="text-center text-white fw-semibold">2024 ©️ Tanaka Mawere</p>
-  </footer>
+<footer class="p-5 vonge-gradient-footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+                <p class="text-white-50 mb-3">
+                    Full-stack .NET developer and final year medical student passionate about 
+                    creating innovative solutions at the intersection of technology and healthcare.
+                </p>
+                <div class="row align-items-center m-2">
+    <div class="col">
+        <a href="https://www.instagram.com/tan.akamawere/">
+            <i class="fa-brands fa-instagram fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://github.com/tanakamawere">
+            <i class="fa-brands fa-github fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="mailto:tanaka@tanakamawere.co.zw">
+            <i class="fa-solid fa-envelope fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://wa.me/263785468923">
+            <i class="fa-brands fa-whatsapp fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://x.com/tanaka_mawere">
+            <i class="fa-brands fa-twitter fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <!-- <div class="col">
+        <a href="https://www.youtube.com/channel/UCta53LdBaAj7gQ-JHgHBEfg">
+            <i class="fa-brands fa-youtube fa-xl icon-colour icon-size"></i>
+        </a>
+    </div> -->
+</div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="/" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-home me-2"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/projects" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-code me-2"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/posts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-blog me-2"></i>Posts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/all-thoughts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-lightbulb me-2"></i>Thoughts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/about" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-user me-2"></i>About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Contact Info</h6>
+                <div class="text-white-50">
+                    <p class="mb-2">
+                        <i class="fas fa-envelope me-2"></i>
+                        hello@tanakamawere.com
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Harare, Zimbabwe
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4 footer-divider">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="text-white-50 mb-0">
+                    &copy; 2025 Tanaka Mawere. All rights reserved.
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <small class="text-white-50">
+                    Built with Jekyll & Bootstrap 5
+                </small>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>

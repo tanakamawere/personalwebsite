@@ -1,58 +1,281 @@
 ---
 layout: default
 ---
-<div class="container mt-5">
-    <div class="row align-items-center justify-content-center">
-        <div class="col-xl-6 col-xxl-6 text-center">
-            <img class="rounded-top rounded-bottom img-fluid" src="{{ page.image }}"/>
-        </div>
-        <div class="col-lg-6 col-xl-6 col-xxl-4">
-          <div class="my-3 text-center text-xl-start">
-              {% for category in page.categories %}  
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    {{ category }}
-                </button>
-              {% endfor %}
-              <h1 class="fw-bolder">
-                  {{ page.title }}
-              </h1>
-              <div class="row align-items-center justify-content-between container-fluid">
-                <!-- <img class="col rounded-circle" style="max-height: 50px; max-width: 50px; background-color: transparent;" src="/assets/img/profile_picture.jpg"/> -->
-                <div class="col social-links">
-                  <p>{{ page.author }}</p>
-                  <h6>
-                    {{ page.date | date: "%b %-d, %Y" }}
-                  </h6>
+
+<!-- Post Hero Section -->
+<article class="post-article">
+    <header class="post-header">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <!-- Categories -->
+                    <div class="post-categories mb-3">
+                        {% for category in page.categories %}  
+                        <span class="badge post-category-badge me-2">
+                            <i class="fas fa-tag me-1"></i>{{ category }}
+                        </span>
+                        {% endfor %}
+                    </div>
+                    
+                    <!-- Title -->
+                    <h1 class="post-title display-4 fw-bold mb-4">
+                        {{ page.title }}
+                    </h1>
+                    
+                    <!-- Meta Information -->
+                    <div class="post-meta d-flex align-items-center mb-4">
+                        <div class="author-info d-flex align-items-center me-4">
+                            <div class="author-avatar me-3">
+                                <i class="fas fa-user-circle fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <div class="author-name fw-semibold">{{ page.author | default: site.author.name }}</div>
+                                <div class="post-date text-muted small">
+                                    <i class="fas fa-calendar me-1"></i>
+                                    {{ page.date | date: "%B %-d, %Y" }}
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Reading Time Estimate -->
+                        <div class="reading-time text-muted small">
+                            <i class="fas fa-clock me-1"></i>
+                            <span id="reading-time">5 min read</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Post Image -->
+                    {% if page.image %}
+                    <div class="post-image-container mb-5">
+                        <img src="{{ page.image }}" class="post-featured-image" alt="{{ page.title }}">
+                    </div>
+                    {% endif %}
                 </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <div class="px-3 highlight">
-    {{ content }}
-  </div>  
-    
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
-
-  <!--Next article section-->
-  <hr class="my-5"/>
-  <h2 class="fw-bolder">Your next article...</h2>
-
-  {% if page.previous %}
-    <div class="card" style="max-width: 30rem;">
-      <div class="row card-body">
-        <div class="col-6">
-          <img class="rounded-top rounded-bottom img-fluid" src="{{ page.previous.image }}"/>
+            </div>
         </div>
-        <div class="col-6">
-          <h3 class="card-title">{{ page.previous.title }}</h5>
-          <a href="{{ page.previous.url | relative_url}}" class="btn btn-primary">Read it...</a>
+    </header>
+
+    <!-- Post Content -->
+    <div class="post-content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <div class="post-body">
+                        {{ content }}
+                    </div>
+                    
+                    <!-- Social Share -->
+                    <div class="post-share mt-5 pt-4 border-top">
+                        <h5 class="fw-bold mb-3">Share this post</h5>
+                        <div class="share-buttons">
+                            <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" 
+                               class="btn btn-outline-primary me-2 mb-2" target="_blank">
+                                <i class="fab fa-twitter me-2"></i>Twitter
+                            </a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" 
+                               class="btn btn-outline-primary me-2 mb-2" target="_blank">
+                                <i class="fab fa-linkedin me-2"></i>LinkedIn
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" 
+                               class="btn btn-outline-primary me-2 mb-2" target="_blank">
+                                <i class="fab fa-facebook me-2"></i>Facebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  {% endif %}
+
+    <!-- Comments Section -->
+    {% if site.disqus.shortname %}
+    <div class="post-comments">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    {% include disqus_comments.html %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</article>
+
+<!-- Navigation Section -->
+<section class="post-navigation py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- Section Header -->
+                <div class="text-center mb-5">
+                    <h3 class="fw-bold">Continue Reading</h3>
+                    <p class="text-muted">Discover more engaging content</p>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Previous Post -->
+                    {% if page.previous %}
+                    <div class="col-md-6">
+                        <div class="nav-post-card nav-post-prev">
+                            <div class="nav-post-direction">
+                                <i class="fas fa-arrow-left me-2"></i>
+                                <span>Previous</span>
+                            </div>
+                            
+                            {% if page.previous.image %}
+                            <div class="nav-post-image">
+                                <img src="{{ page.previous.image }}" alt="{{ page.previous.title }}">
+                                <div class="nav-post-image-overlay">
+                                    <i class="fas fa-arrow-left fa-2x"></i>
+                                </div>
+                            </div>
+                            {% endif %}
+                            
+                            <div class="nav-post-content">
+                                <h5 class="nav-post-title">{{ page.previous.title }}</h5>
+                                <p class="nav-post-excerpt">
+                                    {{ page.previous.description | default: page.previous.excerpt | strip_html | truncate: 100 }}
+                                </p>
+                                <div class="nav-post-meta">
+                                    <span class="nav-post-date">
+                                        <i class="fas fa-calendar me-1"></i>
+                                        {{ page.previous.date | date: "%b %-d, %Y" }}
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <a href="{{ page.previous.url | relative_url }}" class="nav-post-link stretched-link" aria-label="Read previous post: {{ page.previous.title }}"></a>
+                        </div>
+                    </div>
+                    {% endif %}
+                    
+                    <!-- Next Post -->
+                    {% if page.next %}
+                    <div class="col-md-6">
+                        <div class="nav-post-card nav-post-next">
+                            <div class="nav-post-direction">
+                                <span>Next</span>
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </div>
+                            
+                            {% if page.next.image %}
+                            <div class="nav-post-image">
+                                <img src="{{ page.next.image }}" alt="{{ page.next.title }}">
+                                <div class="nav-post-image-overlay">
+                                    <i class="fas fa-arrow-right fa-2x"></i>
+                                </div>
+                            </div>
+                            {% endif %}
+                            
+                            <div class="nav-post-content">
+                                <h5 class="nav-post-title">{{ page.next.title }}</h5>
+                                <p class="nav-post-excerpt">
+                                    {{ page.next.description | default: page.next.excerpt | strip_html | truncate: 100 }}
+                                </p>
+                                <div class="nav-post-meta">
+                                    <span class="nav-post-date">
+                                        <i class="fas fa-calendar me-1"></i>
+                                        {{ page.next.date | date: "%b %-d, %Y" }}
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <a href="{{ page.next.url | relative_url }}" class="nav-post-link stretched-link" aria-label="Read next post: {{ page.next.title }}"></a>
+                        </div>
+                    </div>
+                    {% endif %}
+                    
+                    <!-- Explore More Section (when only one or no adjacent posts) -->
+                    {% if page.previous == nil or page.next == nil %}
+                    <div class="col-md-6">
+                        <div class="nav-post-card nav-post-explore">
+                            <div class="nav-post-direction">
+                                <i class="fas fa-compass me-2"></i>
+                                <span>Explore</span>
+                            </div>
+                            
+                            <div class="nav-post-explore-content text-center py-4">
+                                <i class="fas fa-blog fa-3x text-primary mb-3"></i>
+                                <h5 class="nav-post-title">More Articles</h5>
+                                <p class="nav-post-excerpt">
+                                    Discover more insights and stories from our blog
+                                </p>
+                                <div class="mt-3">
+                                    <a href="/posts" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-arrow-right me-2"></i>View All Posts
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    
+                    <!-- Full Width Explore if no adjacent posts -->
+                    {% unless page.previous or page.next %}
+                    <div class="col-12">
+                        <div class="nav-post-card nav-post-explore-full text-center py-5">
+                            <div class="nav-post-explore-content">
+                                <i class="fas fa-blog fa-4x text-primary mb-4"></i>
+                                <h4 class="nav-post-title mb-3">Explore More Articles</h4>
+                                <p class="nav-post-excerpt lead mb-4">
+                                    This might be the end of this article, but it's just the beginning of your journey through our content
+                                </p>
+                                <a href="/posts" class="btn btn-primary btn-lg me-3">
+                                    <i class="fas fa-arrow-right me-2"></i>All Posts
+                                </a>
+                                <a href="/" class="btn btn-outline-primary btn-lg">
+                                    <i class="fas fa-home me-2"></i>Home
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endunless %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reading Progress Bar -->
+<div class="reading-progress">
+    <div class="reading-progress-bar"></div>
 </div>
+
+<!-- JavaScript for Reading Time and Progress -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Calculate reading time
+    const content = document.querySelector('.post-body');
+    const readingTimeElement = document.getElementById('reading-time');
+    
+    if (content && readingTimeElement) {
+        const text = content.textContent || content.innerText || '';
+        const wordsPerMinute = 200;
+        const words = text.trim().split(/\s+/).length;
+        const time = Math.ceil(words / wordsPerMinute);
+        readingTimeElement.textContent = `${time} min read`;
+    }
+    
+    // Reading progress bar
+    const progressBar = document.querySelector('.reading-progress-bar');
+    
+    if (progressBar) {
+        window.addEventListener('scroll', function() {
+            const article = document.querySelector('.post-article');
+            if (article) {
+                const articleTop = article.offsetTop;
+                const articleHeight = article.offsetHeight;
+                const windowTop = window.pageYOffset;
+                const windowHeight = window.innerHeight;
+                
+                const progress = Math.min(
+                    Math.max((windowTop - articleTop + windowHeight) / articleHeight, 0), 1
+                );
+                
+                progressBar.style.width = (progress * 100) + '%';
+            }
+        });
+    }
+});
+</script>
 

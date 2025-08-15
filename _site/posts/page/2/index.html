@@ -23,14 +23,14 @@
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:4000/posts/page/2/index.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/posts/page/2/index.html" />
 <meta property="og:title" content="Posts - page 2 - Tanaka Mawere" />
 <meta property="og:description" content="" />
 <meta property="og:image" content="" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="http://localhost:4000" />
+<meta property="twitter:url" content="http://0.0.0.0:4000" />
 <meta property="twitter:title" content="Posts - page 2 - Tanaka Mawere" />
 <meta property="twitter:description" content="" />
 <meta property="twitter:image" content="" />
@@ -148,26 +148,38 @@
     <div class="container">
     <nav class="navbar navbar-expand-lg mt-4">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="/">TM</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand fw-bold fs-4" href="/">
+          <span class="text-primary">TM</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold align-items-center justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="/">
+                <i class="fas fa-home me-2"></i>Home
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/projects">Projects</a>
+              <a class="nav-link" href="/projects">
+                <i class="fas fa-code me-2"></i>Projects
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/posts">Posts</a>
+              <a class="nav-link active" href="/posts">
+                <i class="fas fa-blog me-2"></i>Posts
+              </a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/all-thoughts">
+                <i class="fas fa-lightbulb me-2"></i>Thoughts
+              </a>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/all-thoughts">Thoughts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/about">About</a>
+              <a class="nav-link" href="/about">
+                <i class="fas fa-user me-2"></i>About
+              </a>
             </li>
           </ul>
         </div>
@@ -175,34 +187,31 @@
     </nav>
   </div>
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
-        <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
-      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    <button class="btn btn-outline-secondary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+        <i class="fa-solid fa-circle-half-stroke me-2 theme-icon-active"></i>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
     </button>
     <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-          <i class="fa-solid fa-sun fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-sun me-2"></i>
           Light
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-          <i class="fa-solid fa-moon fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-moon me-2"></i>
           Dark
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-circle-half-stroke me-2"></i>
           Auto
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
     </ul>
-  </div>
+</div>
   
     <main class="p-1">
       <div class="px-5 container">
@@ -218,358 +227,1099 @@
         
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/P5J10GKQ/a3b736b6-7ff8-47f9-9c9c-6e54aaae087a.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
-            </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Health
-                </button>
-            
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/health/2024/01/22/let-there-be-light.html">
-                <h3 class="fw-bold">
-                    Let There Be Light?
-                </h3>
-            </a>
-            <p class="card-text mb-0">
-                In this article, I dive into the links between light and our sleep and health. In addition, I highlight the importance of waking up at the same time every day. 
-            </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Jan 22, 2024
-                        </div>
-                    </div>
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/qBjTz8z4/98a09f15-7d8c-4c4a-a995-94f8da258d88.jpg" alt="A Sign of Good Health You Don't Know About" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/health/2024/01/29/a-sign-of-health-you-dont-know.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Health
+                </span>
+                
+            </div>
+            
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/health/2024/01/29/a-sign-of-health-you-dont-know.html" class="text-decoration-none">
+                    A Sign of Good Health You Don't Know About
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
+                Should your heart rate be regular and constant when you are resting, or should it be all over the place? What's the r...
+            </p>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
+                    </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Jan 29, 2024</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="This week, we are talking about matters of the heart.
+
+So in love, you should…
+
+Just kidding. I know nothing about that.
+
+Before reading on, please give your answer to the following and no cheating
+
+PS: If there’s nothing there, just wait a few seconds until the page loads
+
+
+QuizWiz
+
+So what did you choose?
+
+We all know that a heart rate that is too slow, too fast or irregular can be a sign of heart disease so you can’t be blamed for choosing the first answer which is wrong.
+
+And if you chose the second, more baffling answer, it’s either you know your medical physiology or you cheated somehow. I believe more of the latter.
+
+Heart Rate Variability
+Heart Rate Variability (HRV) is a measurement of the variation in time between successive heart beats. Simple as that.
+
+A high HRV, meaning the more the variation between your heartbeats has been shown to be a signal of a healthy heart. This means that instead of your heart beating at a constant rhythm of “lub dub, lub dub, lub dub, lub dub, lub dub”, you actually want your heart to do more of the following:
+
+“Lub dub (pauses for a sip of tea), lub dub, lub dub, (sprints to the next beat), lub dub”.
+
+
+  It’s important to note that the variability is of fractional duration at a time. There are arrhythmias which are medical conditions in which your heart rate variability is all over the place and that’s not what I am talking about.
+
+
+HRV though, is actually a reflection of your autonomic nervous system than your heart. The autonomic nervous system is the autopilot nervous system in your body that controls a lot of vital activities you don’t control, such as breathing rate, digestion, blood pressure and of course, heart rate.
+
+
+
+So why is this relevant?
+
+High HRV
+
+Let’s start with a high HRV. 
+A high HRV, according to several studies, signals a healthy heart because it reflects the heart’s ability to respond quickly to rapid changes in the body. Things that can cause it to change are environmental stimuli, emotions, mental health, stress and metabolic imbalances in the body.
+
+I will extract a piece from an article from the Harvard Health blog that says it all well.
+
+In a healthy person, HRV should increase when your heart rate drops, as it does during relaxing activities such as reading or meditating. HRV decreases as the heart rate rises, such as when you exercise or are under stress. In fact, it changes constantly, both throughout the day and from day to day.
+
+A low HRV
+
+It then follows that a low Heart Rate Variability is a sign of ill-health.
+
+People with low HRV have an increased risk of Cardiovascular Disease and are less able to cope with stress. Studies have simply shown a correlation between ill-health outcomes and a low Heart Rate Variablity. Explanations as to why are still unclear.
+
+How to track HRV
+
+Unlike blood glucose levels that have a universal level that is considered good or bad, there is no one good value of what your HRV should be. It’s highly variable between people due to fitness levels, gender, diet etc.
+
+What’s important to track is the trend of your HRV. If you wear a smartwatch, it probably can measure your HRV and make a trend of whether your HRV is increasing or decreasing depending on your baseline.
+
+As such, it means that if someone has a higher HRV than you, it doesn’t mean they are fitter or healthier. But if you increase you HRV against a baseline that you set yourself, you know you are on the right path.
+
+How to increase Heart Rate Variability
+
+That’s what we all want to know now, isn’t it?
+
+Well, because HRV is such an automatic process in the body, it’s not something we can directly influence or control.
+Studies do show however, that people who do the following have higher levels of HRV.
+
+
+  Exercise regularly, especially athletes
+  Having a healthy diet while staying hydrated
+  Manage mental stress levels through various techniques such as sleeping on time, journalling etc
+
+
+Conclusion
+
+The take away from this article is this:
+
+
+  The greater your degree of physical fitness and health, the more variable the heart rate is.
+
+
+A bonus marker of health in addition to HRV, is VO2 max level. This will be for another article but now you know that a constant, regular heartbeat might be a sign that you are not fit or healthy.
+
+">
+                        4 min read
+                    </span>
+                </div>
+            </div>
+        </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/mZ1SRdXz/44d57130-04ae-4135-8e8d-df0b59aef3b1.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/P5J10GKQ/a3b736b6-7ff8-47f9-9c9c-6e54aaae087a.jpg" alt="Let There Be Light?" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/health/2024/01/22/let-there-be-light.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Health
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Health
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/health/2024/01/15/the-misconception-of-fruit-juice.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/health/2024/01/22/let-there-be-light.html" class="text-decoration-none">
+                    Let There Be Light?
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
+                In this article, I dive into the links between light and our sleep and health. In addition, I highlight the importanc...
+            </p>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
+                    </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Jan 22, 2024</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="Natural Clocks
+Ever noticed that after using an alarm clock to wake up at a certain time, you end up not needing the alarm clock to wake up? At times, you even wake up prior to your set time all because your natural clock has adjusted to that time.
+
+This natural clock in your body is found in the Suprachiasmatic Nucleus (SCN). This structure is the master clock of your body. The SCN then is what determines your Circadian Rhythm which is the natural oscillation of your body every 24 hours, running in the background to carry out essential functions and processes.
+
+Your Circadian Rhythm is essentially then what determines the time you feel sleepy, the time you wake up and the time certain hormones are released in your body.
+
+For example, Growth Hormone (which does exactly what’s written on the tin) is secreted while you are asleep, but little is released during the day. How the body knows when to release Growth Hormone and others in a timely fashion is dependent on the Circadian Rhythm which is function of the SCN.
+
+Okay. That’s a lot of information.
+The SCN and Awakeness
+The single biggest thing that influences the SCN so that it carries out its Circadian pace-making activity is light, When you wake up in the morning and light hits your eyes, light influences the SCN to start waking up the body and release hormones in accordance with that.
+
+
+  An example is that when light hits your eyes in the morning, cortisol which was little while you are asleep, surges up and fills up your blood stream under instruction by the SCN.
+
+
+Conversely, at night, light is dimming down, and less light is getting to the SCN through your eyes. The SCN now releases hormones and inhibits some to prepare to sleep and rest for the night.
+
+The way the SCN decides to do certain things during the day and night and in a timely fashion is what we call the Circadian Rhythm.
+
+Why does this all matter?
+All I was saying before is an attempt to lay the groundwork for you to understand the deleterious effects of light at the wrong time of the day and the importance of waking up at the same time of day, everyday.
+
+In relation to sleep
+We have created a bright future (pun intended) in which at night, we have bulbs glaring and phones on. We don’t get a rest from light especially towards sleep so that the SCN gets the signal that it should prepare the body for sleep. Light keeps the body awake, making the SCN think that it is still day.
+
+
+  Tip: If you wake up in the middle of the night, the absolute worst thing you could do to yourself if you intend on going back to sleep is use your phone. From this discussion, light will make your SCN think it’s now day and wake up your body in a way that you will find it hard to go back to sleep.
+
+
+Our constant exposure to light is contributing to the sleep epidemic we are facing in which high quality sleep in going downhill. People are going to bed and spend an hour awake, twisting and turning endlessly as sleep evades them.
+
+That’s where the following advice comes from. Avoid looking at a screen an hour before you sleep. Or if you really need to use your phone, turn down the blue light as it is the most arousing light to the human body.
+
+Get enough light in the morning
+
+When you do intend to wake up, it’s recommended that you go outside and have natural light come into your eyes. Phone light has the same effect but is weaker in comparison.
+
+Sunlight properly wakes your body up and increases your mood to face the day. Phone light on the other hand, does a “partial job”. One in which you are up but are sluggish, which explains the sluggishness of getting out of bed after using your phone in the morning.
+
+In relation to wake up times
+This should have been a separate article, but it seems apposite to mention this here since the discussion is on the Circadian Rhythm and the Suprachiasmatic Nucleus (SCN),
+
+It’s not always possible to wake up at the same time every day. Life so happens that you sleep late the previous night, or something happens in the middle of the night i.e. visits from our relatives that pass through walls at night.
+
+Despite this, it is important to keep a consistent wake up time, even on weekends. The goal of this is to keep your Circadian Rhythm, in rhythm. Your body wants to have a rhythm, having constant times that it releases certain hormones and times it stops releasing them.
+
+Of importance to this is the stress hormone, Cortisol. It is an anti-inflammatory hormone that is secreted in bucket-loads according to your Circadian Rhythm when you wake up and is prevented from being secreted into your blood stream when you are asleep.
+
+Cortisol stops inflammation as it says on the tin, preventing chronic diseases such as Crohn’s disease, Ulcerative Colitis, Vasculitis, Arthritis and Psoriasis.
+
+As such, cortisol being in balance is important and should be a motivating factor for one to wake up at a consistent time.
+
+
+  The absolute time doesn’t matter that much. If you decide to wake up at 5am, 6am or 7am, that doesn’t matter. What matters is that you have gotten adequate, long enough sleep (6 to 8 hours) of high quality.
+
+
+Conclusion
+The takeaway message from this article is to expose yourself to sunlight in the morning, decrease your exposure to light at night as you want to sleep and to wake up consistently at the same time.
+
+All these things have major consequences on your physical and mental health, improving mood, minimising inflammation and giving you high quality sleep.
+">
+                        5 min read
+                    </span>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+        
+            <div class="col-lg-4 mb-5">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/mZ1SRdXz/44d57130-04ae-4135-8e8d-df0b59aef3b1.jpg" alt="The Misconception of Fruit Juice" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/health/2024/01/15/the-misconception-of-fruit-juice.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Health
+                </span>
+                
+            </div>
+            
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/health/2024/01/15/the-misconception-of-fruit-juice.html" class="text-decoration-none">
                     The Misconception of Fruit Juice
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 Is it really the healthy alternative that it claims to be?
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Jan 15, 2024
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Jan 15, 2024</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="The Story
+
+I have a friend who drinks fruit juice everyday. When I say everyday, I mean every single waking day. She loves it.
+
+And she has long believed that it is a healthy alternative to drinking Coke and Varun battery acids (Pepsi, Mirinda).
+
+And I don’t blame her at all. 2020 when I started being interested in health and the science and data around it, I was led to believe that I can dump fizzy drinks and gouge fruit juices with no problem. A quick search on Google will easily recommend fruit juices as a healthy alternative which it is not.
+
+Why is fruit juice bad?
+
+It’s all because of the marketing.
+
+Fruit juice is presented as a healthy alternative to fizzy drinks when in actuality, they both pack in the same amount of sugar. Hence it is easy for someone to believe that they are doing well by drinking fruit juice but they are doing just as much harm to themselves as drinking an equal amount of battery acid, oops, I meant to say Mirinda.
+
+Fruit vs Fruit Juice
+
+Fruits naturally have a lot of sugar in them. A lot of it.
+
+But they also have a lot of fibre. Humans cannot digest fibre naturally so it forms a mesh or a net that lines the small intestines, stopping absorption of a lot of sugar from the fruit.
+
+Hence fruits pack in a lot of sugar but you don’t absorb all of it because of the fibre they contain.
+
+Contrast that with fruit juice which is totally devoid of fibre but packs in the sugar. That mean your body will absorb the sugar, more than you would have had you eaten a fruit of the same juice, and spike your blood glucose levels.
+
+Leaving insulin to do its good but also nasty work which I will explain in a future post.
+
+So what to do?
+
+Too much of a good thing is a bad thing.
+
+Even for water which I recommend drinking loads of, drink too much of it, you get Water Toxicity.
+
+I say this focusing on my friend who was drinking fruit juice everyday. Eating anything everyday, especially in large amounts as many fruit juices come in 1 litre bottles, is simply a red flag.
+
+Hence drinking fruit juice is not bad in moderation but it’s something you have to treat as you treat fizzy drinks. I don’t suppose anyone reading this is drinking Coke everyday (and if you are, bless you).
+
+Conclusion
+
+So no. Fruit juice is not a healthy alternative to Coke and battery acid. Drink fruit juice in the same way you’d want to drink a fizzy drink that you know is spiked with sugars and fructose to make you addicted to it and drink more and more.
+
+Bonus point: Aspartame
+
+A key component of fizzy drinks and fruit juices. It is an artificial sweetener that is 200 times sweeter than sucrose. Sucrose is what we find in table, white sugar.
+
+During one of my clinical rounds, I heard a doctor say that aspartame has been linked with causing cancer. So naturally I gasped and promised myself to not drink them ever again.
+
+But when I did my own research, I found that there haven’t been any conclusive links of aspartame as a carcinogen. So according to current data, this is false but the world of science isn’t perfect anyway.
+
+This is just another point for drinking more water than anything else.😂
+">
+                        3 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/RZbK4bpk/63d82727-dfbd-4f5c-9a6c-8c127ecc231a.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/RZbK4bpk/63d82727-dfbd-4f5c-9a6c-8c127ecc231a.jpg" alt="Your Bacteria and Fibre" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/health/bacteria&fibre" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Health
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Health
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/health/bacteria&fibre">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/health/bacteria&fibre" class="text-decoration-none">
                     Your Bacteria and Fibre
-                </h3>
-            </a>
-            <p class="card-text mb-0">
-                Explore the world of gut microbes with me plus why fibre is very important! Learn about these tiny organisms in our digestive system and their impact on our health.
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
+                Explore the world of gut microbes with me plus why fibre is very important! Learn about these tiny organisms in our d...
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Jan 8, 2024
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Jan 8, 2024</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="We don’t want germs. We domestos them dead. And bacteria is part of what we call germs. But it seems very odd that the same bacteria we kill outside our bodies is also responsible for keeping us well inside.
+
+So let’s start with what they are, what they do, why they are important to us, what we can do to keep them happy (all 38 trillion of them) and as a bonus, highlight the differences between prebiotic, probiotic and post-biotics.
+
+So what’s the bacteria inside of you?
+
+Here is the thing. It’s not only bacteria inside your gut. There are
+
+
+  Viruses
+  Fungi
+  Parasites
+  Archae (recently discovered) as well.
+
+
+All these micro-organisms make up your “Gut Microbiome”. Your intestines are a home to an ecosystem to these small organisms and they feed off the food you eat and rely on the warmth on the warmth that your body generates. Quite a smart place to call home.
+
+What do they do?
+
+Humans can’t digest fibre. I am sure you have heard at some point that fibre is good for you but that is weird given that humans can’t naturally digest fibre. But guess who can?
+
+The gut microbes.
+
+The gut bacteria breaks down fibre and releases Short-Chain Fatty Acids (SCFAs). (They have nothing to do with being fat)  SCFAs are fatty acids with fewer than 6 carbon atoms.
+
+The three most common are Acetate, Propionate and Butyrate.
+These SCFAs play crucial roles in the body¹:
+
+
+  Acetate is important for energy production and synthesis of lipids
+  Propionate is mainly involved in producing glucose in the liver and small intestine
+  Butyrate is the preferred energy source for cells that line the colon.
+
+
+Why is they are important?
+
+To answer this, I think it’s easier to highlight the bad things that happen if we don’t take care of our gut microbiome.
+
+Your intestines are very selective about what they absorb into the body. There are also some harmful things produced by the gut bacteria such as bacterial endotoxin which is not harmful when it’s in the intestines but harmful when it gets into the blood.
+
+Butyrate as mentioned above, is the preferred energy source for cells that line the colon. Butyrate is formed from fibre that you eat. It follows that if you eat less fibre, you are eating less of what your intestinal lining needs to stay closed and not feeding the bacteria that form butyrate.
+
+What this leads to is inflammation of the intestinal lining and entrance of bacterial endotoxin into your blood. Leading to inflammation is all of the wrong places in your body.
+
+In addition to that, inflammation in your intestines may lead to colon cancer and other nasty health complications.
+
+How to keep our Gut Microbiome happy
+
+Fibre.
+
+That’s it.
+
+Foods that have fibre are plant based. That is
+
+
+  Fruits
+  Legumes
+  Vegetables
+  Seeds &amp; Nuts
+
+
+I do realise however, that this is largely the Zimbabwean diet. From sugar beans to nuts. So I suppose that much of the nation is okay in terms of the gut microbiome. But it’s this second part that is more important.
+
+Foods that affect the gut microbiome
+
+
+  
+    Artificial sweeteners.
+  Those found in “diet-drinks” and other similar foods.
+  
+  Processed/Refined foods.
+  These deserve an article on their own. But they are more damaging than nutritive to the body and the gut microbiome is not spared.
+  Red meat.
+  Seems like beef isn’t responsible for gout only but can also affect your heart and gut.
+
+
+Prebiotics Vs Probiotics Vs Postbiotics
+
+
+  
+    Prebiotics are plant fibers found primarily in foods that contain complex carbohydrates, like resistant starch and fiber. They act as food for bacteria, promoting their growth and health. Foods rich in prebiotics include whole wheat, bananas, soybeans, and greens. Essentially plants
+  
+  
+    Probiotics are live bacteria and yeast contained in cultured foods. They promote healthy digestive function, support immune health, and influence overall wellness. Probiotic-rich foods include yogurt and kombucha.
+  
+  
+    Postbiotics are byproducts of the good bacteria left behind when probiotics ferment prebiotics. They contain dead bacteria, short-chain fatty acids, and peptides that support bodily function
+  
+
+
+Conclusion
+
+This was not at all exhaustive on the topic of gut microbiota. But I believe that if you were at zero, you now know to spare a thought for the 38 trillion strong army inside your gut.
+">
+                        4 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/xTNPcVHj/dd747fa4-f487-497d-8ba5-6ab25ae3deed.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/xTNPcVHj/dd747fa4-f487-497d-8ba5-6ab25ae3deed.jpg" alt="Health Misconceptions You Shouldn't Carry Into 2024" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/health/lessons%20from%202023/2024/01/01/health-misconceptions.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Health
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Lessons from 2023
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Health
+                </span>
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Lessons from 2023
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/health/lessons%20from%202023/2024/01/01/health-misconceptions.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/health/lessons%20from%202023/2024/01/01/health-misconceptions.html" class="text-decoration-none">
                     Health Misconceptions You Shouldn't Carry Into 2024
-                </h3>
-            </a>
-            <p class="card-text mb-0">
-                This is the first time using such a title that sounds sounds so click-bait-y and I don't like it either. But since it will pique your curiosity...
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
+                This is the first time using such a title that sounds sounds so click-bait-y and I don't like it either. But since it...
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Jan 1, 2024
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Jan 1, 2024</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="Let’s get right into it, shall we? But first a few disclaimers are in order.
+
+
+  Health tips isn’t as reductionist and simple as blogs (like mine) and people make them seem. There’s much more nuance to each point and more explanation that could be given but since we are living in a society of people with short attention spans, we try to package the most correct information possible in the shortest possible way.
+  I am a medical student aggregating information from numerous studies and experts in different fields.
+
+
+1. Exercise will remove your belly fat
+
+Misconception
+
+Numerous studies from 2023 and prior have long since disproved what might be a very common assumption that if you exercise, you can lose weight. Very well meaning people often advise their peers to do situps or run so that they lose weight because it makes sense on the surface.
+
+That’s not to say that exercising doesn’t contribute to weight loss and losing belly fat. It does.
+
+But I have seen so many people frustrated with exercise because they don’t see the value of exercising after losing only a few grammes and no change to their body shape and “that tummy”. It’s all because they have it wrong.
+
+The truth
+
+The single biggest contributor to weight loss is diet. More people are getting to know this more and more by the day.
+
+If you eat more than you are burning through exercise, you are going to stay in the same place and feel stuck.
+
+It’s also much less about the quantity you are eating and more about what exactly you are eating.
+
+Quality over quantity. To use a very extreme example, you could eat 2kg of fruits vs 500g of fast food and the fruit will invariably be better for you due to the way it’s absorbed and metabolised in the body.
+
+2. Sleep is for the rich
+
+Misconception
+
+As a university student in Zimbabwe, there’s a common phrase. “Arara akera” meaning “if you sleep, you will repeat a course”. It’s a way to say that to pass your courses, you need to stay up long nights studying.
+
+And even outside of schooling, people don’t really see the importance of sleeping for as long as possible and having sleep of the highest quality.
+
+The truth
+
+
+  
+    The World Health Organisation (WHO) has considered adding ‘not sleeping enough’ to the list of things that cause cancer.
+
+    This is because a lack of sleep reduces the number of immune system cells called “Natural Killer Cells” which do what they say on the tin. They kill any cell in your body that decides to become cancerous, protecting you from cancer.
+
+    Hence reducing the number of those guys isn’t a good idea.
+  
+  A recent discovery was that our brains go through a clean up process when we are asleep. Dead cells inside the brain and waste products from metabolism are cleared from our brains efficiently when we sleep for long enough and sleep well.
+  
+    This one is for students. Neuronal connections are made when we are asleep. When are bodies drop dead while we are asleep, our brains are a hive of activity during REM (Rapid Eye Movement) sleep and non-REM sleep which are the two phases of sleep.
+
+    These neuronal connections account for creativity, awareness but more importantly, memory retention. Sleeping is essentially hitting the save button in Microsoft Word, but just in the brain. And yet we encourage students to do the opposite, not sleep so that they remember things.
+  
+  Lastly, a lack of sleep is linked to weight gain and inflammation due to throwing off hormones off their rhythm. For example, cortisol is a hormone that is released in different quantities due to the time of day. As such by not sleeping well, you throw off the natural clock you have and find yourself being much sicker due to the immune suppression cortisol causes.
+
+
+Summary of it all. Sleep is extremely important and we should skimp on it or compromise its quality.
+
+3. Calories In, Calories Out (CICO)
+
+Misconception
+
+The last conception on the list today is CICO, the Calories In, Calories Out phenomenon. What nonsense it is.
+
+The idea is that eating 500 calories of bread for example, and eating 500 calories of nuts are the same. Because it’s still 500 calories after all.
+
+People count their calories so that they watch what they eat. It’s especially done in weight loss programs and specialised diets.
+
+It doesn’t help that the food industry has created this model just so that we are more okay with drinking Fanta with a hypothetical 400 calories just as much as eating an apple with the same amount of calories.
+
+The Truth
+
+Different foods are absorbed differently in the body. The differences especially come from the way they are ingested.
+
+For example, a fruit probably contains a lot of natural sugar yes, but it also contains fibre. And what fibre does is it creates a net of sorts, that lines your intestines and prevents more sugar and more sugar from being absorbed. Hence from maybe 10 grammes of natural sugar in a fruit, probably 6 grammes are absorbed because of fibre preventing excessive absorption. (Hence why fibre is good for you.)
+
+Contrast this to fruit juice that may contain the same amount of sugar but is completely devoid of fibre. Hence all the 10 grammes of sugar are absorbed unapologetically leading to increased weight. Hence why fruit juice, which may seems healthier than Coke and other soft drinks, is essentially just as bad.
+
+The point is a calorie just isn’t a calorie because of how different foods are absorbed. But advertising has led us to believe otherwise.
+
+Bonus Point
+
+
+  Be very wary of foods that are advertised as “nutritious” and “healthy”. Normal human nature. If I told you I was a billionaire, the fact that I am telling you that I am one is a red flag and should show you that I am trying to cover up something.
+
+">
+                        5 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/mrw8Gp9t/9d897122-329a-4818-abf6-e340d63a3769.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/mrw8Gp9t/9d897122-329a-4818-abf6-e340d63a3769.jpg" alt="And I am back to YouTube..." />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/battle%20with%20social%20media/youtube/productivity/2023/12/28/youtube-update.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Battle with Social Media
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    YouTube
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Productivity
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Battle with Social Media
+                </span>
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>YouTube
+                </span>
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Productivity
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/battle%20with%20social%20media/youtube/productivity/2023/12/28/youtube-update.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/battle%20with%20social%20media/youtube/productivity/2023/12/28/youtube-update.html" class="text-decoration-none">
                     And I am back to YouTube...
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 I had a good reason to go back (we always have a good reason. Don't we?)
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Dec 28, 2023
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Dec 28, 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="I needed it for something
+
+Well, 5 April seemed to be too far of a stretch and I am right back to YouTube. I haven’t been binging it though as much as I used to but it’s still not April.
+
+I didn’t make that resolution with enough conviction and believe in it enough. Besides, I had a good reason, ish. Problem is I have now forgotten what that reason was and I am back on the bandwagon.
+
+YouTube is still blocked on my laptop and it’s only on my phone. It’s hard for me to zone out on my phone unlike my laptop where I am supposed to be productive.
+
+Try, try, try again
+
+The point was to establish a good relationship with YouTube. And I am happy with how it is right now. Blocked on my laptop but still there on my phone. The break I had helped to find a way to use YouTube in a way that is fine for me.
+
+However, I am still wondering what I will do with WhatsApp. That’s probably for 2024 now.
+">
+                        1 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/mrw8Gp9t/9d897122-329a-4818-abf6-e340d63a3769.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/mrw8Gp9t/9d897122-329a-4818-abf6-e340d63a3769.jpg" alt="Now a week off YouTube..." />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/battle%20with%20social%20media/youtube/productivity/2023/12/05/a-week-off-youtube.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Battle with Social Media
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    YouTube
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Productivity
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Battle with Social Media
+                </span>
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>YouTube
+                </span>
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Productivity
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/battle%20with%20social%20media/youtube/productivity/2023/12/05/a-week-off-youtube.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/battle%20with%20social%20media/youtube/productivity/2023/12/05/a-week-off-youtube.html" class="text-decoration-none">
                     Now a week off YouTube...
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 I last watched a YouTube video a week ago and man, has it been something
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Dec 5, 2023
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Dec 5, 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="Going against habit
+
+A week doesn’t seem like a long time but considering that a day wouldn’t pass without me typing “you…” and having the browser auto-predict that I want to open the land of milk and time-wasting that is YouTube, it really is something! Something that wasn’t easy at all.
+
+Friday
+
+All the other days of the week, I was definitely fine. Until Friday.
+
+And this is because usually on Friday afternoons, I open up my YouTube and watch videos till the evening. (Yes, my Friday afternoons are quite drab. It’s not a competition). So on the Friday I didn’t have YouTube, I really felt it. It being withdrawal symptoms.
+
+Now, I don’t know the intensity of withdrawal symptoms that people who have had a drug addiction go through but I am sure they are almost the same as what I felt on Friday.
+
+I felt a sense of something missing, a longing for YouTube, to just open it. I didn’t have an idea of what I wanted to watch. I just wanted it there.
+
+
+  It is in the moment that I realised that yes, YouTube (and social media) really is addictive.
+
+
+But I distracted myself by relying on my other nemesis…
+
+WhatsApp
+
+Yes, I haven’t watched YouTube in a week but my usage of WhatsApp shot up. Not dramatically but significantly, especially for someone who already thought I spend more time than is necessary on Zuck’s messaging app.
+
+I was really conscious about simply replacing the YouTube addiction and misuse with misusing WhatsApp which is my other enemy and I sort of failed in that.
+
+Of course, it’s not a 1 to 1 match for the time you will spend. For example, WhatsApp, once you are not in conversation with no one, you can easily close the app unlike YouTube which presents to you more eye candy in the form of attracting thumbnails and videos once you refresh the page.
+
+Conclusion
+
+I have been more productive in a way. Finally began to make progress on a project of mine and started being a bit more intentional, but I am definitely not where I want to be.
+
+As for WhatsApp, it’s another battle that I have commenced. I am experimenting with a few things to see healthy ways to still have WhatsApp in my life. I will probably have to outline why WhatsApp is a problem to me because I have just realised that some people might not understand why I don’t like WhatsApp so much.
+
+Onwards I guess…
+
+">
+                        3 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/c4Rwg4Lx/quit-social-media.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/c4Rwg4Lx/quit-social-media.jpg" alt="I quit social media and got addicted to YouTube" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/battle%20with%20social%20media/youtube/productivity/2023/11/27/quit-social-media-addicted-to-youtube.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Battle with Social Media
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    YouTube
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Productivity
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Battle with Social Media
+                </span>
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>YouTube
+                </span>
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Productivity
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/battle%20with%20social%20media/youtube/productivity/2023/11/27/quit-social-media-addicted-to-youtube.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/battle%20with%20social%20media/youtube/productivity/2023/11/27/quit-social-media-addicted-to-youtube.html" class="text-decoration-none">
                     I quit social media and got addicted to YouTube
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 The digital definition of evading a pothole and driving straight into a pit.
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Nov 27, 2023
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Nov 27, 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="The Story
+
+I left social media, or at least a part of it, in 2021 completely. Reasons are for another article.
+
+My Facebook account that I had opened in 2009 was deleted. The Instagram account that I had built quite a following on same thing. Twitter? Got the axe as well. I remember also having SnapChat and deleting it a week later too.
+
+Overall, what was left was WhatsApp and YouTube. And these two were easy to excuse.
+
+
+  WhatsApp =&gt; My school sends updates through groups so I can’t possibly remove it?
+  YouTube =&gt; I watch educational content only such as videos on coding or fixing stuff. In any case, with the time I am using on YouTube I am still being productive.
+
+
+The Problem
+
+The problem however is that I have long believed that since I deleted social media (Instagram, Twitter, Facebook; the classics), I had more time to be productive. And by productivity, I mean actually study more or do the things that I really want to do.
+
+But on closer inspection, I am no different to someone who has 10 social media apps on their phone and changes between each app. I really just replaced the time I thought I was saving with spending it on WhatsApp and YouTube, all because they are both easy to excuse as not wasteful.
+
+Focusing on YouTube
+
+I will tackle WhatsApp later. YouTube is really what forced me to think about this and write it down.
+
+I take pride in that I never got onto the TikTok, Reels or Shorts train. Because short videos take advantage of our short attention spans and make them even shorter. So I always watch long form content on YouTube, usually videos lasting 9 minutes or more. And because most of the videos I watch are educational, I am able to rationally justify spending 2 hours watching video after video after video.
+
+But truth be told, I have a growing discontent internally for the following reasons
+
+
+  
+    Time wasting
+ When you have something hard to do, it’s very easy to open a browser, type “you..” and let auto-predict direct you on your way to watching videos. And the YouTube algorithm is so good that it’ll recommend video after video after video, and in no time, you have spent 3 hours on the site.
+
+    This in particular hurts studying time and time meant to be working on projects that actually matter in the real world…
+  
+  
+    Motivation depletion
+ I haven’t looked for studies to back this up hence all this is personal experience. 
+ I have noticed that stopping to watch YouTube while stuck in a YouTube rabbit hole is hard. Extremely hard. You get into a state of being tranced into waiting for the next video to give you a dopamine hit. 
+ And even when you manage to snap out of it, you don’t feel particularly excited or motivated to be productive. You are just there, feeling like a wasteman.
+
+    I really don’t know what it is about social media that after using it, you feel sort of depleted and tired. And YouTube was doing that to me.
+  
+  
+    Asking myself what I just watched
+
+    I got into an exercise of asking myself the importance and relevance of what I just watched to my life. Okay, I now know what “Clean Architecture” is but where does that apply to me? It is educational, but relevance is zero.
+
+    The times I really like is when I end up watching a Beta Squad video. Now let me take the time to say this PSA
+
+    
+      If you don’t know what the Beta Squad is, I envy your life and the focus you have in it. Keep it going.
+    
+
+    Anyway, I don’t know what relevance or particular importance it is to me to see Chunkz guess African’s ethnicity based on their language. So why should I watch it? Thing is I don’t do it willingly. I end up there. And that’s just an effect of being tranced into a social media consumption rabbit hole.
+  
+
+
+Seeing it for what it is
+
+Given the reasons above and how negatively YouTube is beginning to impact my life, I had to call a duck, a duck because it was quacking like a duck. YouTube is making me not focus on the things I want to achieve, it’s wasting time, makes me feel like a wasteman, gets me stuck in 2 hours watching cycles and more importantly, it’s really hacked my dopamine system.
+
+And even the times I justified YouTube as being productive, is it really? And asking myself that question led me to thinking and believing that I left social media, only to get addicted to YouTube, which is a form of social media in itself.
+
+The plan now
+
+Going cold turkey on YouTube until 5 April. (Close to my birthday)
+
+Typing this, I feel unsure I can accomplish this since YouTube is a mainstay of my daily living. But it’s a necessary challenge in which I will question if YouTube really is that important and try to prove to myself that I can live without it.
+
+I am going to be very very bored hence I will end up writing more nonsense like this on my website to not make me go crazy. By the way, if you got this far in the article, could you kindly send a ‘😝’ emoji to my WhatsApp. I’d appreciate it.
+
+
+  Next up on the chopping block? WhatsApp. Coming for you Zuck!
+
+">
+                        5 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1495293453185-532fbd0a872c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cXVpZXR8ZW58MHx8MHx8fDA%3D" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://images.unsplash.com/photo-1495293453185-532fbd0a872c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cXVpZXR8ZW58MHx8MHx8fDA%3D" alt="Don't tell, cause thought" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/thoughts/productivity/2023/11/24/dont-tell-cause-thought.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Productivity
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Thoughts
+                </span>
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Productivity
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/productivity/2023/11/24/dont-tell-cause-thought.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/thoughts/productivity/2023/11/24/dont-tell-cause-thought.html" class="text-decoration-none">
                     Don't tell, cause thought
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 People don't listen when you tell them something. Simple fact of life, so don't tell them. Make them think.
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Nov 24, 2023
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-        
-            <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1632435499152-18838be77960?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdoYXRzYXBwfGVufDB8fDB8fHww" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
-            </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Development
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Programming
-                </button>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/development/programming/2023/11/18/defeating-whatsapp.html">
-                <h3 class="fw-bold">
-                    Defeating WhatsApp
-                </h3>
-            </a>
-            <p class="card-text mb-0">
-                A programmer in Zimbabwe's greatest enemy is WhatsApp. How do we defeat it? I have no idea
-            </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Nov 18, 2023
-                        </div>
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Nov 24, 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="A story
+
+A few weeks ago, my school group (8 of us) had patient case presentations. It was a Friday and given the vibe of the day of ‘I want to get this over with so that I go back home and vegetate on some TikTok’, each of us wanted to go present first and leave the hospital. No one wanted to go last so in my head, I had no problem with being the ‘sacrificial lamb’ that waits. I had no problem with it until someone said, “you should go last because you usually have no problem with it.”
+
+I don’t know what it was but it felt like a switch was flipped in my head to just be antagonistic. It was saying “I was okay with going last on my own volition but since you said I should, I don’t want to anymore.”
+
+
+  I am sure we all relate to how you could wake up one morning, feel like you could do the dishes, sweep the floors and even mop the ceiling. UNTIL, until your mom tells you to do so.
+
+
+It’s like all the internal motivation you had to do something just vanishes out the window and you get into a “I don’t want to do it anymore” type of mode.
+
+We are all rebels
+
+There is a certain part in us all that just doesn’t want to be told what to do. Certainly in me, being hard and strong headed is a trait. So knowing this about humans, what do you do when you want to communicate with your peers effectively or write something?
+
+Don’t tell, cause thought
+
+I was really trying to think of a catch statement do distill all this. “Don’t tell, cause thought” sounds grammaticaly correct but I am not settled with it😂. But it will have to make do. And it’s really self-explanatory.
+
+Don’t tell people what to do. We don’t want to be told what to do. Instead, lead people to think for themselves. No wonder there is the over-reliance on the not-so-common ‘common sense.’ We expect individuals to get to certain conclusions using ‘common sense’ (but of course it’s not so common) and that’s how people want to be treated.
+
+
+  People love freedom and autonomy. The best feeling is doing something because you did it because you wanted to. Not because you were told to.
+
+
+Conclusion
+
+Hence as a communicator, speaker or ‘content creator👀’, aim to present the facts in a way that enables people to get to their own conclusions. Cross your fingers that if whatever you are saying makes sense, people are also going to get to the same conclusion as well.
+
+And if they feel like they are forming their own opinion or conclusions without you being instructive or pushy, it’s much more likely to see people respond positively to you.
+
+">
+                        3 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
     </div>
@@ -597,24 +1347,105 @@
     <script src="/assets/js/color-modes.js"></script>
   </body>
   
-<footer class="p-5 vonge-gradient-footer">
-    <ul class="nav justify-content-center pb-3 mb-3">
-      <li class="vonge-nav-item">
-        <a href="#" class="nav-link px-2 text-white fw-semibold">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="/posts" class="nav-link px-2 text-white fw-semibold">Posts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/projects" class="nav-link px-2 text-white fw-semibold">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="all-thoughts" class="nav-link px-2  text-white fw-semibold">Thoughts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/about" class="nav-link px-2 text-white fw-semibold">About</a>
-      </li>
-    </ul>
-    <p class="text-center text-white fw-semibold">2024 ©️ Tanaka Mawere</p>
-  </footer>
+<footer class="p-5 vonge-gradient-footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+                <p class="text-white-50 mb-3">
+                    Full-stack .NET developer and final year medical student passionate about 
+                    creating innovative solutions at the intersection of technology and healthcare.
+                </p>
+                <div class="row align-items-center m-2">
+    <div class="col">
+        <a href="https://www.instagram.com/tan.akamawere/">
+            <i class="fa-brands fa-instagram fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://github.com/tanakamawere">
+            <i class="fa-brands fa-github fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="mailto:tanaka@tanakamawere.co.zw">
+            <i class="fa-solid fa-envelope fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://wa.me/263785468923">
+            <i class="fa-brands fa-whatsapp fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://x.com/tanaka_mawere">
+            <i class="fa-brands fa-twitter fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <!-- <div class="col">
+        <a href="https://www.youtube.com/channel/UCta53LdBaAj7gQ-JHgHBEfg">
+            <i class="fa-brands fa-youtube fa-xl icon-colour icon-size"></i>
+        </a>
+    </div> -->
+</div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="/" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-home me-2"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/projects" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-code me-2"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/posts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-blog me-2"></i>Posts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/all-thoughts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-lightbulb me-2"></i>Thoughts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/about" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-user me-2"></i>About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Contact Info</h6>
+                <div class="text-white-50">
+                    <p class="mb-2">
+                        <i class="fas fa-envelope me-2"></i>
+                        hello@tanakamawere.com
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Harare, Zimbabwe
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4 footer-divider">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="text-white-50 mb-0">
+                    &copy; 2025 Tanaka Mawere. All rights reserved.
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <small class="text-white-50">
+                    Built with Jekyll & Bootstrap 5
+                </small>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>

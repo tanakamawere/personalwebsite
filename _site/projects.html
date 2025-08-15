@@ -23,14 +23,14 @@
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:4000/projects" />
+<meta property="og:url" content="http://0.0.0.0:4000/projects" />
 <meta property="og:title" content="Projects - Tanaka Mawere" />
 <meta property="og:description" content="" />
 <meta property="og:image" content="" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="http://localhost:4000" />
+<meta property="twitter:url" content="http://0.0.0.0:4000" />
 <meta property="twitter:title" content="Projects - Tanaka Mawere" />
 <meta property="twitter:description" content="" />
 <meta property="twitter:image" content="" />
@@ -148,26 +148,38 @@
     <div class="container">
     <nav class="navbar navbar-expand-lg mt-4">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="/">TM</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand fw-bold fs-4" href="/">
+          <span class="text-primary">TM</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold align-items-center justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="/">
+                <i class="fas fa-home me-2"></i>Home
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/projects">Projects</a>
+              <a class="nav-link active" href="/projects">
+                <i class="fas fa-code me-2"></i>Projects
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/posts">Posts</a>
+              <a class="nav-link" href="/posts">
+                <i class="fas fa-blog me-2"></i>Posts
+              </a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/all-thoughts">
+                <i class="fas fa-lightbulb me-2"></i>Thoughts
+              </a>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/all-thoughts">Thoughts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/about">About</a>
+              <a class="nav-link" href="/about">
+                <i class="fas fa-user me-2"></i>About
+              </a>
             </li>
           </ul>
         </div>
@@ -175,63 +187,121 @@
     </nav>
   </div>
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
-        <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
-      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    <button class="btn btn-outline-secondary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+        <i class="fa-solid fa-circle-half-stroke me-2 theme-icon-active"></i>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
     </button>
     <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-          <i class="fa-solid fa-sun fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-sun me-2"></i>
           Light
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-          <i class="fa-solid fa-moon fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-moon me-2"></i>
           Dark
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-circle-half-stroke me-2"></i>
           Auto
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
     </ul>
-  </div>
+</div>
   
     <main class="p-1">
-      <div class="px-5 container rounded-3">
-    <div class="container-fluid py-5">
-        <h2 class="display-6 fw-bold">Projects</h2>
-        <p class="col-md-8 fs-6">
-            The programs I am working on ranging from programming projects, businesses, events and everything else that makes sense to put under this heading
-        </p>
+      <div class="container">
+    <!-- Hero Section -->
+    <div class="row align-items-center py-5 mb-5">
+        <div class="col-lg-6">
+            <div class="text-center text-lg-start">
+                <h1 class="display-4 fw-bold mb-4">My Projects</h1>
+                <p class="lead text-muted mb-4">
+                    A collection of my work spanning programming projects, businesses, and creative endeavors. 
+                    Each project represents a journey of learning, innovation, and problem-solving.
+                </p>
+                <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
+                    <span class="badge bg-primary-subtle text-primary px-3 py-2">Full-Stack Development</span>
+                    <span class="badge bg-success-subtle text-success px-3 py-2">Medical Tech</span>
+                    <span class="badge bg-info-subtle text-info px-3 py-2">AI &amp; Machine Learning</span>
+                    <span class="badge bg-warning-subtle text-warning px-3 py-2">Web Applications</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 text-center">
+            <div class="position-relative">
+                <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 200px; height: 200px;">
+                    <i class="fas fa-code icon-colour" style="font-size: 4rem;"></i>
+                </div>
+                <div class="position-absolute top-0 start-100 translate-middle bg-success rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                    <i class="fas fa-lightbulb text-white"></i>
+                </div>
+                <div class="position-absolute bottom-0 start-0 translate-middle bg-warning rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                    <i class="fas fa-rocket text-white"></i>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Projects by Category -->
     
     
-    
-        <div class="container-fluid py-3">
-            <h3 class="fw-bold">Personal Projects</h3>
-            <div class="row gx-5">
+        <div class="mb-5">
+            <!-- Category Header -->
+            <div class="d-flex align-items-center mb-4">
+                <div class="flex-shrink-0 me-3">
+                    
+                        <div class="bg-secondary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <i class="fas fa-folder text-secondary"></i>
+                        </div>
+                    
+                </div>
+                <div>
+                    <h2 class="h3 fw-bold mb-1">Personal Projects</h2>
+                    <p class="text-muted mb-0">
+                        
+                            Exploring new technologies and ideas
+                        
+                    </p>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="row g-4">
                 
                     
                 
                     
                 
                     
-                        <div class="col-lg-4 mb-5">
-  <div class="card shadow text-white">
-    <img src="https://i.postimg.cc/d3FdX3X7/Logo.png" class="card-img" alt="..." />
-    <div class="card-img-overlay d-flex flex-column justify-content-end">
-      <div class="card-text-overlay p-3">
-        <h2 class="card-title">Medbase</h2>
-        <p class="card-text text-white">A repository of Zimbabwe-relevant medical school information through videos, questions and notes.</p>
-        <a href="https://medbase.co.zw" class="btn btn-primary-outline">Go To Link</a>
+                        <div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100 shadow-sm border-0 project-card">
+    <div class="position-relative overflow-hidden rounded-top">
+      <img src="https://i.postimg.cc/d3FdX3X7/Logo.png" class="card-img-top project-image" alt="Medbase" />
+      <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+        <a href="https://medbase.co.zw" class="btn btn-light btn-lg rounded-pill px-4 fw-semibold">
+          <i class="fas fa-external-link-alt me-2"></i>View Project
+        </a>
+      </div>
+    </div>
+    <div class="card-body d-flex flex-column">
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Personal Projects</span>
+        <div class="text-muted">
+          <i class="fas fa-calendar-alt me-1"></i>
+          <small>Recent</small>
+        </div>
+      </div>
+      <h5 class="card-title fw-bold mb-3">Medbase</h5>
+      <p class="card-text text-muted flex-grow-1">A repository of Zimbabwe-relevant medical school information through videos, questions and notes.</p>
+      <div class="mt-auto pt-3">
+        <a href="https://medbase.co.zw" class="btn btn-outline-primary w-100 rounded-pill">
+          <i class="fas fa-arrow-right me-2"></i>Learn More
+        </a>
       </div>
     </div>
   </div>
@@ -243,14 +313,30 @@
                     
                 
                     
-                        <div class="col-lg-4 mb-5">
-  <div class="card shadow text-white">
-    <img src="https://i.postimg.cc/Z5Xcwm3T/Chat-GPT-Image-Apr-26-2025-09-42-58-AM.png" class="card-img" alt="..." />
-    <div class="card-img-overlay d-flex flex-column justify-content-end">
-      <div class="card-text-overlay p-3">
-        <h2 class="card-title">Storybase - In Development</h2>
-        <p class="card-text text-white">Short stories and book reading application, tailored to the African audience.</p>
-        <a href="#" class="btn btn-primary-outline">Go To Link</a>
+                        <div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100 shadow-sm border-0 project-card">
+    <div class="position-relative overflow-hidden rounded-top">
+      <img src="https://i.postimg.cc/Z5Xcwm3T/Chat-GPT-Image-Apr-26-2025-09-42-58-AM.png" class="card-img-top project-image" alt="Storybase - In Development" />
+      <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+        <a href="#" class="btn btn-light btn-lg rounded-pill px-4 fw-semibold">
+          <i class="fas fa-external-link-alt me-2"></i>View Project
+        </a>
+      </div>
+    </div>
+    <div class="card-body d-flex flex-column">
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Personal Projects</span>
+        <div class="text-muted">
+          <i class="fas fa-calendar-alt me-1"></i>
+          <small>Recent</small>
+        </div>
+      </div>
+      <h5 class="card-title fw-bold mb-3">Storybase - In Development</h5>
+      <p class="card-text text-muted flex-grow-1">Short stories and book reading application, tailored to the African audience.</p>
+      <div class="mt-auto pt-3">
+        <a href="#" class="btn btn-outline-primary w-100 rounded-pill">
+          <i class="fas fa-arrow-right me-2"></i>Learn More
+        </a>
       </div>
     </div>
   </div>
@@ -264,19 +350,54 @@
             </div>
         </div>
     
-        <div class="container-fluid py-3">
-            <h3 class="fw-bold">Work</h3>
-            <div class="row gx-5">
+        <div class="mb-5">
+            <!-- Category Header -->
+            <div class="d-flex align-items-center mb-4">
+                <div class="flex-shrink-0 me-3">
+                    
+                        <div class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                            <i class="fas fa-briefcase text-primary"></i>
+                        </div>
+                    
+                </div>
+                <div>
+                    <h2 class="h3 fw-bold mb-1">Work</h2>
+                    <p class="text-muted mb-0">
+                        
+                            Professional projects and client work
+                        
+                    </p>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="row g-4">
                 
                     
-                        <div class="col-lg-4 mb-5">
-  <div class="card shadow text-white">
-    <img src="https://market-resized.envatousercontent.com/previews/files/404110373/590-medical-app.jpg?w=590&amp;h=590&amp;cf_fit=crop&amp;crop=top&amp;format=auto&amp;q=85&amp;s=635bdefe23db8a724e177f4164d24daa235a7415dbfb21ff677273571fee3ae5" class="card-img" alt="..." />
-    <div class="card-img-overlay d-flex flex-column justify-content-end">
-      <div class="card-text-overlay p-3">
-        <h2 class="card-title">Curamed - In Development</h2>
-        <p class="card-text text-white">AI Powered Medical Application</p>
-        <a href="#" class="btn btn-primary-outline">Go To Link</a>
+                        <div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100 shadow-sm border-0 project-card">
+    <div class="position-relative overflow-hidden rounded-top">
+      <img src="https://market-resized.envatousercontent.com/previews/files/404110373/590-medical-app.jpg?w=590&amp;h=590&amp;cf_fit=crop&amp;crop=top&amp;format=auto&amp;q=85&amp;s=635bdefe23db8a724e177f4164d24daa235a7415dbfb21ff677273571fee3ae5" class="card-img-top project-image" alt="Curamed - In Development" />
+      <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+        <a href="#" class="btn btn-light btn-lg rounded-pill px-4 fw-semibold">
+          <i class="fas fa-external-link-alt me-2"></i>View Project
+        </a>
+      </div>
+    </div>
+    <div class="card-body d-flex flex-column">
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Work</span>
+        <div class="text-muted">
+          <i class="fas fa-calendar-alt me-1"></i>
+          <small>Recent</small>
+        </div>
+      </div>
+      <h5 class="card-title fw-bold mb-3">Curamed - In Development</h5>
+      <p class="card-text text-muted flex-grow-1">AI Powered Medical Application</p>
+      <div class="mt-auto pt-3">
+        <a href="#" class="btn btn-outline-primary w-100 rounded-pill">
+          <i class="fas fa-arrow-right me-2"></i>Learn More
+        </a>
       </div>
     </div>
   </div>
@@ -286,14 +407,30 @@
                     
                 
                     
-                        <div class="col-lg-4 mb-5">
-  <div class="card shadow text-white">
-    <img src="https://www.logo-designer.co/storage/2021/05/2021-upwork-new-logo-design.png" class="card-img" alt="..." />
-    <div class="card-img-overlay d-flex flex-column justify-content-end">
-      <div class="card-text-overlay p-3">
-        <h2 class="card-title">Upwork</h2>
-        <p class="card-text text-white">See my Upwork profile for jobs I did and the ones I am currently doing</p>
-        <a href="https://www.upwork.com/freelancers/~01f54a1b4e400aaa6e" class="btn btn-primary-outline">Go To Link</a>
+                        <div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100 shadow-sm border-0 project-card">
+    <div class="position-relative overflow-hidden rounded-top">
+      <img src="https://www.logo-designer.co/storage/2021/05/2021-upwork-new-logo-design.png" class="card-img-top project-image" alt="Upwork" />
+      <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+        <a href="https://www.upwork.com/freelancers/~01f54a1b4e400aaa6e" class="btn btn-light btn-lg rounded-pill px-4 fw-semibold">
+          <i class="fas fa-external-link-alt me-2"></i>View Project
+        </a>
+      </div>
+    </div>
+    <div class="card-body d-flex flex-column">
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Work</span>
+        <div class="text-muted">
+          <i class="fas fa-calendar-alt me-1"></i>
+          <small>Recent</small>
+        </div>
+      </div>
+      <h5 class="card-title fw-bold mb-3">Upwork</h5>
+      <p class="card-text text-muted flex-grow-1">See my Upwork profile for jobs I did and the ones I am currently doing</p>
+      <div class="mt-auto pt-3">
+        <a href="https://www.upwork.com/freelancers/~01f54a1b4e400aaa6e" class="btn btn-outline-primary w-100 rounded-pill">
+          <i class="fas fa-arrow-right me-2"></i>Learn More
+        </a>
       </div>
     </div>
   </div>
@@ -305,14 +442,30 @@
                     
                 
                     
-                        <div class="col-lg-4 mb-5">
-  <div class="card shadow text-white">
-    <img src="https://media.licdn.com/dms/image/v2/D560BAQEhRey73pr05g/company-logo_200_200/company-logo_200_200/0/1724925162655/newagenews_logo?e=2147483647&amp;v=beta&amp;t=TkLI5s5lMqVLrjlNBrSXbZghJM-yiCbkpYlT0tPx8gI" class="card-img" alt="..." />
-    <div class="card-img-overlay d-flex flex-column justify-content-end">
-      <div class="card-text-overlay p-3">
-        <h2 class="card-title">New Age Motors</h2>
-        <p class="card-text text-white">Motor Clinic Website based in Kwekwe</p>
-        <a href="https://newagemotors.co.zw" class="btn btn-primary-outline">Go To Link</a>
+                        <div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100 shadow-sm border-0 project-card">
+    <div class="position-relative overflow-hidden rounded-top">
+      <img src="https://media.licdn.com/dms/image/v2/D560BAQEhRey73pr05g/company-logo_200_200/company-logo_200_200/0/1724925162655/newagenews_logo?e=2147483647&amp;v=beta&amp;t=TkLI5s5lMqVLrjlNBrSXbZghJM-yiCbkpYlT0tPx8gI" class="card-img-top project-image" alt="New Age Motors" />
+      <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+        <a href="https://newagemotors.co.zw" class="btn btn-light btn-lg rounded-pill px-4 fw-semibold">
+          <i class="fas fa-external-link-alt me-2"></i>View Project
+        </a>
+      </div>
+    </div>
+    <div class="card-body d-flex flex-column">
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Work</span>
+        <div class="text-muted">
+          <i class="fas fa-calendar-alt me-1"></i>
+          <small>Recent</small>
+        </div>
+      </div>
+      <h5 class="card-title fw-bold mb-3">New Age Motors</h5>
+      <p class="card-text text-muted flex-grow-1">Motor Clinic Website based in Kwekwe</p>
+      <div class="mt-auto pt-3">
+        <a href="https://newagemotors.co.zw" class="btn btn-outline-primary w-100 rounded-pill">
+          <i class="fas fa-arrow-right me-2"></i>Learn More
+        </a>
       </div>
     </div>
   </div>
@@ -324,14 +477,30 @@
                     
                 
                     
-                        <div class="col-lg-4 mb-5">
-  <div class="card shadow text-white">
-    <img src="https://th.bing.com/th/id/OIP.beIsCy1VApz3oWEeHVJqeAHaHa?rs=1&amp;pid=ImgDetMain" class="card-img" alt="..." />
-    <div class="card-img-overlay d-flex flex-column justify-content-end">
-      <div class="card-text-overlay p-3">
-        <h2 class="card-title">Zimsa</h2>
-        <p class="card-text text-white">Main website for the Zimbabwe Medical Students Association (ZIMSA)</p>
-        <a href="https://zimsa.org" class="btn btn-primary-outline">Go To Link</a>
+                        <div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100 shadow-sm border-0 project-card">
+    <div class="position-relative overflow-hidden rounded-top">
+      <img src="https://th.bing.com/th/id/OIP.beIsCy1VApz3oWEeHVJqeAHaHa?rs=1&amp;pid=ImgDetMain" class="card-img-top project-image" alt="Zimsa" />
+      <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+        <a href="https://zimsa.org" class="btn btn-light btn-lg rounded-pill px-4 fw-semibold">
+          <i class="fas fa-external-link-alt me-2"></i>View Project
+        </a>
+      </div>
+    </div>
+    <div class="card-body d-flex flex-column">
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Work</span>
+        <div class="text-muted">
+          <i class="fas fa-calendar-alt me-1"></i>
+          <small>Recent</small>
+        </div>
+      </div>
+      <h5 class="card-title fw-bold mb-3">Zimsa</h5>
+      <p class="card-text text-muted flex-grow-1">Main website for the Zimbabwe Medical Students Association (ZIMSA)</p>
+      <div class="mt-auto pt-3">
+        <a href="https://zimsa.org" class="btn btn-outline-primary w-100 rounded-pill">
+          <i class="fas fa-arrow-right me-2"></i>Learn More
+        </a>
       </div>
     </div>
   </div>
@@ -343,6 +512,24 @@
             </div>
         </div>
     
+
+    <!-- Call to Action -->
+    <div class="text-center py-5 my-5">
+        <div class="bg-light-gray rounded-4 p-5">
+            <h3 class="fw-bold mb-3">Interested in Collaborating?</h3>
+            <p class="text-muted mb-4">
+                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            </p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="/about" class="btn btn-primary btn-lg px-4">
+                    <i class="fas fa-user me-2"></i>About Me
+                </a>
+                <a href="mailto:your-email@example.com" class="btn btn-outline-primary btn-lg px-4">
+                    <i class="fas fa-envelope me-2"></i>Get In Touch
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 
     </main>
@@ -351,24 +538,105 @@
     <script src="/assets/js/color-modes.js"></script>
   </body>
   
-<footer class="p-5 vonge-gradient-footer">
-    <ul class="nav justify-content-center pb-3 mb-3">
-      <li class="vonge-nav-item">
-        <a href="#" class="nav-link px-2 text-white fw-semibold">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="/posts" class="nav-link px-2 text-white fw-semibold">Posts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/projects" class="nav-link px-2 text-white fw-semibold">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="all-thoughts" class="nav-link px-2  text-white fw-semibold">Thoughts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/about" class="nav-link px-2 text-white fw-semibold">About</a>
-      </li>
-    </ul>
-    <p class="text-center text-white fw-semibold">2024 ©️ Tanaka Mawere</p>
-  </footer>
+<footer class="p-5 vonge-gradient-footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+                <p class="text-white-50 mb-3">
+                    Full-stack .NET developer and final year medical student passionate about 
+                    creating innovative solutions at the intersection of technology and healthcare.
+                </p>
+                <div class="row align-items-center m-2">
+    <div class="col">
+        <a href="https://www.instagram.com/tan.akamawere/">
+            <i class="fa-brands fa-instagram fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://github.com/tanakamawere">
+            <i class="fa-brands fa-github fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="mailto:tanaka@tanakamawere.co.zw">
+            <i class="fa-solid fa-envelope fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://wa.me/263785468923">
+            <i class="fa-brands fa-whatsapp fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://x.com/tanaka_mawere">
+            <i class="fa-brands fa-twitter fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <!-- <div class="col">
+        <a href="https://www.youtube.com/channel/UCta53LdBaAj7gQ-JHgHBEfg">
+            <i class="fa-brands fa-youtube fa-xl icon-colour icon-size"></i>
+        </a>
+    </div> -->
+</div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="/" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-home me-2"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/projects" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-code me-2"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/posts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-blog me-2"></i>Posts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/all-thoughts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-lightbulb me-2"></i>Thoughts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/about" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-user me-2"></i>About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Contact Info</h6>
+                <div class="text-white-50">
+                    <p class="mb-2">
+                        <i class="fas fa-envelope me-2"></i>
+                        hello@tanakamawere.com
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Harare, Zimbabwe
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4 footer-divider">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="text-white-50 mb-0">
+                    &copy; 2025 Tanaka Mawere. All rights reserved.
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <small class="text-white-50">
+                    Built with Jekyll & Bootstrap 5
+                </small>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>

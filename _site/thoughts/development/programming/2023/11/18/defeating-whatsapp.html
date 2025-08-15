@@ -23,14 +23,14 @@
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:4000/thoughts/development/programming/2023/11/18/defeating-whatsapp.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/thoughts/development/programming/2023/11/18/defeating-whatsapp.html" />
 <meta property="og:title" content="Defeating WhatsApp - Tanaka Mawere" />
 <meta property="og:description" content="A programmer in Zimbabwe's greatest enemy is WhatsApp. How do we defeat it? I have no idea" />
 <meta property="og:image" content="https://images.unsplash.com/photo-1632435499152-18838be77960?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdoYXRzYXBwfGVufDB8fDB8fHww" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="http://localhost:4000" />
+<meta property="twitter:url" content="http://0.0.0.0:4000" />
 <meta property="twitter:title" content="Defeating WhatsApp - Tanaka Mawere" />
 <meta property="twitter:description" content="A programmer in Zimbabwe's greatest enemy is WhatsApp. How do we defeat it? I have no idea" />
 <meta property="twitter:image" content="https://images.unsplash.com/photo-1632435499152-18838be77960?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdoYXRzYXBwfGVufDB8fDB8fHww" />
@@ -148,26 +148,38 @@
     <div class="container">
     <nav class="navbar navbar-expand-lg mt-4">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="/">TM</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand fw-bold fs-4" href="/">
+          <span class="text-primary">TM</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold align-items-center justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="/">
+                <i class="fas fa-home me-2"></i>Home
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/projects">Projects</a>
+              <a class="nav-link" href="/projects">
+                <i class="fas fa-code me-2"></i>Projects
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/posts">Posts</a>
+              <a class="nav-link" href="/posts">
+                <i class="fas fa-blog me-2"></i>Posts
+              </a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link active" href="/all-thoughts">
+                <i class="fas fa-lightbulb me-2"></i>Thoughts
+              </a>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/all-thoughts">Thoughts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/about">About</a>
+              <a class="nav-link" href="/about">
+                <i class="fas fa-user me-2"></i>About
+              </a>
             </li>
           </ul>
         </div>
@@ -175,74 +187,101 @@
     </nav>
   </div>
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
-        <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
-      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    <button class="btn btn-outline-secondary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+        <i class="fa-solid fa-circle-half-stroke me-2 theme-icon-active"></i>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
     </button>
     <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-          <i class="fa-solid fa-sun fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-sun me-2"></i>
           Light
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-          <i class="fa-solid fa-moon fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-moon me-2"></i>
           Dark
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-circle-half-stroke me-2"></i>
           Auto
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
     </ul>
-  </div>
+</div>
   
     <main class="p-1">
-      <div class="container mt-5">
-    <div class="row align-items-center justify-content-center">
-        <div class="col-xl-6 col-xxl-6 text-center">
-            <img class="rounded-top rounded-bottom img-fluid" src="https://images.unsplash.com/photo-1632435499152-18838be77960?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdoYXRzYXBwfGVufDB8fDB8fHww"/>
-        </div>
-        <div class="col-lg-6 col-xl-6 col-xxl-4">
-          <div class="my-3 text-center text-xl-start">
-                
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
-                
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Development
-                </button>
-                
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Programming
-                </button>
-              
-              <h1 class="fw-bolder">
-                  Defeating WhatsApp
-              </h1>
-              <div class="row align-items-center justify-content-between container-fluid">
-                <!-- <img class="col rounded-circle" style="max-height: 50px; max-width: 50px; background-color: transparent;" src="/assets/img/profile_picture.jpg"/> -->
-                <div class="col social-links">
-                  <p>Tanaka Mawere</p>
-                  <h6>
-                    Nov 18, 2023
-                  </h6>
+      <!-- Post Hero Section -->
+<article class="post-article">
+    <header class="post-header">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <!-- Categories -->
+                    <div class="post-categories mb-3">
+                          
+                        <span class="badge post-category-badge me-2">
+                            <i class="fas fa-tag me-1"></i>Thoughts
+                        </span>
+                          
+                        <span class="badge post-category-badge me-2">
+                            <i class="fas fa-tag me-1"></i>Development
+                        </span>
+                          
+                        <span class="badge post-category-badge me-2">
+                            <i class="fas fa-tag me-1"></i>Programming
+                        </span>
+                        
+                    </div>
+                    
+                    <!-- Title -->
+                    <h1 class="post-title display-4 fw-bold mb-4">
+                        Defeating WhatsApp
+                    </h1>
+                    
+                    <!-- Meta Information -->
+                    <div class="post-meta d-flex align-items-center mb-4">
+                        <div class="author-info d-flex align-items-center me-4">
+                            <div class="author-avatar me-3">
+                                <i class="fas fa-user-circle fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <div class="author-name fw-semibold">Tanaka Mawere</div>
+                                <div class="post-date text-muted small">
+                                    <i class="fas fa-calendar me-1"></i>
+                                    November 18, 2023
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Reading Time Estimate -->
+                        <div class="reading-time text-muted small">
+                            <i class="fas fa-clock me-1"></i>
+                            <span id="reading-time">5 min read</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Post Image -->
+                    
+                    <div class="post-image-container mb-5">
+                        <img src="https://images.unsplash.com/photo-1632435499152-18838be77960?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdoYXRzYXBwfGVufDB8fDB8fHww" class="post-featured-image" alt="Defeating WhatsApp">
+                    </div>
+                    
                 </div>
-              </div>
-          </div>
-      </div>
-  </div>
+            </div>
+        </div>
+    </header>
 
-  <div class="px-3 highlight">
-    <h1 id="ma-runner">ma-runner</h1>
+    <!-- Post Content -->
+    <div class="post-content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <div class="post-body">
+                        <h1 id="ma-runner">ma-runner</h1>
 
 <p>I recently went into a shop that sells good quality clothes. Thing is I don’t go for shopping. I will go 5 years without buying a clothing item just because I don’t like going shop by shop looking for clothes.</p>
 
@@ -290,18 +329,46 @@
 
 <p><em>P.S: I do not have a girlfriend. Neither would I do daily checkups on her phone. I hope…</em></p>
 
-  </div>  
+                    </div>
+                    
+                    <!-- Social Share -->
+                    <div class="post-share mt-5 pt-4 border-top">
+                        <h5 class="fw-bold mb-3">Share this post</h5>
+                        <div class="share-buttons">
+                            <a href="https://twitter.com/intent/tweet?text=Defeating WhatsApp&url=http://0.0.0.0:4000/thoughts/development/programming/2023/11/18/defeating-whatsapp.html" 
+                               class="btn btn-outline-primary me-2 mb-2" target="_blank">
+                                <i class="fab fa-twitter me-2"></i>Twitter
+                            </a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=http://0.0.0.0:4000/thoughts/development/programming/2023/11/18/defeating-whatsapp.html" 
+                               class="btn btn-outline-primary me-2 mb-2" target="_blank">
+                                <i class="fab fa-linkedin me-2"></i>LinkedIn
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http://0.0.0.0:4000/thoughts/development/programming/2023/11/18/defeating-whatsapp.html" 
+                               class="btn btn-outline-primary me-2 mb-2" target="_blank">
+                                <i class="fab fa-facebook me-2"></i>Facebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comments Section -->
     
-  
-    
+    <div class="post-comments">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    
 <div id="disqus_thread"></div>
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
     var disqus_config = function () {
-    this.page.url = 'http://localhost:4000/thoughts/development/programming/2023/11/18/defeating-whatsapp.html';  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = 'http://localhost:4000/thoughts/development/programming/2023/11/18/defeating-whatsapp.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    this.page.url = 'http://0.0.0.0:4000/thoughts/development/programming/2023/11/18/defeating-whatsapp.html';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = 'http://0.0.0.0:4000/thoughts/development/programming/2023/11/18/defeating-whatsapp.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
@@ -312,26 +379,150 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-  
-
-  <!--Next article section-->
-  <hr class="my-5"/>
-  <h2 class="fw-bolder">Your next article...</h2>
-
-  
-    <div class="card" style="max-width: 30rem;">
-      <div class="row card-body">
-        <div class="col-6">
-          <img class="rounded-top rounded-bottom img-fluid" src="https://images.unsplash.com/photo-1569025743873-ea3a9ade89f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9yZXglMjB0cmFkaW5nfGVufDB8fDB8fHww"/>
+                </div>
+            </div>
         </div>
-        <div class="col-6">
-          <h3 class="card-title">The Catch of Forex Trading...</h5>
-          <a href="/the-catch-of-forex-trading" class="btn btn-primary">Read it...</a>
-        </div>
-      </div>
     </div>
-  
+    
+</article>
+
+<!-- Navigation Section -->
+<section class="post-navigation py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- Section Header -->
+                <div class="text-center mb-5">
+                    <h3 class="fw-bold">Continue Reading</h3>
+                    <p class="text-muted">Discover more engaging content</p>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Previous Post -->
+                    
+                    <div class="col-md-6">
+                        <div class="nav-post-card nav-post-prev">
+                            <div class="nav-post-direction">
+                                <i class="fas fa-arrow-left me-2"></i>
+                                <span>Previous</span>
+                            </div>
+                            
+                            
+                            <div class="nav-post-image">
+                                <img src="https://images.unsplash.com/photo-1569025743873-ea3a9ade89f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9yZXglMjB0cmFkaW5nfGVufDB8fDB8fHww" alt="The Catch of Forex Trading...">
+                                <div class="nav-post-image-overlay">
+                                    <i class="fas fa-arrow-left fa-2x"></i>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="nav-post-content">
+                                <h5 class="nav-post-title">The Catch of Forex Trading...</h5>
+                                <p class="nav-post-excerpt">
+                                    This year marks 3 years since I started learning how to trade... Here's something I learnt
+                                </p>
+                                <div class="nav-post-meta">
+                                    <span class="nav-post-date">
+                                        <i class="fas fa-calendar me-1"></i>
+                                        Nov 15, 2023
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <a href="/the-catch-of-forex-trading" class="nav-post-link stretched-link" aria-label="Read previous post: The Catch of Forex Trading..."></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- Next Post -->
+                    
+                    <div class="col-md-6">
+                        <div class="nav-post-card nav-post-next">
+                            <div class="nav-post-direction">
+                                <span>Next</span>
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </div>
+                            
+                            
+                            <div class="nav-post-image">
+                                <img src="https://images.unsplash.com/photo-1495293453185-532fbd0a872c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cXVpZXR8ZW58MHx8MHx8fDA%3D" alt="Don't tell, cause thought">
+                                <div class="nav-post-image-overlay">
+                                    <i class="fas fa-arrow-right fa-2x"></i>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="nav-post-content">
+                                <h5 class="nav-post-title">Don't tell, cause thought</h5>
+                                <p class="nav-post-excerpt">
+                                    People don't listen when you tell them something. Simple fact of life, so don't tell them. Make t...
+                                </p>
+                                <div class="nav-post-meta">
+                                    <span class="nav-post-date">
+                                        <i class="fas fa-calendar me-1"></i>
+                                        Nov 24, 2023
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <a href="/thoughts/productivity/2023/11/24/dont-tell-cause-thought.html" class="nav-post-link stretched-link" aria-label="Read next post: Don't tell, cause thought"></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- Explore More Section (when only one or no adjacent posts) -->
+                    
+                    
+                    <!-- Full Width Explore if no adjacent posts -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reading Progress Bar -->
+<div class="reading-progress">
+    <div class="reading-progress-bar"></div>
 </div>
+
+<!-- JavaScript for Reading Time and Progress -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Calculate reading time
+    const content = document.querySelector('.post-body');
+    const readingTimeElement = document.getElementById('reading-time');
+    
+    if (content && readingTimeElement) {
+        const text = content.textContent || content.innerText || '';
+        const wordsPerMinute = 200;
+        const words = text.trim().split(/\s+/).length;
+        const time = Math.ceil(words / wordsPerMinute);
+        readingTimeElement.textContent = `${time} min read`;
+    }
+    
+    // Reading progress bar
+    const progressBar = document.querySelector('.reading-progress-bar');
+    
+    if (progressBar) {
+        window.addEventListener('scroll', function() {
+            const article = document.querySelector('.post-article');
+            if (article) {
+                const articleTop = article.offsetTop;
+                const articleHeight = article.offsetHeight;
+                const windowTop = window.pageYOffset;
+                const windowHeight = window.innerHeight;
+                
+                const progress = Math.min(
+                    Math.max((windowTop - articleTop + windowHeight) / articleHeight, 0), 1
+                );
+                
+                progressBar.style.width = (progress * 100) + '%';
+            }
+        });
+    }
+});
+</script>
 
 
     </main>
@@ -340,24 +531,105 @@
     <script src="/assets/js/color-modes.js"></script>
   </body>
   
-<footer class="p-5 vonge-gradient-footer">
-    <ul class="nav justify-content-center pb-3 mb-3">
-      <li class="vonge-nav-item">
-        <a href="#" class="nav-link px-2 text-white fw-semibold">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="/posts" class="nav-link px-2 text-white fw-semibold">Posts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/projects" class="nav-link px-2 text-white fw-semibold">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="all-thoughts" class="nav-link px-2  text-white fw-semibold">Thoughts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/about" class="nav-link px-2 text-white fw-semibold">About</a>
-      </li>
-    </ul>
-    <p class="text-center text-white fw-semibold">2024 ©️ Tanaka Mawere</p>
-  </footer>
+<footer class="p-5 vonge-gradient-footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+                <p class="text-white-50 mb-3">
+                    Full-stack .NET developer and final year medical student passionate about 
+                    creating innovative solutions at the intersection of technology and healthcare.
+                </p>
+                <div class="row align-items-center m-2">
+    <div class="col">
+        <a href="https://www.instagram.com/tan.akamawere/">
+            <i class="fa-brands fa-instagram fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://github.com/tanakamawere">
+            <i class="fa-brands fa-github fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="mailto:tanaka@tanakamawere.co.zw">
+            <i class="fa-solid fa-envelope fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://wa.me/263785468923">
+            <i class="fa-brands fa-whatsapp fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://x.com/tanaka_mawere">
+            <i class="fa-brands fa-twitter fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <!-- <div class="col">
+        <a href="https://www.youtube.com/channel/UCta53LdBaAj7gQ-JHgHBEfg">
+            <i class="fa-brands fa-youtube fa-xl icon-colour icon-size"></i>
+        </a>
+    </div> -->
+</div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="/" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-home me-2"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/projects" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-code me-2"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/posts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-blog me-2"></i>Posts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/all-thoughts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-lightbulb me-2"></i>Thoughts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/about" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-user me-2"></i>About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Contact Info</h6>
+                <div class="text-white-50">
+                    <p class="mb-2">
+                        <i class="fas fa-envelope me-2"></i>
+                        hello@tanakamawere.com
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Harare, Zimbabwe
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4 footer-divider">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="text-white-50 mb-0">
+                    &copy; 2025 Tanaka Mawere. All rights reserved.
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <small class="text-white-50">
+                    Built with Jekyll & Bootstrap 5
+                </small>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>

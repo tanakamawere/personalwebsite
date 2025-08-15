@@ -3,16 +3,37 @@ layout: default
 title: About
 permalink: "/about"
 ---
-
 <section>
     <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
-                <img src="/assets/img/about_image.jpg" class="d-block mx-lg-auto img-fluid rounded-4 shadow-lg" alt="About Me" height="500" loading="lazy">
+                <img src="/assets/img/about_image.jpg" class="d-block mx-lg-auto img-fluid rounded-4 shadow-lg" alt="{{ site.author.name }}" height="500" loading="lazy">
             </div>
             <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Me</h1>
-                <p class="lead">Hey there, I'm Tanaka Mawere. I am a 5th year medical student, programmer, musician (not too sure about this one), blogger (I am a fitness addict on rare occassions)</p>
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About {{ site.author.name }}</h1>
+                <p class="lead">{{ site.author.bio }}</p>
+                <p class="text-muted">{{ site.author.bio_short }}</p>
+                
+                <!-- Location and Contact -->
+                <div class="d-flex flex-wrap gap-3 mb-4">
+                    <span class="badge bg-primary-subtle text-primary px-3 py-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>{{ site.author.location }}
+                    </span>
+                    <a href="mailto:{{ site.author.email }}" class="badge bg-info-subtle text-info px-3 py-2 text-decoration-none">
+                        <i class="fas fa-envelope me-2"></i>{{ site.author.email }}
+                    </a>
+                </div>
+                
+                <!-- Skills -->
+                <div class="mb-4">
+                    <h5 class="fw-bold mb-3">Core Skills</h5>
+                    <div class="d-flex flex-wrap gap-2">
+                        {% for skill in site.author.skills %}
+                        <span class="badge bg-secondary-subtle text-secondary px-3 py-2">{{ skill }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                
                 <hr style="height: 10px; border: none; width:20rem;" class="vonge-gradient-footer">
             </div>
         </div>

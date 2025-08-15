@@ -4,6 +4,23 @@ description: "Incompetent C# Programmer and Keyboardist + Bassist from Harare. C
 baseurl: "/" # the subpath of your site, e.g. /blog
 title: "Tanaka Mawere"
 
+# Personal Information
+author:
+  name: "Tanaka Mawere"
+  titles:
+    - "Full-stack .NET Programmer"
+    - "Final Year Medical Student"
+    - "Musician"
+  bio: "Passionate about creating innovative solutions at the intersection of technology and healthcare. Currently balancing medical studies with full-stack development and music."
+  bio_short: "I pretend to exercise at times."
+  location: "Harare, Zimbabwe"
+  email: "tanaka@tanakamawere.com"
+  skills:
+    - "Full-Stack Development"
+    - "Medical Tech"
+    - ".NET Development"
+    - "Web Applications"
+
 gems: 
   - jekyll-paginate-v2
 
@@ -21,7 +38,6 @@ pagination:
   debug: true
 
   # The default document collection to paginate if nothing is specified ('posts' is default)
-  collection: 'thoughts' 
   collection: 'posts'
 
   # How many objects per paginated page, used to be `paginate` (default: 0, means all)

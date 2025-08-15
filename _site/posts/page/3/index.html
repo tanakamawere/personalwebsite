@@ -23,14 +23,14 @@
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:4000/posts/page/3/index.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/posts/page/3/index.html" />
 <meta property="og:title" content="Posts - page 3 - Tanaka Mawere" />
 <meta property="og:description" content="" />
 <meta property="og:image" content="" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="http://localhost:4000" />
+<meta property="twitter:url" content="http://0.0.0.0:4000" />
 <meta property="twitter:title" content="Posts - page 3 - Tanaka Mawere" />
 <meta property="twitter:description" content="" />
 <meta property="twitter:image" content="" />
@@ -148,26 +148,38 @@
     <div class="container">
     <nav class="navbar navbar-expand-lg mt-4">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="/">TM</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand fw-bold fs-4" href="/">
+          <span class="text-primary">TM</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold align-items-center justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="/">
+                <i class="fas fa-home me-2"></i>Home
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/projects">Projects</a>
+              <a class="nav-link" href="/projects">
+                <i class="fas fa-code me-2"></i>Projects
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/posts">Posts</a>
+              <a class="nav-link active" href="/posts">
+                <i class="fas fa-blog me-2"></i>Posts
+              </a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/all-thoughts">
+                <i class="fas fa-lightbulb me-2"></i>Thoughts
+              </a>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/all-thoughts">Thoughts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/about">About</a>
+              <a class="nav-link" href="/about">
+                <i class="fas fa-user me-2"></i>About
+              </a>
             </li>
           </ul>
         </div>
@@ -175,34 +187,31 @@
     </nav>
   </div>
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
-        <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
-      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    <button class="btn btn-outline-secondary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+        <i class="fa-solid fa-circle-half-stroke me-2 theme-icon-active"></i>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
     </button>
     <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-          <i class="fa-solid fa-sun fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-sun me-2"></i>
           Light
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-          <i class="fa-solid fa-moon fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-moon me-2"></i>
           Dark
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
+          <i class="fa-solid fa-circle-half-stroke me-2"></i>
           Auto
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
       </li>
     </ul>
-  </div>
+</div>
   
     <main class="p-1">
       <div class="px-5 container">
@@ -218,326 +227,925 @@
         
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1569025743873-ea3a9ade89f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9yZXglMjB0cmFkaW5nfGVufDB8fDB8fHww" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://images.unsplash.com/photo-1632435499152-18838be77960?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdoYXRzYXBwfGVufDB8fDB8fHww" alt="Defeating WhatsApp" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/thoughts/development/programming/2023/11/18/defeating-whatsapp.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Forex
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Trading
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Thoughts
+                </span>
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Development
+                </span>
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Programming
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/the-catch-of-forex-trading">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/thoughts/development/programming/2023/11/18/defeating-whatsapp.html" class="text-decoration-none">
+                    Defeating WhatsApp
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
+                A programmer in Zimbabwe's greatest enemy is WhatsApp. How do we defeat it? I have no idea
+            </p>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
+                    </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Nov 18, 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="ma-runner
+
+I recently went into a shop that sells good quality clothes. Thing is I don’t go for shopping. I will go 5 years without buying a clothing item just because I don’t like going shop by shop looking for clothes.
+
+Then it hit me.
+
+Why not make an app for this? For lazy people like me to do their clothes shopping online?
+
+Then it hit me again.
+
+My girlfriend’s WhatsApp has close to 30 groups of people who sell clothes in there (I don’t like them because they might hide a chat from a blesser or someone she’s cheating with when I am doing my daily check ups on her phone.) Add to that, the use of Facebook Marketplace.
+
+And just like that, the Zimbabwean Amazon died before it went anywhere.
+
+It’s everywhere
+
+And if you think about it, there are WhatsApp groups for everything, not just clothes. Food, cars, books, movies (ehm ehm). In first world countries, there are separate apps for each category.
+
+
+  Just for food in first world countries, Chicken Inn, Nandos and kwaMereki would have their own separate food ordering apps. No wonder there are more jobs there than here.
+
+
+Everything is in WhatsApp. So as a developer trying to remove people from WhatsApp, natural question to ask is “why?” Why is everything aggregated in WhatsApp groups?
+
+To state the obvious…
+
+It’s convenient. Simply that. I already have a WhatsApp bundle to stalk my relative’s status updates who recently left Zimbabwe and isn’t sending money back home but is going on holidays to what’s it called, Bhali, Balie? So why not just look for clothes in the same app by just joining groups?
+
+Data is expensive?
+
+A few years ago, you would have convinced me that it was because data is expensive and people just buy WhatsApp bundles. Which is still true to some extent. It’s more likely for someone to have a WhatsApp bundle and not a data bundle in Zimbabwe. But I don’t buy this reason completely.
+
+The number of people now using Instagram and more ubiquitously, TikTok, makes me think that of course, not everyone has money for data bundles, but if someone is using their data for TikTok, they have probably 5mb to spare for using a different app.
+
+Granted the number of people who use TikTok in Zimbabwe, is still low compared to the total population but I suppose with time, they will increase. Which lead me to…
+
+Time
+
+I don’t know what the solution is for developers to pull the population away from WhatsApp to their apps but something tells me that with time and as more and more people are digitally connected in Zimbabwe, this is likely to change. Because for all their merit, WhatsApp groups are limited.
+
+There is a lot of spam eating into your device memory. You can’t really search for a product and of course, payment systems. It’s a hassle that I suppose people in Zimbabwe in a few years will be ready to eliminate.
+
+Conclusion
+
+But what do you think? Are there any actionable steps to pull people away from WhatsApp groups towards using dedicated apps or websites? Because WhatsApp really is a developer’s enemy and developers need to fight against it.
+
+P.S: I do not have a girlfriend. Neither would I do daily checkups on her phone. I hope…
+">
+                        3 min read
+                    </span>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+        
+            <div class="col-lg-4 mb-5">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://images.unsplash.com/photo-1569025743873-ea3a9ade89f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9yZXglMjB0cmFkaW5nfGVufDB8fDB8fHww" alt="The Catch of Forex Trading..." />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/the-catch-of-forex-trading" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Forex
+                </span>
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Thoughts
+                </span>
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Trading
+                </span>
+                
+            </div>
+            
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/the-catch-of-forex-trading" class="text-decoration-none">
                     The Catch of Forex Trading...
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 This year marks 3 years since I started learning how to trade... Here's something I learnt
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Nov 15, 2023
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Nov 15, 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="Introduction
+
+The number of times I have cast my privacy-disrespecting eye over to someone’s phone (most often a dude) and he passes through his apps screen, chances are I see Metatrader 4 and/or 5. And if you don’t know Metatrader 4 or 5, you are either a girl or a pocketically-blessed dude.
+
+The subject matter I want to talk about doesn’t need you to have any forex trading knowledge because I will keep it as generic as possible. So let’s dive into the catch of forex trading.
+
+An egg…
+
+Ever heard the statement that the hardest thing to cook is an egg? And it’s because so easy to cook. Doesn’t make sense right?
+
+We are used to eating eggs that are either overcooked or overcooked-er. They are always way to crispy on the outside if they are fried, some to the point of qualifying as biltong. Worse even, try making a sunny side up egg without browning the edges. What about boiling an egg without making the york into a rubbery, minature ‘zadza-dama’? I won’t even mention poaching.
+
+The point of the overly-drawn joke above is that making a perfect egg is hard because the way to make an edible egg is easy to understand and do. It’s just frying in oil, boiling in water etc. That’s simple. The barriers to making an egg are so low and that’s what makes it hard. Contrast that with making a insert some complicated recipe I will search on Google that only Gordon Ramsey can make. The fact that you need the skills of Gordon Ramsey to make it stops you from even daring to make it.
+
+So what?
+
+
+  Forex trading is like making an egg.
+
+
+It’s so easy to put in $10 to start trading with. All you need is to make a broker account, download Metatrader and start getting your losses because you probably have no idea what you are doing. The barriers of entry into forex trading are extremely low hence anyone can sign up to do it.
+
+Much like making a perfect egg, the average Joe who has entered into forex trading will fail. And does fail. No wonder you hear so many people saying “forex trading is a scam” or something to that effect.
+
+And I don’t blame people for signing up to trade. All the other potential legal ways of making money either need some skill, quite a bit of capital and more effort than that which is required in forex trading. 
+But that ease of entry into trading is also the downfall for many and it is the catch.
+
+The effects of the catch
+
+
+  
+    Trading, like any other business, needs capital. - More likely than not, if you deposit any amount below $100, you are going to lose it because when trades are still in red, your capital can’t handle it. And for you to make sensible money from such a low amount, you’d have to over-leverage your small capital (essentially trading more than you can). So in the end, you’d be at a disadvantage.
+
+    I never understood it while starting out while some brokers said their minimum deposit amount was $500. But now that I have gained the experience I have, anything below $100, you are probably going to lose it. This is another blog post on it’s own explaining this more.
+  
+  
+    There is no selection criteria - You just can’t be a doctor. There are many exams over the 5+ years of training that make sure you are up to scratch with your skills and knowledge to treat patients.
+
+    Not with trading though.
+
+    The only person stopping you from risking all you own is you. No one evaluates your skills and knowledge about trading or the market prior to trading except you. Hence anyone who wants to trade, can. And that is ultimately bad for them as they will end up blaming the markets for their lack of experience when they lose everything.
+
+    
+      Side note though. People go get degrees so that they trade for big banks and sometimes fail to make profits even with tens of millions of dollars to trade with. What makes us think that watching YouTube videos for a weekend and armed with $10 of capital, we are going to buy a Ferrari and lift the whole family out of poverty?
+    
+  
+
+
+The take-aways
+
+I wish all brokers had $500 as their minimum trading amount. I was angry about it when I started learning how to trade but it helped me not lose more than I did as I was learning. And it’s only from losing money that I learnt this lesson, hard. If someone asks me for advice on trading, I immediately tell them that if they don’t have $500 or more to trade, leave it alone.
+
+Conclusion
+
+While I understand that trading might seems like a low-cost option of a side hustle, because it’s so easy to get into now, that should not be mistaken for ease of execution. Starting to forex trade is easy. Forexing trading itself, a totally different beast on its own.
+
+
+  Don’t be fooled by how easy it is to start trading. And that is the catch of forex trading.
+
+
+">
+                        5 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Put your eggs in one basket" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/thoughts/2023/11/07/put-your-eggs-in-one-basket.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Thoughts
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/2023/11/07/put-your-eggs-in-one-basket.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/thoughts/2023/11/07/put-your-eggs-in-one-basket.html" class="text-decoration-none">
                     Put your eggs in one basket
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 Having a 'Plan B' is bad for 'Plan A'
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Nov 7, 2023
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Nov 7, 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="Introduction
+
+I am currently reading Stephen Bartlett’s “Diary of a CEO: 33 laws of something (I have forgotten and lazy to check it up)” and there is a chapter that says Plan B is bad for Plan A.
+
+That whole chapter resonated with me. Imagine you were living in a shack and you had one opportunity to free yourself and your family from poverty. You’d work hard to make that opportunity worthwhile and if you don’t succeed as much, you will be close to some definition of success. However, if you have an alternative path to follow, you won’t work as hard on Plan A because Plan B is a safety net for. Hence the commitment, the almost deluded belief in Plan A will not be there as you have comfort of having another way to go.
+
+Hence you won’t execute plan A well or fail miserably at it.
+
+My Story
+
+I have seen this in myself. My plan A is to make something with my coding skills and have that sustain me. My plan B is doing this medicine thingy. But because medicine is a safe bet and comforting, I am putting nowhere enough effort in plan A that would make me succeed at the very least. I suppose that if I wasn’t enrolled into medical school and sitting at home (of course not with African parents), plan A would probably be all there is and I would put all my being and effort into it.
+
+But because plan B exists, I am calm when I am not supposed to be.
+
+This is Zimbabwe
+
+
+  But that is the Zimbabwean story isn’t it? One thing can’t sustain you. You have to have a job, a side hustle, a farm and three Visa applications to go to the UK, Australia and/or Poland (in that order) to help old white people bath.
+
+
+So realistically speaking, it’s not bad for plan B to exist. In Zimbabwe, it’s a necessity even. But there is a need to be conscious of your priorities and what you want to achieve most so that side-plans do not derail the first one.
+">
+                        2 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/8zpTck2s/impostor.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.postimg.cc/8zpTck2s/impostor.jpg" alt="My current experience with impostor syndrome" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/thoughts/2023/11/03/impostor-syndrome.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Thoughts
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/2023/11/03/impostor-syndrome.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/thoughts/2023/11/03/impostor-syndrome.html" class="text-decoration-none">
                     My current experience with impostor syndrome
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 A bit more quiet and shush from me...
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Nov 3, 2023
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Nov 3, 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="I suppose being a late teenager and getting into your twenties, you go into life with so many ideas of how things are supposed to go, how things are etc. After all, your life before university is almost as black and white, wrong and right as it can get. You are either a good student or a bad student, you are either a good child or a bad child, you are either a good friend or a bad friend. You get the idea. But then you get to experience life in its whole, I believe in university. You start to appreciate that life is not black and white but many many shades of grey.
+
+That’s what happened to me this year. I was never scared to share information with people. I’d read dozens of books a year, listen to many podcasts and read many articles on how to be the best person I could be (I still do). I would then share this information. That was one of my motivations to start this blog, to have a place to share things I found interesting with people around me, hoping it’d help.
+
+However, events that have happened this year, many that I caused to myself, have led me to question myself more. And it has led me to question who am I to say anything that I say? I suppose this is still me reeling from the events of this year and I will eventually get back to feeling like myself and writing regardless.
+
+It really doesn’t matter
+
+I have had plans to start a podcast for at least a year now and I will. I wanted to start it as a podcast to give advice and lessons that I have learnt from my very short life, especially to young, Christian boys. But again, the question springs up. Who am I to do that? The point of the podcast has now changed then. Instead of me giving advice (which I don’t have anyway), let me talk to people who are way ahead of me. Doctors, parents, pastors etc, people who obviously know something about life because I know nothing.
+
+In summary, it’ll be a podcast where I selfishly talk to people who are way ahead of me in life and ask them questions that I have. I’ll be learning and hopefully, you’ll be learning too.
+
+Conclusion
+
+I wrote this today so that I am keep a public record of me going through impostor syndrome for the first time in my life and seeing how I will overcome it. Typing this, I am now questioning if ‘impostor syndrome’ is a problem anyway.😂 Maybe it’s a way for people to know their places in life.
+
+But I will go back to my past cadence of posting things I would have found interesting. That shouldn’t cause any problems since the information wouldn’t be coming from me directly😂. And when the podcast comes around, it’ll be even better.
+
+
+  Key takeaway for me: I am not old enough to be giving ‘life advice’. Don’t I ever will or dare to.
+
+">
+                        3 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.ytimg.com/vi/zKL7xVbXSpI/sddefault.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i.ytimg.com/vi/zKL7xVbXSpI/sddefault.jpg" alt="Are Minister Mahendere's lyrics biblical?" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/faith/2023/10/31/tangai-neni-lyrics.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Faith
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Faith
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/faith/2023/10/31/tangai-neni-lyrics.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/faith/2023/10/31/tangai-neni-lyrics.html" class="text-decoration-none">
                     Are Minister Mahendere's lyrics biblical?
-                </h3>
-            </a>
-            <p class="card-text mb-0">
-                Minister Mahendere's popular song "Tangai Neni" came into question yesterday and I fell down a rabbit hole. Are they biblical?
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
+                Minister Mahendere's popular song "Tangai Neni" came into question yesterday and I fell down a rabbit hole. Are they ...
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Oct 31, 2023
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Oct 31, 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="It was late at night, at a time I know I should be asleep. It’s as easy as going offline, closing my eyes and going to sleep. But of course, I don’t do that. Instead, in a conversation with my friend, (who was honestly sleepy to the point of just indulging me by replying so ‘conversation’ might be some sort of a stretch), I got to wonder, are Minister Mahendere’s lyrics to ‘Tangai Neni’ biblical?
+
+Disclaimers
+
+Before I go on, I should state a few things.
+
+  If you are a Minister Mahendere fan, please (and pretty please) do not take this as an attack. You will see that in this article, I won’t even claim whether it’s wrong (maybe once I get more information, I will have a solid opinion). I am simply in a quest for truth.
+  I am not the biggest fan of his in any case. It’s not that I don’t like his music and him, I just don’t listen to his music. I have nothing against him. (I felt I had to say this to remove any bias that might be perceived in this article).
+
+
+Things I have questions about
+
+I am going to try to pose questions that I have about the song. I will try to be as objective as possible and keep them as questions. Please do feel free to reply with answers and I will update this article accordingly.
+
+Now that that is out of the way…
+
+Tangai neni
+
+What does that mean? It’s implication is that we are in a competition to be blessed so “might as well start here Lord”.
+
+In addition to that, an obvious question is “Is this a song about God or about me?”
+
+The whole song’s lyrics are “Tangai neni”, “Mugopedza neni”, “Ndioneiwo”… Matthew 6 vs 33 says “But seek first His kingdom and His righteousness, and all these things will be given to you as well.”
+
+Are we not in direct violation of that when we ask God to do something for us first? And I say for us first because God is considered at the end, sort of as an afterthought with the following lyrics, at the end of the song…
+
+I will testify
+I will testify
+Of Your goodness
+Of Your mercy
+
+
+Prosperity gospel repackaged?
+
+There is a part of the song that goes like
+
+Ko paye
+Pamuno promoter vanhu venyu
+Imbo tangai neni Ishe
+
+
+Another
+
+Pamunokomborera vana venyu
+Imbo tangai neni Ishe
+
+
+There is a very materialistic feel to the song. Prosperity gospel-like. And who can blame him? It sells easily. No wonder the song has 2.7 million views on YouTube. But then again, is it biblical?
+
+So for those who things don’t work out…
+
+There are lyrics saying
+
+Mwari
+Iko kutenda ndinako
+Kushoko renyu
+Saka ndioneiwo Mwari
+
+
+This is one of the reasons why people end up leaving the church. “Ah it didn’t work out? You didn’t have enough faith. Keep pushing” without stopping to ask, “Is this what God wants for me? What actually is God’s will?”
+
+Romans 9 vs 21 says “Does not the potter have the right to make out of the same lump of clay some pottery for special purposes and some for common use?” God is sovereign and His will will be done.
+
+Is it not better that we first ask God what His will is and then pray for it to be done instead of encouraging people to have faith in whatever, no matter the reason?”
+
+In conclusion
+
+If it wasn’t clear, my biggest problem with the song is that it seems to be about me and not about God. It seems to be about what I want and not what God wants. Further to that, it seems to be encouraging an ATM type of God. “Lord I want to make the first withdrawal so tangai neni”.
+
+Is that really what the New Testament is encouraging our relationship with God to be like?
+
+Again, please do feel free to reply me on my WhatsApp by clicking right here
+">
+                        4 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1636082106091-493a3696eaf4?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGluc3RpbmN0fGVufDB8fDB8fHww" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://images.unsplash.com/photo-1636082106091-493a3696eaf4?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGluc3RpbmN0fGVufDB8fDB8fHww" alt="A theory about that gut feeling" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/thoughts/2023/10/30/a-theory-about-that-gut-feeling.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Thoughts
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/2023/10/30/a-theory-about-that-gut-feeling.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/thoughts/2023/10/30/a-theory-about-that-gut-feeling.html" class="text-decoration-none">
                     A theory about that gut feeling
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 Do I need to rationalise everything and understand how I got to every conclusion I have? Probably not. Here's why.
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Oct 30, 2023
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Oct 30, 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="My friend and I, we take long walks after Sunday church so that we avoid having to cook and do chores at home after service. 
+During one of these walks, we talked about what ‘gut feeling’ is.
+
+I know we have all had it at some point. You consciously get to a conclusion about something but something just doesn’t ‘feel’ right. And because it’s ‘feeling’ based, many people tend to dismiss it because of social constructs that feelings are unimportant. But we rationalised it in another way.
+
+Our Theory On Gut Feelings
+
+We are consciously prone to deceiving ourselves. We disregard things consciously things when they don’t fit the model of what we want things to be. I might know that I don’t have a lot of money for fuel while deciding to buy a car but will gladly disregard that when I see a Benz in my price range. (Obviously the engine is missing and it has banana peels for brakes if it is that cheap.)
+
+Therefore
+
+If we are so prone to lying to ourselves, what if the gut feeling is the conclusion that your subconscious mind has gotten to without lying to itself?
+
+Your subconscious mind is probably the truest you and acts as a repository of your values and principles. So it doesn’t seem unlikely, to me at least, that the subconscious mind will make the best decision for you (without you being aware of it - that’s the subconscious mind) but just present it as a ‘gut feeling’. This probably happens while you are still trying to rationalise consciously you eating that cake in the fridge at 11pm.
+
+And another funny thing too. Your ‘gut’ is always right. This is from anecdotal evidence of course, but I am sure some of you might relate to this.
+
+
+  Whatever your gut was feeling iffy about, in the future, you probably realise it was trying to tell you something and it was right.
+
+
+Why is it a ‘gut feeling’?
+
+Scientists have attempted to explain why you feel it in your gut or stomach. Along the whole lining of your digestive tract, there is a complex system of nerves called the ‘Enteric Nervous System’. Now, there is no conclusive evidence that there is a link between this nervous system and ‘feeling it in your gut’ (maybe you just ate a lot).
+
+Conclusion
+
+It’s just a theory but a theory that makes sense to me. It helps so that I don’t dismiss the feelings I have about something. It’s probably right and I am the one lying to myself.
+">
+                        3 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3JpdGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3JpdGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="By whose authority do I write?" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/thoughts/2023/10/29/by-whose-authority.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Thoughts
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/2023/10/29/by-whose-authority.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/thoughts/2023/10/29/by-whose-authority.html" class="text-decoration-none">
                     By whose authority do I write?
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 A bit of an imposter syndrome piece
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Oct 29, 2023
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Oct 29, 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="Whenever I write something that I want to post here later, I find myself cringing sometimes. The question in my head will be
+
+
+  Who are you to write about this?
+
+
+Which is a good question which I answer in the following ways.
+
+1. I am no one really.
+
+I write and post primarily for myself and to organise my thoughts more. The feeling of having to go public with what you are thinking forces you to think the thoughts more thoroughly.
+
+That’s the whole value of putting things in public such as this. Richard Feynman’s claim to fame is that he popularised the notion that if you can’t teach something, you probably don’t understand it. Posting thoughts in public isn’t necessarily teaching but the action of posting itself is an exercise in helping you understand what you are posting.
+
+This is the first selfish reason
+
+2. Let the information out there
+
+The other reason is that at this very young, juvenile age, I don’t know a lot. But I might be one step ahead in a journey that someone else younger is on. So what I share and experience might help in some way. Very unlikely but I hope so.
+">
+                        2 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://zimpricecheck.com/wp-content/uploads/2022/07/gold_coins.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://zimpricecheck.com/wp-content/uploads/2022/07/gold_coins.jpg" alt="What's ZiG!?" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/thoughts/2023/10/03/what-is-zig.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Thoughts
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/2023/10/03/what-is-zig.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/thoughts/2023/10/03/what-is-zig.html" class="text-decoration-none">
                     What's ZiG!?
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 A summary of Zimbabwean Gold (ZiG) and my thoughts on it
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Oct 3, 2023
-                        </div>
+            
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Oct 3, 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="First of all, this is not financial advice. This is simply ‘distilling’ stuff for people because I spend too much time reading stuff on the internet instead of studying the difference between acetaminophen and paracetamol (something actually relevant to the test I have on 1 November.)
+
+Since we are on the same page now, what’s ZiG?
+
+A few facts.
+
+
+  A country needs its own currency. Zimbabwe can’t rely on US Dollars as it’s main currency.
+  A currency like the US dollar gets its value from the belief people have in it. Otherwise, it’s just a paper.
+
+
+So…
+
+In Zimbabwe, because all of our local currencies always lose value, the government came up with the ingenious idea of backing a local currency with something that has inherent value, gold. And since the world is becoming more digital, instead of printing the currency, they will make the new currency format digital. This is because there already physical gold coins (supposedly, I have never seen one. Maybe because I don’t have $1500 to buy one🤔).
+
+How will it work?
+
+Your USD Ecocash tells you that you have $30. ZiG however will be quoted in its weight, milligrams. Hence you will have 2mg of ZiG.
+
+Weird, I know.
+
+But here is the idea.
+
+The value of the digital currency, since it is backed by gold and gold’s price is controlled by the London Bullion Market Association, changes. Hence 1mg of ZiG might be worth $0.60 today but depending on the international price that day, it’d be worth more (or less depending on your luck).
+
+For example, gold in 2018 was worth $1300 or so. Now, it plays around $1600. Meaning that your ZiG would have increased value.
+
+Other information
+
+As news outlets have already outlined how to buy ZiG and the terms and conditions, I won’t bother to repeat saying them again here.
+
+Here’s a Pindula article summarising that.
+
+The bit you have been waiting for…
+
+My opinion on ZiG. I am joking. Of course you weren’t waiting for that. But question is will it work?
+
+Two sides. The optimist in me vs the realist.
+
+The optimist
+
+As with many things in Zimbabwe, in theory, this was is the best move to de-dollarise (because we need to wean ourselves off the cocaine we have gotten used to - the US dollar). 
+So the plan to go back to gold is a masterstroke.
+
+In addition, the fact that the value of the currency is actually stored in gold and not in our faith in ‘Mu2cents Ncube’ and the government, means that this currency, in theory will hold value.
+
+This is a result of our good friend, inflation (the thing that puts us in every economics textbook in the world for having the highest inflation rate in 2008), seizing to exist. Inflation exists because paper currencies such as the Rand and USD have no inherent value. Hence by gold being valuable in itself, it doesn’t lose value. It gains always!
+
+The optimist in me so dearly wants this to work as the benefits of having a functioning currency are unending in Zimbabwe.
+
+However…
+
+The Realist in Me
+
+This is Zimbabwe😂 do we really think this will go straight? There is definitely a way this benefits a certain party in Zimbabwe at the expense of us, the normal people. I just don’t see that loophole yet, but I can bet the 50 bonds I got as ‘mushikashika’ change today that now worthless, that there is a loophole somewhere.
+
+Besides that negativity, the question is the wider economy ready for a digital currency?
+
+
+  Imagine paying driver weHonda Fit using Zipit yeZiG instead of cash. That’d be nice in theory, but in reality, too many hurdles to jump through.
+
+
+For the majority of Zimbabweans, I don’t believe we are ready for such a shift towards digital money. We don’t have the faith in not having physical stores of value.
+
+Conclusion
+
+The optimist is back. If there is a way to force the economy to become digital and be in the formal sector, this move by the RBZ is definitely one way to do it.
+
+My hope is that this works but being Zimbabwean, I am keeping coy.
+
+Further reading from the most reliable newspaper in the world
+">
+                        4 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i3.ytimg.com/vi/hCW2NHbWNwA/maxresdefault.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <article class="post-card h-100">
+        <div class="post-card-image-container">
+            <img class="post-card-image" src="https://i3.ytimg.com/vi/hCW2NHbWNwA/maxresdefault.jpg" alt="Humans Sweat Out Stress!?" />
+            <div class="post-card-overlay">
+                <div class="post-card-overlay-content">
+                    <a href="/podcast-review/2023/10/02/how-to-manage-stress.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-arrow-right me-2"></i>Read More
+                    </a>
+                </div>
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Podcast-Review
-                </button>
+        </div>
+        
+        <div class="post-card-body">
+            <!-- Categories -->
+            <div class="post-card-categories mb-3">
+                  
+                <span class="badge post-card-category me-2">
+                    <i class="fas fa-tag me-1"></i>Podcast-Review
+                </span>
+                
+            </div>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/podcast-review/2023/10/02/how-to-manage-stress.html">
-                <h3 class="fw-bold">
+            <!-- Title and Link -->
+            <h3 class="post-card-title mb-3">
+                <a href="/podcast-review/2023/10/02/how-to-manage-stress.html" class="text-decoration-none">
                     Humans Sweat Out Stress!?
-                </h3>
-            </a>
-            <p class="card-text mb-0">
+                </a>
+            </h3>
+            
+            <!-- Description -->
+            <p class="post-card-description">
                 Here is a summary of what the 'stress doctor', Dr Tara Swart, says about managing stress and the power of our minds.
             </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Oct 2, 2023
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-        
-            <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://www.disruptorleague.com/wp-content/uploads/2017/03/Contagious-Jonah-Berger.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
-            </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Book-Review
-                </button>
             
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/book-review/2023/09/14/contagious-book-review-copy.html">
-                <h3 class="fw-bold">
-                    Book Review: Contagious
-                </h3>
-            </a>
-            <p class="card-text mb-0">
-                Contagious by Jonah Berger
-            </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Sep 14, 2023
-                        </div>
+            <!-- Meta Information -->
+            <div class="post-card-meta">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="post-card-author">
+                        <i class="fas fa-user-circle me-2 text-primary"></i>
+                        <span class="author-name">Tanaka Mawere</span>
                     </div>
+                    <div class="post-card-date">
+                        <i class="fas fa-calendar me-2 text-muted"></i>
+                        <span>Oct 2, 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Reading time estimate -->
+                <div class="post-card-reading-time mt-2">
+                    <i class="fas fa-clock me-2 text-muted"></i>
+                    <span class="reading-time-estimate" data-content="
+
+I have recently started my clinical rounds in medical school and seeing patients for the first time. When I see a patient’s condition, I wonder to myself if it could have been avoided with a healthier lifestyle i.e. regular exercise and stress management.
+
+However, these thoughts are immediately stopped by reality. Try convincing an overweight mother from Glen View or Budiriro to wake up and chase the wind for 30 minutes every morning. Never going to happen.
+
+
+  What I hope is that since you are in a position to read this, you are much easier to convince.
+
+
+So listening to the podcast, it was interesting to learn that humans sweat out the stress hormone (called cortisol) when exercising.
+
+I have always known that to exercise the mind, exercise the body and the vice-versa but this was a new perspective.
+
+
+  What this means essentially is that when you exercise, you are literally sweating out the stress hormone thereby reducing your stress levels.
+
+
+Another tidbit from the podcast
+
+In a study to show the power of our minds, weightlifters who imagined themselves lifting weights in their minds had the same muscle growth as those who actually lifted weights.
+
+This is a whole other discussion on its own that is interesting as it delves into the realm of visualising stuff. But that’s for another day.
+
+Conclusion
+
+If you have gotten this far in the post, please send this emoji ☺️ to my WhatsApp . I appreciate it.
+">
+                        2 min read
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </div>
         
     </div>
@@ -565,24 +1173,105 @@
     <script src="/assets/js/color-modes.js"></script>
   </body>
   
-<footer class="p-5 vonge-gradient-footer">
-    <ul class="nav justify-content-center pb-3 mb-3">
-      <li class="vonge-nav-item">
-        <a href="#" class="nav-link px-2 text-white fw-semibold">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="/posts" class="nav-link px-2 text-white fw-semibold">Posts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/projects" class="nav-link px-2 text-white fw-semibold">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="all-thoughts" class="nav-link px-2  text-white fw-semibold">Thoughts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/about" class="nav-link px-2 text-white fw-semibold">About</a>
-      </li>
-    </ul>
-    <p class="text-center text-white fw-semibold">2024 ©️ Tanaka Mawere</p>
-  </footer>
+<footer class="p-5 vonge-gradient-footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+                <p class="text-white-50 mb-3">
+                    Full-stack .NET developer and final year medical student passionate about 
+                    creating innovative solutions at the intersection of technology and healthcare.
+                </p>
+                <div class="row align-items-center m-2">
+    <div class="col">
+        <a href="https://www.instagram.com/tan.akamawere/">
+            <i class="fa-brands fa-instagram fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://github.com/tanakamawere">
+            <i class="fa-brands fa-github fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="mailto:tanaka@tanakamawere.co.zw">
+            <i class="fa-solid fa-envelope fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://wa.me/263785468923">
+            <i class="fa-brands fa-whatsapp fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://x.com/tanaka_mawere">
+            <i class="fa-brands fa-twitter fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <!-- <div class="col">
+        <a href="https://www.youtube.com/channel/UCta53LdBaAj7gQ-JHgHBEfg">
+            <i class="fa-brands fa-youtube fa-xl icon-colour icon-size"></i>
+        </a>
+    </div> -->
+</div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="/" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-home me-2"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/projects" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-code me-2"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/posts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-blog me-2"></i>Posts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/all-thoughts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-lightbulb me-2"></i>Thoughts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/about" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-user me-2"></i>About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Contact Info</h6>
+                <div class="text-white-50">
+                    <p class="mb-2">
+                        <i class="fas fa-envelope me-2"></i>
+                        hello@tanakamawere.com
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Harare, Zimbabwe
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4 footer-divider">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="text-white-50 mb-0">
+                    &copy; 2025 Tanaka Mawere. All rights reserved.
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <small class="text-white-50">
+                    Built with Jekyll & Bootstrap 5
+                </small>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>
