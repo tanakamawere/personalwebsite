@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2025-08-16T01:22:35+02:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Tanaka Mawere</title><subtitle>Incompetent C# Programmer and Keyboardist + Bassist from Harare. Currently an unfortunate medical student at UZ and pretends to exercise at times.</subtitle><author><name>Tanaka Mawere</name><email>hello@tanakamawere.com</email></author><entry><title type="html">When music becomes perfect…</title><link href="http://0.0.0.0:4000/thoughts/music/2025/06/28/perfect-music.html" rel="alternate" type="text/html" title="When music becomes perfect…" /><published>2025-06-28T02:00:00+02:00</published><updated>2025-06-28T02:00:00+02:00</updated><id>http://0.0.0.0:4000/thoughts/music/2025/06/28/perfect-music</id><content type="html" xml:base="http://0.0.0.0:4000/thoughts/music/2025/06/28/perfect-music.html"><![CDATA[<p>I like The Unveiled.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-26T22:42:44+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tanaka Mawere</title><subtitle>Incompetent C# Programmer and Keyboardist + Bassist from Harare. Currently an unfortunate medical student at UZ and pretends to exercise at times.</subtitle><author><name>Tanaka Mawere</name><email>tanaka@tanakamawere.com</email></author><entry><title type="html">I tried vibe-coding…</title><link href="http://localhost:4000/thoughts/programming/2025/08/26/vibe-coding.html" rel="alternate" type="text/html" title="I tried vibe-coding…" /><published>2025-08-26T02:00:00+02:00</published><updated>2025-08-26T02:00:00+02:00</updated><id>http://localhost:4000/thoughts/programming/2025/08/26/vibe-coding</id><content type="html" xml:base="http://localhost:4000/thoughts/programming/2025/08/26/vibe-coding.html"><![CDATA[<p>The uninitiated might be wondering, what is “vibe-coding?” So here is a short-ish, very much not AI answer.</p>
+
+<blockquote>
+  <p>Tell AI to make an app, bammm, it’s there and it works.</p>
+</blockquote>
+
+<p>To be very fair though, there is no one definition that everyone can agree on but the basic premise is that AI is doing most, if not all of the coding, and you are just there, facilitating.</p>
+
+<p>So I tried it. I tried to vibe-code. And I have thoughts.</p>
+
+<h2 id="there-are-things-it-is-and-things-it-isnt">There are things it is, and things it isn’t</h2>
+
+<p>I was at a games night, and we’d played 30 seconds to its max and wanted something to switch things up. Charades we thought. Went on the app store and downloaded an app clearly written “Charades”. Great then. More fun on the way.</p>
+
+<p>Except that we knew none of the things that were in the game, completely. And as self-ordained problem solver, I took it upon myself to make a charades game that Africans, in particular Zimbabweans, can play and relate to.</p>
+
+<p>Gave myself a weekend because it’s really a simple application if you think about it. But I was like nah, there’s AI for this.</p>
+
+<p>So I opened VSCode and told it what I want and kept on prompting it until it said it was done with everything.</p>
+
+<p>Yeppie! The app is done. With the excitement that a child has when its mother comes back from work, I installed it on my phone.</p>
+
+<p>Crashed.</p>
+
+<p>I really thought the promise of vibe-coding was that it’d do everything “better than humans” but when I opened the code, even spaghetti isn’t as tangled and messy as that horror show of code I saw.</p>
+
+<p>And I learnt that my passion career is still safe for a few years, I hope…</p>
+
+<blockquote>
+  <p>I should mention, if you want the app I then fixed after it was vibe-coded, here is a link … which should be here had Google Play approved the app in time but oh well, I will post it on my socials.</p>
+</blockquote>
+
+<h2 id="lessons">Lessons</h2>
+
+<h3 id="1-context-is-key">1. Context is key</h3>
+
+<p>AI is like an overzealous child that wants to use a knife to eat Cerevita. Because of how LLMs work, if you don’t guide it accordingly, you will find it doing the wildest things ever. And that’s something that is not talked about enough.</p>
+
+<p>The reason is that Sam Altman and the likes promise us that AI means autonomy, but in practice, it means me learning to become a supervisor and that really takes a paradigm shift in mindset, in how one works and in one’s coding practices.</p>
+
+<h3 id="2-gemini-is-a-horror-show">2. Gemini is a horror show.</h3>
+
+<p>That’s it. That’s the tweet.</p>
+
+<h3 id="3-ai-wont-replace-programmers-it-will-make-us-work-faster-for-now">3. AI won’t replace programmers, it will make us work faster… for now</h3>
+
+<p>Genuinely convinced that companies that are laying off people because of AI will come to regret it soon because AI isn’t all it’s been made up to be. It’s really not autonomous. Needs a lot of human supervision to guide</p>
+
+<p>And that’s really the conclusion… That vibe-coding really isn’t a “thing” if you think you can tell AI to make the next WhatsApp in 2 hours. You will be very disappointed.</p>
+
+<p>But it will certainly make you faster.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Thoughts" /><category term="Programming" /><summary type="html"><![CDATA[Just tell AI to make the app and it will, or will it?]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Jo3cVvNmq-FqXd1oV3dWyxig1f09pIsjtw&amp;s" /><media:content medium="image" url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Jo3cVvNmq-FqXd1oV3dWyxig1f09pIsjtw&amp;s" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">When music becomes perfect…</title><link href="http://localhost:4000/thoughts/music/2025/06/28/perfect-music.html" rel="alternate" type="text/html" title="When music becomes perfect…" /><published>2025-06-28T02:00:00+02:00</published><updated>2025-06-28T02:00:00+02:00</updated><id>http://localhost:4000/thoughts/music/2025/06/28/perfect-music</id><content type="html" xml:base="http://localhost:4000/thoughts/music/2025/06/28/perfect-music.html"><![CDATA[<p>I like The Unveiled.</p>
 
 <p>They are the best vocal group in Zimbabwe to me and it’s not even close! Their harmonies are tighter than the way I grip my phone when I walk in town these days. Their individual voices are as smooth as Mama’s peanut butter.</p>
 
@@ -45,7 +95,7 @@
 
 <blockquote>
   <p>Sometimes, “the best” is not in the excellence of the sound — it’s in the <strong>honesty of the sound</strong></p>
-</blockquote>]]></content><author><name>Tanaka Mawere</name></author><category term="Thoughts" /><category term="Music" /><summary type="html"><![CDATA[There is no perfection in art]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/1RKnRKWq/Copilot-20250628-083519.png" /><media:content medium="image" url="https://i.postimg.cc/1RKnRKWq/Copilot-20250628-083519.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What is Valentine’s Day!?</title><link href="http://0.0.0.0:4000/thoughts/2025/01/31/valentines.html" rel="alternate" type="text/html" title="What is Valentine’s Day!?" /><published>2025-01-31T02:00:00+02:00</published><updated>2025-01-31T02:00:00+02:00</updated><id>http://0.0.0.0:4000/thoughts/2025/01/31/valentines</id><content type="html" xml:base="http://0.0.0.0:4000/thoughts/2025/01/31/valentines.html"><![CDATA[<p>Writing this, I do understand that it does come off as someone who is bitter and is trying to find a way out of participating in Valentine’s Day. But, I promise you, that is not the case, or I hope it isn’t.</p>
+</blockquote>]]></content><author><name>Tanaka Mawere</name></author><category term="Thoughts" /><category term="Music" /><summary type="html"><![CDATA[There is no perfection in art]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/1RKnRKWq/Copilot-20250628-083519.png" /><media:content medium="image" url="https://i.postimg.cc/1RKnRKWq/Copilot-20250628-083519.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What is Valentine’s Day!?</title><link href="http://localhost:4000/thoughts/2025/01/31/valentines.html" rel="alternate" type="text/html" title="What is Valentine’s Day!?" /><published>2025-01-31T02:00:00+02:00</published><updated>2025-01-31T02:00:00+02:00</updated><id>http://localhost:4000/thoughts/2025/01/31/valentines</id><content type="html" xml:base="http://localhost:4000/thoughts/2025/01/31/valentines.html"><![CDATA[<p>Writing this, I do understand that it does come off as someone who is bitter and is trying to find a way out of participating in Valentine’s Day. But, I promise you, that is not the case, or I hope it isn’t.</p>
 
 <p>My feed has been full of memes, reels, products and services being marketed for Valentine’s Day. (Seems like everyone is selling something for Valentine’s, wondering who is going to buy.)</p>
 
@@ -127,7 +177,7 @@
 
 <blockquote>
   <p>PS: I will still participate in the pressure because I don’t want to get dumped (so please take what I am saying with a big grain of salt)</p>
-</blockquote>]]></content><author><name>Tanaka Mawere</name></author><category term="Thoughts" /><summary type="html"><![CDATA[Lowkey protesting against Valentine's Day]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/28p8Kj2C/valentines.jpg" /><media:content medium="image" url="https://i.postimg.cc/28p8Kj2C/valentines.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Where is the manual?</title><link href="http://0.0.0.0:4000/thoughts/2024/09/16/where-is-the-manual.html" rel="alternate" type="text/html" title="Where is the manual?" /><published>2024-09-16T02:00:00+02:00</published><updated>2024-09-16T02:00:00+02:00</updated><id>http://0.0.0.0:4000/thoughts/2024/09/16/where-is-the-manual</id><content type="html" xml:base="http://0.0.0.0:4000/thoughts/2024/09/16/where-is-the-manual.html"><![CDATA[<p>During gynae clinic today, there was a woman I was clerking. She has had genital warts for 17 years now. So normally, after taking her history, we are supposed to examine the patient and in this case, it meant asking her for permission to see and inspect the warts “down there.”</p>
+</blockquote>]]></content><author><name>Tanaka Mawere</name></author><category term="Thoughts" /><summary type="html"><![CDATA[Lowkey protesting against Valentine's Day]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/28p8Kj2C/valentines.jpg" /><media:content medium="image" url="https://i.postimg.cc/28p8Kj2C/valentines.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Where is the manual?</title><link href="http://localhost:4000/thoughts/2024/09/16/where-is-the-manual.html" rel="alternate" type="text/html" title="Where is the manual?" /><published>2024-09-16T02:00:00+02:00</published><updated>2024-09-16T02:00:00+02:00</updated><id>http://localhost:4000/thoughts/2024/09/16/where-is-the-manual</id><content type="html" xml:base="http://localhost:4000/thoughts/2024/09/16/where-is-the-manual.html"><![CDATA[<p>During gynae clinic today, there was a woman I was clerking. She has had genital warts for 17 years now. So normally, after taking her history, we are supposed to examine the patient and in this case, it meant asking her for permission to see and inspect the warts “down there.”</p>
 
 <p>But I reasoned myself out of it. “I have never done it before. I will first see a senior do it then maybe do it next time?”</p>
 
@@ -167,7 +217,7 @@
 
 <p>There is none. So why give yourself the pressure of having figured out life?</p>
 
-<p>If anything, each of us are writing our own manual as we are living it.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Thoughts" /><summary type="html"><![CDATA[No, you don't have everything figured out... And you never will.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/7LSjnsQf/c742f3ca-04f0-4c93-a395-514cdefde9f4.jpg" /><media:content medium="image" url="https://i.postimg.cc/7LSjnsQf/c742f3ca-04f0-4c93-a395-514cdefde9f4.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">On leadership and Hitler…</title><link href="http://0.0.0.0:4000/thoughts/leadership/2024/09/15/on-leadership-and-hitler.html" rel="alternate" type="text/html" title="On leadership and Hitler…" /><published>2024-09-15T02:00:00+02:00</published><updated>2024-09-15T02:00:00+02:00</updated><id>http://0.0.0.0:4000/thoughts/leadership/2024/09/15/on-leadership-and-hitler</id><content type="html" xml:base="http://0.0.0.0:4000/thoughts/leadership/2024/09/15/on-leadership-and-hitler.html"><![CDATA[<p>If you don’t know what arm-chair commentary is, this is it. Saying something just because you had thoughts while sitting on your arm chair, regardless of you thinking the thoughts through or not.</p>
+<p>If anything, each of us are writing our own manual as we are living it.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Thoughts" /><summary type="html"><![CDATA[No, you don't have everything figured out... And you never will.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/7LSjnsQf/c742f3ca-04f0-4c93-a395-514cdefde9f4.jpg" /><media:content medium="image" url="https://i.postimg.cc/7LSjnsQf/c742f3ca-04f0-4c93-a395-514cdefde9f4.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">On leadership and Hitler…</title><link href="http://localhost:4000/thoughts/leadership/2024/09/15/on-leadership-and-hitler.html" rel="alternate" type="text/html" title="On leadership and Hitler…" /><published>2024-09-15T02:00:00+02:00</published><updated>2024-09-15T02:00:00+02:00</updated><id>http://localhost:4000/thoughts/leadership/2024/09/15/on-leadership-and-hitler</id><content type="html" xml:base="http://localhost:4000/thoughts/leadership/2024/09/15/on-leadership-and-hitler.html"><![CDATA[<p>If you don’t know what arm-chair commentary is, this is it. Saying something just because you had thoughts while sitting on your arm chair, regardless of you thinking the thoughts through or not.</p>
 
 <p>But that the beauty of having your own website right? I can edit this or post another one later when I have ironed out my thoughts😂.</p>
 
@@ -211,7 +261,7 @@
 
 <p>Which is what I said in the introduction. When I discover where I wanted to go with this thought train, I’ll add.</p>
 
-<p>Thanks for reading! Congratulate yourself on not having the attention span of a housefly for reading this far because of all this TikTok, dopamine nonsense.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Thoughts" /><category term="Leadership" /><summary type="html"><![CDATA[Hitler, Mussolini, Lenin - what do all these people have in common?]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/FR65nFdT/09c888b9-f4cf-46eb-b08c-e4bbfaddc429.jpg" /><media:content medium="image" url="https://i.postimg.cc/FR65nFdT/09c888b9-f4cf-46eb-b08c-e4bbfaddc429.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">I never understood Nelson Mandela until now…</title><link href="http://0.0.0.0:4000/thoughts/2024/08/05/nelson-mandela.html" rel="alternate" type="text/html" title="I never understood Nelson Mandela until now…" /><published>2024-08-05T02:00:00+02:00</published><updated>2024-08-05T02:00:00+02:00</updated><id>http://0.0.0.0:4000/thoughts/2024/08/05/nelson-mandela</id><content type="html" xml:base="http://0.0.0.0:4000/thoughts/2024/08/05/nelson-mandela.html"><![CDATA[<p>I grew up watching Wiztech SABC channels like most of the people my age and I’d see Madiba being praised so much as a kid. I got it, 27 years was no joke in jail. Heck I haven’t existed for as long as this man did in jail. That’s something. More on him in a minute</p>
+<p>Thanks for reading! Congratulate yourself on not having the attention span of a housefly for reading this far because of all this TikTok, dopamine nonsense.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Thoughts" /><category term="Leadership" /><summary type="html"><![CDATA[Hitler, Mussolini, Lenin - what do all these people have in common?]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/FR65nFdT/09c888b9-f4cf-46eb-b08c-e4bbfaddc429.jpg" /><media:content medium="image" url="https://i.postimg.cc/FR65nFdT/09c888b9-f4cf-46eb-b08c-e4bbfaddc429.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">I never understood Nelson Mandela until now…</title><link href="http://localhost:4000/thoughts/2024/08/05/nelson-mandela.html" rel="alternate" type="text/html" title="I never understood Nelson Mandela until now…" /><published>2024-08-05T02:00:00+02:00</published><updated>2024-08-05T02:00:00+02:00</updated><id>http://localhost:4000/thoughts/2024/08/05/nelson-mandela</id><content type="html" xml:base="http://localhost:4000/thoughts/2024/08/05/nelson-mandela.html"><![CDATA[<p>I grew up watching Wiztech SABC channels like most of the people my age and I’d see Madiba being praised so much as a kid. I got it, 27 years was no joke in jail. Heck I haven’t existed for as long as this man did in jail. That’s something. More on him in a minute</p>
 
 <p>But recently I was thinking about the concept of hope, an optimistic state of mind that tomorrow might be my day, if not, the next day.</p>
 
@@ -235,7 +285,7 @@ These pastors are promising that give that and your breakthrough is near. This y
 <p>I want to keep this writing and I know the internet will. Probably our father’s generation wasn’t the one to restore and give us back hope in Zimbabwe but I do hope and pray that it is my generation somehow that gives hope back to Zimbabwe.
 Time to really emulate Nelson Mandela and not let situations around you kill your hope.</p>
 
-<p>Thank you for reading my writing. Tell me your thoughts.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Thoughts" /><summary type="html"><![CDATA[I see a parallel between his struggles and the challenges we face in Zimbabwe, where hope can often seem elusive. Despite the systemic obstacles, I believe in the power of hope and the potential of my generation to restore it.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i0.wp.com/www.culturetype.com/wp-content/uploads/2013/12/mandela.png" /><media:content medium="image" url="https://i0.wp.com/www.culturetype.com/wp-content/uploads/2013/12/mandela.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Run Faster by Training Slower</title><link href="http://0.0.0.0:4000/health/2024/06/11/run-faster-by-training-slower.html" rel="alternate" type="text/html" title="Run Faster by Training Slower" /><published>2024-06-11T02:00:00+02:00</published><updated>2024-06-11T02:00:00+02:00</updated><id>http://0.0.0.0:4000/health/2024/06/11/run-faster-by-training-slower</id><content type="html" xml:base="http://0.0.0.0:4000/health/2024/06/11/run-faster-by-training-slower.html"><![CDATA[<p>A few years ago, I was on a morning run. That day I had told myself I am going to have an easy run, no pressure on having a fast pace. Just a nice jog to get the body started for the day.</p>
+<p>Thank you for reading my writing. Tell me your thoughts.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Thoughts" /><summary type="html"><![CDATA[I see a parallel between his struggles and the challenges we face in Zimbabwe, where hope can often seem elusive. Despite the systemic obstacles, I believe in the power of hope and the potential of my generation to restore it.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i0.wp.com/www.culturetype.com/wp-content/uploads/2013/12/mandela.png" /><media:content medium="image" url="https://i0.wp.com/www.culturetype.com/wp-content/uploads/2013/12/mandela.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Run Faster by Training Slower</title><link href="http://localhost:4000/health/2024/06/11/run-faster-by-training-slower.html" rel="alternate" type="text/html" title="Run Faster by Training Slower" /><published>2024-06-11T02:00:00+02:00</published><updated>2024-06-11T02:00:00+02:00</updated><id>http://localhost:4000/health/2024/06/11/run-faster-by-training-slower</id><content type="html" xml:base="http://localhost:4000/health/2024/06/11/run-faster-by-training-slower.html"><![CDATA[<p>A few years ago, I was on a morning run. That day I had told myself I am going to have an easy run, no pressure on having a fast pace. Just a nice jog to get the body started for the day.</p>
 
 <p>As I was turning a corner into Seke road, a guy on his way to work saw me and encouraged me to up the pace. Definitely well intentioned.</p>
 
@@ -279,7 +329,7 @@ Time to really emulate Nelson Mandela and not let situations around you kill you
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>The hope is you have learnt that it’s not every day that you have to be putting in 100% of your effort into anything, or in this particular discussion, exercise. Most of your training <em>should</em> be slow, <em>should</em> be easy. But in the remaining 20%, make sure you are giving it your all.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Health" /><summary type="html"><![CDATA[We all think that the most results come for putting in 100% all the time, but that's just not it.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/VLHDhVX6/eebb8a09-f65b-4ed1-90f5-48f1c3a6c5df.jpg" /><media:content medium="image" url="https://i.postimg.cc/VLHDhVX6/eebb8a09-f65b-4ed1-90f5-48f1c3a6c5df.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Praying about the Comfort Pandemic</title><link href="http://0.0.0.0:4000/faith/health/2024/05/23/praying-about-the-comfort-pandemic.html" rel="alternate" type="text/html" title="Praying about the Comfort Pandemic" /><published>2024-05-23T02:00:00+02:00</published><updated>2024-05-23T02:00:00+02:00</updated><id>http://0.0.0.0:4000/faith/health/2024/05/23/praying-about-the-comfort-pandemic</id><content type="html" xml:base="http://0.0.0.0:4000/faith/health/2024/05/23/praying-about-the-comfort-pandemic.html"><![CDATA[<p>At a recent church gathering, an elder gave us the following prayer point. “Let’s pray against the diseases that are now more prevalent in this day and age than when we were growing up: diabetes mellitus, hypertension”.</p>
+<p>The hope is you have learnt that it’s not every day that you have to be putting in 100% of your effort into anything, or in this particular discussion, exercise. Most of your training <em>should</em> be slow, <em>should</em> be easy. But in the remaining 20%, make sure you are giving it your all.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Health" /><summary type="html"><![CDATA[We all think that the most results come for putting in 100% all the time, but that's just not it.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/VLHDhVX6/eebb8a09-f65b-4ed1-90f5-48f1c3a6c5df.jpg" /><media:content medium="image" url="https://i.postimg.cc/VLHDhVX6/eebb8a09-f65b-4ed1-90f5-48f1c3a6c5df.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Praying about the Comfort Pandemic</title><link href="http://localhost:4000/faith/health/2024/05/23/praying-about-the-comfort-pandemic.html" rel="alternate" type="text/html" title="Praying about the Comfort Pandemic" /><published>2024-05-23T02:00:00+02:00</published><updated>2024-05-23T02:00:00+02:00</updated><id>http://localhost:4000/faith/health/2024/05/23/praying-about-the-comfort-pandemic</id><content type="html" xml:base="http://localhost:4000/faith/health/2024/05/23/praying-about-the-comfort-pandemic.html"><![CDATA[<p>At a recent church gathering, an elder gave us the following prayer point. “Let’s pray against the diseases that are now more prevalent in this day and age than when we were growing up: diabetes mellitus, hypertension”.</p>
 
 <p>And as a medical student, I heard that and thought well…</p>
 
@@ -320,7 +370,7 @@ But surely we can’t pray effects of our own doing away?</p>
 
 <blockquote>
   <p>Buy stocks in pharmaceutical companies. Their stock prices are only going to get higher.</p>
-</blockquote>]]></content><author><name>Tanaka Mawere</name></author><category term="Faith" /><category term="Health" /><summary type="html"><![CDATA[When should we stop praying and start listening?]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/hjVsQ2qb/2a2a5d41-2026-40f6-8495-78f0a9f75cc5.jpg" /><media:content medium="image" url="https://i.postimg.cc/hjVsQ2qb/2a2a5d41-2026-40f6-8495-78f0a9f75cc5.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Shhh, let’s not talk about sin</title><link href="http://0.0.0.0:4000/faith/2024/04/02/lets-shush-about-sin-copy.html" rel="alternate" type="text/html" title="Shhh, let’s not talk about sin" /><published>2024-04-02T02:00:00+02:00</published><updated>2024-04-02T02:00:00+02:00</updated><id>http://0.0.0.0:4000/faith/2024/04/02/lets-shush-about-sin%20copy</id><content type="html" xml:base="http://0.0.0.0:4000/faith/2024/04/02/lets-shush-about-sin-copy.html"><![CDATA[<p>Why?</p>
+</blockquote>]]></content><author><name>Tanaka Mawere</name></author><category term="Faith" /><category term="Health" /><summary type="html"><![CDATA[When should we stop praying and start listening?]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/hjVsQ2qb/2a2a5d41-2026-40f6-8495-78f0a9f75cc5.jpg" /><media:content medium="image" url="https://i.postimg.cc/hjVsQ2qb/2a2a5d41-2026-40f6-8495-78f0a9f75cc5.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Shhh, let’s not talk about sin</title><link href="http://localhost:4000/faith/2024/04/02/lets-shush-about-sin-copy.html" rel="alternate" type="text/html" title="Shhh, let’s not talk about sin" /><published>2024-04-02T02:00:00+02:00</published><updated>2024-04-02T02:00:00+02:00</updated><id>http://localhost:4000/faith/2024/04/02/lets-shush-about-sin%20copy</id><content type="html" xml:base="http://localhost:4000/faith/2024/04/02/lets-shush-about-sin-copy.html"><![CDATA[<p>Why?</p>
 
 <p>“Because we want to keep the peace, and not hurt each other’s <em>feelings.</em> 
 Besides, if you talk about sin, who are you to judge because Matthew 7 vs 1 says ‘Do not judge or you too will be judged…’ “</p>
@@ -441,7 +491,7 @@ Or read on. In any case, thank you for reading thus far.</p>
 
 <p>You run the risk of losing your own faith if you live among people who want to live in obvious sin. Do the thing Jesus said in <a href="https://www.bible.com/bible/1/MAT.10.14">Matthew 10 vs 14</a>.</p>
 
-<p>Shake the dust off your feet and move away.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Faith" /><summary type="html"><![CDATA[The big, pink elephant wearing a crop-top in the room we ignore]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/y8LkCRgs/e59ab246-fb33-4dc0-8ec5-7790b633d1da.jpg" /><media:content medium="image" url="https://i.postimg.cc/y8LkCRgs/e59ab246-fb33-4dc0-8ec5-7790b633d1da.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Starting &amp;amp; Maintaining An Exercise Habit</title><link href="http://0.0.0.0:4000/health/2024/02/19/starting-an-exercise-habit-copy.html" rel="alternate" type="text/html" title="Starting &amp;amp; Maintaining An Exercise Habit" /><published>2024-02-19T14:00:00+02:00</published><updated>2024-02-19T14:00:00+02:00</updated><id>http://0.0.0.0:4000/health/2024/02/19/starting-an-exercise-habit%20copy</id><content type="html" xml:base="http://0.0.0.0:4000/health/2024/02/19/starting-an-exercise-habit-copy.html"><![CDATA[<p>Ever said to yourself, “Next Monday, I will start exercise?”</p>
+<p>Shake the dust off your feet and move away.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Faith" /><summary type="html"><![CDATA[The big, pink elephant wearing a crop-top in the room we ignore]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/y8LkCRgs/e59ab246-fb33-4dc0-8ec5-7790b633d1da.jpg" /><media:content medium="image" url="https://i.postimg.cc/y8LkCRgs/e59ab246-fb33-4dc0-8ec5-7790b633d1da.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Starting &amp;amp; Maintaining An Exercise Habit</title><link href="http://localhost:4000/health/2024/02/19/starting-an-exercise-habit-copy.html" rel="alternate" type="text/html" title="Starting &amp;amp; Maintaining An Exercise Habit" /><published>2024-02-19T14:00:00+02:00</published><updated>2024-02-19T14:00:00+02:00</updated><id>http://localhost:4000/health/2024/02/19/starting-an-exercise-habit%20copy</id><content type="html" xml:base="http://localhost:4000/health/2024/02/19/starting-an-exercise-habit-copy.html"><![CDATA[<p>Ever said to yourself, “Next Monday, I will start exercise?”</p>
 
 <p>Oddly enough, you actually get round to do it on Monday and feel great after the run, gym etc.</p>
 
@@ -509,84 +559,4 @@ Done a ten-minute workout? Post it.</p>
 
 <p>I hope it helps.</p>
 
-<p>Tell me about your exercise journey and the challenges you face and I will try to help and chime in with what I know.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Health" /><summary type="html"><![CDATA[Based off my recent interactions with people, here are a few pointers on how to keep an exercise habit.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/Bv2XVQdS/a46e0168-8718-4a76-94c6-d96e82f36e22.jpg" /><media:content medium="image" url="https://i.postimg.cc/Bv2XVQdS/a46e0168-8718-4a76-94c6-d96e82f36e22.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">A Sign of Good Health You Don’t Know About</title><link href="http://0.0.0.0:4000/health/2024/01/29/a-sign-of-health-you-dont-know.html" rel="alternate" type="text/html" title="A Sign of Good Health You Don’t Know About" /><published>2024-01-29T18:00:00+02:00</published><updated>2024-01-29T18:00:00+02:00</updated><id>http://0.0.0.0:4000/health/2024/01/29/a-sign-of-health-you-dont-know</id><content type="html" xml:base="http://0.0.0.0:4000/health/2024/01/29/a-sign-of-health-you-dont-know.html"><![CDATA[<p>This week, we are talking about matters of the heart.</p>
-
-<p>So in love, you should…</p>
-
-<p>Just kidding. I know nothing about that.</p>
-
-<p>Before reading on, please give your answer to the following and no cheating</p>
-
-<p><strong>PS: If there’s nothing there, just wait a few seconds until the page loads</strong></p>
-
-<script>(function(i,s,o,g,r,a,m){i['QP']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//scripts.poll-maker.com/3012/pollembed.js','qp');</script>
-<p><a href="https://www.quiz-maker.com" data-poll="5091087x675847b2-154" style="width:100%; display:block; text-align:right;">QuizWiz</a></p>
-
-<p>So what did you choose?</p>
-
-<p>We all know that a heart rate that is too slow, too fast or irregular can be a sign of heart disease so you can’t be blamed for choosing the first answer which is wrong.</p>
-
-<p>And if you chose the second, more baffling answer, it’s either you know your medical physiology or you cheated somehow. I believe more of the latter.</p>
-
-<h1 id="heart-rate-variability">Heart Rate Variability</h1>
-<p>Heart Rate Variability (HRV) is a measurement of the variation in time between successive heart beats. Simple as that.</p>
-
-<p>A high HRV, meaning the more the variation between your heartbeats has been shown to be a signal of a healthy heart. This means that instead of your heart beating at a constant rhythm of “lub dub, lub dub, lub dub, lub dub, lub dub”, you actually want your heart to do more of the following:</p>
-
-<p>“Lub dub (pauses for a sip of tea), lub dub, lub dub, (sprints to the next beat), lub dub”.</p>
-
-<blockquote>
-  <p>It’s important to note that the variability is of fractional duration at a time. There are arrhythmias which are medical conditions in which your heart rate variability is all over the place and that’s not what I am talking about.</p>
-</blockquote>
-
-<p>HRV though, is actually a reflection of your autonomic nervous system than your heart. The autonomic nervous system is the autopilot nervous system in your body that controls a lot of vital activities you don’t control, such as breathing rate, digestion, blood pressure and of course, heart rate.</p>
-
-<p><img src="https://cdn.michaelkummer.com/wp-content/uploads/2021/06/Heart-Rate-Variability.jpg?strip=all&amp;lossy=1&amp;resize=770%2C347&amp;ssl=1" alt="Heart Rate Variability Image" title="Your heart doesn't beat at exact intervals and it shouldn't" /></p>
-
-<h1 id="so-why-is-this-relevant">So why is this relevant?</h1>
-
-<h2 id="high-hrv">High HRV</h2>
-
-<p>Let’s start with a high HRV. 
-A high HRV, according to several studies, signals a healthy heart because it reflects the heart’s ability to respond quickly to rapid changes in the body. Things that can cause it to change are environmental stimuli, emotions, mental health, stress and metabolic imbalances in the body.</p>
-
-<p>I will extract a piece from an article from the Harvard Health blog that says it all well.</p>
-
-<p><em>In a healthy person, HRV should increase when your heart rate drops, as it does during relaxing activities such as reading or meditating. HRV decreases as the heart rate rises, such as when you exercise or are under stress. In fact, it changes constantly, both throughout the day and from day to day.</em></p>
-
-<h2 id="a-low-hrv">A low HRV</h2>
-
-<p>It then follows that a low Heart Rate Variability is a sign of ill-health.</p>
-
-<p>People with low HRV have an increased risk of Cardiovascular Disease and are less able to cope with stress. Studies have simply shown a correlation between ill-health outcomes and a low Heart Rate Variablity. Explanations as to why are still unclear.</p>
-
-<h1 id="how-to-track-hrv">How to track HRV</h1>
-
-<p>Unlike blood glucose levels that have a universal level that is considered good or bad, there is no one good value of what your HRV should be. It’s highly variable between people due to fitness levels, gender, diet etc.</p>
-
-<p>What’s important to track is the trend of your HRV. If you wear a smartwatch, it probably can measure your HRV and make a trend of whether your HRV is increasing or decreasing depending on your baseline.</p>
-
-<p>As such, it means that if someone has a higher HRV than you, it doesn’t mean they are fitter or healthier. But if you increase you HRV against a baseline that you set yourself, you know you are on the right path.</p>
-
-<h1 id="how-to-increase-heart-rate-variability">How to increase Heart Rate Variability</h1>
-
-<p>That’s what we all want to know now, isn’t it?</p>
-
-<p>Well, because HRV is such an automatic process in the body, it’s not something we can directly influence or control.
-Studies do show however, that people who do the following have higher levels of HRV.</p>
-
-<ul>
-  <li>Exercise regularly, especially athletes</li>
-  <li>Having a healthy diet while staying hydrated</li>
-  <li>Manage mental stress levels through various techniques such as sleeping on time, journalling etc</li>
-</ul>
-
-<h1 id="conclusion">Conclusion</h1>
-
-<p>The take away from this article is this:</p>
-
-<blockquote>
-  <p>The greater your degree of physical fitness and health, the more variable the heart rate is.</p>
-</blockquote>
-
-<p>A bonus marker of health in addition to HRV, is VO2 max level. This will be for another article but now you know that a constant, regular heartbeat might be a sign that you are not fit or healthy.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Health" /><summary type="html"><![CDATA[Should your heart rate be regular and constant when you are resting, or should it be all over the place? What's the right thing? (Might surprise you)]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/qBjTz8z4/98a09f15-7d8c-4c4a-a995-94f8da258d88.jpg" /><media:content medium="image" url="https://i.postimg.cc/qBjTz8z4/98a09f15-7d8c-4c4a-a995-94f8da258d88.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>Tell me about your exercise journey and the challenges you face and I will try to help and chime in with what I know.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Health" /><summary type="html"><![CDATA[Based off my recent interactions with people, here are a few pointers on how to keep an exercise habit.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/Bv2XVQdS/a46e0168-8718-4a76-94c6-d96e82f36e22.jpg" /><media:content medium="image" url="https://i.postimg.cc/Bv2XVQdS/a46e0168-8718-4a76-94c6-d96e82f36e22.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
