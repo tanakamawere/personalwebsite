@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-26T22:42:44+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tanaka Mawere</title><subtitle>Incompetent C# Programmer and Keyboardist + Bassist from Harare. Currently an unfortunate medical student at UZ and pretends to exercise at times.</subtitle><author><name>Tanaka Mawere</name><email>tanaka@tanakamawere.com</email></author><entry><title type="html">I tried vibe-coding…</title><link href="http://localhost:4000/thoughts/programming/2025/08/26/vibe-coding.html" rel="alternate" type="text/html" title="I tried vibe-coding…" /><published>2025-08-26T02:00:00+02:00</published><updated>2025-08-26T02:00:00+02:00</updated><id>http://localhost:4000/thoughts/programming/2025/08/26/vibe-coding</id><content type="html" xml:base="http://localhost:4000/thoughts/programming/2025/08/26/vibe-coding.html"><![CDATA[<p>The uninitiated might be wondering, what is “vibe-coding?” So here is a short-ish, very much not AI answer.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-30T21:47:05+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tanaka Mawere</title><subtitle>Incompetent C# Programmer and Keyboardist + Bassist from Harare. Currently an unfortunate medical student at UZ and pretends to exercise at times.</subtitle><author><name>Tanaka Mawere</name><email>tanaka@tanakamawere.com</email></author><entry><title type="html">Ubuntu in government…</title><link href="http://localhost:4000/thoughts/government/2025/08/30/best-form-of-governance.html" rel="alternate" type="text/html" title="Ubuntu in government…" /><published>2025-08-30T02:00:00+02:00</published><updated>2025-08-30T02:00:00+02:00</updated><id>http://localhost:4000/thoughts/government/2025/08/30/best-form-of-governance</id><content type="html" xml:base="http://localhost:4000/thoughts/government/2025/08/30/best-form-of-governance.html"><![CDATA[<p>I changed a mind a few times on this issue, of what’s the perfect government structure for the economy.</p>
+
+<p>We’ve spent the last century arguing over two broken systems: the authoritarian failures of communism and the capitalistic excesses of the West. But what if the answer isn’t a new import, but something we’ve always had?</p>
+
+<h2 id="what-is-ubuntu">What is Ubuntu?</h2>
+
+<p>I had a conversation with a friend who mentioned something along the lines of our culture as the Bantu people shouldn’t be erased because “tiri vanhu nekuda kwevanhu” which means “a person is a person because of other people”.</p>
+
+<p>And that’s what made me think, why do we never think of what our culture holds to be irrevocably true, as something that might be introduced in goverment?</p>
+
+<p>Walk with me on this for bit.</p>
+
+<p>Core values of ubuntu:</p>
+
+<ul>
+  <li>Community &gt; individual</li>
+  <li>Reciprocity, compassion, and solidarity.</li>
+  <li>Justice not only legal but relational (restoring harmony vs punishment)</li>
+</ul>
+
+<blockquote>
+  <p>Social bonds are as essential as oxygen to the individual. Individual flourishing depends on collective flourishing.</p>
+</blockquote>
+
+<h2 id="what-is-social-democracy">What is Social Democracy?</h2>
+
+<p>Describing it might be a better way of explaining it.
+Core features are:</p>
+
+<ul>
+  <li>Parliamentary or constitutional democracy (citizen participation, rule of law).</li>
+  <li>Market economy, but with state intervention to ensure fairness (universal healthcare, education, social safety nets).</li>
+  <li>Progressive taxation to reduce inequality</li>
+</ul>
+
+<p>This model is already working in Scandanavian countries and it’s taking the best of what’s in socialism and the best of what’s in capitalism and finding a balance inbetween the two.</p>
+
+<h2 id="how-do-social-democracy--ubuntu-fit-together">How do Social Democracy &amp; Ubuntu Fit Together?</h2>
+
+<ol>
+  <li>
+    <p><strong>Healthcare</strong>: In the public health, we yap endlessly over the concept of Universal Health Coverage where we want access to good healthcare to be available without financial hardship. This is a core tenet of social democracy and it fits well with ubuntu’s emphasis on community well-being. In a society that values collective health, ensuring that everyone has access to healthcare is not just a policy choice but a moral imperative.</p>
+  </li>
+  <li>
+    <p><strong>Education</strong>: Investing in everyone’s knowledge base reflects Ubuntu’s belief that my growth enhances yours.</p>
+  </li>
+  <li>
+    <p><strong>Everyday needs such as transport, welfare</strong>: Essentially, the things that cost the most for people are “democratised” (funded by high taxes which are a necessary trade-off for these universal services) because everyone needs transport and there is a need to cover people’s welfare.</p>
+  </li>
+</ol>
+
+<p>The only tension is that Social Democracy believes a lot in <strong>individual rights</strong> while Ubuntu is more <strong>duty/community-centered</strong>. But that’s exactly the idea. Finding the balance between the two.</p>
+
+<blockquote>
+  <p>High taxes, not only because they fund Universal Health Coverage, Education and Transport, but because Ubuntu is a principle which encourages us to pool resources to support each other, and that’s an interesting synergy I had never thought about.</p>
+</blockquote>
+
+<h2 id="this-is-not-a-new-idea">This Is Not A New Idea</h2>
+
+<p>This is not a foreign import grafted onto Africa. <strong>Julius Nyerere’s Ujamaa in Tanzania</strong> was an early attempt to build governance around African communal values.</p>
+
+<p>While it struggled economically due to over-centralisation (fixed by decentralising responsibilities to the country’s provinces) and coercion, it showed that philosophies like Ubuntu are not abstract ideals. They can and have been the foundation of statecraft.</p>
+
+<p>Similarly, South Africa’s post-apartheid <strong>Truth and Reconciliation Commission</strong> reflected Ubuntu’s emphasis on relational justice rather than retribution.</p>
+
+<h2 id="challenges">Challenges</h2>
+
+<p>Of course, there are challenges.</p>
+
+<p>High taxation can trigger brain drain, welfare can risk dependency, and invoking Ubuntu without safeguards could degenerate into tribalism or patronage.</p>
+
+<p>But these are not fatal flaws. They are design questions.</p>
+
+<p>Strong institutions, fair taxation, and civic education can ensure that Ubuntu strengthens solidarity without suffocating initiative, and that Social Democracy’s redistribution lifts everyone without breeding complacency.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Social Democracy gives us the institutional framework (parliaments, rights, welfare systems), while Ubuntu provides the ethical foundation (community-first, relational justice, compassion).</p>
+
+<p>Together, they could shape a political model that feels authentically African yet globally modern.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Thoughts" /><category term="Government" /><summary type="html"><![CDATA[The economics of Ubuntu in Governance?]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX42dKuHsMriQkrPnRxlRPPhA2NzbjvLLVag&amp;s" /><media:content medium="image" url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX42dKuHsMriQkrPnRxlRPPhA2NzbjvLLVag&amp;s" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">I tried vibe-coding…</title><link href="http://localhost:4000/thoughts/programming/2025/08/26/vibe-coding.html" rel="alternate" type="text/html" title="I tried vibe-coding…" /><published>2025-08-26T02:00:00+02:00</published><updated>2025-08-26T02:00:00+02:00</updated><id>http://localhost:4000/thoughts/programming/2025/08/26/vibe-coding</id><content type="html" xml:base="http://localhost:4000/thoughts/programming/2025/08/26/vibe-coding.html"><![CDATA[<p>The uninitiated might be wondering, what is “vibe-coding?” So here is a short-ish, very much not AI answer.</p>
 
 <blockquote>
   <p>Tell AI to make an app, bammm, it’s there and it works.</p>
@@ -491,72 +570,4 @@ Or read on. In any case, thank you for reading thus far.</p>
 
 <p>You run the risk of losing your own faith if you live among people who want to live in obvious sin. Do the thing Jesus said in <a href="https://www.bible.com/bible/1/MAT.10.14">Matthew 10 vs 14</a>.</p>
 
-<p>Shake the dust off your feet and move away.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Faith" /><summary type="html"><![CDATA[The big, pink elephant wearing a crop-top in the room we ignore]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/y8LkCRgs/e59ab246-fb33-4dc0-8ec5-7790b633d1da.jpg" /><media:content medium="image" url="https://i.postimg.cc/y8LkCRgs/e59ab246-fb33-4dc0-8ec5-7790b633d1da.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Starting &amp;amp; Maintaining An Exercise Habit</title><link href="http://localhost:4000/health/2024/02/19/starting-an-exercise-habit-copy.html" rel="alternate" type="text/html" title="Starting &amp;amp; Maintaining An Exercise Habit" /><published>2024-02-19T14:00:00+02:00</published><updated>2024-02-19T14:00:00+02:00</updated><id>http://localhost:4000/health/2024/02/19/starting-an-exercise-habit%20copy</id><content type="html" xml:base="http://localhost:4000/health/2024/02/19/starting-an-exercise-habit-copy.html"><![CDATA[<p>Ever said to yourself, “Next Monday, I will start exercise?”</p>
-
-<p>Oddly enough, you actually get round to do it on Monday and feel great after the run, gym etc.</p>
-
-<p>Then Tuesday comes and your body is aching and you decide to rest.</p>
-
-<p>Wednesday comes and you’d slept late the last-night so you postpone your next work out to tomorrow.</p>
-
-<p>Thursday comes. You actually wake up on time but have zero motivation to do it.
-Friday, you then conclude that maybe exercise isn’t for you.</p>
-
-<p>Well, I have seen many people who supposedly want to start exercising who follow this exact pattern. They start good for one day, then wane off as the week progresses.</p>
-
-<p>So I decided to write and highlight a few of the things you could do that could help start and maintain an exercise habit.</p>
-
-<p>The disclaimer is the first point.</p>
-
-<h1 id="1-how-much-it-means-to-you">1. How much it means to you</h1>
-<p>How much does exercise, and in turn, your health mean to you? 
-I said this point was a disclaimer because no matter how many hacks will follow in this article, if you do not have the intrinsic motivation to want to be healthy and exercise, they won’t work.</p>
-
-<p>When the COVID-19 pandemic hit, I realised just how important health was. It was the healthier people who were handling the virus better. It also put into perspective that if I am not healthy, everything else won’t matter, in particular, wealth, school, career, goals etc.</p>
-
-<p>What use is it to want wealth so as to gain freedom but are condemned to taking a tablet a day for hypertension?</p>
-
-<p>In addition to that, exercise helps maintain my mental and emotional health, keeps my brain on its toes and increases my creativity. In other words, exercise is absolutely essential to who I am and what I value.</p>
-
-<p>Now the question to you is how much is your health important to you?</p>
-<blockquote>
-  <p>Side note: I see that many people also rely on the fact that they are still young hence they’ll exercise later. Truth is that the diseases that occur in old age are due to a lack of a strong, healthy foundation set now when one is young. Of course your health is going to deteriorate inevitably, but at least start deteriorating from 90% than from 60% or 50% of health.</p>
-</blockquote>
-
-<h1 id="2-dont-start-high">2. Don’t start high</h1>
-<p>One big hurdle I see for many people is the pressure to want to run their fastest 5km everyday, lift their heaviest weight etc. Actually run themselves into the ground because that is what exercise entails.</p>
-
-<p>False.</p>
-
-<p>With exercise, you do more by doing less. Instead of starting out with the intention to run 5km, just get out the door and walk for a start. Walk for even 200m. Why is this important?</p>
-
-<p>You are training your mind to just <strong>get out the door and do something</strong>, building discipline to exercise. Especially if you are starting from scratch, this is the best thing you could do for your habit training.</p>
-
-<p>Once your mental gets used to the habit of getting out the house and doing something active, you will natural increase the workout intensity. But beware…</p>
-
-<h1 id="3-do-8020">3. Do 80/20</h1>
-<p>The world’s best athletes follow an 80/20 approach in which 80% of the time, they do light exercise. This is exercise that leaves with enough air to carry out a conversation or sing (when no one’s around of course). The other 20% is moderate to hard exercise that leaves you gasping for air.</p>
-
-<p>An example of what this looks like is if you decide to exercise for 5 days in the week, 4 of those days are your light exercise days and only 1 day is for hard exercise.</p>
-
-<p>This tries to shoot down the belief that people should be doing hard strenuous exercise all the time when light exercise is all that you need. What that looks like is jogging at a light, comfortable pace or walking.</p>
-
-<h1 id="4-post-post-post">4. Post, post, post</h1>
-<p>There is social pressure when posting such things. The fact that you are now aligning yourself with exercise, posting helps you maintain that habit because you have an intrinsic desire to look consistent with whatever you make public.</p>
-
-<p>So completed a 1km run? Post it. 
-Done a ten-minute workout? Post it.</p>
-
-<p>Not wanting to disappoint the eyes of others is a strong motivator for human actions. Might as well put it to good use.</p>
-
-<h1 id="5-discipline-over-motivation">5. Discipline Over Motivation</h1>
-<p>Another thing is to know and believe that you will never be motivated to exercise except on the first day. On so many runs, during the first kilometre, I ask myself why I am doing this anyway. That’s a lack of motivation.</p>
-
-<p>But you must be disciplined, striving to keep up an image to yourself that you are someone who does what they say they’re going to do. Point number 4 also acts as a hack for discipline.</p>
-
-<h1 id="conclusion">Conclusion</h1>
-<p>These tips are by no means complete. I will keep on adding more and more, but these are what are relevant to the people I have recently interacted with.</p>
-
-<p>I hope it helps.</p>
-
-<p>Tell me about your exercise journey and the challenges you face and I will try to help and chime in with what I know.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Health" /><summary type="html"><![CDATA[Based off my recent interactions with people, here are a few pointers on how to keep an exercise habit.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/Bv2XVQdS/a46e0168-8718-4a76-94c6-d96e82f36e22.jpg" /><media:content medium="image" url="https://i.postimg.cc/Bv2XVQdS/a46e0168-8718-4a76-94c6-d96e82f36e22.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>Shake the dust off your feet and move away.</p>]]></content><author><name>Tanaka Mawere</name></author><category term="Faith" /><summary type="html"><![CDATA[The big, pink elephant wearing a crop-top in the room we ignore]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.postimg.cc/y8LkCRgs/e59ab246-fb33-4dc0-8ec5-7790b633d1da.jpg" /><media:content medium="image" url="https://i.postimg.cc/y8LkCRgs/e59ab246-fb33-4dc0-8ec5-7790b633d1da.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
