@@ -3,5 +3,5 @@ image: https://market-resized.envatousercontent.com/previews/files/404110373/590
 category: Work
 title: Curamed - In Development
 description: AI Powered Medical Application
-address: "#"
+address: "https://thankful-mushroom-0104c8f03.6.azurestaticapps.net/"
 ---
