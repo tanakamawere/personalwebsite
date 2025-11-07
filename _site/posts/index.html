@@ -145,35 +145,6 @@
 </script>
 </head></head>
   <body>
-    <div class="container">
-    <nav class="navbar navbar-expand-lg mt-4">
-      <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="/">TM</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold align-items-center justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/posts">Posts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/all-thoughts">Thoughts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/about">About</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
     <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
         <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
@@ -205,6 +176,51 @@
   </div>
   
     <main class="p-1">
+      <nav class="custom-navbar">
+  <div class="container-fluid px-5">
+    <div class="navbar-content">
+      <a class="navbar-logo" href="/">TM</a>
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="navbar-menu" id="navbarMenu">
+        <li class="navbar-item">
+          <a class="navbar-link" href="/">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/projects">Projects</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/posts">Posts</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Toggle mobile menu
+  document.getElementById('navbarToggle').addEventListener('click', function() {
+    const menu = document.getElementById('navbarMenu');
+    menu.classList.toggle('active');
+    this.classList.toggle('active');
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const navbar = document.querySelector('.custom-navbar');
+    const toggle = document.getElementById('navbarToggle');
+    const menu = document.getElementById('navbarMenu');
+    
+    if (!navbar.contains(event.target)) {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+    }
+  });
+</script>
       <div class="px-5 container">
     <div class="container-fluid py-5">
         <h2 class="display-6 fw-bold">Recent Posts</h2>
@@ -218,38 +234,39 @@
         
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX42dKuHsMriQkrPnRxlRPPhA2NzbjvLLVag&s" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX42dKuHsMriQkrPnRxlRPPhA2NzbjvLLVag&s" alt="Ubuntu in government..." />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Thoughts
+                    </span>
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Government
+                    </span>
+                
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Government
-                </button>
-            
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/government/2025/08/30/best-form-of-governance.html">
-                <h3 class="fw-bold">
+            <a class="text-decoration-none stretched-link" href="/thoughts/government/2025/08/30/best-form-of-governance.html">
+                <h3 class="fw-bold post-card-title mb-3">
                     Ubuntu in government...
                 </h3>
             </a>
-            <p class="card-text mb-0">
+            <p class="card-text text-muted mb-0">
                 The economics of Ubuntu in Governance?
             </p>
         </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Aug 30, 2025
-                        </div>
-                    </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Aug 30, 2025
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         </div>
@@ -257,38 +274,39 @@
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Jo3cVvNmq-FqXd1oV3dWyxig1f09pIsjtw&s" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Jo3cVvNmq-FqXd1oV3dWyxig1f09pIsjtw&s" alt="I tried vibe-coding..." />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Thoughts
+                    </span>
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Programming
+                    </span>
+                
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Programming
-                </button>
-            
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/programming/2025/08/26/vibe-coding.html">
-                <h3 class="fw-bold">
+            <a class="text-decoration-none stretched-link" href="/thoughts/programming/2025/08/26/vibe-coding.html">
+                <h3 class="fw-bold post-card-title mb-3">
                     I tried vibe-coding...
                 </h3>
             </a>
-            <p class="card-text mb-0">
+            <p class="card-text text-muted mb-0">
                 Just tell AI to make the app and it will, or will it?
             </p>
         </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Aug 26, 2025
-                        </div>
-                    </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Aug 26, 2025
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         </div>
@@ -296,38 +314,39 @@
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/1RKnRKWq/Copilot-20250628-083519.png" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://i.postimg.cc/1RKnRKWq/Copilot-20250628-083519.png" alt="When music becomes perfect..." />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Thoughts
+                    </span>
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Music
+                    </span>
+                
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Music
-                </button>
-            
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/music/2025/06/28/perfect-music.html">
-                <h3 class="fw-bold">
+            <a class="text-decoration-none stretched-link" href="/thoughts/music/2025/06/28/perfect-music.html">
+                <h3 class="fw-bold post-card-title mb-3">
                     When music becomes perfect...
                 </h3>
             </a>
-            <p class="card-text mb-0">
+            <p class="card-text text-muted mb-0">
                 There is no perfection in art
             </p>
         </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Jun 28, 2025
-                        </div>
-                    </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Jun 28, 2025
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         </div>
@@ -335,34 +354,35 @@
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/28p8Kj2C/valentines.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://i.postimg.cc/28p8Kj2C/valentines.jpg" alt="What is Valentine's Day!?" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Thoughts
+                    </span>
+                
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
-            
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/2025/01/31/valentines.html">
-                <h3 class="fw-bold">
+            <a class="text-decoration-none stretched-link" href="/thoughts/2025/01/31/valentines.html">
+                <h3 class="fw-bold post-card-title mb-3">
                     What is Valentine's Day!?
                 </h3>
             </a>
-            <p class="card-text mb-0">
+            <p class="card-text text-muted mb-0">
                 Lowkey protesting against Valentine's Day
             </p>
         </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Jan 31, 2025
-                        </div>
-                    </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Jan 31, 2025
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         </div>
@@ -370,34 +390,35 @@
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/7LSjnsQf/c742f3ca-04f0-4c93-a395-514cdefde9f4.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://i.postimg.cc/7LSjnsQf/c742f3ca-04f0-4c93-a395-514cdefde9f4.jpg" alt="Where is the manual?" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Thoughts
+                    </span>
+                
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
-            
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/2024/09/16/where-is-the-manual.html">
-                <h3 class="fw-bold">
+            <a class="text-decoration-none stretched-link" href="/thoughts/2024/09/16/where-is-the-manual.html">
+                <h3 class="fw-bold post-card-title mb-3">
                     Where is the manual?
                 </h3>
             </a>
-            <p class="card-text mb-0">
+            <p class="card-text text-muted mb-0">
                 No, you don't have everything figured out... And you never will.
             </p>
         </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Sep 16, 2024
-                        </div>
-                    </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Sep 16, 2024
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         </div>
@@ -405,38 +426,35 @@
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/FR65nFdT/09c888b9-f4cf-46eb-b08c-e4bbfaddc429.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://i.postimg.cc/FR65nFdT/09c888b9-f4cf-46eb-b08c-e4bbfaddc429.jpg" alt="On leadership and Hitler..." />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Thoughts
+                    </span>
+                
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Leadership
-                </button>
-            
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/leadership/2024/09/15/on-leadership-and-hitler.html">
-                <h3 class="fw-bold">
+            <a class="text-decoration-none stretched-link" href="/thoughts/2024/09/15/on-leadership-and-hitler.html">
+                <h3 class="fw-bold post-card-title mb-3">
                     On leadership and Hitler...
                 </h3>
             </a>
-            <p class="card-text mb-0">
+            <p class="card-text text-muted mb-0">
                 Hitler, Mussolini, Lenin - what do all these people have in common?
             </p>
         </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Sep 15, 2024
-                        </div>
-                    </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Sep 15, 2024
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         </div>
@@ -444,34 +462,35 @@
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i0.wp.com/www.culturetype.com/wp-content/uploads/2013/12/mandela.png" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://i0.wp.com/www.culturetype.com/wp-content/uploads/2013/12/mandela.png" alt="I never understood Nelson Mandela until now..." />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Thoughts
+                    </span>
+                
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Thoughts
-                </button>
-            
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/thoughts/2024/08/05/nelson-mandela.html">
-                <h3 class="fw-bold">
+            <a class="text-decoration-none stretched-link" href="/thoughts/2024/08/05/nelson-mandela.html">
+                <h3 class="fw-bold post-card-title mb-3">
                     I never understood Nelson Mandela until now...
                 </h3>
             </a>
-            <p class="card-text mb-0">
+            <p class="card-text text-muted mb-0">
                 I see a parallel between his struggles and the challenges we face in Zimbabwe, where hope can often seem elusive. Despite the systemic obstacles, I believe in the power of hope and the potential of my generation to restore it.
             </p>
         </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Aug 5, 2024
-                        </div>
-                    </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Aug 5, 2024
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         </div>
@@ -479,34 +498,35 @@
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/VLHDhVX6/eebb8a09-f65b-4ed1-90f5-48f1c3a6c5df.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://i.postimg.cc/VLHDhVX6/eebb8a09-f65b-4ed1-90f5-48f1c3a6c5df.jpg" alt="Run Faster by Training Slower" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Health
+                    </span>
+                
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Health
-                </button>
-            
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/health/2024/06/11/run-faster-by-training-slower.html">
-                <h3 class="fw-bold">
+            <a class="text-decoration-none stretched-link" href="/health/2024/06/11/run-faster-by-training-slower.html">
+                <h3 class="fw-bold post-card-title mb-3">
                     Run Faster by Training Slower
                 </h3>
             </a>
-            <p class="card-text mb-0">
+            <p class="card-text text-muted mb-0">
                 We all think that the most results come for putting in 100% all the time, but that's just not it.
             </p>
         </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            Jun 11, 2024
-                        </div>
-                    </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Jun 11, 2024
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         </div>
@@ -514,38 +534,39 @@
 </div>
         
             <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <img class="card-img-top" src="https://i.postimg.cc/hjVsQ2qb/2a2a5d41-2026-40f6-8495-78f0a9f75cc5.jpg" alt="..." />
-        <div class="card-body p-4 rounded-top">
-            <div class="row">
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://i.postimg.cc/hjVsQ2qb/2a2a5d41-2026-40f6-8495-78f0a9f75cc5.jpg" alt="Praying about the Comfort Pandemic" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Faith
+                    </span>
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Health
+                    </span>
+                
             </div>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Faith
-                </button>
-              
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Health
-                </button>
-            
-            <a class="text-decoration-none stretched-link mb-3"
-                href="/faith/health/2024/05/23/praying-about-the-comfort-pandemic.html">
-                <h3 class="fw-bold">
+            <a class="text-decoration-none stretched-link" href="/faith/health/2024/05/23/praying-about-the-comfort-pandemic.html">
+                <h3 class="fw-bold post-card-title mb-3">
                     Praying about the Comfort Pandemic
                 </h3>
             </a>
-            <p class="card-text mb-0">
+            <p class="card-text text-muted mb-0">
                 When should we stop praying and start listening?
             </p>
         </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="d-flex align-items-center">
-                    <div class="small">
-                        <div class="text-muted">
-                            May 23, 2024
-                        </div>
-                    </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>May 23, 2024
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         </div>
@@ -573,24 +594,91 @@
     <script src="/assets/js/color-modes.js"></script>
   </body>
   
-<footer class="p-5 vonge-gradient-footer">
-    <ul class="nav justify-content-center pb-3 mb-3">
-      <li class="vonge-nav-item">
-        <a href="#" class="nav-link px-2 text-white fw-semibold">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="/posts" class="nav-link px-2 text-white fw-semibold">Posts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/projects" class="nav-link px-2 text-white fw-semibold">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="all-thoughts" class="nav-link px-2  text-white fw-semibold">Thoughts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/about" class="nav-link px-2 text-white fw-semibold">About</a>
-      </li>
-    </ul>
-    <p class="text-center text-white fw-semibold">2025 ©️ Tanaka Mawere</p>
-  </footer>
+<footer class="vonge-gradient-footer py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- About Section -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+        <p class="text-white opacity-75 small mb-3">Passionate about creating innovative solutions at the intersection of technology and healthcare. Currently balancing medical studies with full-stack development and music.</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="https://www.instagram.com/tan.akamawere/" class="text-white text-decoration-none" aria-label="Instagram">
+            <i class="fa-brands fa-instagram fa-lg"></i>
+          </a>
+          <a href="https://github.com/tanakamawere" class="text-white text-decoration-none" aria-label="GitHub">
+            <i class="fa-brands fa-github fa-lg"></i>
+          </a>
+          <a href="mailto:tanaka@tanakamawere.co.zw" class="text-white text-decoration-none" aria-label="Email">
+            <i class="fa-solid fa-envelope fa-lg"></i>
+          </a>
+          <a href="https://wa.me/263785468923" class="text-white text-decoration-none" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp fa-lg"></i>
+          </a>
+          <a href="https://x.com/tanaka_mawere" class="text-white text-decoration-none" aria-label="Twitter">
+            <i class="fa-brands fa-twitter fa-lg"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/" class="text-white text-decoration-none opacity-75 small">Home</a>
+          </li>
+          <li class="mb-2">
+            <a href="/about" class="text-white text-decoration-none opacity-75 small">About</a>
+          </li>
+          <li class="mb-2">
+            <a href="/projects" class="text-white text-decoration-none opacity-75 small">Projects</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Content Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Content</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/posts" class="text-white text-decoration-none opacity-75 small">Posts</a>
+          </li>
+          <li class="mb-2">
+            <a href="/all-thoughts" class="text-white text-decoration-none opacity-75 small">Thoughts</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="col-lg-4 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Get In Touch</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="mailto:tanaka@tanakamawere.co.zw" class="text-white text-decoration-none opacity-75 small">
+              <i class="fa-solid fa-envelope me-2"></i>tanaka@tanakamawere.co.zw
+            </a>
+          </li>
+          <li class="mb-2">
+            <span class="text-white opacity-75 small">
+              <i class="fa-solid fa-location-dot me-2"></i>Harare, Zimbabwe
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-white opacity-25 my-4">
+
+    <!-- Bottom Bar -->
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <p class="text-white small mb-0">© 2025 Tanaka Mawere. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <span class="text-white small opacity-75">Full-stack .NET Programmer • Medical Student • Musician</span>
+      </div>
+    </div>
+  </div>
+</footer>
 </html>

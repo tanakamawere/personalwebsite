@@ -5,7 +5,7 @@ date: 2024-06-11 02:00:00 +0200
 description: "We all think that the most results come for putting in 100% all the time, but that's just not it."
 author: Tanaka Mawere
 categories: 
-    -   Health
+    - Health
 image: "https://i.postimg.cc/VLHDhVX6/eebb8a09-f65b-4ed1-90f5-48f1c3a6c5df.jpg"
 ---
 A few years ago, I was on a morning run. That day I had told myself I am going to have an easy run, no pressure on having a fast pace. Just a nice jog to get the body started for the day.

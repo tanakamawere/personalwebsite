@@ -4,7 +4,8 @@ title: "By whose authority do I write?"
 date: 2023-10-29 06:00:00 +0200
 description: "A bit of an imposter syndrome piece"
 author: Tanaka Mawere
-categories: Thoughts
+categories: 
+    - Thoughts
 image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3JpdGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
 ---
 

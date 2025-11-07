@@ -4,7 +4,8 @@ title: "Are Minister Mahendere's lyrics biblical?"
 date: 2023-10-31 00:00:00 +0200
 description: "Minister Mahendere's popular song \"Tangai Neni\" came into question yesterday and I fell down a rabbit hole. Are they biblical?"
 author: Tanaka Mawere
-categories: Faith
+categories: 
+    - Faith
 image: "https://i.ytimg.com/vi/zKL7xVbXSpI/sddefault.jpg"
 ---
 

@@ -6,9 +6,8 @@ description: "I had a good reason to go back (we always have a good reason. Don'
 author: Tanaka Mawere
 comments: true
 categories: 
-    -   Battle with Social Media
-    -   YouTube
-    -   Productivity
+    - Lifestyle
+    - Productivity
 image: "https://i.postimg.cc/mrw8Gp9t/9d897122-329a-4818-abf6-e340d63a3769.jpg"
 ---
 

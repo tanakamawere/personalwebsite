@@ -4,7 +4,8 @@ title: "Why I don't use Microsoft Word"
 date: 2023-07-21 18:00:00 +0200
 description: "Many people have used my laptop and looked for Microsoft Word, only to be bombarded by some weird application. I have a semi-good reason"
 author: Tanaka Mawere
-categories: Thoughts
+categories: 
+    - Technology
 image: "https://images.unsplash.com/photo-1632239776255-0a7f24814df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWljcm9zb2Z0JTIwb2ZmaWNlfGVufDB8fDB8fHww"
 ---
 

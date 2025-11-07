@@ -145,35 +145,6 @@
 </script>
 </head></head>
   <body>
-    <div class="container">
-    <nav class="navbar navbar-expand-lg mt-4">
-      <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="/">TM</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold align-items-center justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/posts">Posts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/all-thoughts">Thoughts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/about">About</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
     <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
         <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
@@ -205,36 +176,92 @@
   </div>
   
     <main class="p-1">
-      <div class="container mt-5">
-    <div class="row align-items-center justify-content-center">
-        <div class="col-xl-6 col-xxl-6 text-center">
-            <img class="rounded-top rounded-bottom img-fluid" src="https://i.postimg.cc/mZ1SRdXz/44d57130-04ae-4135-8e8d-df0b59aef3b1.jpg"/>
-        </div>
-        <div class="col-lg-6 col-xl-6 col-xxl-4">
-          <div class="my-3 text-center text-xl-start">
-                
-                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
-                    Health
-                </button>
+      <nav class="custom-navbar">
+  <div class="container-fluid px-5">
+    <div class="navbar-content">
+      <a class="navbar-logo" href="/">TM</a>
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="navbar-menu" id="navbarMenu">
+        <li class="navbar-item">
+          <a class="navbar-link" href="/">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/projects">Projects</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/posts">Posts</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Toggle mobile menu
+  document.getElementById('navbarToggle').addEventListener('click', function() {
+    const menu = document.getElementById('navbarMenu');
+    menu.classList.toggle('active');
+    this.classList.toggle('active');
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const navbar = document.querySelector('.custom-navbar');
+    const toggle = document.getElementById('navbarToggle');
+    const menu = document.getElementById('navbarMenu');
+    
+    if (!navbar.contains(event.target)) {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+    }
+  });
+</script>
+      <article class="post-article">
+  <!-- Hero Section -->
+  <div class="post-hero">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="post-categories mb-3">
               
-              <h1 class="fw-bolder">
-                  The Misconception of Fruit Juice
-              </h1>
-              <div class="row align-items-center justify-content-between container-fluid">
-                <!-- <img class="col rounded-circle" style="max-height: 50px; max-width: 50px; background-color: transparent;" src="/assets/img/profile_picture.jpg"/> -->
-                <div class="col social-links">
-                  <p>Tanaka Mawere</p>
-                  <h6>
-                    Jan 15, 2024
-                  </h6>
-                </div>
-              </div>
+              <span class="badge rounded-pill bg-white text-dark px-3 py-2 me-2">
+                Health
+              </span>
+            
           </div>
+          <h1 class="display-4 fw-bold mb-4">
+            The Misconception of Fruit Juice
+          </h1>
+          <div class="d-flex align-items-center justify-content-center gap-3">
+            <span class="fw-semibold">Tanaka Mawere</span>
+            <span>•</span>
+            <span>Jan 15, 2024</span>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
 
-  <div class="px-3 highlight">
-    <h1 id="the-story">The Story</h1>
+  <!-- Featured Image -->
+  <div class="container post-featured-image">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <img class="img-fluid rounded-4 shadow-lg w-100" src="https://i.postimg.cc/mZ1SRdXz/44d57130-04ae-4135-8e8d-df0b59aef3b1.jpg" alt="The Misconception of Fruit Juice"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Post Content -->
+  <div class="container post-content">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="post-body">
+          <h1 id="the-story">The Story</h1>
 
 <p>I have a friend who drinks fruit juice <strong>everyday</strong>. When I say everyday, I mean every single waking day. She loves it.</p>
 
@@ -284,10 +311,16 @@
 
 <p>This is just another point for drinking more water than anything else.😂</p>
 
-  </div>  
+        </div>
+      </div>
+    </div>
+  </div>
     
   
-    
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          
 <div id="disqus_thread"></div>
 <script>
     /**
@@ -306,26 +339,40 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-  
-
-  <!--Next article section-->
-  <hr class="my-5"/>
-  <h2 class="fw-bolder">Your next article...</h2>
-
-  
-    <div class="card" style="max-width: 30rem;">
-      <div class="row card-body">
-        <div class="col-6">
-          <img class="rounded-top rounded-bottom img-fluid" src="https://i.postimg.cc/RZbK4bpk/63d82727-dfbd-4f5c-9a6c-8c127ecc231a.jpg"/>
-        </div>
-        <div class="col-6">
-          <h3 class="card-title">Your Bacteria and Fibre</h5>
-          <a href="/health/bacteria&fibre" class="btn btn-primary">Read it...</a>
         </div>
       </div>
     </div>
   
-</div>
+
+  <!-- Next Article Section -->
+  
+    <div class="next-article-section py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="fw-bold mb-4">Your next article...</h2>
+            <div class="card next-article-card border-0 shadow-lg overflow-hidden">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <img class="img-fluid h-100 object-fit-cover" src="https://i.postimg.cc/RZbK4bpk/63d82727-dfbd-4f5c-9a6c-8c127ecc231a.jpg" alt="Your Bacteria and Fibre"/>
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body d-flex flex-column h-100 p-4">
+                    <h3 class="card-title fw-bold mb-3">Your Bacteria and Fibre</h3>
+                    <p class="card-text text-muted flex-grow-1">Explore the world of gut microbes with me plus why fibre is very important! Learn about these tiny organisms in our digestive system and their impact on our health.</p>
+                    <a href="/health/bacteria&fibre" class="btn btn-primary vonge-btn mt-3 align-self-start">
+                      Read Article <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</article>
 
 
     </main>
@@ -334,24 +381,91 @@
     <script src="/assets/js/color-modes.js"></script>
   </body>
   
-<footer class="p-5 vonge-gradient-footer">
-    <ul class="nav justify-content-center pb-3 mb-3">
-      <li class="vonge-nav-item">
-        <a href="#" class="nav-link px-2 text-white fw-semibold">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="/posts" class="nav-link px-2 text-white fw-semibold">Posts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/projects" class="nav-link px-2 text-white fw-semibold">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="all-thoughts" class="nav-link px-2  text-white fw-semibold">Thoughts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/about" class="nav-link px-2 text-white fw-semibold">About</a>
-      </li>
-    </ul>
-    <p class="text-center text-white fw-semibold">2025 ©️ Tanaka Mawere</p>
-  </footer>
+<footer class="vonge-gradient-footer py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- About Section -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+        <p class="text-white opacity-75 small mb-3">Passionate about creating innovative solutions at the intersection of technology and healthcare. Currently balancing medical studies with full-stack development and music.</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="https://www.instagram.com/tan.akamawere/" class="text-white text-decoration-none" aria-label="Instagram">
+            <i class="fa-brands fa-instagram fa-lg"></i>
+          </a>
+          <a href="https://github.com/tanakamawere" class="text-white text-decoration-none" aria-label="GitHub">
+            <i class="fa-brands fa-github fa-lg"></i>
+          </a>
+          <a href="mailto:tanaka@tanakamawere.co.zw" class="text-white text-decoration-none" aria-label="Email">
+            <i class="fa-solid fa-envelope fa-lg"></i>
+          </a>
+          <a href="https://wa.me/263785468923" class="text-white text-decoration-none" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp fa-lg"></i>
+          </a>
+          <a href="https://x.com/tanaka_mawere" class="text-white text-decoration-none" aria-label="Twitter">
+            <i class="fa-brands fa-twitter fa-lg"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/" class="text-white text-decoration-none opacity-75 small">Home</a>
+          </li>
+          <li class="mb-2">
+            <a href="/about" class="text-white text-decoration-none opacity-75 small">About</a>
+          </li>
+          <li class="mb-2">
+            <a href="/projects" class="text-white text-decoration-none opacity-75 small">Projects</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Content Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Content</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/posts" class="text-white text-decoration-none opacity-75 small">Posts</a>
+          </li>
+          <li class="mb-2">
+            <a href="/all-thoughts" class="text-white text-decoration-none opacity-75 small">Thoughts</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="col-lg-4 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Get In Touch</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="mailto:tanaka@tanakamawere.co.zw" class="text-white text-decoration-none opacity-75 small">
+              <i class="fa-solid fa-envelope me-2"></i>tanaka@tanakamawere.co.zw
+            </a>
+          </li>
+          <li class="mb-2">
+            <span class="text-white opacity-75 small">
+              <i class="fa-solid fa-location-dot me-2"></i>Harare, Zimbabwe
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-white opacity-25 my-4">
+
+    <!-- Bottom Bar -->
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <p class="text-white small mb-0">© 2025 Tanaka Mawere. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <span class="text-white small opacity-75">Full-stack .NET Programmer • Medical Student • Musician</span>
+      </div>
+    </div>
+  </div>
+</footer>
 </html>

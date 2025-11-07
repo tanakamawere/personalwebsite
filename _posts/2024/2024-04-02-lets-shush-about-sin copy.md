@@ -5,7 +5,7 @@ date: 2024-04-02 02:00:00 +0200
 description: "The big, pink elephant wearing a crop-top in the room we ignore"
 author: Tanaka Mawere
 categories: 
-    -   Faith
+    - Faith
 image: "https://i.postimg.cc/y8LkCRgs/e59ab246-fb33-4dc0-8ec5-7790b633d1da.jpg"
 ---
 Why?

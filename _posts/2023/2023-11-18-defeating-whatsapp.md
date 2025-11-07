@@ -5,9 +5,8 @@ date: 2023-11-18 09:00:00 +0200
 description: "A programmer in Zimbabwe's greatest enemy is WhatsApp. How do we defeat it? I have no idea"
 author: Tanaka Mawere
 categories: 
+    - Technology
     - Thoughts
-    - Development
-    - Programming
 image: "https://images.unsplash.com/photo-1632435499152-18838be77960?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdoYXRzYXBwfGVufDB8fDB8fHww"
 ---
 

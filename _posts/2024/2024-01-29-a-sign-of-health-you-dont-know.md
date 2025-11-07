@@ -5,7 +5,7 @@ date: 2024-01-29 18:00:00 +0200
 description: "Should your heart rate be regular and constant when you are resting, or should it be all over the place? What's the right thing? (Might surprise you)"
 author: Tanaka Mawere
 categories: 
-    -   Health
+    - Health
 image: "https://i.postimg.cc/qBjTz8z4/98a09f15-7d8c-4c4a-a995-94f8da258d88.jpg"
 ---
 

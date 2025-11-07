@@ -5,8 +5,8 @@ date: 2024-05-23 02:00:00 +0200
 description: "When should we stop praying and start listening?"
 author: Tanaka Mawere
 categories: 
-    -   Faith
-    -   Health
+    - Faith
+    - Health
 image: "https://i.postimg.cc/hjVsQ2qb/2a2a5d41-2026-40f6-8495-78f0a9f75cc5.jpg"
 ---
 

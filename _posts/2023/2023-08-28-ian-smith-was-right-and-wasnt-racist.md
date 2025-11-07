@@ -4,7 +4,8 @@ title: "Ian Smith was right"
 date: 2023-08-28 13:00:00 +0200
 description: "I don't believe in majority rule ever in Rhodesia... not in 1000 years. Was this all to it for Smith?"
 author: Tanaka Mawere
-categories: History
+categories: 
+    - History
 image: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/01/30/17/ian-smith-rhodesia-5.jpg?quality=75&width=990&crop=3%3A2%2Csmart&auto=webp"
 ---
 

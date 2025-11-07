@@ -4,7 +4,8 @@ title: "A theory about that gut feeling"
 date: 2023-10-30 18:00:00 +0200
 description: "Do I need to rationalise everything and understand how I got to every conclusion I have? Probably not. Here's why."
 author: Tanaka Mawere
-categories: Thoughts
+categories: 
+    - Thoughts
 image: "https://images.unsplash.com/photo-1636082106091-493a3696eaf4?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGluc3RpbmN0fGVufDB8fDB8fHww"
 ---
 

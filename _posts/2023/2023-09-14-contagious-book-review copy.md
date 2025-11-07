@@ -4,7 +4,8 @@ title: "Book Review: Contagious"
 date: 2023-09-14 16:30:00 +0200
 description: "Contagious by Jonah Berger"
 author: Tanaka Mawere
-categories: Book-Review
+categories: 
+    - Reviews
 image: "https://www.disruptorleague.com/wp-content/uploads/2017/03/Contagious-Jonah-Berger.jpg"
 ---
 

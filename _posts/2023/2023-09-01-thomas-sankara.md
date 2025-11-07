@@ -4,7 +4,8 @@ title: "Thomas Sankara ladies and gentlemen"
 date: 2023-09-01 16:30:00 +0200
 description: "Oops, I went down another wikipedia rabbit hole in African political history  "
 author: Tanaka Mawere
-categories: History
+categories: 
+    - History
 image: "https://cdn.thecollector.com/wp-content/uploads/2023/06/thomas-sankara-burkina-faso-revolutionary.jpg"
 ---
 

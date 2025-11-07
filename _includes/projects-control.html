@@ -1,12 +1,15 @@
 <div class="col-lg-4 mb-5">
-  <div class="card shadow text-white">
-    <img src="{{ project.image }}" class="card-img" alt="...">
-    <div class="card-img-overlay d-flex flex-column justify-content-end">
-      <div class="card-text-overlay p-3">
-        <h2 class="card-title">{{ project.title }}</h2>
-        <p class="card-text text-white">{{ project.description }}</p>
-        <a href="{{ project.address }}" class="btn btn-primary-outline">Go To Link</a>
-      </div>
+  <div class="card project-card shadow-lg border-0 overflow-hidden h-100">
+    <div class="project-image-wrapper">
+      <img src="{{ project.image }}" class="project-image" alt="{{ project.title }}">
+      <div class="project-gradient-overlay"></div>
+    </div>
+    <div class="project-content">
+      <h2 class="project-title text-white fw-bold mb-3">{{ project.title }}</h2>
+      <p class="project-description text-white mb-4">{{ project.description }}</p>
+      <a href="{{ project.address }}" class="btn btn-outline-light project-btn">
+        View Project <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+      </a>
     </div>
   </div>
 </div>

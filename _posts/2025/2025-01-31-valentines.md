@@ -5,7 +5,7 @@ date: 2025-01-31 02:00:00 +0200
 description: "Lowkey protesting against Valentine's Day"
 author: Tanaka Mawere
 categories: 
-    -   Thoughts
+    - Thoughts
 image: "https://i.postimg.cc/28p8Kj2C/valentines.jpg"
 ---
 

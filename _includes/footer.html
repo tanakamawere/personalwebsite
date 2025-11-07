@@ -1,21 +1,88 @@
 
-<footer class="p-5 vonge-gradient-footer">
-    <ul class="nav justify-content-center pb-3 mb-3">
-      <li class="vonge-nav-item">
-        <a href="#" class="nav-link px-2 text-white fw-semibold">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="/posts" class="nav-link px-2 text-white fw-semibold">Posts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/projects" class="nav-link px-2 text-white fw-semibold">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="all-thoughts" class="nav-link px-2  text-white fw-semibold">Thoughts</a>
-      </li>
-      <li class="nav-item">
-        <a href="/about" class="nav-link px-2 text-white fw-semibold">About</a>
-      </li>
-    </ul>
-    <p class="text-center text-white fw-semibold">2025 ©️ Tanaka Mawere</p>
-  </footer>
+<footer class="vonge-gradient-footer py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- About Section -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+        <p class="text-white opacity-75 small mb-3">{{ site.author.bio }}</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="https://www.instagram.com/tan.akamawere/" class="text-white text-decoration-none" aria-label="Instagram">
+            <i class="fa-brands fa-instagram fa-lg"></i>
+          </a>
+          <a href="https://github.com/tanakamawere" class="text-white text-decoration-none" aria-label="GitHub">
+            <i class="fa-brands fa-github fa-lg"></i>
+          </a>
+          <a href="mailto:{{ site.author.email }}" class="text-white text-decoration-none" aria-label="Email">
+            <i class="fa-solid fa-envelope fa-lg"></i>
+          </a>
+          <a href="https://wa.me/263785468923" class="text-white text-decoration-none" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp fa-lg"></i>
+          </a>
+          <a href="https://x.com/tanaka_mawere" class="text-white text-decoration-none" aria-label="Twitter">
+            <i class="fa-brands fa-twitter fa-lg"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/" class="text-white text-decoration-none opacity-75 small">Home</a>
+          </li>
+          <li class="mb-2">
+            <a href="/about" class="text-white text-decoration-none opacity-75 small">About</a>
+          </li>
+          <li class="mb-2">
+            <a href="/projects" class="text-white text-decoration-none opacity-75 small">Projects</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Content Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Content</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/posts" class="text-white text-decoration-none opacity-75 small">Posts</a>
+          </li>
+          <li class="mb-2">
+            <a href="/all-thoughts" class="text-white text-decoration-none opacity-75 small">Thoughts</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="col-lg-4 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Get In Touch</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="mailto:{{ site.author.email }}" class="text-white text-decoration-none opacity-75 small">
+              <i class="fa-solid fa-envelope me-2"></i>{{ site.author.email }}
+            </a>
+          </li>
+          <li class="mb-2">
+            <span class="text-white opacity-75 small">
+              <i class="fa-solid fa-location-dot me-2"></i>{{ site.author.location }}
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-white opacity-25 my-4">
+
+    <!-- Bottom Bar -->
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <p class="text-white small mb-0">© 2025 Tanaka Mawere. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <span class="text-white small opacity-75">Full-stack .NET Programmer • Medical Student • Musician</span>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Defeating WhatsApp - Tanaka Mawere</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QPN1RF97X"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0QPN1RF97X');
+    </script>
+
+    <!--Meta tags-->
+    <!-- Primary Meta Tags -->
+<meta name="title" content="Defeating WhatsApp - Tanaka Mawere" />
+<meta name="description" content="A programmer in Zimbabwe's greatest enemy is WhatsApp. How do we defeat it? I have no idea" />
+<meta name="keywords" content=""/>
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:4000/technology/thoughts/2023/11/18/defeating-whatsapp.html" />
+<meta property="og:title" content="Defeating WhatsApp - Tanaka Mawere" />
+<meta property="og:description" content="A programmer in Zimbabwe's greatest enemy is WhatsApp. How do we defeat it? I have no idea" />
+<meta property="og:image" content="https://images.unsplash.com/photo-1632435499152-18838be77960?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdoYXRzYXBwfGVufDB8fDB8fHww" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="http://localhost:4000" />
+<meta property="twitter:title" content="Defeating WhatsApp - Tanaka Mawere" />
+<meta property="twitter:description" content="A programmer in Zimbabwe's greatest enemy is WhatsApp. How do we defeat it? I have no idea" />
+<meta property="twitter:image" content="https://images.unsplash.com/photo-1632435499152-18838be77960?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdoYXRzYXBwfGVufDB8fDB8fHww" />
+
+<!--Browser Toolbar Colour-->
+<meta name="theme-color" content="#f2f6ff">
+
+<!-- Meta Tags Generated with https://metatags.io -->
+
+
+    <script src="https://kit.fontawesome.com/f4b902f1d9.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+
+  <!--Ad sense stuff-->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7010150994074481"
+     crossorigin="anonymous"></script>
+
+    <!--Clarity Code-->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "k9ajfs4kbb");
+    </script>
+
+     <!--Favicon stuff-->
+     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<script>
+    (() => {
+  'use strict'
+
+  const getStoredTheme = () => localStorage.getItem('theme')
+  const setStoredTheme = theme => localStorage.setItem('theme', theme)
+
+  const getPreferredTheme = () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme) {
+      return storedTheme
+    }
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  }
+
+  const setTheme = theme => {
+    if (theme === 'auto') {
+      document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+    } else {
+      document.documentElement.setAttribute('data-bs-theme', theme)
+    }
+  }
+
+  setTheme(getPreferredTheme())
+
+  const showActiveTheme = (theme, focus = false) => {
+    const themeSwitcher = document.querySelector('#bd-theme')
+
+    if (!themeSwitcher) {
+      return
+    }
+
+    const themeSwitcherText = document.querySelector('#bd-theme-text')
+    const activeThemeIcon = document.querySelector('.theme-icon-active use')
+    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+    const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
+
+    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+      element.classList.remove('active')
+      element.setAttribute('aria-pressed', 'false')
+    })
+
+    btnToActive.classList.add('active')
+    btnToActive.setAttribute('aria-pressed', 'true')
+    activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+    const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
+    themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
+
+    if (focus) {
+      themeSwitcher.focus()
+    }
+  }
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme !== 'light' && storedTheme !== 'dark') {
+      setTheme(getPreferredTheme())
+    }
+  })
+
+  window.addEventListener('DOMContentLoaded', () => {
+    showActiveTheme(getPreferredTheme())
+
+    document.querySelectorAll('[data-bs-theme-value]')
+      .forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const theme = toggle.getAttribute('data-bs-theme-value')
+          setStoredTheme(theme)
+          setTheme(theme)
+          showActiveTheme(theme, true)
+        })
+      })
+  })
+})()
+</script>
+</head></head>
+  <body>
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+        <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+          <i class="fa-solid fa-sun fa-l icon-colour icon-size-sm"></i>
+          Light
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+          <i class="fa-solid fa-moon fa-l icon-colour icon-size-sm"></i>
+          Dark
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
+          Auto
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+  
+    <main class="p-1">
+      <nav class="custom-navbar">
+  <div class="container-fluid px-5">
+    <div class="navbar-content">
+      <a class="navbar-logo" href="/">TM</a>
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="navbar-menu" id="navbarMenu">
+        <li class="navbar-item">
+          <a class="navbar-link" href="/">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/projects">Projects</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/posts">Posts</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Toggle mobile menu
+  document.getElementById('navbarToggle').addEventListener('click', function() {
+    const menu = document.getElementById('navbarMenu');
+    menu.classList.toggle('active');
+    this.classList.toggle('active');
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const navbar = document.querySelector('.custom-navbar');
+    const toggle = document.getElementById('navbarToggle');
+    const menu = document.getElementById('navbarMenu');
+    
+    if (!navbar.contains(event.target)) {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+    }
+  });
+</script>
+      <article class="post-article">
+  <!-- Hero Section -->
+  <div class="post-hero">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="post-categories mb-3">
+              
+              <span class="badge rounded-pill bg-white text-dark px-3 py-2 me-2">
+                Technology
+              </span>
+              
+              <span class="badge rounded-pill bg-white text-dark px-3 py-2 me-2">
+                Thoughts
+              </span>
+            
+          </div>
+          <h1 class="display-4 fw-bold mb-4">
+            Defeating WhatsApp
+          </h1>
+          <div class="d-flex align-items-center justify-content-center gap-3">
+            <span class="fw-semibold">Tanaka Mawere</span>
+            <span>•</span>
+            <span>Nov 18, 2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Image -->
+  <div class="container post-featured-image">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <img class="img-fluid rounded-4 shadow-lg w-100" src="https://images.unsplash.com/photo-1632435499152-18838be77960?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdoYXRzYXBwfGVufDB8fDB8fHww" alt="Defeating WhatsApp"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Post Content -->
+  <div class="container post-content">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="post-body">
+          <h1 id="ma-runner">ma-runner</h1>
+
+<p>I recently went into a shop that sells good quality clothes. Thing is I don’t go for shopping. I will go 5 years without buying a clothing item just because I don’t like going shop by shop looking for clothes.</p>
+
+<p>Then it hit me.</p>
+
+<p>Why not make an app for this? For lazy people like me to do their clothes shopping online?</p>
+
+<p>Then it hit me again.</p>
+
+<p>My girlfriend’s WhatsApp has close to 30 groups of people who sell clothes in there (I don’t like them because they might hide a chat from a blesser or someone she’s cheating with when I am doing my daily check ups on her phone.) Add to that, the use of Facebook Marketplace.</p>
+
+<p>And just like that, the Zimbabwean Amazon died before it went anywhere.</p>
+
+<h1 id="its-everywhere">It’s everywhere</h1>
+
+<p>And if you think about it, there are WhatsApp groups for everything, not just clothes. Food, cars, books, movies (ehm ehm). In first world countries, there are separate apps for each category.</p>
+
+<blockquote>
+  <p>Just for food in first world countries, Chicken Inn, Nandos and kwaMereki would have their own separate food ordering apps. No wonder there are more jobs there than here.</p>
+</blockquote>
+
+<p>Everything is in WhatsApp. So as a developer trying to remove people from WhatsApp, natural question to ask is “why?” Why is everything aggregated in WhatsApp groups?</p>
+
+<h1 id="to-state-the-obvious">To state the obvious…</h1>
+
+<p>It’s convenient. Simply that. I already have a WhatsApp bundle to stalk my relative’s status updates who recently left Zimbabwe and isn’t sending money back home but is going on holidays to what’s it called, Bhali, Balie? So why not just look for clothes in the same app by just joining groups?</p>
+
+<h1 id="data-is-expensive">Data is expensive?</h1>
+
+<p>A few years ago, you would have convinced me that it was because data is expensive and people just buy WhatsApp bundles. Which is still true to some extent. It’s more likely for someone to have a WhatsApp bundle and not a data bundle in Zimbabwe. But I don’t buy this reason completely.</p>
+
+<p>The number of people now using Instagram and more ubiquitously, TikTok, makes me think that of course, not everyone has money for data bundles, but if someone is using their data for TikTok, they have probably 5mb to spare for using a different app.</p>
+
+<p>Granted the number of people who use TikTok in Zimbabwe, is still low compared to the total population but I suppose with time, they will increase. Which lead me to…</p>
+
+<h1 id="time">Time</h1>
+
+<p>I don’t know what the solution is for developers to pull the population away from WhatsApp to their apps but something tells me that with time and as more and more people are digitally connected in Zimbabwe, this is likely to change. Because for all their merit, WhatsApp groups are limited.</p>
+
+<p>There is a lot of spam eating into your device memory. You can’t really search for a product and of course, payment systems. It’s a hassle that I suppose people in Zimbabwe in a few years will be ready to eliminate.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>But what do you think? Are there any actionable steps to pull people away from WhatsApp groups towards using dedicated apps or websites? Because WhatsApp really is a developer’s enemy and developers need to fight against it.</p>
+
+<p><em>P.S: I do not have a girlfriend. Neither would I do daily checkups on her phone. I hope…</em></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    var disqus_config = function () {
+    this.page.url = 'http://localhost:4000/technology/thoughts/2023/11/18/defeating-whatsapp.html';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = 'http://localhost:4000/technology/thoughts/2023/11/18/defeating-whatsapp.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://tanakamawere.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </div>
+      </div>
+    </div>
+  
+
+  <!-- Next Article Section -->
+  
+    <div class="next-article-section py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="fw-bold mb-4">Your next article...</h2>
+            <div class="card next-article-card border-0 shadow-lg overflow-hidden">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <img class="img-fluid h-100 object-fit-cover" src="https://images.unsplash.com/photo-1569025743873-ea3a9ade89f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9yZXglMjB0cmFkaW5nfGVufDB8fDB8fHww" alt="The Catch of Forex Trading..."/>
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body d-flex flex-column h-100 p-4">
+                    <h3 class="card-title fw-bold mb-3">The Catch of Forex Trading...</h3>
+                    <p class="card-text text-muted flex-grow-1">This year marks 3 years since I started learning how to trade... Here's something I learnt</p>
+                    <a href="/the-catch-of-forex-trading" class="btn btn-primary vonge-btn mt-3 align-self-start">
+                      Read Article <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</article>
+
+
+    </main>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/color-modes.js"></script>
+  </body>
+  
+<footer class="vonge-gradient-footer py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- About Section -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+        <p class="text-white opacity-75 small mb-3">Passionate about creating innovative solutions at the intersection of technology and healthcare. Currently balancing medical studies with full-stack development and music.</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="https://www.instagram.com/tan.akamawere/" class="text-white text-decoration-none" aria-label="Instagram">
+            <i class="fa-brands fa-instagram fa-lg"></i>
+          </a>
+          <a href="https://github.com/tanakamawere" class="text-white text-decoration-none" aria-label="GitHub">
+            <i class="fa-brands fa-github fa-lg"></i>
+          </a>
+          <a href="mailto:tanaka@tanakamawere.co.zw" class="text-white text-decoration-none" aria-label="Email">
+            <i class="fa-solid fa-envelope fa-lg"></i>
+          </a>
+          <a href="https://wa.me/263785468923" class="text-white text-decoration-none" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp fa-lg"></i>
+          </a>
+          <a href="https://x.com/tanaka_mawere" class="text-white text-decoration-none" aria-label="Twitter">
+            <i class="fa-brands fa-twitter fa-lg"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/" class="text-white text-decoration-none opacity-75 small">Home</a>
+          </li>
+          <li class="mb-2">
+            <a href="/about" class="text-white text-decoration-none opacity-75 small">About</a>
+          </li>
+          <li class="mb-2">
+            <a href="/projects" class="text-white text-decoration-none opacity-75 small">Projects</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Content Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Content</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/posts" class="text-white text-decoration-none opacity-75 small">Posts</a>
+          </li>
+          <li class="mb-2">
+            <a href="/all-thoughts" class="text-white text-decoration-none opacity-75 small">Thoughts</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="col-lg-4 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Get In Touch</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="mailto:tanaka@tanakamawere.co.zw" class="text-white text-decoration-none opacity-75 small">
+              <i class="fa-solid fa-envelope me-2"></i>tanaka@tanakamawere.co.zw
+            </a>
+          </li>
+          <li class="mb-2">
+            <span class="text-white opacity-75 small">
+              <i class="fa-solid fa-location-dot me-2"></i>Harare, Zimbabwe
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-white opacity-25 my-4">
+
+    <!-- Bottom Bar -->
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <p class="text-white small mb-0">© 2025 Tanaka Mawere. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <span class="text-white small opacity-75">Full-stack .NET Programmer • Medical Student • Musician</span>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
