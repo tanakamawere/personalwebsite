@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>I tried vibe-coding... - Tanaka Mawere</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QPN1RF97X"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0QPN1RF97X');
+    </script>
+
+    <!--Meta tags-->
+    <!-- Primary Meta Tags -->
+<meta name="title" content="I tried vibe-coding... - Tanaka Mawere" />
+<meta name="description" content="Just tell AI to make the app and it will, or will it?" />
+<meta name="keywords" content=""/>
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:4000/thoughts/programming/2025/08/26/vibe-coding.html" />
+<meta property="og:title" content="I tried vibe-coding... - Tanaka Mawere" />
+<meta property="og:description" content="Just tell AI to make the app and it will, or will it?" />
+<meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Jo3cVvNmq-FqXd1oV3dWyxig1f09pIsjtw&s" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="http://localhost:4000" />
+<meta property="twitter:title" content="I tried vibe-coding... - Tanaka Mawere" />
+<meta property="twitter:description" content="Just tell AI to make the app and it will, or will it?" />
+<meta property="twitter:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Jo3cVvNmq-FqXd1oV3dWyxig1f09pIsjtw&s" />
+
+<!--Browser Toolbar Colour-->
+<meta name="theme-color" content="#f2f6ff">
+
+<!-- Meta Tags Generated with https://metatags.io -->
+
+
+    <script src="https://kit.fontawesome.com/f4b902f1d9.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+
+  <!--Ad sense stuff-->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7010150994074481"
+     crossorigin="anonymous"></script>
+
+    <!--Clarity Code-->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "k9ajfs4kbb");
+    </script>
+
+     <!--Favicon stuff-->
+     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<script>
+    (() => {
+  'use strict'
+
+  const getStoredTheme = () => localStorage.getItem('theme')
+  const setStoredTheme = theme => localStorage.setItem('theme', theme)
+
+  const getPreferredTheme = () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme) {
+      return storedTheme
+    }
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  }
+
+  const setTheme = theme => {
+    if (theme === 'auto') {
+      document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+    } else {
+      document.documentElement.setAttribute('data-bs-theme', theme)
+    }
+  }
+
+  setTheme(getPreferredTheme())
+
+  const showActiveTheme = (theme, focus = false) => {
+    const themeSwitcher = document.querySelector('#bd-theme')
+
+    if (!themeSwitcher) {
+      return
+    }
+
+    const themeSwitcherText = document.querySelector('#bd-theme-text')
+    const activeThemeIcon = document.querySelector('.theme-icon-active use')
+    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+    const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
+
+    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+      element.classList.remove('active')
+      element.setAttribute('aria-pressed', 'false')
+    })
+
+    btnToActive.classList.add('active')
+    btnToActive.setAttribute('aria-pressed', 'true')
+    activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+    const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
+    themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
+
+    if (focus) {
+      themeSwitcher.focus()
+    }
+  }
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme !== 'light' && storedTheme !== 'dark') {
+      setTheme(getPreferredTheme())
+    }
+  })
+
+  window.addEventListener('DOMContentLoaded', () => {
+    showActiveTheme(getPreferredTheme())
+
+    document.querySelectorAll('[data-bs-theme-value]')
+      .forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const theme = toggle.getAttribute('data-bs-theme-value')
+          setStoredTheme(theme)
+          setTheme(theme)
+          showActiveTheme(theme, true)
+        })
+      })
+  })
+})()
+</script>
+</head></head>
+  <body>
+    <div class="container">
+    <nav class="navbar navbar-expand-lg mt-4">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="/">TM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold align-items-center justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/posts">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/all-thoughts">Thoughts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/about">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+        <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+          <i class="fa-solid fa-sun fa-l icon-colour icon-size-sm"></i>
+          Light
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+          <i class="fa-solid fa-moon fa-l icon-colour icon-size-sm"></i>
+          Dark
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
+          Auto
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+  
+    <main class="p-1">
+      <div class="container mt-5">
+    <div class="row align-items-center justify-content-center">
+        <div class="col-xl-6 col-xxl-6 text-center">
+            <img class="rounded-top rounded-bottom img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Jo3cVvNmq-FqXd1oV3dWyxig1f09pIsjtw&s"/>
+        </div>
+        <div class="col-lg-6 col-xl-6 col-xxl-4">
+          <div class="my-3 text-center text-xl-start">
+                
+                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
+                    Thoughts
+                </button>
+                
+                <button class="btn btn-primary rounded-pill fw-semibold fs-small">
+                    Programming
+                </button>
+              
+              <h1 class="fw-bolder">
+                  I tried vibe-coding...
+              </h1>
+              <div class="row align-items-center justify-content-between container-fluid">
+                <!-- <img class="col rounded-circle" style="max-height: 50px; max-width: 50px; background-color: transparent;" src="/assets/img/profile_picture.jpg"/> -->
+                <div class="col social-links">
+                  <p>Tanaka Mawere</p>
+                  <h6>
+                    Aug 26, 2025
+                  </h6>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="px-3 highlight">
+    <p>The uninitiated might be wondering, what is “vibe-coding?” So here is a short-ish, very much not AI answer.</p>
+
+<blockquote>
+  <p>Tell AI to make an app, bammm, it’s there and it works.</p>
+</blockquote>
+
+<p>To be very fair though, there is no one definition that everyone can agree on but the basic premise is that AI is doing most, if not all of the coding, and you are just there, facilitating.</p>
+
+<p>So I tried it. I tried to vibe-code. And I have thoughts.</p>
+
+<h2 id="there-are-things-it-is-and-things-it-isnt">There are things it is, and things it isn’t</h2>
+
+<p>I was at a games night, and we’d played 30 seconds to its max and wanted something to switch things up. Charades we thought. Went on the app store and downloaded an app clearly written “Charades”. Great then. More fun on the way.</p>
+
+<p>Except that we knew none of the things that were in the game, completely. And as self-ordained problem solver, I took it upon myself to make a charades game that Africans, in particular Zimbabweans, can play and relate to.</p>
+
+<p>Gave myself a weekend because it’s really a simple application if you think about it. But I was like nah, there’s AI for this.</p>
+
+<p>So I opened VSCode and told it what I want and kept on prompting it until it said it was done with everything.</p>
+
+<p>Yeppie! The app is done. With the excitement that a child has when its mother comes back from work, I installed it on my phone.</p>
+
+<p>Crashed.</p>
+
+<p>I really thought the promise of vibe-coding was that it’d do everything “better than humans” but when I opened the code, even spaghetti isn’t as tangled and messy as that horror show of code I saw.</p>
+
+<p>And I learnt that my passion career is still safe for a few years, I hope…</p>
+
+<blockquote>
+  <p>I should mention, if you want the app I then fixed after it was vibe-coded, here is a link … which should be here had Google Play approved the app in time but oh well, I will post it on my socials.</p>
+</blockquote>
+
+<h2 id="lessons">Lessons</h2>
+
+<h3 id="1-context-is-key">1. Context is key</h3>
+
+<p>AI is like an overzealous child that wants to use a knife to eat Cerevita. Because of how LLMs work, if you don’t guide it accordingly, you will find it doing the wildest things ever. And that’s something that is not talked about enough.</p>
+
+<p>The reason is that Sam Altman and the likes promise us that AI means autonomy, but in practice, it means me learning to become a supervisor and that really takes a paradigm shift in mindset, in how one works and in one’s coding practices.</p>
+
+<h3 id="2-gemini-is-a-horror-show">2. Gemini is a horror show.</h3>
+
+<p>That’s it. That’s the tweet.</p>
+
+<h3 id="3-ai-wont-replace-programmers-it-will-make-us-work-faster-for-now">3. AI won’t replace programmers, it will make us work faster… for now</h3>
+
+<p>Genuinely convinced that companies that are laying off people because of AI will come to regret it soon because AI isn’t all it’s been made up to be. It’s really not autonomous. Needs a lot of human supervision to guide</p>
+
+<p>And that’s really the conclusion… That vibe-coding really isn’t a “thing” if you think you can tell AI to make the next WhatsApp in 2 hours. You will be very disappointed.</p>
+
+<p>But it will certainly make you faster.</p>
+
+  </div>  
+    
+  
+    
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    var disqus_config = function () {
+    this.page.url = 'http://localhost:4000/thoughts/programming/2025/08/26/vibe-coding.html';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = 'http://localhost:4000/thoughts/programming/2025/08/26/vibe-coding.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://tanakamawere.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+  <!--Next article section-->
+  <hr class="my-5"/>
+  <h2 class="fw-bolder">Your next article...</h2>
+
+  
+    <div class="card" style="max-width: 30rem;">
+      <div class="row card-body">
+        <div class="col-6">
+          <img class="rounded-top rounded-bottom img-fluid" src="https://i.postimg.cc/1RKnRKWq/Copilot-20250628-083519.png"/>
+        </div>
+        <div class="col-6">
+          <h3 class="card-title">When music becomes perfect...</h5>
+          <a href="/thoughts/music/2025/06/28/perfect-music.html" class="btn btn-primary">Read it...</a>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
+
+    </main>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/color-modes.js"></script>
+  </body>
+  
+<footer class="p-5 vonge-gradient-footer">
+    <ul class="nav justify-content-center pb-3 mb-3">
+      <li class="vonge-nav-item">
+        <a href="#" class="nav-link px-2 text-white fw-semibold">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="/posts" class="nav-link px-2 text-white fw-semibold">Posts</a>
+      </li>
+      <li class="nav-item">
+        <a href="/projects" class="nav-link px-2 text-white fw-semibold">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a href="all-thoughts" class="nav-link px-2  text-white fw-semibold">Thoughts</a>
+      </li>
+      <li class="nav-item">
+        <a href="/about" class="nav-link px-2 text-white fw-semibold">About</a>
+      </li>
+    </ul>
+    <p class="text-center text-white fw-semibold">2025 ©️ Tanaka Mawere</p>
+  </footer>
+</html>
