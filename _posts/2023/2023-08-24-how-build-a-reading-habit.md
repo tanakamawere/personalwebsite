@@ -4,7 +4,8 @@ title: "How to build a reading habit"
 date: 2023-08-24 08:00:00 +0200
 description: "A summary of the things I have learnt from reading over 200 books in the last 2 years"
 author: Tanaka Mawere
-categories: Reading
+categories: 
+    - Productivity
 image: "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
 ---
 

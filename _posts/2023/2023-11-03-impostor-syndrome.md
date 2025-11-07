@@ -4,7 +4,8 @@ title: "My current experience with impostor syndrome"
 date: 2023-11-03 18:00:00 +0200
 description: "A bit more quiet and shush from me..."
 author: Tanaka Mawere
-categories: Thoughts
+categories: 
+    - Thoughts
 image: "https://i.postimg.cc/8zpTck2s/impostor.jpg"
 ---
 

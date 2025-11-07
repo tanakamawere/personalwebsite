@@ -5,7 +5,7 @@ date: 2024-08-05 02:00:00 +0200
 description: "I see a parallel between his struggles and the challenges we face in Zimbabwe, where hope can often seem elusive. Despite the systemic obstacles, I believe in the power of hope and the potential of my generation to restore it."
 author: Tanaka Mawere
 categories: 
-    -   Thoughts
+    - Thoughts
 image: "https://i0.wp.com/www.culturetype.com/wp-content/uploads/2013/12/mandela.png"
 ---
 

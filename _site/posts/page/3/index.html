@@ -145,6 +145,7 @@
 </script>
 </head></head>
   <body>
+<<<<<<< HEAD
     <div class="container">
     <nav class="navbar navbar-expand-lg mt-4">
       <div class="container-fluid">
@@ -186,6 +187,8 @@
       </div>
     </nav>
   </div>
+=======
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
     <button class="btn btn-outline-secondary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
         <i class="fa-solid fa-circle-half-stroke me-2 theme-icon-active"></i>
@@ -214,6 +217,51 @@
 </div>
   
     <main class="p-1">
+      <nav class="custom-navbar">
+  <div class="container-fluid px-5">
+    <div class="navbar-content">
+      <a class="navbar-logo" href="/">TM</a>
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="navbar-menu" id="navbarMenu">
+        <li class="navbar-item">
+          <a class="navbar-link" href="/">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/projects">Projects</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/posts">Posts</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Toggle mobile menu
+  document.getElementById('navbarToggle').addEventListener('click', function() {
+    const menu = document.getElementById('navbarMenu');
+    menu.classList.toggle('active');
+    this.classList.toggle('active');
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const navbar = document.querySelector('.custom-navbar');
+    const toggle = document.getElementById('navbarToggle');
+    const menu = document.getElementById('navbarMenu');
+    
+    if (!navbar.contains(event.target)) {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+    }
+  });
+</script>
       <div class="px-5 container">
     <div class="container-fluid py-5">
         <h2 class="display-6 fw-bold">Recent Posts</h2>
@@ -227,6 +275,7 @@
         
         
             <div class="col-lg-4 mb-5">
+<<<<<<< HEAD
     <article class="post-card h-100">
         <div class="post-card-image-container">
             <img class="post-card-image" src="https://i.postimg.cc/c4Rwg4Lx/quit-social-media.jpg" alt="I quit social media and got addicted to YouTube" />
@@ -701,6 +750,161 @@ While I understand that trading might seems like a low-cost option of a side hus
 ">
                         5 min read
                     </span>
+=======
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://i.postimg.cc/c4Rwg4Lx/quit-social-media.jpg" alt="I quit social media and got addicted to YouTube" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Lifestyle
+                    </span>
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Productivity
+                    </span>
+                
+            </div>
+            <a class="text-decoration-none stretched-link" href="/lifestyle/productivity/2023/11/27/quit-social-media-addicted-to-youtube.html">
+                <h3 class="fw-bold post-card-title mb-3">
+                    I quit social media and got addicted to YouTube
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                The digital definition of evading a pothole and driving straight into a pit.
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Nov 27, 2023
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+            <div class="col-lg-4 mb-5">
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://images.unsplash.com/photo-1495293453185-532fbd0a872c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cXVpZXR8ZW58MHx8MHx8fDA%3D" alt="Don't tell, cause thought" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Thoughts
+                    </span>
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Productivity
+                    </span>
+                
+            </div>
+            <a class="text-decoration-none stretched-link" href="/thoughts/productivity/2023/11/24/dont-tell-cause-thought.html">
+                <h3 class="fw-bold post-card-title mb-3">
+                    Don't tell, cause thought
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                People don't listen when you tell them something. Simple fact of life, so don't tell them. Make them think.
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Nov 24, 2023
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+            <div class="col-lg-4 mb-5">
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://images.unsplash.com/photo-1632435499152-18838be77960?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdoYXRzYXBwfGVufDB8fDB8fHww" alt="Defeating WhatsApp" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Technology
+                    </span>
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Thoughts
+                    </span>
+                
+            </div>
+            <a class="text-decoration-none stretched-link" href="/technology/thoughts/2023/11/18/defeating-whatsapp.html">
+                <h3 class="fw-bold post-card-title mb-3">
+                    Defeating WhatsApp
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                A programmer in Zimbabwe's greatest enemy is WhatsApp. How do we defeat it? I have no idea
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Nov 18, 2023
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+            <div class="col-lg-4 mb-5">
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://images.unsplash.com/photo-1569025743873-ea3a9ade89f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9yZXglMjB0cmFkaW5nfGVufDB8fDB8fHww" alt="The Catch of Forex Trading..." />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Finance
+                    </span>
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Thoughts
+                    </span>
+                
+            </div>
+            <a class="text-decoration-none stretched-link" href="/the-catch-of-forex-trading">
+                <h3 class="fw-bold post-card-title mb-3">
+                    The Catch of Forex Trading...
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                This year marks 3 years since I started learning how to trade... Here's something I learnt
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Nov 15, 2023
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
                 </div>
             </div>
         </div>
@@ -708,6 +912,7 @@ While I understand that trading might seems like a low-cost option of a side hus
 </div>
         
             <div class="col-lg-4 mb-5">
+<<<<<<< HEAD
     <article class="post-card h-100">
         <div class="post-card-image-container">
             <img class="post-card-image" src="https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Put your eggs in one basket" />
@@ -782,6 +987,37 @@ So realistically speaking, it’s not bad for plan B to exist. In Zimbabwe, it�
 ">
                         2 min read
                     </span>
+=======
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Put your eggs in one basket" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Productivity
+                    </span>
+                
+            </div>
+            <a class="text-decoration-none stretched-link" href="/productivity/2023/11/07/put-your-eggs-in-one-basket.html">
+                <h3 class="fw-bold post-card-title mb-3">
+                    Put your eggs in one basket
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                Having a 'Plan B' is bad for 'Plan A'
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Nov 7, 2023
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
                 </div>
             </div>
         </div>
@@ -789,6 +1025,7 @@ So realistically speaking, it’s not bad for plan B to exist. In Zimbabwe, it�
 </div>
         
             <div class="col-lg-4 mb-5">
+<<<<<<< HEAD
     <article class="post-card h-100">
         <div class="post-card-image-container">
             <img class="post-card-image" src="https://i.postimg.cc/8zpTck2s/impostor.jpg" alt="My current experience with impostor syndrome" />
@@ -863,6 +1100,37 @@ But I will go back to my past cadence of posting things I would have found inter
 ">
                         3 min read
                     </span>
+=======
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://i.postimg.cc/8zpTck2s/impostor.jpg" alt="My current experience with impostor syndrome" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Thoughts
+                    </span>
+                
+            </div>
+            <a class="text-decoration-none stretched-link" href="/thoughts/2023/11/03/impostor-syndrome.html">
+                <h3 class="fw-bold post-card-title mb-3">
+                    My current experience with impostor syndrome
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                A bit more quiet and shush from me...
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Nov 3, 2023
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
                 </div>
             </div>
         </div>
@@ -870,6 +1138,7 @@ But I will go back to my past cadence of posting things I would have found inter
 </div>
         
             <div class="col-lg-4 mb-5">
+<<<<<<< HEAD
     <article class="post-card h-100">
         <div class="post-card-image-container">
             <img class="post-card-image" src="https://i.ytimg.com/vi/zKL7xVbXSpI/sddefault.jpg" alt="Are Minister Mahendere's lyrics biblical?" />
@@ -995,6 +1264,37 @@ Again, please do feel free to reply me on my WhatsApp by clicking right here
 ">
                         4 min read
                     </span>
+=======
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://i.ytimg.com/vi/zKL7xVbXSpI/sddefault.jpg" alt="Are Minister Mahendere's lyrics biblical?" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Faith
+                    </span>
+                
+            </div>
+            <a class="text-decoration-none stretched-link" href="/faith/2023/10/31/tangai-neni-lyrics.html">
+                <h3 class="fw-bold post-card-title mb-3">
+                    Are Minister Mahendere's lyrics biblical?
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                Minister Mahendere's popular song "Tangai Neni" came into question yesterday and I fell down a rabbit hole. Are they biblical?
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Oct 31, 2023
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
                 </div>
             </div>
         </div>
@@ -1002,6 +1302,7 @@ Again, please do feel free to reply me on my WhatsApp by clicking right here
 </div>
         
             <div class="col-lg-4 mb-5">
+<<<<<<< HEAD
     <article class="post-card h-100">
         <div class="post-card-image-container">
             <img class="post-card-image" src="https://images.unsplash.com/photo-1636082106091-493a3696eaf4?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGluc3RpbmN0fGVufDB8fDB8fHww" alt="A theory about that gut feeling" />
@@ -1083,6 +1384,37 @@ It’s just a theory but a theory that makes sense to me. It helps so that I don
 ">
                         3 min read
                     </span>
+=======
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://images.unsplash.com/photo-1636082106091-493a3696eaf4?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGluc3RpbmN0fGVufDB8fDB8fHww" alt="A theory about that gut feeling" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Thoughts
+                    </span>
+                
+            </div>
+            <a class="text-decoration-none stretched-link" href="/thoughts/2023/10/30/a-theory-about-that-gut-feeling.html">
+                <h3 class="fw-bold post-card-title mb-3">
+                    A theory about that gut feeling
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                Do I need to rationalise everything and understand how I got to every conclusion I have? Probably not. Here's why.
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Oct 30, 2023
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
                 </div>
             </div>
         </div>
@@ -1090,6 +1422,7 @@ It’s just a theory but a theory that makes sense to me. It helps so that I don
 </div>
         
             <div class="col-lg-4 mb-5">
+<<<<<<< HEAD
     <article class="post-card h-100">
         <div class="post-card-image-container">
             <img class="post-card-image" src="https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3JpdGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="By whose authority do I write?" />
@@ -1166,6 +1499,41 @@ The other reason is that at this very young, juvenile age, I don’t know a lot.
             </div>
         </div>
     </article>
+=======
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3JpdGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="By whose authority do I write?" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Thoughts
+                    </span>
+                
+            </div>
+            <a class="text-decoration-none stretched-link" href="/thoughts/2023/10/29/by-whose-authority.html">
+                <h3 class="fw-bold post-card-title mb-3">
+                    By whose authority do I write?
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                A bit of an imposter syndrome piece
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Oct 29, 2023
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
 </div>
         
     </div>
@@ -1193,6 +1561,7 @@ The other reason is that at this very young, juvenile age, I don’t know a lot.
     <script src="/assets/js/color-modes.js"></script>
   </body>
   
+<<<<<<< HEAD
 <footer class="p-5 vonge-gradient-footer mt-5">
     <div class="container">
         <div class="row">
@@ -1298,5 +1667,93 @@ The other reason is that at this very young, juvenile age, I don’t know a lot.
             </div>
         </div>
     </div>
+=======
+<footer class="vonge-gradient-footer py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- About Section -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+        <p class="text-white opacity-75 small mb-3">Passionate about creating innovative solutions at the intersection of technology and healthcare. Currently balancing medical studies with full-stack development and music.</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="https://www.instagram.com/tan.akamawere/" class="text-white text-decoration-none" aria-label="Instagram">
+            <i class="fa-brands fa-instagram fa-lg"></i>
+          </a>
+          <a href="https://github.com/tanakamawere" class="text-white text-decoration-none" aria-label="GitHub">
+            <i class="fa-brands fa-github fa-lg"></i>
+          </a>
+          <a href="mailto:tanaka@tanakamawere.co.zw" class="text-white text-decoration-none" aria-label="Email">
+            <i class="fa-solid fa-envelope fa-lg"></i>
+          </a>
+          <a href="https://wa.me/263785468923" class="text-white text-decoration-none" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp fa-lg"></i>
+          </a>
+          <a href="https://x.com/tanaka_mawere" class="text-white text-decoration-none" aria-label="Twitter">
+            <i class="fa-brands fa-twitter fa-lg"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/" class="text-white text-decoration-none opacity-75 small">Home</a>
+          </li>
+          <li class="mb-2">
+            <a href="/about" class="text-white text-decoration-none opacity-75 small">About</a>
+          </li>
+          <li class="mb-2">
+            <a href="/projects" class="text-white text-decoration-none opacity-75 small">Projects</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Content Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Content</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/posts" class="text-white text-decoration-none opacity-75 small">Posts</a>
+          </li>
+          <li class="mb-2">
+            <a href="/all-thoughts" class="text-white text-decoration-none opacity-75 small">Thoughts</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="col-lg-4 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Get In Touch</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="mailto:tanaka@tanakamawere.co.zw" class="text-white text-decoration-none opacity-75 small">
+              <i class="fa-solid fa-envelope me-2"></i>tanaka@tanakamawere.co.zw
+            </a>
+          </li>
+          <li class="mb-2">
+            <span class="text-white opacity-75 small">
+              <i class="fa-solid fa-location-dot me-2"></i>Harare, Zimbabwe
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-white opacity-25 my-4">
+
+    <!-- Bottom Bar -->
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <p class="text-white small mb-0">© 2025 Tanaka Mawere. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <span class="text-white small opacity-75">Full-stack .NET Programmer • Medical Student • Musician</span>
+      </div>
+    </div>
+  </div>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
 </footer>
 </html>

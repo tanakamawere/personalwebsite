@@ -5,7 +5,7 @@ date: 2024-09-16 02:00:00 +0200
 description: "No, you don't have everything figured out... And you never will."
 author: Tanaka Mawere
 categories: 
-    -   Thoughts
+    - Thoughts
 image: "https://i.postimg.cc/7LSjnsQf/c742f3ca-04f0-4c93-a395-514cdefde9f4.jpg"
 ---
 

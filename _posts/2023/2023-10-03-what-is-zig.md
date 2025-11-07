@@ -4,7 +4,8 @@ title: "What's ZiG!?"
 date: 2023-10-03 20:00:00 +0200
 description: "A summary of Zimbabwean Gold (ZiG) and my thoughts on it"
 author: Tanaka Mawere
-categories: Thoughts
+categories: 
+    - Finance
 image: "https://zimpricecheck.com/wp-content/uploads/2022/07/gold_coins.jpg"
 ---
 

@@ -145,6 +145,7 @@
 </script>
 </head></head>
   <body>
+<<<<<<< HEAD
     <div class="container">
     <nav class="navbar navbar-expand-lg mt-4">
       <div class="container-fluid">
@@ -186,6 +187,8 @@
       </div>
     </nav>
   </div>
+=======
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
     <button class="btn btn-outline-secondary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
         <i class="fa-solid fa-circle-half-stroke me-2 theme-icon-active"></i>
@@ -214,6 +217,51 @@
 </div>
   
     <main class="p-1">
+      <nav class="custom-navbar">
+  <div class="container-fluid px-5">
+    <div class="navbar-content">
+      <a class="navbar-logo" href="/">TM</a>
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="navbar-menu" id="navbarMenu">
+        <li class="navbar-item">
+          <a class="navbar-link" href="/">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/projects">Projects</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/posts">Posts</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Toggle mobile menu
+  document.getElementById('navbarToggle').addEventListener('click', function() {
+    const menu = document.getElementById('navbarMenu');
+    menu.classList.toggle('active');
+    this.classList.toggle('active');
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const navbar = document.querySelector('.custom-navbar');
+    const toggle = document.getElementById('navbarToggle');
+    const menu = document.getElementById('navbarMenu');
+    
+    if (!navbar.contains(event.target)) {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+    }
+  });
+</script>
       <div class="px-5 container">
     <div class="container-fluid py-5">
         <h2 class="display-6 fw-bold">Recent Posts</h2>
@@ -227,6 +275,7 @@
         
         
             <div class="col-lg-4 mb-5">
+<<<<<<< HEAD
     <article class="post-card h-100">
         <div class="post-card-image-container">
             <img class="post-card-image" src="https://zimpricecheck.com/wp-content/uploads/2022/07/gold_coins.jpg" alt="What's ZiG!?" />
@@ -658,6 +707,145 @@ Links to where I got the information
 ">
                         3 min read
                     </span>
+=======
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://zimpricecheck.com/wp-content/uploads/2022/07/gold_coins.jpg" alt="What's ZiG!?" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Finance
+                    </span>
+                
+            </div>
+            <a class="text-decoration-none stretched-link" href="/finance/2023/10/03/what-is-zig.html">
+                <h3 class="fw-bold post-card-title mb-3">
+                    What's ZiG!?
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                A summary of Zimbabwean Gold (ZiG) and my thoughts on it
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Oct 3, 2023
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+            <div class="col-lg-4 mb-5">
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://i3.ytimg.com/vi/hCW2NHbWNwA/maxresdefault.jpg" alt="Humans Sweat Out Stress!?" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Reviews
+                    </span>
+                
+            </div>
+            <a class="text-decoration-none stretched-link" href="/reviews/2023/10/02/how-to-manage-stress.html">
+                <h3 class="fw-bold post-card-title mb-3">
+                    Humans Sweat Out Stress!?
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                Here is a summary of what the 'stress doctor', Dr Tara Swart, says about managing stress and the power of our minds.
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Oct 2, 2023
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+            <div class="col-lg-4 mb-5">
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://www.disruptorleague.com/wp-content/uploads/2017/03/Contagious-Jonah-Berger.jpg" alt="Book Review: Contagious" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Reviews
+                    </span>
+                
+            </div>
+            <a class="text-decoration-none stretched-link" href="/reviews/2023/09/14/contagious-book-review-copy.html">
+                <h3 class="fw-bold post-card-title mb-3">
+                    Book Review: Contagious
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                Contagious by Jonah Berger
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Sep 14, 2023
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+            <div class="col-lg-4 mb-5">
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://cdn.thecollector.com/wp-content/uploads/2023/06/thomas-sankara-burkina-faso-revolutionary.jpg" alt="Thomas Sankara ladies and gentlemen" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        History
+                    </span>
+                
+            </div>
+            <a class="text-decoration-none stretched-link" href="/history/2023/09/01/thomas-sankara.html">
+                <h3 class="fw-bold post-card-title mb-3">
+                    Thomas Sankara ladies and gentlemen
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                Oops, I went down another wikipedia rabbit hole in African political history  
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Sep 1, 2023
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
                 </div>
             </div>
         </div>
@@ -665,6 +853,7 @@ Links to where I got the information
 </div>
         
             <div class="col-lg-4 mb-5">
+<<<<<<< HEAD
     <article class="post-card h-100">
         <div class="post-card-image-container">
             <img class="post-card-image" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/01/30/17/ian-smith-rhodesia-5.jpg?quality=75&width=990&crop=3%3A2%2Csmart&auto=webp" alt="Ian Smith was right" />
@@ -741,6 +930,37 @@ Links to where I got the information
 ">
                         2 min read
                     </span>
+=======
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/01/30/17/ian-smith-rhodesia-5.jpg?quality=75&width=990&crop=3%3A2%2Csmart&auto=webp" alt="Ian Smith was right" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        History
+                    </span>
+                
+            </div>
+            <a class="text-decoration-none stretched-link" href="/history/2023/08/28/ian-smith-was-right-and-wasnt-racist.html">
+                <h3 class="fw-bold post-card-title mb-3">
+                    Ian Smith was right
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                I don't believe in majority rule ever in Rhodesia... not in 1000 years. Was this all to it for Smith?
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Aug 28, 2023
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
                 </div>
             </div>
         </div>
@@ -748,6 +968,7 @@ Links to where I got the information
 </div>
         
             <div class="col-lg-4 mb-5">
+<<<<<<< HEAD
     <article class="post-card h-100">
         <div class="post-card-image-container">
             <img class="post-card-image" src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="How to build a reading habit" />
@@ -830,6 +1051,37 @@ If you want to know how I write notes from books or anything else, talk to me on
 ">
                         2 min read
                     </span>
+=======
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="How to build a reading habit" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Productivity
+                    </span>
+                
+            </div>
+            <a class="text-decoration-none stretched-link" href="/productivity/2023/08/24/how-build-a-reading-habit.html">
+                <h3 class="fw-bold post-card-title mb-3">
+                    How to build a reading habit
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                A summary of the things I have learnt from reading over 200 books in the last 2 years
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Aug 24, 2023
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
                 </div>
             </div>
         </div>
@@ -837,6 +1089,7 @@ If you want to know how I write notes from books or anything else, talk to me on
 </div>
         
             <div class="col-lg-4 mb-5">
+<<<<<<< HEAD
     <article class="post-card h-100">
         <div class="post-card-image-container">
             <img class="post-card-image" src="https://images.unsplash.com/photo-1632239776255-0a7f24814df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWljcm9zb2Z0JTIwb2ZmaWNlfGVufDB8fDB8fHww" alt="Why I don't use Microsoft Word" />
@@ -911,6 +1164,37 @@ This was a hodge podge of a post but the summary is this. I feel the pain of not
 ">
                         3 min read
                     </span>
+=======
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://images.unsplash.com/photo-1632239776255-0a7f24814df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWljcm9zb2Z0JTIwb2ZmaWNlfGVufDB8fDB8fHww" alt="Why I don't use Microsoft Word" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Technology
+                    </span>
+                
+            </div>
+            <a class="text-decoration-none stretched-link" href="/technology/2023/07/21/why-i-dont-use-word.html">
+                <h3 class="fw-bold post-card-title mb-3">
+                    Why I don't use Microsoft Word
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                Many people have used my laptop and looked for Microsoft Word, only to be bombarded by some weird application. I have a semi-good reason
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Jul 21, 2023
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
                 </div>
             </div>
         </div>
@@ -918,6 +1202,7 @@ This was a hodge podge of a post but the summary is this. I feel the pain of not
 </div>
         
             <div class="col-lg-4 mb-5">
+<<<<<<< HEAD
     <article class="post-card h-100">
         <div class="post-card-image-container">
             <img class="post-card-image" src="https://i.postimg.cc/N0zLYBcM/perfectimg.png" alt="Perfection is the enemy of good" />
@@ -996,6 +1281,37 @@ If you got this far, you deserve a star.
 ">
                         2 min read
                     </span>
+=======
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="https://i.postimg.cc/N0zLYBcM/perfectimg.png" alt="Perfection is the enemy of good" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        Thoughts
+                    </span>
+                
+            </div>
+            <a class="text-decoration-none stretched-link" href="/thoughts/2023/07/21/perfection-is-the-enemy-of-good.html">
+                <h3 class="fw-bold post-card-title mb-3">
+                    Perfection is the enemy of good
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                This is the first post on this website and I am going to be recollecting on how and why I made this new site.
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>Jul 21, 2023
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
                 </div>
             </div>
         </div>
@@ -1023,6 +1339,7 @@ If you got this far, you deserve a star.
     <script src="/assets/js/color-modes.js"></script>
   </body>
   
+<<<<<<< HEAD
 <footer class="p-5 vonge-gradient-footer mt-5">
     <div class="container">
         <div class="row">
@@ -1128,5 +1445,93 @@ If you got this far, you deserve a star.
             </div>
         </div>
     </div>
+=======
+<footer class="vonge-gradient-footer py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- About Section -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+        <p class="text-white opacity-75 small mb-3">Passionate about creating innovative solutions at the intersection of technology and healthcare. Currently balancing medical studies with full-stack development and music.</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="https://www.instagram.com/tan.akamawere/" class="text-white text-decoration-none" aria-label="Instagram">
+            <i class="fa-brands fa-instagram fa-lg"></i>
+          </a>
+          <a href="https://github.com/tanakamawere" class="text-white text-decoration-none" aria-label="GitHub">
+            <i class="fa-brands fa-github fa-lg"></i>
+          </a>
+          <a href="mailto:tanaka@tanakamawere.co.zw" class="text-white text-decoration-none" aria-label="Email">
+            <i class="fa-solid fa-envelope fa-lg"></i>
+          </a>
+          <a href="https://wa.me/263785468923" class="text-white text-decoration-none" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp fa-lg"></i>
+          </a>
+          <a href="https://x.com/tanaka_mawere" class="text-white text-decoration-none" aria-label="Twitter">
+            <i class="fa-brands fa-twitter fa-lg"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/" class="text-white text-decoration-none opacity-75 small">Home</a>
+          </li>
+          <li class="mb-2">
+            <a href="/about" class="text-white text-decoration-none opacity-75 small">About</a>
+          </li>
+          <li class="mb-2">
+            <a href="/projects" class="text-white text-decoration-none opacity-75 small">Projects</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Content Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Content</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/posts" class="text-white text-decoration-none opacity-75 small">Posts</a>
+          </li>
+          <li class="mb-2">
+            <a href="/all-thoughts" class="text-white text-decoration-none opacity-75 small">Thoughts</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="col-lg-4 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Get In Touch</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="mailto:tanaka@tanakamawere.co.zw" class="text-white text-decoration-none opacity-75 small">
+              <i class="fa-solid fa-envelope me-2"></i>tanaka@tanakamawere.co.zw
+            </a>
+          </li>
+          <li class="mb-2">
+            <span class="text-white opacity-75 small">
+              <i class="fa-solid fa-location-dot me-2"></i>Harare, Zimbabwe
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-white opacity-25 my-4">
+
+    <!-- Bottom Bar -->
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <p class="text-white small mb-0">© 2025 Tanaka Mawere. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <span class="text-white small opacity-75">Full-stack .NET Programmer • Medical Student • Musician</span>
+      </div>
+    </div>
+  </div>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
 </footer>
 </html>

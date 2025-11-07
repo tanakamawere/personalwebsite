@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Why I don't use Microsoft Word - Tanaka Mawere</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QPN1RF97X"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0QPN1RF97X');
+    </script>
+
+    <!--Meta tags-->
+    <!-- Primary Meta Tags -->
+<meta name="title" content="Why I don't use Microsoft Word - Tanaka Mawere" />
+<meta name="description" content="Many people have used my laptop and looked for Microsoft Word, only to be bombarded by some weird application. I have a semi-good reason" />
+<meta name="keywords" content=""/>
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:4000/technology/2023/07/21/why-i-dont-use-word.html" />
+<meta property="og:title" content="Why I don't use Microsoft Word - Tanaka Mawere" />
+<meta property="og:description" content="Many people have used my laptop and looked for Microsoft Word, only to be bombarded by some weird application. I have a semi-good reason" />
+<meta property="og:image" content="https://images.unsplash.com/photo-1632239776255-0a7f24814df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWljcm9zb2Z0JTIwb2ZmaWNlfGVufDB8fDB8fHww" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="http://localhost:4000" />
+<meta property="twitter:title" content="Why I don't use Microsoft Word - Tanaka Mawere" />
+<meta property="twitter:description" content="Many people have used my laptop and looked for Microsoft Word, only to be bombarded by some weird application. I have a semi-good reason" />
+<meta property="twitter:image" content="https://images.unsplash.com/photo-1632239776255-0a7f24814df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWljcm9zb2Z0JTIwb2ZmaWNlfGVufDB8fDB8fHww" />
+
+<!--Browser Toolbar Colour-->
+<meta name="theme-color" content="#f2f6ff">
+
+<!-- Meta Tags Generated with https://metatags.io -->
+
+
+    <script src="https://kit.fontawesome.com/f4b902f1d9.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+
+  <!--Ad sense stuff-->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7010150994074481"
+     crossorigin="anonymous"></script>
+
+    <!--Clarity Code-->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "k9ajfs4kbb");
+    </script>
+
+     <!--Favicon stuff-->
+     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<script>
+    (() => {
+  'use strict'
+
+  const getStoredTheme = () => localStorage.getItem('theme')
+  const setStoredTheme = theme => localStorage.setItem('theme', theme)
+
+  const getPreferredTheme = () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme) {
+      return storedTheme
+    }
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  }
+
+  const setTheme = theme => {
+    if (theme === 'auto') {
+      document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+    } else {
+      document.documentElement.setAttribute('data-bs-theme', theme)
+    }
+  }
+
+  setTheme(getPreferredTheme())
+
+  const showActiveTheme = (theme, focus = false) => {
+    const themeSwitcher = document.querySelector('#bd-theme')
+
+    if (!themeSwitcher) {
+      return
+    }
+
+    const themeSwitcherText = document.querySelector('#bd-theme-text')
+    const activeThemeIcon = document.querySelector('.theme-icon-active use')
+    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+    const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
+
+    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+      element.classList.remove('active')
+      element.setAttribute('aria-pressed', 'false')
+    })
+
+    btnToActive.classList.add('active')
+    btnToActive.setAttribute('aria-pressed', 'true')
+    activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+    const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
+    themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
+
+    if (focus) {
+      themeSwitcher.focus()
+    }
+  }
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme !== 'light' && storedTheme !== 'dark') {
+      setTheme(getPreferredTheme())
+    }
+  })
+
+  window.addEventListener('DOMContentLoaded', () => {
+    showActiveTheme(getPreferredTheme())
+
+    document.querySelectorAll('[data-bs-theme-value]')
+      .forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const theme = toggle.getAttribute('data-bs-theme-value')
+          setStoredTheme(theme)
+          setTheme(theme)
+          showActiveTheme(theme, true)
+        })
+      })
+  })
+})()
+</script>
+</head></head>
+  <body>
+<<<<<<< HEAD:_site/thoughts/2023/07/21/why-i-dont-use-word.html
+    <div class="container">
+    <nav class="navbar navbar-expand-lg mt-4">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-4" href="/">
+          <span class="text-primary">TM</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold align-items-center justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="fas fa-home me-2"></i>Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects">
+                <i class="fas fa-code me-2"></i>Projects
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/posts">
+                <i class="fas fa-blog me-2"></i>Posts
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link active" href="/all-thoughts">
+                <i class="fas fa-lightbulb me-2"></i>Thoughts
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="/about">
+                <i class="fas fa-user me-2"></i>About
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+=======
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7:_site/technology/2023/07/21/why-i-dont-use-word.html
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-outline-secondary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+        <i class="fa-solid fa-circle-half-stroke me-2 theme-icon-active"></i>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+          <i class="fa-solid fa-sun me-2"></i>
+          Light
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+          <i class="fa-solid fa-moon me-2"></i>
+          Dark
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+          <i class="fa-solid fa-circle-half-stroke me-2"></i>
+          Auto
+        </button>
+      </li>
+    </ul>
+</div>
+  
+    <main class="p-1">
+<<<<<<< HEAD:_site/thoughts/2023/07/21/why-i-dont-use-word.html
+      <!-- Post Hero Section -->
+<article class="post-article">
+    <header class="post-header">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <!-- Categories -->
+                    <div class="post-categories mb-3">
+                          
+                        <span class="badge post-category-badge me-2">
+                            <i class="fas fa-tag me-1"></i>Thoughts
+                        </span>
+                        
+                    </div>
+                    
+                    <!-- Title -->
+                    <h1 class="post-title display-4 fw-bold mb-4">
+                        Why I don't use Microsoft Word
+                    </h1>
+                    
+                    <!-- Meta Information -->
+                    <div class="post-meta d-flex align-items-center mb-4">
+                        <div class="author-info d-flex align-items-center me-4">
+                            <div class="author-avatar me-3">
+                                <i class="fas fa-user-circle fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <div class="author-name fw-semibold">Tanaka Mawere</div>
+                                <div class="post-date text-muted small">
+                                    <i class="fas fa-calendar me-1"></i>
+                                    July 21, 2023
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Reading Time Estimate -->
+                        <div class="reading-time text-muted small">
+                            <i class="fas fa-clock me-1"></i>
+                            <span id="reading-time">5 min read</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Post Image -->
+                    
+                    <div class="post-image-container mb-5">
+                        <img src="https://images.unsplash.com/photo-1632239776255-0a7f24814df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWljcm9zb2Z0JTIwb2ZmaWNlfGVufDB8fDB8fHww" class="post-featured-image" alt="Why I don't use Microsoft Word">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <div class="post-content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <div class="post-body">
+                        <h1 id="money-money-money">Money, money, money</h1>
+=======
+      <nav class="custom-navbar">
+  <div class="container-fluid px-5">
+    <div class="navbar-content">
+      <a class="navbar-logo" href="/">TM</a>
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="navbar-menu" id="navbarMenu">
+        <li class="navbar-item">
+          <a class="navbar-link" href="/">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/projects">Projects</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/posts">Posts</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Toggle mobile menu
+  document.getElementById('navbarToggle').addEventListener('click', function() {
+    const menu = document.getElementById('navbarMenu');
+    menu.classList.toggle('active');
+    this.classList.toggle('active');
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const navbar = document.querySelector('.custom-navbar');
+    const toggle = document.getElementById('navbarToggle');
+    const menu = document.getElementById('navbarMenu');
+    
+    if (!navbar.contains(event.target)) {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+    }
+  });
+</script>
+      <article class="post-article">
+  <!-- Hero Section -->
+  <div class="post-hero">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="post-categories mb-3">
+              
+              <span class="badge rounded-pill bg-white text-dark px-3 py-2 me-2">
+                Technology
+              </span>
+            
+          </div>
+          <h1 class="display-4 fw-bold mb-4">
+            Why I don't use Microsoft Word
+          </h1>
+          <div class="d-flex align-items-center justify-content-center gap-3">
+            <span class="fw-semibold">Tanaka Mawere</span>
+            <span>•</span>
+            <span>Jul 21, 2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Image -->
+  <div class="container post-featured-image">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <img class="img-fluid rounded-4 shadow-lg w-100" src="https://images.unsplash.com/photo-1632239776255-0a7f24814df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWljcm9zb2Z0JTIwb2ZmaWNlfGVufDB8fDB8fHww" alt="Why I don't use Microsoft Word"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Post Content -->
+  <div class="container post-content">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="post-body">
+          <h1 id="money-money-money">Money, money, money</h1>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7:_site/technology/2023/07/21/why-i-dont-use-word.html
+
+<p>Microsoft Word is popular. Everyone has it. But this is Zimbabwe, so if you are not working for a company listed on the Zimbabwe Stock Exchange, you’re probably a pirate if you are using Microsoft Word. It’s not free. It’s supposed to be paid for.</p>
+
+<p>I also released an app called Medbase. A few people use it and it makes me negative thirty dollars a year. But it’s a passion project so I keep it running. Point is though, it’d really suck with the effort I put in the application, someone removes the ads that bring a bit of money (that I haven’t even used because it’s not a lot) or someone does something to jeopardise the application. So since I also I have an app in the wild that I wouldn’t want to be tampered with, I don’t use Microsoft Word that is also tampered with.</p>
+
+<h1 id="but-microsoft-is-a-big-company">But Microsoft is a big company</h1>
+
+<p>I know what you are saying,”Microsoft is a big company that brings in millions per year. My single laptop wouldn’t change a thing.” And I am genuinely against that type of thinking. Because guess what, you are not the only one thinking that. A million other people in Zimbabwe are probably saying the same and that compounds.</p>
+
+<p>I relate it to my application. If Medbase was charging $5 a month to use and it had 100 people who had the same thinking, that means Medbase wouldn’t be making $500 per month that is was supposed to make. And in Zimbabwe, that is a lot of money that can support the creator of the app and also be invested back into the application.</p>
+
+<h1 id="the-world-is-going-digital">The world is going digital</h1>
+
+<p>Everything in life is becoming digital. Unfortunately, as Zimbabweans we don’t see value because we are used to physical, tangible things. So paying for something digital is a waste of money (money that many Zimbos don’t have anyway) but it’s a mindset that will have to change eventually as we go into the future. Paying for digital services is a reality that we can’t run away from because it is coming.</p>
+
+<p>And since I fall into the category of Zimbabweans who can’t afford to pay for Office, I’d rather use the free alternatives such as LibreOffice and FreeOffice just because of how I wouldn’t want to not make money from my own app too.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>This was a hodge podge of a post but the summary is this. I feel the pain of not getting renumerated on your hard work. And I hope that Zimbabweans get used to paying for digital programs.</p>
+
+<<<<<<< HEAD:_site/thoughts/2023/07/21/why-i-dont-use-word.html
+                    </div>
+                    
+                    <!-- Social Share -->
+                    <div class="post-share mt-5 pt-4 border-top">
+                        <h5 class="fw-bold mb-3">Share this post</h5>
+                        <div class="share-buttons">
+                            <a href="https://twitter.com/intent/tweet?text=Why I don't use Microsoft Word&url=http://localhost:4000/thoughts/2023/07/21/why-i-dont-use-word.html" 
+                               class="btn btn-outline-primary me-2 mb-2" target="_blank">
+                                <i class="fab fa-twitter me-2"></i>Twitter
+                            </a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=http://localhost:4000/thoughts/2023/07/21/why-i-dont-use-word.html" 
+                               class="btn btn-outline-primary me-2 mb-2" target="_blank">
+                                <i class="fab fa-linkedin me-2"></i>LinkedIn
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/thoughts/2023/07/21/why-i-dont-use-word.html" 
+                               class="btn btn-outline-primary me-2 mb-2" target="_blank">
+                                <i class="fab fa-facebook me-2"></i>Facebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comments Section -->
+    
+    <div class="post-comments">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    
+=======
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7:_site/technology/2023/07/21/why-i-dont-use-word.html
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    var disqus_config = function () {
+    this.page.url = 'http://localhost:4000/technology/2023/07/21/why-i-dont-use-word.html';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = 'http://localhost:4000/technology/2023/07/21/why-i-dont-use-word.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://tanakamawere.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<<<<<<< HEAD:_site/thoughts/2023/07/21/why-i-dont-use-word.html
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</article>
+
+<!-- Navigation Section -->
+<section class="post-navigation py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- Section Header -->
+                <div class="text-center mb-5">
+                    <h3 class="fw-bold">Continue Reading</h3>
+                    <p class="text-muted">Discover more engaging content</p>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Previous Post -->
+                    
+                    <div class="col-md-6">
+                        <div class="nav-post-card nav-post-prev">
+                            <div class="nav-post-direction">
+                                <i class="fas fa-arrow-left me-2"></i>
+                                <span>Previous</span>
+                            </div>
+                            
+                            
+                            <div class="nav-post-image">
+                                <img src="https://i.postimg.cc/N0zLYBcM/perfectimg.png" alt="Perfection is the enemy of good">
+                                <div class="nav-post-image-overlay">
+                                    <i class="fas fa-arrow-left fa-2x"></i>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="nav-post-content">
+                                <h5 class="nav-post-title">Perfection is the enemy of good</h5>
+                                <p class="nav-post-excerpt">
+                                    This is the first post on this website and I am going to be recollecting on how and why I made th...
+                                </p>
+                                <div class="nav-post-meta">
+                                    <span class="nav-post-date">
+                                        <i class="fas fa-calendar me-1"></i>
+                                        Jul 21, 2023
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <a href="/thoughts/2023/07/21/perfection-is-the-enemy-of-good.html" class="nav-post-link stretched-link" aria-label="Read previous post: Perfection is the enemy of good"></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- Next Post -->
+                    
+                    <div class="col-md-6">
+                        <div class="nav-post-card nav-post-next">
+                            <div class="nav-post-direction">
+                                <span>Next</span>
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </div>
+                            
+                            
+                            <div class="nav-post-image">
+                                <img src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="How to build a reading habit">
+                                <div class="nav-post-image-overlay">
+                                    <i class="fas fa-arrow-right fa-2x"></i>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="nav-post-content">
+                                <h5 class="nav-post-title">How to build a reading habit</h5>
+                                <p class="nav-post-excerpt">
+                                    A summary of the things I have learnt from reading over 200 books in the last 2 years
+                                </p>
+                                <div class="nav-post-meta">
+                                    <span class="nav-post-date">
+                                        <i class="fas fa-calendar me-1"></i>
+                                        Aug 24, 2023
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <a href="/reading/2023/08/24/how-build-a-reading-habit.html" class="nav-post-link stretched-link" aria-label="Read next post: How to build a reading habit"></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- Explore More Section (when only one or no adjacent posts) -->
+                    
+                    
+                    <!-- Full Width Explore if no adjacent posts -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reading Progress Bar -->
+<div class="reading-progress">
+    <div class="reading-progress-bar"></div>
+</div>
+=======
+        </div>
+      </div>
+    </div>
+  
+
+  <!-- Next Article Section -->
+  
+    <div class="next-article-section py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="fw-bold mb-4">Your next article...</h2>
+            <div class="card next-article-card border-0 shadow-lg overflow-hidden">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <img class="img-fluid h-100 object-fit-cover" src="https://i.postimg.cc/N0zLYBcM/perfectimg.png" alt="Perfection is the enemy of good"/>
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body d-flex flex-column h-100 p-4">
+                    <h3 class="card-title fw-bold mb-3">Perfection is the enemy of good</h3>
+                    <p class="card-text text-muted flex-grow-1">This is the first post on this website and I am going to be recollecting on how and why I made this new site.</p>
+                    <a href="/thoughts/2023/07/21/perfection-is-the-enemy-of-good.html" class="btn btn-primary vonge-btn mt-3 align-self-start">
+                      Read Article <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</article>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7:_site/technology/2023/07/21/why-i-dont-use-word.html
+
+<!-- JavaScript for Reading Time and Progress -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Calculate reading time
+    const content = document.querySelector('.post-body');
+    const readingTimeElement = document.getElementById('reading-time');
+    
+    if (content && readingTimeElement) {
+        const text = content.textContent || content.innerText || '';
+        const wordsPerMinute = 200;
+        const words = text.trim().split(/\s+/).length;
+        const time = Math.ceil(words / wordsPerMinute);
+        readingTimeElement.textContent = `${time} min read`;
+    }
+    
+    // Reading progress bar
+    const progressBar = document.querySelector('.reading-progress-bar');
+    
+    if (progressBar) {
+        window.addEventListener('scroll', function() {
+            const article = document.querySelector('.post-article');
+            if (article) {
+                const articleTop = article.offsetTop;
+                const articleHeight = article.offsetHeight;
+                const windowTop = window.pageYOffset;
+                const windowHeight = window.innerHeight;
+                
+                const progress = Math.min(
+                    Math.max((windowTop - articleTop + windowHeight) / articleHeight, 0), 1
+                );
+                
+                progressBar.style.width = (progress * 100) + '%';
+            }
+        });
+    }
+});
+</script>
+
+
+    </main>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/color-modes.js"></script>
+  </body>
+  
+<<<<<<< HEAD:_site/thoughts/2023/07/21/why-i-dont-use-word.html
+<footer class="p-5 vonge-gradient-footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+                <p class="text-white-50 mb-3">
+                    Full-stack .NET developer and final year medical student passionate about 
+                    creating innovative solutions at the intersection of technology and healthcare.
+                </p>
+                <div class="row align-items-center m-2">
+    <div class="col">
+        <a href="https://www.instagram.com/tan.akamawere/">
+            <i class="fa-brands fa-instagram fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://github.com/tanakamawere">
+            <i class="fa-brands fa-github fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="mailto:tanaka@tanakamawere.co.zw">
+            <i class="fa-solid fa-envelope fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://wa.me/263785468923">
+            <i class="fa-brands fa-whatsapp fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://x.com/tanaka_mawere">
+            <i class="fa-brands fa-twitter fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <!-- <div class="col">
+        <a href="https://www.youtube.com/channel/UCta53LdBaAj7gQ-JHgHBEfg">
+            <i class="fa-brands fa-youtube fa-xl icon-colour icon-size"></i>
+        </a>
+    </div> -->
+</div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="/" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-home me-2"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/projects" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-code me-2"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/posts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-blog me-2"></i>Posts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/all-thoughts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-lightbulb me-2"></i>Thoughts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/about" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-user me-2"></i>About
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/privacy-policy" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-shield-alt me-2"></i>Privacy Policy
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Contact Info</h6>
+                <div class="text-white-50">
+                    <p class="mb-2">
+                        <i class="fas fa-envelope me-2"></i>
+                        hello@tanakamawere.com
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Harare, Zimbabwe
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4 footer-divider">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="text-white-50 mb-0">
+                    &copy; 2025 Tanaka Mawere. All rights reserved.
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <small class="text-white-50">
+                    Built with Jekyll & Bootstrap 5
+                </small>
+            </div>
+        </div>
+    </div>
+=======
+<footer class="vonge-gradient-footer py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- About Section -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+        <p class="text-white opacity-75 small mb-3">Passionate about creating innovative solutions at the intersection of technology and healthcare. Currently balancing medical studies with full-stack development and music.</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="https://www.instagram.com/tan.akamawere/" class="text-white text-decoration-none" aria-label="Instagram">
+            <i class="fa-brands fa-instagram fa-lg"></i>
+          </a>
+          <a href="https://github.com/tanakamawere" class="text-white text-decoration-none" aria-label="GitHub">
+            <i class="fa-brands fa-github fa-lg"></i>
+          </a>
+          <a href="mailto:tanaka@tanakamawere.co.zw" class="text-white text-decoration-none" aria-label="Email">
+            <i class="fa-solid fa-envelope fa-lg"></i>
+          </a>
+          <a href="https://wa.me/263785468923" class="text-white text-decoration-none" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp fa-lg"></i>
+          </a>
+          <a href="https://x.com/tanaka_mawere" class="text-white text-decoration-none" aria-label="Twitter">
+            <i class="fa-brands fa-twitter fa-lg"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/" class="text-white text-decoration-none opacity-75 small">Home</a>
+          </li>
+          <li class="mb-2">
+            <a href="/about" class="text-white text-decoration-none opacity-75 small">About</a>
+          </li>
+          <li class="mb-2">
+            <a href="/projects" class="text-white text-decoration-none opacity-75 small">Projects</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Content Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Content</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/posts" class="text-white text-decoration-none opacity-75 small">Posts</a>
+          </li>
+          <li class="mb-2">
+            <a href="/all-thoughts" class="text-white text-decoration-none opacity-75 small">Thoughts</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="col-lg-4 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Get In Touch</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="mailto:tanaka@tanakamawere.co.zw" class="text-white text-decoration-none opacity-75 small">
+              <i class="fa-solid fa-envelope me-2"></i>tanaka@tanakamawere.co.zw
+            </a>
+          </li>
+          <li class="mb-2">
+            <span class="text-white opacity-75 small">
+              <i class="fa-solid fa-location-dot me-2"></i>Harare, Zimbabwe
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-white opacity-25 my-4">
+
+    <!-- Bottom Bar -->
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <p class="text-white small mb-0">© 2025 Tanaka Mawere. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <span class="text-white small opacity-75">Full-stack .NET Programmer • Medical Student • Musician</span>
+      </div>
+    </div>
+  </div>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7:_site/technology/2023/07/21/why-i-dont-use-word.html
+</footer>
+</html>

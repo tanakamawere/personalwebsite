@@ -5,8 +5,7 @@ date: 2024-09-15 02:00:00 +0200
 description: "Hitler, Mussolini, Lenin - what do all these people have in common?"
 author: Tanaka Mawere
 categories: 
-    -   Thoughts
-    -   Leadership
+    - Thoughts
 image: "https://i.postimg.cc/FR65nFdT/09c888b9-f4cf-46eb-b08c-e4bbfaddc429.jpg"
 ---
 

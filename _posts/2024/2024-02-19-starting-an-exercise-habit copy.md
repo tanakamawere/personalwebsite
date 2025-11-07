@@ -5,7 +5,8 @@ date: 2024-02-19 14:00:00 +0200
 description: "Based off my recent interactions with people, here are a few pointers on how to keep an exercise habit."
 author: Tanaka Mawere
 categories: 
-    -   Health
+    - Health
+    - Productivity
 image: "https://i.postimg.cc/Bv2XVQdS/a46e0168-8718-4a76-94c6-d96e82f36e22.jpg"
 ---
 

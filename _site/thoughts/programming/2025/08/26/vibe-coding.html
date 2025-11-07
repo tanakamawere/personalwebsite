@@ -145,6 +145,7 @@
 </script>
 </head></head>
   <body>
+<<<<<<< HEAD
     <div class="container">
     <nav class="navbar navbar-expand-lg mt-4">
       <div class="container-fluid">
@@ -190,22 +191,41 @@
     <button class="btn btn-outline-secondary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
         <i class="fa-solid fa-circle-half-stroke me-2 theme-icon-active"></i>
         <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+=======
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+        <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
     </button>
     <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+<<<<<<< HEAD
           <i class="fa-solid fa-sun me-2"></i>
           Light
+=======
+          <i class="fa-solid fa-sun fa-l icon-colour icon-size-sm"></i>
+          Light
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
         </button>
       </li>
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+<<<<<<< HEAD
           <i class="fa-solid fa-moon me-2"></i>
           Dark
+=======
+          <i class="fa-solid fa-moon fa-l icon-colour icon-size-sm"></i>
+          Dark
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
         </button>
       </li>
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+<<<<<<< HEAD
           <i class="fa-solid fa-circle-half-stroke me-2"></i>
           Auto
         </button>
@@ -278,6 +298,107 @@
                 <div class="col-lg-8 col-xl-7">
                     <div class="post-body">
                         <p>The uninitiated might be wondering, what is “vibe-coding?” So here is a short-ish, very much not AI answer.</p>
+=======
+            <i class="fa-solid fa-circle-half-stroke fa-l icon-colour icon-size-sm"></i>
+          Auto
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+  
+    <main class="p-1">
+      <nav class="custom-navbar">
+  <div class="container-fluid px-5">
+    <div class="navbar-content">
+      <a class="navbar-logo" href="/">TM</a>
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="navbar-menu" id="navbarMenu">
+        <li class="navbar-item">
+          <a class="navbar-link" href="/">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/projects">Projects</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/posts">Posts</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Toggle mobile menu
+  document.getElementById('navbarToggle').addEventListener('click', function() {
+    const menu = document.getElementById('navbarMenu');
+    menu.classList.toggle('active');
+    this.classList.toggle('active');
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const navbar = document.querySelector('.custom-navbar');
+    const toggle = document.getElementById('navbarToggle');
+    const menu = document.getElementById('navbarMenu');
+    
+    if (!navbar.contains(event.target)) {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+    }
+  });
+</script>
+      <article class="post-article">
+  <!-- Hero Section -->
+  <div class="post-hero">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="post-categories mb-3">
+              
+              <span class="badge rounded-pill bg-white text-dark px-3 py-2 me-2">
+                Thoughts
+              </span>
+              
+              <span class="badge rounded-pill bg-white text-dark px-3 py-2 me-2">
+                Programming
+              </span>
+            
+          </div>
+          <h1 class="display-4 fw-bold mb-4">
+            I tried vibe-coding...
+          </h1>
+          <div class="d-flex align-items-center justify-content-center gap-3">
+            <span class="fw-semibold">Tanaka Mawere</span>
+            <span>•</span>
+            <span>Aug 26, 2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Image -->
+  <div class="container post-featured-image">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <img class="img-fluid rounded-4 shadow-lg w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Jo3cVvNmq-FqXd1oV3dWyxig1f09pIsjtw&s" alt="I tried vibe-coding..."/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Post Content -->
+  <div class="container post-content">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="post-body">
+          <p>The uninitiated might be wondering, what is “vibe-coding?” So here is a short-ish, very much not AI answer.</p>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
 
 <blockquote>
   <p>Tell AI to make an app, bammm, it’s there and it works.</p>
@@ -329,6 +450,7 @@
 
 <p>But it will certainly make you faster.</p>
 
+<<<<<<< HEAD
                     </div>
                     
                     <!-- Social Share -->
@@ -361,6 +483,18 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
                     
+=======
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
 <div id="disqus_thread"></div>
 <script>
     /**
@@ -379,6 +513,7 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
+<<<<<<< HEAD
                 </div>
             </div>
         </div>
@@ -523,6 +658,42 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
+=======
+        </div>
+      </div>
+    </div>
+  
+
+  <!-- Next Article Section -->
+  
+    <div class="next-article-section py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="fw-bold mb-4">Your next article...</h2>
+            <div class="card next-article-card border-0 shadow-lg overflow-hidden">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <img class="img-fluid h-100 object-fit-cover" src="https://i.postimg.cc/1RKnRKWq/Copilot-20250628-083519.png" alt="When music becomes perfect..."/>
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body d-flex flex-column h-100 p-4">
+                    <h3 class="card-title fw-bold mb-3">When music becomes perfect...</h3>
+                    <p class="card-text text-muted flex-grow-1">There is no perfection in art</p>
+                    <a href="/thoughts/music/2025/06/28/perfect-music.html" class="btn btn-primary vonge-btn mt-3 align-self-start">
+                      Read Article <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</article>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
 
 
     </main>
@@ -531,6 +702,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <script src="/assets/js/color-modes.js"></script>
   </body>
   
+<<<<<<< HEAD
 <footer class="p-5 vonge-gradient-footer mt-5">
     <div class="container">
         <div class="row">
@@ -636,5 +808,93 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         </div>
     </div>
+=======
+<footer class="vonge-gradient-footer py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- About Section -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+        <p class="text-white opacity-75 small mb-3">Passionate about creating innovative solutions at the intersection of technology and healthcare. Currently balancing medical studies with full-stack development and music.</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="https://www.instagram.com/tan.akamawere/" class="text-white text-decoration-none" aria-label="Instagram">
+            <i class="fa-brands fa-instagram fa-lg"></i>
+          </a>
+          <a href="https://github.com/tanakamawere" class="text-white text-decoration-none" aria-label="GitHub">
+            <i class="fa-brands fa-github fa-lg"></i>
+          </a>
+          <a href="mailto:tanaka@tanakamawere.co.zw" class="text-white text-decoration-none" aria-label="Email">
+            <i class="fa-solid fa-envelope fa-lg"></i>
+          </a>
+          <a href="https://wa.me/263785468923" class="text-white text-decoration-none" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp fa-lg"></i>
+          </a>
+          <a href="https://x.com/tanaka_mawere" class="text-white text-decoration-none" aria-label="Twitter">
+            <i class="fa-brands fa-twitter fa-lg"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/" class="text-white text-decoration-none opacity-75 small">Home</a>
+          </li>
+          <li class="mb-2">
+            <a href="/about" class="text-white text-decoration-none opacity-75 small">About</a>
+          </li>
+          <li class="mb-2">
+            <a href="/projects" class="text-white text-decoration-none opacity-75 small">Projects</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Content Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Content</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/posts" class="text-white text-decoration-none opacity-75 small">Posts</a>
+          </li>
+          <li class="mb-2">
+            <a href="/all-thoughts" class="text-white text-decoration-none opacity-75 small">Thoughts</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="col-lg-4 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Get In Touch</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="mailto:tanaka@tanakamawere.co.zw" class="text-white text-decoration-none opacity-75 small">
+              <i class="fa-solid fa-envelope me-2"></i>tanaka@tanakamawere.co.zw
+            </a>
+          </li>
+          <li class="mb-2">
+            <span class="text-white opacity-75 small">
+              <i class="fa-solid fa-location-dot me-2"></i>Harare, Zimbabwe
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-white opacity-25 my-4">
+
+    <!-- Bottom Bar -->
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <p class="text-white small mb-0">© 2025 Tanaka Mawere. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <span class="text-white small opacity-75">Full-stack .NET Programmer • Medical Student • Musician</span>
+      </div>
+    </div>
+  </div>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7
 </footer>
 </html>

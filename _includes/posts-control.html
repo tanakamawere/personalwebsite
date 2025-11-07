@@ -1,12 +1,33 @@
 <div class="col-lg-4 mb-5">
-    <article class="post-card h-100">
-        <div class="post-card-image-container">
-            <img class="post-card-image" src="{{ post.image }}" alt="{{ post.title }}" />
-            <div class="post-card-overlay">
-                <div class="post-card-overlay-content">
-                    <a href="{{ post.url | relative_url}}" class="btn btn-light btn-lg">
-                        <i class="fas fa-arrow-right me-2"></i>Read More
-                    </a>
+    <div class="card post-card h-100 shadow-lg border-0 overflow-hidden">
+        <div class="post-card-image-wrapper">
+            <img class="card-img-top post-card-image" src="{{ post.image }}" alt="{{ post.title }}" />
+            <div class="post-card-overlay"></div>
+        </div>
+        <div class="card-body p-4">
+            <div class="mb-3">
+                {% for category in post.categories %}  
+                    <span class="badge vonge-badge rounded-pill me-2 mb-2">
+                        {{ category }}
+                    </span>
+                {% endfor %}
+            </div>
+            <a class="text-decoration-none stretched-link" href="{{ post.url | relative_url}}">
+                <h3 class="fw-bold post-card-title mb-3">
+                    {{ post.title }}
+                </h3>
+            </a>
+            <p class="card-text text-muted mb-0">
+                {{ post.description }}
+            </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="small text-muted">
+                    <i class="fa-regular fa-calendar me-2"></i>{{ post.date | date: "%b %-d, %Y" }}
+                </div>
+                <div class="read-more-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         </div>

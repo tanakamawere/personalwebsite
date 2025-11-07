@@ -6,8 +6,7 @@ description: "This is the first time using such a title that sounds sounds so cl
 author: Tanaka Mawere
 comments: true
 categories: 
-    -   Health
-    -   Lessons from 2023
+    - Health
 image: "https://i.postimg.cc/xTNPcVHj/dd747fa4-f487-497d-8ba5-6ab25ae3deed.jpg"
 ---
 

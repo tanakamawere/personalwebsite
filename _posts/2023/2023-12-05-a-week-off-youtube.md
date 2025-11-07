@@ -5,9 +5,8 @@ date: 2023-12-05 17:30:00 +0200
 description: "I last watched a YouTube video a week ago and man, has it been something"
 author: Tanaka Mawere
 categories: 
-    -   Battle with Social Media
-    -   YouTube
-    -   Productivity
+    - Lifestyle
+    - Productivity
 image: "https://i.postimg.cc/mrw8Gp9t/9d897122-329a-4818-abf6-e340d63a3769.jpg"
 ---
 

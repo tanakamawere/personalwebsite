@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>How to build a reading habit - Tanaka Mawere</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QPN1RF97X"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0QPN1RF97X');
+    </script>
+
+    <!--Meta tags-->
+    <!-- Primary Meta Tags -->
+<meta name="title" content="How to build a reading habit - Tanaka Mawere" />
+<meta name="description" content="A summary of the things I have learnt from reading over 200 books in the last 2 years" />
+<meta name="keywords" content=""/>
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:4000/productivity/2023/08/24/how-build-a-reading-habit.html" />
+<meta property="og:title" content="How to build a reading habit - Tanaka Mawere" />
+<meta property="og:description" content="A summary of the things I have learnt from reading over 200 books in the last 2 years" />
+<meta property="og:image" content="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="http://localhost:4000" />
+<meta property="twitter:title" content="How to build a reading habit - Tanaka Mawere" />
+<meta property="twitter:description" content="A summary of the things I have learnt from reading over 200 books in the last 2 years" />
+<meta property="twitter:image" content="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" />
+
+<!--Browser Toolbar Colour-->
+<meta name="theme-color" content="#f2f6ff">
+
+<!-- Meta Tags Generated with https://metatags.io -->
+
+
+    <script src="https://kit.fontawesome.com/f4b902f1d9.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+
+  <!--Ad sense stuff-->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7010150994074481"
+     crossorigin="anonymous"></script>
+
+    <!--Clarity Code-->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "k9ajfs4kbb");
+    </script>
+
+     <!--Favicon stuff-->
+     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<script>
+    (() => {
+  'use strict'
+
+  const getStoredTheme = () => localStorage.getItem('theme')
+  const setStoredTheme = theme => localStorage.setItem('theme', theme)
+
+  const getPreferredTheme = () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme) {
+      return storedTheme
+    }
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  }
+
+  const setTheme = theme => {
+    if (theme === 'auto') {
+      document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+    } else {
+      document.documentElement.setAttribute('data-bs-theme', theme)
+    }
+  }
+
+  setTheme(getPreferredTheme())
+
+  const showActiveTheme = (theme, focus = false) => {
+    const themeSwitcher = document.querySelector('#bd-theme')
+
+    if (!themeSwitcher) {
+      return
+    }
+
+    const themeSwitcherText = document.querySelector('#bd-theme-text')
+    const activeThemeIcon = document.querySelector('.theme-icon-active use')
+    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+    const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
+
+    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+      element.classList.remove('active')
+      element.setAttribute('aria-pressed', 'false')
+    })
+
+    btnToActive.classList.add('active')
+    btnToActive.setAttribute('aria-pressed', 'true')
+    activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+    const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
+    themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
+
+    if (focus) {
+      themeSwitcher.focus()
+    }
+  }
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme !== 'light' && storedTheme !== 'dark') {
+      setTheme(getPreferredTheme())
+    }
+  })
+
+  window.addEventListener('DOMContentLoaded', () => {
+    showActiveTheme(getPreferredTheme())
+
+    document.querySelectorAll('[data-bs-theme-value]')
+      .forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const theme = toggle.getAttribute('data-bs-theme-value')
+          setStoredTheme(theme)
+          setTheme(theme)
+          showActiveTheme(theme, true)
+        })
+      })
+  })
+})()
+</script>
+</head></head>
+  <body>
+<<<<<<< HEAD:_site/reading/2023/08/24/how-build-a-reading-habit.html
+    <div class="container">
+    <nav class="navbar navbar-expand-lg mt-4">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-4" href="/">
+          <span class="text-primary">TM</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold align-items-center justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="fas fa-home me-2"></i>Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects">
+                <i class="fas fa-code me-2"></i>Projects
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/posts">
+                <i class="fas fa-blog me-2"></i>Posts
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/all-thoughts">
+                <i class="fas fa-lightbulb me-2"></i>Thoughts
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="/about">
+                <i class="fas fa-user me-2"></i>About
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+=======
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7:_site/productivity/2023/08/24/how-build-a-reading-habit.html
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-outline-secondary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+        <i class="fa-solid fa-circle-half-stroke me-2 theme-icon-active"></i>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+          <i class="fa-solid fa-sun me-2"></i>
+          Light
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+          <i class="fa-solid fa-moon me-2"></i>
+          Dark
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+          <i class="fa-solid fa-circle-half-stroke me-2"></i>
+          Auto
+        </button>
+      </li>
+    </ul>
+</div>
+  
+    <main class="p-1">
+<<<<<<< HEAD:_site/reading/2023/08/24/how-build-a-reading-habit.html
+      <!-- Post Hero Section -->
+<article class="post-article">
+    <header class="post-header">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <!-- Categories -->
+                    <div class="post-categories mb-3">
+                          
+                        <span class="badge post-category-badge me-2">
+                            <i class="fas fa-tag me-1"></i>Reading
+                        </span>
+                        
+                    </div>
+                    
+                    <!-- Title -->
+                    <h1 class="post-title display-4 fw-bold mb-4">
+                        How to build a reading habit
+                    </h1>
+                    
+                    <!-- Meta Information -->
+                    <div class="post-meta d-flex align-items-center mb-4">
+                        <div class="author-info d-flex align-items-center me-4">
+                            <div class="author-avatar me-3">
+                                <i class="fas fa-user-circle fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <div class="author-name fw-semibold">Tanaka Mawere</div>
+                                <div class="post-date text-muted small">
+                                    <i class="fas fa-calendar me-1"></i>
+                                    August 24, 2023
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Reading Time Estimate -->
+                        <div class="reading-time text-muted small">
+                            <i class="fas fa-clock me-1"></i>
+                            <span id="reading-time">5 min read</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Post Image -->
+                    
+                    <div class="post-image-container mb-5">
+                        <img src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" class="post-featured-image" alt="How to build a reading habit">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <div class="post-content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <div class="post-body">
+                        <h1 id="1-read-what-is-relevant-to-you-in-the-moment">1. Read what is relevant to you in the moment</h1>
+=======
+      <nav class="custom-navbar">
+  <div class="container-fluid px-5">
+    <div class="navbar-content">
+      <a class="navbar-logo" href="/">TM</a>
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="navbar-menu" id="navbarMenu">
+        <li class="navbar-item">
+          <a class="navbar-link" href="/">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/projects">Projects</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/posts">Posts</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Toggle mobile menu
+  document.getElementById('navbarToggle').addEventListener('click', function() {
+    const menu = document.getElementById('navbarMenu');
+    menu.classList.toggle('active');
+    this.classList.toggle('active');
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const navbar = document.querySelector('.custom-navbar');
+    const toggle = document.getElementById('navbarToggle');
+    const menu = document.getElementById('navbarMenu');
+    
+    if (!navbar.contains(event.target)) {
+      menu.classList.remove('active');
+      toggle.classList.remove('active');
+    }
+  });
+</script>
+      <article class="post-article">
+  <!-- Hero Section -->
+  <div class="post-hero">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="post-categories mb-3">
+              
+              <span class="badge rounded-pill bg-white text-dark px-3 py-2 me-2">
+                Productivity
+              </span>
+            
+          </div>
+          <h1 class="display-4 fw-bold mb-4">
+            How to build a reading habit
+          </h1>
+          <div class="d-flex align-items-center justify-content-center gap-3">
+            <span class="fw-semibold">Tanaka Mawere</span>
+            <span>•</span>
+            <span>Aug 24, 2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Image -->
+  <div class="container post-featured-image">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <img class="img-fluid rounded-4 shadow-lg w-100" src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="How to build a reading habit"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Post Content -->
+  <div class="container post-content">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="post-body">
+          <h1 id="1-read-what-is-relevant-to-you-in-the-moment">1. Read what is relevant to you in the moment</h1>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7:_site/productivity/2023/08/24/how-build-a-reading-habit.html
+
+<p>One mistake I did when I started reading books is reading a book just because it was popular. Even if the book is popular and actually good, because you are not in the space that the book will resonate with you, it will end up being a drag to read.</p>
+
+<p>In the times that in your life you are concerned about money, read more books to do with finance. Or when you are concerned about your health and fitness etc, make sure your reading list is catered to that in that moment.</p>
+
+<p>You will find yourself wanting to read the book even more and actually <em>get to finish a book you have started.</em></p>
+
+<blockquote>
+  <p>Another thing that is linked to this point is to not read for people. Read what you enjoy and what aligns with your current goals and purpose. What that you read will manifest itself to the right people, if you are so inclined to impress people with what you read.</p>
+</blockquote>
+
+<h1 id="2-you-are-allowed-to-skip-pages">2. You are allowed to skip pages</h1>
+
+<p>I had the belief that for me to have finished the whole book, I should have read every single word, paragraph and page, even the parts I found dull and monotonous.</p>
+
+<p>This point is especially true when you are reading one of those cheesy self-help books I detest. Some parts of them are great to read and you should, but some parts are mushy and repetitive. Skip that. Jump to the next chapter, paragraph, whatever.</p>
+
+<blockquote>
+  <p>Get to what you want to read and what you want to know to keep the book interesting to you</p>
+</blockquote>
+
+<h1 id="3-write-notes">3. Write notes</h1>
+
+<p>Okay.</p>
+
+<p>You’ve heard this before so I won’t waste time here. Writing notes is important so that whatever insights you get from reading, they immediately get imprinted in you head.</p>
+
+<p>If you want to know how I write notes from books or anything else, <a href="https://wa.me/263785468923">talk to me on WhatsApp</a></p>
+
+<<<<<<< HEAD:_site/reading/2023/08/24/how-build-a-reading-habit.html
+                    </div>
+                    
+                    <!-- Social Share -->
+                    <div class="post-share mt-5 pt-4 border-top">
+                        <h5 class="fw-bold mb-3">Share this post</h5>
+                        <div class="share-buttons">
+                            <a href="https://twitter.com/intent/tweet?text=How to build a reading habit&url=http://localhost:4000/reading/2023/08/24/how-build-a-reading-habit.html" 
+                               class="btn btn-outline-primary me-2 mb-2" target="_blank">
+                                <i class="fab fa-twitter me-2"></i>Twitter
+                            </a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=http://localhost:4000/reading/2023/08/24/how-build-a-reading-habit.html" 
+                               class="btn btn-outline-primary me-2 mb-2" target="_blank">
+                                <i class="fab fa-linkedin me-2"></i>LinkedIn
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/reading/2023/08/24/how-build-a-reading-habit.html" 
+                               class="btn btn-outline-primary me-2 mb-2" target="_blank">
+                                <i class="fab fa-facebook me-2"></i>Facebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comments Section -->
+    
+    <div class="post-comments">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    
+=======
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7:_site/productivity/2023/08/24/how-build-a-reading-habit.html
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    var disqus_config = function () {
+    this.page.url = 'http://localhost:4000/productivity/2023/08/24/how-build-a-reading-habit.html';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = 'http://localhost:4000/productivity/2023/08/24/how-build-a-reading-habit.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://tanakamawere.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<<<<<<< HEAD:_site/reading/2023/08/24/how-build-a-reading-habit.html
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</article>
+
+<!-- Navigation Section -->
+<section class="post-navigation py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- Section Header -->
+                <div class="text-center mb-5">
+                    <h3 class="fw-bold">Continue Reading</h3>
+                    <p class="text-muted">Discover more engaging content</p>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Previous Post -->
+                    
+                    <div class="col-md-6">
+                        <div class="nav-post-card nav-post-prev">
+                            <div class="nav-post-direction">
+                                <i class="fas fa-arrow-left me-2"></i>
+                                <span>Previous</span>
+                            </div>
+                            
+                            
+                            <div class="nav-post-image">
+                                <img src="https://images.unsplash.com/photo-1632239776255-0a7f24814df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWljcm9zb2Z0JTIwb2ZmaWNlfGVufDB8fDB8fHww" alt="Why I don't use Microsoft Word">
+                                <div class="nav-post-image-overlay">
+                                    <i class="fas fa-arrow-left fa-2x"></i>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="nav-post-content">
+                                <h5 class="nav-post-title">Why I don't use Microsoft Word</h5>
+                                <p class="nav-post-excerpt">
+                                    Many people have used my laptop and looked for Microsoft Word, only to be bombarded by some weird...
+                                </p>
+                                <div class="nav-post-meta">
+                                    <span class="nav-post-date">
+                                        <i class="fas fa-calendar me-1"></i>
+                                        Jul 21, 2023
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <a href="/thoughts/2023/07/21/why-i-dont-use-word.html" class="nav-post-link stretched-link" aria-label="Read previous post: Why I don't use Microsoft Word"></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- Next Post -->
+                    
+                    <div class="col-md-6">
+                        <div class="nav-post-card nav-post-next">
+                            <div class="nav-post-direction">
+                                <span>Next</span>
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </div>
+                            
+                            
+                            <div class="nav-post-image">
+                                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/01/30/17/ian-smith-rhodesia-5.jpg?quality=75&width=990&crop=3%3A2%2Csmart&auto=webp" alt="Ian Smith was right">
+                                <div class="nav-post-image-overlay">
+                                    <i class="fas fa-arrow-right fa-2x"></i>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="nav-post-content">
+                                <h5 class="nav-post-title">Ian Smith was right</h5>
+                                <p class="nav-post-excerpt">
+                                    I don't believe in majority rule ever in Rhodesia... not in 1000 years. Was this all to it for Sm...
+                                </p>
+                                <div class="nav-post-meta">
+                                    <span class="nav-post-date">
+                                        <i class="fas fa-calendar me-1"></i>
+                                        Aug 28, 2023
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <a href="/history/2023/08/28/ian-smith-was-right-and-wasnt-racist.html" class="nav-post-link stretched-link" aria-label="Read next post: Ian Smith was right"></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- Explore More Section (when only one or no adjacent posts) -->
+                    
+                    
+                    <!-- Full Width Explore if no adjacent posts -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reading Progress Bar -->
+<div class="reading-progress">
+    <div class="reading-progress-bar"></div>
+</div>
+=======
+        </div>
+      </div>
+    </div>
+  
+
+  <!-- Next Article Section -->
+  
+    <div class="next-article-section py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="fw-bold mb-4">Your next article...</h2>
+            <div class="card next-article-card border-0 shadow-lg overflow-hidden">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <img class="img-fluid h-100 object-fit-cover" src="https://images.unsplash.com/photo-1632239776255-0a7f24814df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWljcm9zb2Z0JTIwb2ZmaWNlfGVufDB8fDB8fHww" alt="Why I don't use Microsoft Word"/>
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body d-flex flex-column h-100 p-4">
+                    <h3 class="card-title fw-bold mb-3">Why I don't use Microsoft Word</h3>
+                    <p class="card-text text-muted flex-grow-1">Many people have used my laptop and looked for Microsoft Word, only to be bombarded by some weird application. I have a semi-good reason</p>
+                    <a href="/technology/2023/07/21/why-i-dont-use-word.html" class="btn btn-primary vonge-btn mt-3 align-self-start">
+                      Read Article <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</article>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7:_site/productivity/2023/08/24/how-build-a-reading-habit.html
+
+<!-- JavaScript for Reading Time and Progress -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Calculate reading time
+    const content = document.querySelector('.post-body');
+    const readingTimeElement = document.getElementById('reading-time');
+    
+    if (content && readingTimeElement) {
+        const text = content.textContent || content.innerText || '';
+        const wordsPerMinute = 200;
+        const words = text.trim().split(/\s+/).length;
+        const time = Math.ceil(words / wordsPerMinute);
+        readingTimeElement.textContent = `${time} min read`;
+    }
+    
+    // Reading progress bar
+    const progressBar = document.querySelector('.reading-progress-bar');
+    
+    if (progressBar) {
+        window.addEventListener('scroll', function() {
+            const article = document.querySelector('.post-article');
+            if (article) {
+                const articleTop = article.offsetTop;
+                const articleHeight = article.offsetHeight;
+                const windowTop = window.pageYOffset;
+                const windowHeight = window.innerHeight;
+                
+                const progress = Math.min(
+                    Math.max((windowTop - articleTop + windowHeight) / articleHeight, 0), 1
+                );
+                
+                progressBar.style.width = (progress * 100) + '%';
+            }
+        });
+    }
+});
+</script>
+
+
+    </main>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/color-modes.js"></script>
+  </body>
+  
+<<<<<<< HEAD:_site/reading/2023/08/24/how-build-a-reading-habit.html
+<footer class="p-5 vonge-gradient-footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+                <p class="text-white-50 mb-3">
+                    Full-stack .NET developer and final year medical student passionate about 
+                    creating innovative solutions at the intersection of technology and healthcare.
+                </p>
+                <div class="row align-items-center m-2">
+    <div class="col">
+        <a href="https://www.instagram.com/tan.akamawere/">
+            <i class="fa-brands fa-instagram fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://github.com/tanakamawere">
+            <i class="fa-brands fa-github fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="mailto:tanaka@tanakamawere.co.zw">
+            <i class="fa-solid fa-envelope fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://wa.me/263785468923">
+            <i class="fa-brands fa-whatsapp fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <div class="col">
+        <a href="https://x.com/tanaka_mawere">
+            <i class="fa-brands fa-twitter fa-xl icon-colour icon-size"></i>
+        </a>
+    </div>
+    <!-- <div class="col">
+        <a href="https://www.youtube.com/channel/UCta53LdBaAj7gQ-JHgHBEfg">
+            <i class="fa-brands fa-youtube fa-xl icon-colour icon-size"></i>
+        </a>
+    </div> -->
+</div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="/" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-home me-2"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/projects" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-code me-2"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/posts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-blog me-2"></i>Posts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/all-thoughts" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-lightbulb me-2"></i>Thoughts
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/about" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-user me-2"></i>About
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/privacy-policy" class="nav-link px-0 text-white-50 fw-semibold">
+                            <i class="fas fa-shield-alt me-2"></i>Privacy Policy
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h6 class="text-white fw-bold mb-3">Contact Info</h6>
+                <div class="text-white-50">
+                    <p class="mb-2">
+                        <i class="fas fa-envelope me-2"></i>
+                        hello@tanakamawere.com
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Harare, Zimbabwe
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4 footer-divider">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="text-white-50 mb-0">
+                    &copy; 2025 Tanaka Mawere. All rights reserved.
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <small class="text-white-50">
+                    Built with Jekyll & Bootstrap 5
+                </small>
+            </div>
+        </div>
+    </div>
+=======
+<footer class="vonge-gradient-footer py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- About Section -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="text-white fw-bold mb-3">Tanaka Mawere</h5>
+        <p class="text-white opacity-75 small mb-3">Passionate about creating innovative solutions at the intersection of technology and healthcare. Currently balancing medical studies with full-stack development and music.</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="https://www.instagram.com/tan.akamawere/" class="text-white text-decoration-none" aria-label="Instagram">
+            <i class="fa-brands fa-instagram fa-lg"></i>
+          </a>
+          <a href="https://github.com/tanakamawere" class="text-white text-decoration-none" aria-label="GitHub">
+            <i class="fa-brands fa-github fa-lg"></i>
+          </a>
+          <a href="mailto:tanaka@tanakamawere.co.zw" class="text-white text-decoration-none" aria-label="Email">
+            <i class="fa-solid fa-envelope fa-lg"></i>
+          </a>
+          <a href="https://wa.me/263785468923" class="text-white text-decoration-none" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp fa-lg"></i>
+          </a>
+          <a href="https://x.com/tanaka_mawere" class="text-white text-decoration-none" aria-label="Twitter">
+            <i class="fa-brands fa-twitter fa-lg"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/" class="text-white text-decoration-none opacity-75 small">Home</a>
+          </li>
+          <li class="mb-2">
+            <a href="/about" class="text-white text-decoration-none opacity-75 small">About</a>
+          </li>
+          <li class="mb-2">
+            <a href="/projects" class="text-white text-decoration-none opacity-75 small">Projects</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Content Section -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Content</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="/posts" class="text-white text-decoration-none opacity-75 small">Posts</a>
+          </li>
+          <li class="mb-2">
+            <a href="/all-thoughts" class="text-white text-decoration-none opacity-75 small">Thoughts</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="col-lg-4 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Get In Touch</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="mailto:tanaka@tanakamawere.co.zw" class="text-white text-decoration-none opacity-75 small">
+              <i class="fa-solid fa-envelope me-2"></i>tanaka@tanakamawere.co.zw
+            </a>
+          </li>
+          <li class="mb-2">
+            <span class="text-white opacity-75 small">
+              <i class="fa-solid fa-location-dot me-2"></i>Harare, Zimbabwe
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-white opacity-25 my-4">
+
+    <!-- Bottom Bar -->
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <p class="text-white small mb-0">© 2025 Tanaka Mawere. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <span class="text-white small opacity-75">Full-stack .NET Programmer • Medical Student • Musician</span>
+      </div>
+    </div>
+  </div>
+>>>>>>> 472225656ee881b2a278c2564f70495e6d64fba7:_site/productivity/2023/08/24/how-build-a-reading-habit.html
+</footer>
+</html>

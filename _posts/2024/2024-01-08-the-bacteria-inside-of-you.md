@@ -5,7 +5,7 @@ date: 2024-01-08 18:00:00 +0200
 description: "Explore the world of gut microbes with me plus why fibre is very important! Learn about these tiny organisms in our digestive system and their impact on our health."
 author: Tanaka Mawere
 categories: 
-    -   Health
+    - Health
 permalink: /health/bacteria&fibre
 image: "https://i.postimg.cc/RZbK4bpk/63d82727-dfbd-4f5c-9a6c-8c127ecc231a.jpg"
 ---

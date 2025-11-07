@@ -5,7 +5,7 @@ date: 2024-01-22 18:00:00 +0200
 description: "In this article, I dive into the links between light and our sleep and health. In addition, I highlight the importance of waking up at the same time every day. "
 author: Tanaka Mawere
 categories: 
-    -   Health
+    - Health
 image: "https://i.postimg.cc/P5J10GKQ/a3b736b6-7ff8-47f9-9c9c-6e54aaae087a.jpg"
 ---
 
