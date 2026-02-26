@@ -1,0 +1,56 @@
+---
+layout: default
+---
+<article class="post-article">
+  <!-- Hero Section -->
+  <div class="post-hero">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="post-categories mb-3">
+            <span class="badge rounded-pill bg-white text-dark px-3 py-2">
+              {{ page.category }}
+            </span>
+          </div>
+          <h1 class="display-4 fw-bold mb-4">
+            {{ page.title }}
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Image -->
+  <div class="container post-featured-image">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <img class="img-fluid rounded-4 shadow-lg w-100" src="{{ page.image }}" alt="{{ page.title }}" style="max-height: 400px; object-fit: cover;"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Content -->
+  <div class="container post-content">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="post-body">
+          {{ content }}
+        </div>
+        
+        <!-- Visit Project Button -->
+        <div class="text-center mt-5 mb-4">
+          <a href="{{ page.address }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary vonge-btn btn-lg px-5 py-3">
+            Visit Project <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+          </a>
+        </div>
+        
+        <!-- Back to Projects -->
+        <div class="mt-4">
+          <a href="/projects" class="btn btn-outline-secondary">
+            <i class="fa-solid fa-arrow-left me-2"></i> Back to Projects
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

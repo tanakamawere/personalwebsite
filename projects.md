@@ -15,8 +15,8 @@ permalink: "projects"
     {% assign categories = site.projects | map: 'category' | uniq | sort %}
     {% for cat in categories %}
         <div class="container-fluid py-3">
-            <h3 class="fw-bold">{{ cat }}</h3>
-            <div class="row gx-5">
+            <h3 class="fw-bold mb-4">{{ cat }}</h3>
+            <div class="row g-4">
                 {% for project in site.projects %}
                     {% if project.category == cat %}
                         {% include projects-control.html %}
