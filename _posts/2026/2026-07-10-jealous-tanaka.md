@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jealous God, Jealous Tanaka"
-date: 2026-04-13 02:00:00 +0200
+date: 2026-07-10 02:00:00 +0200
 description: "Do we value God more than the things we hold on to?"
 author: Tanaka Mawere
 categories: 
