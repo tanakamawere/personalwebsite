@@ -18,7 +18,7 @@ permalink: /zimsa/
                     Gotcha! 
                     <br/>
                     <br/>
-                    Since you are already here, you might as well 
+                    Since you are already here, you might as well
                     <a href="/"> explore my website</a>
                 </p>                
             </div>

@@ -1,5 +1,5 @@
 url: "https://tanakamawere.co.zw" # the base hostname & protocol for your site, e.g. http://example.com
-description: "Incompetent C# Programmer and Keyboardist + Bassist from Harare. Currently an unfortunate medical student at UZ and pretends to exercise at times."
+description: "Medical doctor, full-stack .NET programmer and musician. Passionate about creating innovative solutions at the intersection of technology and healthcare."
 
 baseurl: "/" # the subpath of your site, e.g. /blog
 title: "Tanaka Mawere"
@@ -9,12 +9,12 @@ author:
   name: "Tanaka Mawere"
   titles:
     - "Full-stack .NET Programmer"
-    - "Final Year Medical Student"
+    - "Medical Doctor"
     - "Musician"
-  bio: "Passionate about creating innovative solutions at the intersection of technology and healthcare. Currently balancing medical studies with full-stack development and music."
+  bio: "Passionate about creating innovative solutions at the intersection of technology and healthcare. Currently balancing medical profession with full-stack development and music."
   bio_short: "I pretend to exercise at times."
   location: "Harare, Zimbabwe"
-  email: "tanaka@tanakamawere.com"
+  email: "tanaka@tanakamawere.co.zw"
   skills:
     - "Full-Stack Development"
     - "Medical Tech"

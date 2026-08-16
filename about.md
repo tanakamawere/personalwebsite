@@ -61,7 +61,7 @@ permalink: "/about"
                 <img src="/assets/img/me_medicine.jpg" class="card-img-top rounded-top" alt="Medicine" style="object-fit:cover; height:220px;">
                 <div class="card-body text-center">
                     <h2 class="card-title display-6 fw-bold text-body-emphasis">Medicine</h2>
-                    <p class="card-text lead">I sometimes wonder what I am doing here but I am already 4 years into it. Why not just finish it?</p>
+                    <p class="card-text lead">I AM A DOCTOR NOW!</p>
                 </div>
             </div>
         </div>
