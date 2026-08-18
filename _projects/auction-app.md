@@ -4,7 +4,7 @@ image: https://images.unsplash.com/photo-1535320903710-d993d3d77d29?w=800&h=600&
 category: Projects
 title: Auction App
 description: Online auction platform for buying and selling items
-address: https://orange-tree-0e1693103.1.azurestaticapps.net/
+address: https://auctions.alcanzar.co.zw/
 permalink: /projects/auction-app
 ---
 
