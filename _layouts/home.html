@@ -2,53 +2,41 @@
 layout: default
 ---
 
-<div class="hero-section">
-    <div class="container-fluid px-5">
-        <div class="row align-items-center justify-content-center h-100 g-5">
-            <div class="col-xl-6 col-xxl-6 text-center">
-                <!-- Hero Image with Dynamic Background -->
-                <div class="hero-image-container">
-                    <!-- Animated background elements -->
-                    <div class="hero-bg-elements">
-                        <div class="streak streak-1"></div>
-                        <div class="streak streak-2"></div>
-                        <div class="streak streak-3"></div>
-                        <div class="circle circle-1"></div>
-                        <div class="circle circle-2"></div>
-                        <div class="square square-1"></div>
-                        <div class="square square-2"></div>
-                        <div class="triangle triangle-1"></div>
+<section class="hero-section hero-refresh">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="container-fluid hero-shell">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-7 col-xl-6 order-2 order-lg-1">
+                <div class="hero-content hero-content-refresh">
+                    <p class="hero-kicker"><span></span> Hi there</p>
+                    <h1>Part portfolio.<br>Part personality.<br><em>Mostly proof I can't pick a lane</em><br></h1>
+                    <p class="hero-intro">I am <strong>Tanaka Mawere</strong>, solutions architect & medical doctor. I enjoy doing stuff!</p>
+
+                    <div class="hero-actions">
+                        <a class="hero-button hero-button-primary" href="/projects">Explore my work <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a class="hero-button hero-button-quiet" href="/about">More about me <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <!-- Your image -->
-                    <img src="/assets/img/cover_image-removebg-preview.png" class="hero-main-image" alt="Tanaka Mawere">
                 </div>
             </div>
-            <div class="col-lg-6 col-xl-5 col-xxl-4">
-                <div class="my-5 text-center text-xl-start hero-content">
-                    <h1 class="fw-bolder display-4 mb-4">
-                        Hi there, I am Tanaka Mawere😃
-                    </h1>
-                    <p class="lead mb-4">
-                        <strong>Full-stack .NET Programmer</strong>, <strong>Medical Doctor</strong> and <strong>Musician</strong>.
-                    </p>
-                    <p class="text-muted mb-4">
-                        I pretend to exercise at times.
-                    </p>
-                    
-                    <hr class="divider my-4" />
-                    {% include social-links.html %}
+
+            <div class="col-lg-5 col-xl-6 order-1 order-lg-2">
+                <div class="hero-portrait-stage">
+                    <div class="hero-portrait-panel">
+                        <img src="/assets/img/cover_image-removebg-preview.png" class="hero-main-image" alt="Tanaka Mawere">
+                        <div class="portrait-orbit portrait-orbit-one"></div>
+                        <div class="portrait-orbit portrait-orbit-two"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- Scroll indicator -->
-        <div class="scroll-indicator">
-            <i class="fa-solid fa-chevron-down"></i>
         </div>
     </div>
-</div>
 
-<div class="content-section">
+    <a class="scroll-indicator" href="#recent-posts" aria-label="Scroll to recent posts">
+        <span>Scroll to explore</span><i class="fa-solid fa-arrow-down"></i>
+    </a>
+</section>
+
+<div class="content-section" id="recent-posts">
     <div class="px-5 container py-5">
         <div class="container-fluid py-3">
             <h2 class="display-6 fw-bold">Recent Posts</h2>
