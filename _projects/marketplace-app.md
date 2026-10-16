@@ -2,6 +2,7 @@
 layout: project
 image: https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop
 category: Projects
+company: alcanzar
 title: Marketplace Application
 description: E-commerce marketplace for buying and selling products
 address: https://happy-hill-019cbb603.4.azurestaticapps.net/

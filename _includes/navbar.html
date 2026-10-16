@@ -1,45 +1,37 @@
-<nav class="custom-navbar">
-  <div class="container-fluid px-5">
-    <div class="navbar-content">
-      <a class="navbar-logo" href="/">TM</a>
-      <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <ul class="navbar-menu" id="navbarMenu">
-        <li class="navbar-item">
-          <a class="navbar-link" href="/">Home</a>
-        </li>
-        <li class="navbar-item">
-          <a class="navbar-link" href="/projects">Projects</a>
-        </li>
-        <li class="navbar-item">
-          <a class="navbar-link" href="/posts">Posts</a>
-        </li>
-        <li class="navbar-item">
-          <a class="navbar-link" href="/about">About</a>
-        </li>
-      </ul>
-    </div>
+<nav class="custom-navbar" aria-label="Main navigation">
+  <div class="site-shell navbar-content">
+    <a class="navbar-logo" href="{{ '/' | relative_url }}" aria-label="Tanaka Mawere home">tanaka<span>.</span><small>MAWERE</small></a>
+    <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation" aria-controls="navbarMenu" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+    <ul class="navbar-menu" id="navbarMenu">
+      <li class="navbar-item"><a class="navbar-link" href="{{ '/' | relative_url }}"{% if page.layout == 'home' %} aria-current="page"{% endif %}>Home</a></li>
+      <li class="navbar-item"><a class="navbar-link" href="{{ '/projects' | relative_url }}"{% if page.url contains '/projects' %} aria-current="page"{% endif %}>Projects</a></li>
+      <li class="navbar-item"><a class="navbar-link" href="{{ '/posts/' | relative_url }}"{% if page.url contains '/posts' %} aria-current="page"{% endif %}>Writing</a></li>
+      <li class="navbar-item"><a class="navbar-link" href="{{ '/about' | relative_url }}"{% if page.url == '/about' %} aria-current="page"{% endif %}>About me</a></li>
+      <li class="navbar-item"><a class="navbar-contact" href="mailto:{{ site.author.email }}">Say hello <span aria-hidden="true">↗</span></a></li>
+    </ul>
   </div>
 </nav>
-
 <script>
-  // Toggle mobile menu
-  document.getElementById('navbarToggle').addEventListener('click', function() {
-    const menu = document.getElementById('navbarMenu');
-    menu.classList.toggle('active');
-    this.classList.toggle('active');
-  });
-  
-  // Close menu when clicking outside
-  document.addEventListener('click', function(event) {
-    const navbar = document.querySelector('.custom-navbar');
+  (() => {
     const toggle = document.getElementById('navbarToggle');
     const menu = document.getElementById('navbarMenu');
-    
-    if (!navbar.contains(event.target)) {
+    const closeMenu = () => {
       menu.classList.remove('active');
-      toggle.classList.remove('active');
-    }
-  });
+      toggle.setAttribute('aria-expanded', 'false');
+    };
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('active');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', event => {
+      if (!event.target.closest('.custom-navbar')) closeMenu();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && menu.classList.contains('active')) {
+        closeMenu();
+        toggle.focus();
+      }
+    });
+    menu.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+  })();
 </script>

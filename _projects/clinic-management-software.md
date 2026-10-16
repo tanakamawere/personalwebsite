@@ -2,6 +2,7 @@
 layout: project
 image: https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop
 category: Projects
+company: alcanzar
 title: Clinic Management Software
 description: Digital clinic operations platform for patient care, records, and administration
 address: https://clinics.alcanzar.co.zw/
