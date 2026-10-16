@@ -1,56 +1,49 @@
 ---
 layout: default
 ---
-
-<section class="hero-section hero-refresh">
-    <div class="hero-grid" aria-hidden="true"></div>
-    <div class="container-fluid hero-shell">
-        <div class="row align-items-center g-5">
-            <div class="col-lg-7 col-xl-6 order-2 order-lg-1">
-                <div class="hero-content hero-content-refresh">
-                    <p class="hero-kicker"><span></span> Hi there</p>
-                    <h1>Part portfolio.<br>Part personality.<br><em>Mostly proof I can't pick a lane</em><br></h1>
-                    <p class="hero-intro">I am <strong>Tanaka Mawere</strong>, solutions architect & medical doctor. I enjoy doing stuff!</p>
-
-                    <div class="hero-actions">
-                        <a class="hero-button hero-button-primary" href="/projects">Explore my work <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <a class="hero-button hero-button-quiet" href="/about">More about me <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-5 col-xl-6 order-1 order-lg-2">
-                <div class="hero-portrait-stage">
-                    <div class="hero-portrait-panel">
-                        <img src="/assets/img/cover_image-removebg-preview.png" class="hero-main-image" alt="Tanaka Mawere">
-                        <div class="portrait-orbit portrait-orbit-one"></div>
-                        <div class="portrait-orbit portrait-orbit-two"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="journal-home">
+  <section class="intro-section site-shell" aria-labelledby="intro-title">
+    <div class="intro-copy">
+      <p class="eyebrow"><span class="hello-dot"></span> A few different hats. One curious human.</p>
+      <h1 id="intro-title">Hey, I’m Tanaka<span class="sunburst" aria-hidden="true">✳</span><br>Glad you’re <em>here.</em></h1>
+      <p class="intro-description">Medical doctor. Solutions architect. Musician.<br>Occasional writer. Professional lane-switcher.</p>
+      <p class="intro-note">This is my little corner of the internet — a home for the things I build, the ideas I’m figuring out, and a bit of life in between.</p>
+      <div class="intro-actions">
+        <a class="journal-button" href="{{ '/projects' | relative_url }}">See what I’m building <span aria-hidden="true">↗</span></a>
+        <a class="journal-text-link" href="{{ '/about' | relative_url }}">A little about me <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="intro-location"><span aria-hidden="true">↳</span> Based in {{ site.author.location }}. Curious about everywhere.</div>
     </div>
-
-    <a class="scroll-indicator" href="#recent-posts" aria-label="Scroll to recent posts">
-        <span>Scroll to explore</span><i class="fa-solid fa-arrow-down"></i>
-    </a>
-</section>
-
-<div class="content-section" id="recent-posts">
-    <div class="px-5 container py-5">
-        <div class="container-fluid py-3">
-            <h2 class="display-6 fw-bold">Recent Posts</h2>
-            <p class="col-md-8 fs-6 text-muted">
-                When I feel motivated, I write long form content. Very rare
-            </p>
-        </div>
-        <div class="row g-4">
-            {% assign sorted = site.posts | sort %}
-            {% assign recent = sorted | reverse | slice: 0, 3 %}
-
-            {% for post in recent %}
-                {% include posts-control.html %}
-            {% endfor %}
-        </div> 
+    <div class="intro-photo-stage">
+      <span class="photo-scribble" aria-hidden="true">a face to the name ↴</span>
+      <figure class="intro-photo">
+        <img src="{{ site.author.home_photo | relative_url }}" alt="Tanaka Mawere outdoors in Zimbabwe" width="3456" height="3456" fetchpriority="high">
+        <figcaption><span>Medicine, code & a little music.</span><span aria-hidden="true">☺</span></figcaption>
+      </figure>
+      <div class="photo-stamp" aria-hidden="true">STILL<br><em>figuring</em><br>IT OUT.</div>
     </div>
+  </section>
+  <div class="interests-strip" aria-label="My interests"><div class="site-shell"><span>Medicine</span><span aria-hidden="true">✳</span><span>Technology</span><span aria-hidden="true">✳</span><span>Music</span><span aria-hidden="true">✳</span><span>Faith</span><span aria-hidden="true">✳</span><span>Everyday life</span></div></div>
+  <section class="journal-section site-shell" aria-labelledby="explore-title">
+    <div class="section-heading"><div><p class="eyebrow">Make yourself at home</p><h2 id="explore-title">A few places to <em>start.</em></h2></div><p>Many interests.<br>Same underlying curiosity.</p></div>
+    <div class="explore-grid">
+      <a class="explore-card explore-build" href="{{ '/projects' | relative_url }}"><div class="explore-card-top"><span class="explore-icon" aria-hidden="true">&lt;/&gt;</span><span class="card-number">01 / BUILD</span></div><h3>Things I’m building</h3><p>Apps, experiments, and ideas that made it out of my head and into the world.</p><span class="explore-link">Explore the projects <span aria-hidden="true">↗</span></span></a>
+      <a class="explore-card explore-write" href="{{ '/posts/' | relative_url }}"><div class="explore-card-top"><span class="explore-icon" aria-hidden="true">✎</span><span class="card-number">02 / THINK</span></div><h3>Thinking out loud</h3><p>Longer reads on faith, health, technology, and this whole being-human thing.</p><span class="explore-link">Read the writing <span aria-hidden="true">↗</span></span></a>
+      <a class="explore-card explore-life" href="{{ '/all-thoughts' | relative_url }}"><div class="explore-card-top"><span class="explore-icon" aria-hidden="true">☁</span><span class="card-number">03 / WANDER</span></div><h3>The little thoughts</h3><p>Small observations. Half-formed ideas. The stuff that doesn’t need a whole article.</p><span class="explore-link">Wander through <span aria-hidden="true">↗</span></span></a>
+    </div>
+  </section>
+  <section class="writing-section" id="recent-posts" aria-labelledby="writing-title"><div class="site-shell journal-section">
+    <div class="section-heading"><div><p class="eyebrow">From the notebook</p><h2 id="writing-title">Recently on my <em>mind.</em></h2></div><a class="journal-text-link" href="{{ '/posts/' | relative_url }}">All the writing <span aria-hidden="true">↗</span></a></div>
+    <div class="journal-posts">
+      {% assign recent = site.posts | sort: 'date' | reverse | slice: 0, 3 %}
+      {% for post in recent %}
+      {% include posts-control.html %}
+      {% endfor %}
+    </div>
+  </div></section>
+  <section class="about-note site-shell" aria-labelledby="about-note-title">
+    <div class="about-note-photo"><img src="{{ site.author.about_photo | relative_url }}" alt="Tanaka smiling" loading="lazy" width="3264" height="2448"><span class="photo-scribble" aria-hidden="true">usually smiling :)</span></div>
+    <div><p class="eyebrow">The person behind the tabs</p><h2 id="about-note-title">Life’s too interesting<br>for just <em>one thing.</em></h2><p>I’m a doctor who writes code, a developer who plays music, and someone who occasionally pretends to exercise.</p><p>I care about making useful things and sharing what I learn along the way. This site is where those different worlds meet.</p><a class="journal-text-link" href="{{ '/about' | relative_url }}">Here’s a bit more of my story <span aria-hidden="true">→</span></a></div>
+  </section>
+  <section class="hello-section site-shell" aria-labelledby="hello-title"><div><p class="eyebrow">Good things start with a conversation</p><h2 id="hello-title">Have something in mind?<br><em>Let’s talk.</em></h2></div><a class="journal-button" href="mailto:{{ site.author.email }}">Say hello <span aria-hidden="true">↗</span></a><span class="hello-doodle" aria-hidden="true">✳</span></section>
 </div>

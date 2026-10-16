@@ -5,13 +5,14 @@
   </head>
   <body>
     {% include theme-toggler.html %}
-    <main class="p-1">
-      {% include navbar.html %}
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    {% include navbar.html %}
+    <main id="main-content">
       {{ content }}
     </main>
+    {% include footer.html %}
 
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/color-modes.js"></script>
+
   </body>
-  {% include footer.html %}
 </html>

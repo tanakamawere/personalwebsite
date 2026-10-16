@@ -1,28 +1,4 @@
 ---
 layout: default
 ---
-
-<div class="container">
-  <div class="col-lg-4 mb-5">
-    <div class="card h-100 shadow border-0">
-        <div class="card-body p-4 rounded-top">
-            <p class="card-text mb-0">
-                {{ content }}
-            </p>
-        </div>
-        <div class="card-footer p-4 pt-0 p-0 bg-transparent border-top-0">
-            <div class="d-flex align-items-end justify-content-between">
-                <div class="row align-items-center container-fluid">
-                    <img class="col rounded-circle" style="max-height: 50px; max-width: 50px;" src="/assets/img/profile_picture.jpg"/>
-                    <div class="col small text-muted">
-                        <div>{{ page.author }}</div>
-                        <div>
-                            {{ page.date | date: "%b %-d, %Y" }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div> 
+<article class="thought-detail site-shell"><h1 class="visually-hidden">{{ page.title | default: 'A little thought' }}</h1><a class="journal-text-link" href="{{ '/all-thoughts/' | relative_url }}"><span aria-hidden="true">←</span> All the little thoughts</a><div class="thought-note"><p class="eyebrow">In the margins</p><div class="thought-note-content">{{ content }}</div><div class="thought-note-footer"><span>{{ page.author | default: site.author.name }}</span><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%b %-d, %Y' }}</time></div></div></article>

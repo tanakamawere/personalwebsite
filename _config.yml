@@ -7,6 +7,9 @@ title: "Tanaka Mawere"
 # Personal Information
 author:
   name: "Tanaka Mawere"
+  # Replace these paths when you have new photos; the homepage crops them to fit.
+  home_photo: "/assets/img/profile_picture.jpg"
+  about_photo: "/assets/img/about_image.jpg"
   titles:
     - "Full-stack .NET Programmer"
     - "Medical Doctor"
