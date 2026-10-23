@@ -1,56 +1,18 @@
 ---
 layout: default
 ---
-<article class="post-article">
-  <!-- Hero Section -->
-  <div class="post-hero">
-    <div class="container py-5">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <div class="post-categories mb-3">
-            <span class="badge rounded-pill bg-white text-dark px-3 py-2">
-              {{ page.category }}
-            </span>
-          </div>
-          <h1 class="display-4 fw-bold mb-4">
-            {{ page.title }}
-          </h1>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Featured Image -->
-  <div class="container post-featured-image">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <img class="img-fluid rounded-4 shadow-lg w-100" src="{{ page.image }}" alt="{{ page.title }}" style="max-height: 400px; object-fit: cover;"/>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project Content -->
-  <div class="container post-content">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="post-body">
-          {{ content }}
-        </div>
-        
-        <!-- Visit Project Button -->
-        <div class="text-center mt-5 mb-4">
-          <a href="{{ page.address }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary vonge-btn btn-lg px-5 py-3">
-            Visit Project <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
-          </a>
-        </div>
-        
-        <!-- Back to Projects -->
-        <div class="mt-4">
-          <a href="/projects" class="btn btn-outline-secondary">
-            <i class="fa-solid fa-arrow-left me-2"></i> Back to Projects
-          </a>
-        </div>
-      </div>
-    </div>
+<article class="project-detail site-shell">
+  <a class="journal-text-link" href="{{ '/projects/' | relative_url }}"><span aria-hidden="true">←</span> All projects</a>
+  <header class="project-detail-header">
+    <p class="eyebrow">{% if page.company %}Part of Alcanzar{% else %}{{ page.category }}{% endif %}</p>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.description }}</p>
+    {% if page.company %}<a class="journal-text-link" href="{{ '/projects/alcanzar' | relative_url }}">Explore the Alcanzar family <span aria-hidden="true">→</span></a>{% endif %}
+  </header>
+  {% if page.image %}<div class="project-detail-image"><img src="{{ page.image }}" alt="{{ page.title }}" width="1000" height="500"></div>{% endif %}
+  <div class="post-body project-detail-body">{{ content }}</div>
+  <div class="project-detail-actions">
+    {% if page.address and page.address != '#' %}<a class="journal-button" href="{{ page.address }}" target="_blank" rel="noopener noreferrer">{% if page.featured %}Visit Alcanzar{% else %}Visit project{% endif %}<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>{% else %}<p class="eyebrow">Still taking shape. More to come.</p>{% endif %}
+    <a class="journal-text-link" href="{{ '/projects/' | relative_url }}">Back to all projects <span aria-hidden="true">→</span></a>
   </div>
 </article>

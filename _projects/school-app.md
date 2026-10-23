@@ -2,6 +2,7 @@
 layout: project
 image: https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=600&fit=crop
 category: Projects
+company: alcanzar
 title: School App
 description: School management software for students, teachers, and administrators
 address: https://schools.alcanzar.co.zw/

@@ -2,79 +2,20 @@
 layout: default
 title: About
 permalink: "/about"
+description: The person behind the medicine, code, music, and writing.
 ---
-<section>
-    <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="/assets/img/about_image.jpg" class="d-block mx-lg-auto img-fluid rounded-4 shadow-lg" alt="{{ site.author.name }}" height="500" loading="lazy">
-            </div>
-            <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About {{ site.author.name }}</h1>
-                <p class="lead">{{ site.author.bio }}</p>
-                <p class="text-muted">{{ site.author.bio_short }}</p>
-                
-                <!-- Location and Contact -->
-                <div class="d-flex flex-wrap gap-3 mb-4">
-                    <span class="badge bg-primary-subtle text-primary px-3 py-2">
-                        <i class="fas fa-map-marker-alt me-2"></i>{{ site.author.location }}
-                    </span>
-                    <a href="mailto:{{ site.author.email }}" class="badge bg-info-subtle text-info px-3 py-2 text-decoration-none">
-                        <i class="fas fa-envelope me-2"></i>{{ site.author.email }}
-                    </a>
-                </div>
-                
-                <!-- Skills -->
-                <div class="mb-4">
-                    <h5 class="fw-bold mb-3">Core Skills</h5>
-                    <div class="d-flex flex-wrap gap-2">
-                        {% for skill in site.author.skills %}
-                        <span class="badge bg-secondary-subtle text-secondary px-3 py-2">{{ skill }}</span>
-                        {% endfor %}
-                    </div>
-                </div>
-                
-                <hr style="height: 10px; border: none; width:20rem;" class="vonge-gradient-footer">
-            </div>
-        </div>
+<div class="about-journal site-shell">
+  <section class="about-intro" aria-labelledby="about-title">
+    <div><p class="eyebrow"><span class="hello-dot"></span> The person behind the tabs</p><h1 id="about-title">A few different hats.<br><em>Still just me.</em><span class="sunburst" aria-hidden="true">✳</span></h1><p class="about-lead">I’m {{ site.author.name }} — a medical doctor, solutions architect, and musician based in {{ site.author.location }}.</p><p>I like making useful things, figuring things out, and following an interesting idea a little further than I probably should.</p><p>Medicine, software, music, writing. It all finds a home here. {{ site.author.bio_short }}</p><a class="journal-button" href="mailto:{{ site.author.email }}">Say hello <span aria-hidden="true">↗</span></a></div>
+    <figure class="about-portrait"><img src="{{ site.author.about_photo | relative_url }}" alt="Tanaka Mawere smiling" width="3264" height="2448" fetchpriority="high"><figcaption class="photo-scribble">a face to all those interests :)</figcaption></figure>
+  </section>
+  <section class="about-chapters" aria-labelledby="chapters-title"><div class="section-heading"><div><p class="eyebrow">Same person. Different worlds.</p><h2 id="chapters-title">The things I keep coming <em>back to.</em></h2></div></div>
+    <div class="about-chapter-grid">
+      <article class="about-chapter"><img src="{{ '/assets/img/dev_fest.png' | relative_url }}" alt="Tanaka at a developer event" loading="lazy" width="640" height="440"><div><p class="eyebrow">01 / Building</p><h3>Code & curiosity</h3><p>Started with Python (like everyone else), moved to Java for Android, and settled on C# and .NET for everything.</p><a class="journal-text-link" href="{{ '/projects/' | relative_url }}">Things I’m building <span aria-hidden="true">↗</span></a></div></article>
+      <article class="about-chapter"><img src="{{ '/assets/img/me_medicine.jpg' | relative_url }}" alt="Tanaka in medical attire" loading="lazy" width="640" height="440"><div><p class="eyebrow">02 / Medicine</p><h3>People come first</h3><p>I am a doctor now! I’m especially interested in where healthcare and technology meet, and how useful software can support the work of caring for people.</p><a class="journal-text-link" href="{{ '/projects/medbase' | relative_url }}">Explore Medbase <span aria-hidden="true">↗</span></a></div></article>
+      <article class="about-chapter"><img src="{{ '/assets/img/music2.jpg' | relative_url }}" alt="Tanaka making music" loading="lazy" width="640" height="440"><div><p class="eyebrow">03 / Music</p><h3>A little rhythm</h3><p>I play keyboard and bass. I then pretend to know what I’m doing on the drums, acoustic guitar, marimba, and in singing.</p><span class="photo-scribble">always room for another instrument</span></div></article>
     </div>
-</section>
-
-<hr/>
-
-<!-- Cool Card Grid for Sections -->
-<div class="container py-4">
-    <div class="row g-5">
-        <!-- Programming Card -->
-        <div class="col-md-4">
-            <div class="card h-100 shadow-lg border-0">
-                <img src="/assets/img/dev_fest.png" class="card-img-top rounded-top" alt="Programming" style="object-fit:cover; height:220px;">
-                <div class="card-body text-center">
-                    <h2 class="card-title display-6 fw-bold text-body-emphasis">Programming</h2>
-                    <p class="card-text lead">Started with Python (like everyone else), moved to Java for Android and settled on C# and .NET for everything</p>
-                </div>
-            </div>
-        </div>
-        <!-- Medicine Card -->
-        <div class="col-md-4">
-            <div class="card h-100 shadow-lg border-0">
-                <img src="/assets/img/me_medicine.jpg" class="card-img-top rounded-top" alt="Medicine" style="object-fit:cover; height:220px;">
-                <div class="card-body text-center">
-                    <h2 class="card-title display-6 fw-bold text-body-emphasis">Medicine</h2>
-                    <p class="card-text lead">I AM A DOCTOR NOW!</p>
-                </div>
-            </div>
-        </div>
-        <!-- Music Card -->
-        <div class="col-md-4">
-            <div class="card h-100 shadow-lg border-0">
-                <img src="/assets/img/music2.jpg" class="card-img-top rounded-top" alt="Music" style="object-fit:cover; height:220px;">
-                <div class="card-body text-center">
-                    <h2 class="card-title display-6 fw-bold text-body-emphasis">Music</h2>
-                    <p class="card-text lead">I play the keyboard and bass. I then pretend to know what I am doing on the drums, acoustic guitar, marimba and in singing.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+  </section>
+  <section class="about-footnote"><div><p class="eyebrow">A few tools in the bag</p><h2>Different skills.<br><em>Shared curiosity.</em></h2></div><div><div class="skill-notes">{% for skill in site.author.skills %}<span>{{ skill }}</span>{% endfor %}</div><p>I also write about faith, health, technology, and the little things I notice along the way.</p><a class="journal-text-link" href="{{ '/posts/' | relative_url }}">Step into the notebook <span aria-hidden="true">→</span></a></div></section>
+  <section class="projects-contact"><div><p class="eyebrow">Keep the conversation going</p><h2>Good to <em>meet you.</em></h2></div><a class="journal-button" href="mailto:{{ site.author.email }}">Let’s talk <span aria-hidden="true">↗</span></a></section>
 </div>
-

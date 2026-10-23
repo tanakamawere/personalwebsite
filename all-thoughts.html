@@ -3,18 +3,8 @@ layout: default
 title: Thoughts
 permalink: /all-thoughts/
 ---
-
-<div class="px-5 container rounded-3">
-    <div class="container-fluid py-5">
-        <h2 class="display-6 fw-bold">Recent Thoughts</h2>
-        <p class="col-md-8 fs-6">
-            Who reads long things anyway? Here is my version of Twitter like thoughts, away from Twitter
-        </p>
-    </div>
-    <div class="row gx-5">
-        {% assign sorted = site.thoughts | sort: 'date' | reverse  %}
-        {% for post in sorted %}
-            {% include thoughts-control.html %}
-        {% endfor %}
-    </div>
+<div class="writing-journal site-shell">
+  <header class="notebook-header"><p class="eyebrow"><span class="hello-dot"></span> In the margins</p><h1>The little <em>thoughts.</em><span class="sunburst" aria-hidden="true">✳</span></h1><p>Small observations, half-formed ideas, and things that don’t need a whole article. My version of Twitter, away from Twitter.</p><span class="photo-scribble" aria-hidden="true">a thought before it gets away ↴</span></header>
+  <nav class="notebook-tabs" aria-label="Browse writing"><a href="{{ '/posts/' | relative_url }}">The longer reads</a><a href="{{ '/all-thoughts/' | relative_url }}" aria-current="page">The little thoughts</a><span>Small things, worth noticing.</span></nav>
+  <div class="thought-notes">{% assign sorted = site.thoughts | sort: 'date' | reverse %}{% for post in sorted %}{% include thoughts-control.html %}{% endfor %}</div>
 </div>
